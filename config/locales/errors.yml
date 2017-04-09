@@ -1,0 +1,15 @@
+en:
+  errors:
+    iso8601_date?: "must be an iso8601 formatted date string"
+    yyyy_mm_dd?: "must be a YYYY-MM-DD formatted date string"
+    email?: "must look like an email address"
+    currency?: "must be a valid 3 character currency string"
+    zip?: "must be a valid 5 character zip code"
+    cin?: "must be a valid 10 character (not counting spaces or dashes) Company Identification Numbers / Organisation Number"
+    drivers_license?: "must be a valid drivers license"
+    url?:: "must be a valid URL"
+    ssyk_id?: "must be a valid SSYK identifier"
+    country_code?: "must be a valid 2 character country code"
+    salary_type?: "must be a valid salary type code"
+    municipality?: "must be a valid municipality code"
+    url?: "must be a valid URL with leading http:// or https://"
