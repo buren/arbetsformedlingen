@@ -64,7 +64,6 @@ salary = Salary.new(
   summary: 'Your salary will be...'
 )
 
-
 qualifications = []
 qualifications << Qualification.new(
   summary: 'A summary', # optional, but recommended field

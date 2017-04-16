@@ -3,7 +3,9 @@ require 'set'
 
 module Arbetsformedlingen
   class CountryCode
-    CODES = CSV.read('data/country-codes.csv').to_h.freeze
+    CODES = CSV.read(
+      File.expand_path('../../../../data/country-codes.csv', __FILE__)
+    ).to_h.freeze
 
     COUNTRY_CODES = Set.new(CODES.values).freeze
 
