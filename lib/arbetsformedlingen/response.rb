@@ -5,7 +5,7 @@ module Arbetsformedlingen
     def initialize(httparty_response, request_boby)
       @code = httparty_response.code
       @body = httparty_response.body
-      @request_body = httparty_response.request_body
+      @request_body = request_body
       @valid = @code == 202
       @messages = build_messages(httparty_response.to_a)
     end
