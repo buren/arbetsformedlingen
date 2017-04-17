@@ -21,5 +21,9 @@ module Arbetsformedlingen
     def self.normalize(name)
       name.to_s.strip
     end
+
+    def self.to_form_array
+      CODE_MAP.to_a
+    end
   end
 end
