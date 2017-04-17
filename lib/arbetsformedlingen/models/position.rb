@@ -9,6 +9,13 @@ module Arbetsformedlingen
 
     required(:title, Types::StrippedString).filled
     required(:purpose, Types::StrippedString).filled
+    required(:address).schema do
+      required(:municipality, Types::Municipality).filled(:municipality?)
+      required(:country_code, Types::Country).filled(:str?, :country_code?)
+      required(:street, Types::StrippedString).filled
+      required(:city, Types::StrippedString).filled
+      required(:zip, Types::Zip).filled(:str?, :zip?)
+    end
   end
 
   class Position < Model
