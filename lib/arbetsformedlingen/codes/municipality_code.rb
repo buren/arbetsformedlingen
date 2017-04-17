@@ -25,7 +25,7 @@ module Arbetsformedlingen
     def self.to_form_array(name_only: false)
       return CODE_MAP.to_a unless name_only
 
-      CODE_MAP.to_a.map { |name| [name, name] }
+      CODE_MAP.map { |name, _code| [name, name] }
     end
   end
 end
