@@ -11,6 +11,7 @@ require 'arbetsformedlingen/models/dry/types'
 require 'arbetsformedlingen/models/dry/predicates'
 
 require 'arbetsformedlingen/output_builder'
+require 'arbetsformedlingen/response'
 
 require 'arbetsformedlingen/models/model'
 require 'arbetsformedlingen/models/document'
@@ -36,6 +37,6 @@ module Arbetsformedlingen
   }.freeze
 
   def self.post(xml)
-    HTTParty.post(POST_JOB_URL, body: xml, headers: HEADERS)
+    Response.new(HTTParty.post(POST_JOB_URL, body: xml, headers: HEADERS))
   end
 end
