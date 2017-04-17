@@ -37,6 +37,7 @@ module Arbetsformedlingen
   }.freeze
 
   def self.post(xml)
-    Response.new(HTTParty.post(POST_JOB_URL, body: xml, headers: HEADERS))
+    response = HTTParty.post(POST_JOB_URL, body: xml, headers: HEADERS)
+    Response.new(response, xml)
   end
 end
