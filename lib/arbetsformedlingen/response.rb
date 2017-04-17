@@ -1,6 +1,6 @@
 module Arbetsformedlingen
   class Response
-    attr_reader :code, :messages, :boby, :request_body
+    attr_reader :code, :messages, :body, :request_body
 
     def initialize(httparty_response, request_boby)
       @code = httparty_response.code
