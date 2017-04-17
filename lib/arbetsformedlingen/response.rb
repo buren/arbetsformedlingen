@@ -1,9 +1,10 @@
 module Arbetsformedlingen
   class Response
-    attr_reader :code, :messages
+    attr_reader :code, :messages, :body
 
     def initialize(httparty_response)
       @code = httparty_response.code
+      @body = httparty_response.body
       @valid = @code == 202
       @messages = build_messages(httparty_response.to_a)
     end
