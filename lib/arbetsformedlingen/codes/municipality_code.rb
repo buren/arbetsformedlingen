@@ -1,19 +1,21 @@
 require 'csv'
-require 'set'
 
 module Arbetsformedlingen
   class MunicipalityCode
     CODE_MAP = CSV.read(
       File.expand_path('../../../../data/municipality-codes.csv', __FILE__)
     ).to_h.freeze
-    CODES = Set.new(CODE_MAP.values).freeze
+    CODES_MAP_INVERTED = CODE_MAP.invert.freeze
 
     def self.to_code(name)
-      CODE_MAP.fetch(normalize(name), nil)
+      normalized = normalize(name)
+      CODE_MAP.fetch(normalized) do
+        normalized if CODES_MAP_INVERTED[normalized]
+      end
     end
 
     def self.valid?(name)
-      CODES.include?(normalize(name))
+      !to_code(name).nil?
     end
 
     def self.normalize(name)

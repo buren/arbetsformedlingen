@@ -10,7 +10,7 @@ module Arbetsformedlingen
 
     def self.to_code(value)
       CODES_MAP.fetch(value.to_s) do
-        CODES_MAP_INVERTED.fetch(value.to_s, nil)
+        value.to_s if CODES_MAP_INVERTED[value.to_s]
       end
     end
 
