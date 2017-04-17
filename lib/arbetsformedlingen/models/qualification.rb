@@ -12,7 +12,7 @@ module Arbetsformedlingen
 
     optional(:car, Types::Bool).filled(:bool?)
     optional(:summary, Types::StrippedString).filled
-    optional(:experience, Types::ExperienceRequired).filled(:bool?, :experience_required?)
+    optional(:experience, Types::ExperienceRequired).filled(:experience_required?)
   end
 
   class Qualification < Model

@@ -12,6 +12,8 @@ module Arbetsformedlingen
       append_envelope(builder, @packet.to_h)
     end
 
+    private
+
     def append_envelope(builder, packet_data)
       document = packet_data.fetch(:document)
 
@@ -30,7 +32,7 @@ module Arbetsformedlingen
     end
 
     def append_transaction_info(envelope, document)
-      envelope.TransactionInfo(timeStamp: document.fetch(:timestamp)) do |ti|
+      envelope.TransactInfo(timeStamp: document.fetch(:timestamp)) do |ti|
         ti.TransactId(document.fetch(:id))
       end
     end
@@ -44,7 +46,9 @@ module Arbetsformedlingen
 
     def append_job_position(payload, packet_data)
       payload.JobPositionPosting(status: "#{'in' unless packet_data.fetch(:active)}active") do |pos|
-        pos.JobPositionPostingId(packet_data.fetch(:job_id))
+        cin = packet_data[:position][:company].fetch(:cin_arbetsformedlingen)
+        job_pos_id = "#{cin}-#{packet_data.fetch(:job_id)}"
+        pos.JobPositionPostingId(job_pos_id)
 
         append_hiring_org(payload, packet_data)
         append_post_detail(payload, packet_data)
@@ -87,7 +91,7 @@ module Arbetsformedlingen
     def append_company_contact(node, company)
       data = company.fetch(:address)
       node.Contact do |contact|
-        contact.PostalAdress do |address|
+        contact.PostalAddress do |address|
           address.PostalCode(data.fetch(:zip))
           address.Municipality(data.fetch(:municipality))
           append_delivery_address(node, data)
@@ -104,7 +108,7 @@ module Arbetsformedlingen
         detail.PostedBy do |posted|
           posted.Contact do |contact|
             contact.PersonName { |pn| pn.FormattedName(publication.fetch(:name)) }
-            contact.public_send(:'E-mail', publication.fetch(:email))
+            contact.tag!('E-mail', publication.fetch(:email))
           end
         end
       end
@@ -194,7 +198,7 @@ module Arbetsformedlingen
     end
 
     def append_delivery_address(node, data)
-      node.DeliveryAdress do |d_address|
+      node.DeliveryAddress do |d_address|
         d_address.AddressLine(data.fetch(:full_address))
         d_address.StreetName(data.fetch(:street))
       end
@@ -209,8 +213,8 @@ module Arbetsformedlingen
       end
 
       node.LocationSummary do |loc_sum|
-        loc_sum.CountryCode(address.fetch(:country_code))
         loc_sum.Municipality(address.fetch(:municipality))
+        loc_sum.CountryCode(address.fetch(:country_code))
       end
     end
   end

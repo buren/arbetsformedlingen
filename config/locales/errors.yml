@@ -13,3 +13,4 @@ en:
     salary_type?: "must be a valid salary type code"
     municipality?: "must be a valid municipality code"
     url?: "must be a valid URL with leading http:// or https://"
+    experience_required?: must be either true of false
