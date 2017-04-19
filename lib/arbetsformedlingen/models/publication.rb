@@ -14,9 +14,9 @@ module Arbetsformedlingen
 
   class Publication < Model
     def initialize(hash)
-      publish_date = hash[:publish_at_date] || Time.now.utc
-
       data = hash.dup
+      publish_date = data[:publish_at_date] || Time.now.utc
+
       data[:publish_at_date] = publish_date.strftime('%Y-%m-%d')
 
       super(PublicationSchema.call(data))
