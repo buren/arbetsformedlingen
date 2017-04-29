@@ -1,7 +1,8 @@
 require 'arbetsformedlingen/codes/country_code'
+require 'arbetsformedlingen/codes/drivers_license_code'
+require 'arbetsformedlingen/codes/experience_required_code'
 require 'arbetsformedlingen/codes/municipality_code'
 require 'arbetsformedlingen/codes/salary_type_code'
-require 'arbetsformedlingen/codes/experience_required_code'
 
 module Arbetsformedlingen
   module Types
@@ -26,7 +27,9 @@ module Arbetsformedlingen
       CountryCode.to_code(string)
     end
     PositionDuration = Types::Strict::Int
-    DriversLicense = Types::Strict::String.constructor { |value| value.to_s.strip }
+    DriversLicense = Types::Strict::String.constructor do |value|
+      DriversLicenseCode.to_code(value)
+    end
     SalaryType = Types::Strict::String.constructor do |value|
       SalaryTypeCode.to_code(value)
     end

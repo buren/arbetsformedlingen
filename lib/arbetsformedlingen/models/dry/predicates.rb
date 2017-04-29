@@ -1,4 +1,5 @@
 require 'arbetsformedlingen/codes/country_code'
+require 'arbetsformedlingen/codes/drivers_license_code'
 require 'arbetsformedlingen/codes/experience_required_code'
 require 'arbetsformedlingen/codes/municipality_code'
 require 'arbetsformedlingen/codes/salary_type_code'
@@ -56,8 +57,7 @@ module Arbetsformedlingen
     end
 
     predicate(:drivers_license?) do |value|
-      # TODO: Add proper validation
-      value
+      DriversLicenseCode.valid?(value)
     end
 
     predicate(:ssyk_id?) do |value|

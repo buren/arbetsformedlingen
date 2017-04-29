@@ -28,7 +28,6 @@ module Arbetsformedlingen
     def initialize(hash)
       data = hash.dup
       data[:position_duration_code] = duration_code(data[:start_date], data[:end_date])
-      data[:full_time] = data[:position_duration_code] == DURATION_MAP[:full_time]
       super(ScheduleSchema.call(data))
     end
 
