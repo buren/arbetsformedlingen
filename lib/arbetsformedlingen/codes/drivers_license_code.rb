@@ -1,10 +1,14 @@
 require 'set'
 
 module Arbetsformedlingen
-  module DriversLicenceCode
+  module DriversLicenseCode
     CODES = Set.new([
       'AM', 'A1', 'A2', 'A', 'B', 'Utökad B', 'BE', 'C1', 'C1E', 'C', 'CE', 'D1', 'D1E', 'D', 'DE'
     ]).freeze
+
+    def self.codes
+      CODES.to_a
+    end
 
     def self.to_code(drivers_license)
       normalize(drivers_license)
@@ -22,6 +26,7 @@ module Arbetsformedlingen
       drivers_license.to_s.
         split(',').
         map(&:strip).
+        reject(&:empty?).
         map(&:upcase)
     end
   end

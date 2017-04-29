@@ -7,6 +7,13 @@ require 'dry-types'
 
 require 'arbetsformedlingen/version'
 
+require 'arbetsformedlingen/codes/country_code'
+require 'arbetsformedlingen/codes/drivers_license_code'
+require 'arbetsformedlingen/codes/experience_required_code'
+require 'arbetsformedlingen/codes/municipality_code'
+require 'arbetsformedlingen/codes/salary_type_code'
+
+
 require 'arbetsformedlingen/models/dry/types'
 require 'arbetsformedlingen/models/dry/predicates'
 

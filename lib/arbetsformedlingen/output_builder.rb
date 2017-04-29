@@ -147,7 +147,7 @@ module Arbetsformedlingen
         node.Qualification(type: 'experience', yearsOfExperience: q.fetch(:experience))
       end
 
-      if q[:drivers_license]
+      if q[:drivers_license] && !q[:drivers_license].empty?
         node.Qualification(
           type: 'license',
           description: 'DriversLicense',
