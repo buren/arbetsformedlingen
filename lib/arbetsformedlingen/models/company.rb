@@ -41,7 +41,10 @@ module Arbetsformedlingen
 
     # Formats a Company Identification Number the way Arbetsformedlingen likes it
     def cin_arbetsformedlingen(cin)
-      String.new(cin.dup).insert(6, '-').insert(0, '46-')
+      String.new(cin.dup).
+        delete('-').
+        insert(6, '-').
+        insert(0, '46-')
     end
   end
 end

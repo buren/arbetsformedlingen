@@ -17,12 +17,15 @@ module Arbetsformedlingen
   end
 
   class Packet < Model
+    DEFAULT_PACKET_ID = 1
+
     def initialize(attributes:, publication:, document:, position:)
       hash = attributes
       @publication = publication
       @document = document
       @position = position
-      super(PacketSchema.call(hash.merge(id: hash[:job_id])))
+      id = hash.fetch(:id, DEFAULT_PACKET_ID)
+      super(PacketSchema.call(hash.merge(id: id)))
     end
 
     def to_h

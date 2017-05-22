@@ -103,7 +103,10 @@ module Arbetsformedlingen
       publication = packet_data.fetch(:publication)
 
       node.PostDetail do |detail|
-        detail.EndDate { |n| n.Date(publication.fetch(:publish_at_date)) }
+        if publication[:publish_at]
+          detail.StartDate { |n| n.Date(publication.fetch(:publish_at)) }
+        end
+        detail.EndDate { |n| n.Date(publication.fetch(:unpublish_at)) }
 
         detail.PostedBy do |posted|
           posted.Contact do |contact|
@@ -198,15 +201,17 @@ module Arbetsformedlingen
     end
 
     def append_delivery_address(node, data)
+      return node unless data.key?(:full_address) || data.key?(:street)
+
       node.DeliveryAddress do |d_address|
-        d_address.AddressLine(data.fetch(:full_address))
-        d_address.StreetName(data.fetch(:street))
+        d_address.AddressLine(data.fetch(:full_address)) if data.key?(:full_address)
+        d_address.StreetName(data.fetch(:street)) if data.key?(:street)
       end
     end
 
     def append_job_position_address(node, address)
       node.PostalAddress do |a_node|
-        a_node.CountryCode(address.fetch(:country_code))
+        a_node.CountryCode('SE'))
         a_node.PostalCode(address.fetch(:zip)) if address.key?(:zip)
         a_node.Municipality(address.fetch(:municipality))
         append_delivery_address(a_node, address)

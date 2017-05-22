@@ -38,7 +38,19 @@ module Arbetsformedlingen
       hash[:salary] = @salary.to_h
       hash[:qualifications] = @qualifications.map(&:to_h)
       hash[:application_method] = @application_method.to_h
+      full_address = build_full_address(hash.fetch(:address))
+      hash[:address][:full_address] = full_address if full_address
       hash
+    end
+
+    def build_full_address(address)
+      return unless address.key?(:street) || address.key?(:zip) || address.key?(:city)
+
+      [
+        address.fetch(:street),
+        address.fetch(:zip),
+        address[:city]
+      ].compact.join(', ')
     end
   end
 end

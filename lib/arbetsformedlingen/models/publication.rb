@@ -7,17 +7,22 @@ module Arbetsformedlingen
       predicates(Predicates)
     end
 
-    required(:publish_at_date, :string).filled(:yyyy_mm_dd?)
+    required(:unpublish_at, :string).filled(:yyyy_mm_dd?)
     required(:name, Types::StrippedString).filled
     required(:email, Types::StrippedString).filled(:str?, :email?)
+
+    optional(:publish_at, :string).filled(:yyyy_mm_dd?)
   end
 
   class Publication < Model
     def initialize(hash)
       data = hash.dup
-      publish_date = data[:publish_at_date] || Time.now.utc
+      publish_date = data[:publish_at] || Time.now.utc
 
-      data[:publish_at_date] = publish_date.strftime('%Y-%m-%d')
+      data[:publish_at] = publish_date.strftime('%Y-%m-%d')
+      data[:unpublish_at] = data[:unpublish_at]&.strftime('%Y-%m-%d')
+
+      # TODO: Validate that unpublish_at - publish_at is not greater that 180 days
 
       super(PublicationSchema.call(data))
     end
