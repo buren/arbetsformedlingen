@@ -211,7 +211,7 @@ module Arbetsformedlingen
 
     def append_job_position_address(node, address)
       node.PostalAddress do |a_node|
-        a_node.CountryCode('SE'))
+        a_node.CountryCode('SE')
         a_node.PostalCode(address.fetch(:zip)) if address.key?(:zip)
         a_node.Municipality(address.fetch(:municipality))
         append_delivery_address(a_node, address)
