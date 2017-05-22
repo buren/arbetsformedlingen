@@ -162,7 +162,7 @@ module Arbetsformedlingen
       node.JobPositionDescription do |job_pos_desc|
         job_pos_desc.JobPositionPurpose(position.fetch(:purpose))
         job_pos_desc.JobPositionLocation do |job_pos_loc|
-          append_job_position_address(job_pos_loc, position.fetch(:company).fetch(:address))
+          append_job_position_address(job_pos_loc, position.fetch(:address))
         end
         job_pos_desc.Classification do |classification|
           append_schedule(classification, position.fetch(:schedule))
@@ -207,7 +207,7 @@ module Arbetsformedlingen
     def append_job_position_address(node, address)
       node.PostalAddress do |a_node|
         a_node.CountryCode(address.fetch(:country_code))
-        a_node.PostalCode(address.fetch(:zip))
+        a_node.PostalCode(address.fetch(:zip)) if address.key?(:zip)
         a_node.Municipality(address.fetch(:municipality))
         append_delivery_address(a_node, address)
       end

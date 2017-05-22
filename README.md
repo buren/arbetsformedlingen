@@ -53,6 +53,7 @@ publication = Publication.new(
 )
 
 schedule = Schedule.new(
+  full_time: false,
   summary: '3 days a week 8.00-17.00',
   start_date: Date.today,
   end_date: nil
