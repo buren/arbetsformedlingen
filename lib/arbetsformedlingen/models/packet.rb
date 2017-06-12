@@ -13,7 +13,7 @@ module Arbetsformedlingen
     required(:job_id, Types::StrippedString).filled
     required(:id, Types::StrippedString).filled
     required(:number_to_fill, Types::Int).filled(gt?: 0)
-    required(:ocupation, Types::Ocupation).filled(:ocupation_code?)
+    required(:occupation, Types::Occupation).filled(:occupation_code?)
   end
 
   class Packet < Model

@@ -54,8 +54,8 @@ module Arbetsformedlingen
       DriversLicenseCode.valid?(value)
     end
 
-    predicate(:ocupation_code?) do |value|
-      OcupationCode.valid?(value)
+    predicate(:occupation_code?) do |value|
+      OccupationCode.valid?(value)
     end
 
     predicate(:url?) do |value|
