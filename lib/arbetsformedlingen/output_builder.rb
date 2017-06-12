@@ -61,7 +61,7 @@ module Arbetsformedlingen
         pos.JPPExtension do |jpp|
           company = position.fetch(:company)
           jpp.HiringOrgDescription(company.fetch(:description))
-          jpp.OccupationGroup(code: packet_data.fetch(:ocupation_code), codename: 'OccupationNameID')
+          jpp.OccupationGroup(code: packet_data.fetch(:ocupation), codename: 'OccupationNameID')
         end
       end
     end

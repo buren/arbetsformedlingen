@@ -105,7 +105,7 @@ packet = Packet.new(
     active: true,
     job_id: 1,
     number_to_fill: 1,
-    ocupation_code: '4896'
+    ocupation: '4896'
   }
 )
 
