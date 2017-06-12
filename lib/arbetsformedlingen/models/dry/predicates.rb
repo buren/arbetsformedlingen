@@ -54,9 +54,8 @@ module Arbetsformedlingen
       DriversLicenseCode.valid?(value)
     end
 
-    predicate(:ssyk_id?) do |value|
-      # TODO: Add proper validation
-      value
+    predicate(:ocupation_code?) do |value|
+      OcupationCode.valid?(value)
     end
 
     predicate(:url?) do |value|

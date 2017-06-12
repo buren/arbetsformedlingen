@@ -8,7 +8,7 @@ en:
     cin?: "must be a valid 10 character (not counting spaces or dashes) Company Identification Numbers / Organisation Number"
     drivers_license?: "must be a valid drivers license"
     url?:: "must be a valid URL"
-    ssyk_id?: "must be a valid SSYK identifier"
+    ocupation_code?: "must be a valid OccupationNameID identifier"
     country_code?: "must be a valid 2 character country code"
     salary_type?: "must be a valid salary type code"
     municipality?: "must be a valid municipality code"

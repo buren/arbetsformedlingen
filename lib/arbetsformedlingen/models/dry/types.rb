@@ -20,6 +20,9 @@ module Arbetsformedlingen
     Country = Types::Strict::String.constructor do |string|
       CountryCode.to_code(string)
     end
+    Ocupation = Types::Strict::String.constructor do |string|
+      OcupationCode.to_code(string)
+    end
     PositionDuration = Types::Strict::Int
     DriversLicense = Types::Strict::String.constructor do |value|
       DriversLicenseCode.to_code(value)
