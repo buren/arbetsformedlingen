@@ -1,171 +1,3262 @@
+5370,1:e Fartygsingenjör/1:e Maskinist
+5371,2:e Fartygsingenjör/2:e Maskinist
+5369,2:e Styrman
+7441,2D-grafiker
+7439,3D-grafiker
+2315,Abonnemangsförsäljare
+4896,Abonnemangskontorist
+6728,Account manager
+6534,Accounting controller
+3826,AD-assistent
 2787,Administrativ assistent
+5373,Administrativ chef
+4713,Administrativ utvecklare
+6032,Advokat
+4421,Advokatfiskal
+2799,Advokatsekreterare
+6670,Affischör/Affischuppsättare
+7319,Affärsarkitekt
+4004,Affärsjurist
+7579,"Affärskonsult, IT"
+4880,Affärsområdeschef
+683,Affärsresesäljare
+7661,Affärsutvecklare
+6264,Agronom
+5165,Akademisekreterare
+3581,Akrobat
+2526,Aktieanalytiker
+7554,Aktiechef
+2527,Aktiemäklare
+6655,Aktuarie
+7472,Akupressör
+1623,Akupunktör
+5758,"Akutsjuksköterska/Sjuksköterska, akutmottagning"
+2373,Akvariefiskuppfödare
 1482,Alkohol- och drogterapeut
+3143,Allmän åklagare
+4462,Ambassadråd
+4463,Ambassadsekreterare
+2005,Ambassadör
 1811,Ambulanssjuksköterska
 5708,Ambulanssjukvårdare
+1126,Ammoniakkokare
+1836,Analytisk kemist
+7690,Anbudsansvarig/ Bid Manager
 1812,Anestesisjuksköterska
+3920,Anfångare
+7638,Anhörigkonsulent
+4804,Animationsoperatör
+3829,Animatör
+2855,Anläggningsdykare
+4221,"Anläggningsingenjör, elkraft"
+4898,Annonsassistent
+2303,Annonschef
+4652,Annonsgrafiker
+2304,Annonskonsulent
+4900,Annonsmottagare
+3866,Annonsproducent
+4901,Annonssekreterare
+7316,Anonym konsument
+2864,"Anrikningsarbetare, malm"
+6654,"Antagningschef, utbildning"
+1884,"Antagningssekreterare, utbildning"
+2456,Antikvarie
+4036,Antropolog
+6528,Användbarhetsdesigner
+6529,Användbarhetsexpert
+5056,Apoteksassistent
+7508,Apotekschef
+6359,Apotekstekniker
+84,Applikationsingenjör
+7577,Applikationskonsult
+7576,Applikationsutvecklare/Apputvecklare
+6653,Arbetsförmedlare
+5127,Arbetsförmedlingschef
+4205,"Arbetsledare, anläggning"
+4227,"Arbetsledare, elkraft"
+7111,"Arbetsledare, golv"
+4296,"Arbetsledare, gruvbrytning-metallproduktion"
+4185,"Arbetsledare, husbyggnad"
+7573,"Arbetsledare, lager"
+4263,"Arbetsledare, maskintillv.-verkstadsprodukter"
+7110,"Arbetsledare, mureri"
+7109,"Arbetsledare, måleri"
+7404,"Arbetsledare, rivning"
+4640,"Arbetsledare, skogsbruk"
+444,"Arbetsledare, städ/Städledare"
+4249,"Arbetsledare, tillverkning elektroniska prod."
+4228,"Arbetsledare, tillverkning elkrafttekniska prod."
+4282,"Arbetsledare, tillverkning kemiska produkter"
+4309,"Arbetsledare, tillverkning textil-träprod."
+7372,"Arbetsledare, tryckeri"
+7141,"Arbetsledare, ventilation"
+7142,"Arbetsledare, VVS"
+4563,"Arbetsledare,trädgård/Trädgårdsanläggningsförman"
+4465,Arbetsmarknadsråd
+610,Arbetsmiljöingenjör
+6652,Arbetsmiljöinspektör
+1467,Arbetspsykolog
+6254,Arbetsrättsjurist
 5728,Arbetsterapeut
 1546,Arbetsterapibiträde
+6769,Arborist/Trädvårdare
+5999,Arborrare
+1339,Arkare
+6041,Arkeolog
 5445,Arkitekt
 5898,Arkivarie
+5902,Arkivassistent
+4454,Arkivchef
+2435,Arkivföreståndare
+2466,Arkivkanslist
+2436,Arkivråd
+7364,Arkoffsettryckare
+4154,"Armerare, betongvaruindustri"
+7606,Aromaterapeut
+3351,"Arrangör, musik"
+4625,"Arrendator, blandad drift"
+6434,"Arrendator, djuruppfödning"
+7459,"Arrendator, växtodling"
+7443,Arrestantvakt/Arrestvakt
+6193,Art Director/AD
+2994,Artistagent
+2995,Artistbokare
+6015,Artistförmedlare
+6897,"ARU, ansvarig reklamutgivare"
+4079,Asbestsanerare
+4147,Asfaltarbetare
+4148,Asfaltkokare
+4149,Asfaltmaskinist
+6205,Asfaltverksskötare
+3118,Assessor
+1780,Assistent i församlingsarbete
+4888,"Assistent, bostadsförmedling"
+3144,Assistentåklagare
+1766,Astronom
+4924,Ateljéchef
+1414,Ateljésömmerska
 7236,AT-läkare
+1767,Atomfysiker
+4466,Attaché
+3900,Attributör
+1548,Audiometris
 5732,Audionom
+5947,Auktionist
+4117,Auktionsbiträde
+2736,Auktionskommissarie
+2737,Auktionsutropare
+7133,Automationselektriker
+7284,"Automationsingenjör, elkraft"
+7677,"Automationsingenjör, gruvteknik och metallurgi"
+7289,"Automationsingenjör, maskin"
+7286,"Automationstekniker, el"
+7287,"Automationstekniker, elektronik"
+7288,"Automationstekniker, maskin"
+7496,"Automationstekniker, tillverkningsindustri"
+2700,"Automatpressare, metall"
+5985,Automatskötare
+2639,Automatställare
+2692,Automatsvarvare
 6280,"Avbytare, jordbruk"
+2962,"Avdelningschef, bank"
+4925,"Avdelningschef, butik"
+7675,"Avdelningschef, gruva"
+6392,"Avdelningschef, kommun"
+7302,"Avdelningschef, landsting"
+7406,"Avdelningschef, smältverk"
+6263,"Avdelningschef, statlig"
+3000,Avgjutare
+1217,Avionikmekaniker
+516,Avisningsmaskinförare
+2883,Avloppstekniker
+3081,Avlöningskontorist
+3966,"Avplockare, keramikbränning"
+378,Avsmakare
+4155,"Avsynare, betongvaror"
+305,"Avsynare, elkrafttekniska produkter"
+306,"Avsynare, elteknik"
+304,"Avsynare, el-tele"
+2935,"Avsynare, gjutgods"
+3239,"Avsynare, glas- och keramikprodukter"
+6003,"Avsynare, metallprodukter"
+964,"Avsynare, musikinstrument"
+4392,"Avsynare, pappersprodukter"
+1318,"Avsynare, tyger"
+5208,AV-tekniker
+6943,"Avverkningsledare, skogsbruk"
+7607,Ayurvedamassör/Ayurvedaterapeut
+7632,Backend-utvecklare
+7557,Backofficepersonal
+2901,Badbevakare
+1549,"Baderska, sjukhem"
+386,Badföreståndare
 5496,Badmästare
+5990,Badvakt
 7371,Badvaktmästare
+5504,Bagare/Konditor
+7447,Bagerichef
+4742,Bakteriolog
+5406,Balettmästare
+5564,Ballongflygare
+5286,Balpressare
+7170,"Banarbetare, utan behörighetsbevis"
+7214,Bandlastarförare
+7213,Bandschaktarförare
+4351,Bandsågare
+2707,"Bandsågare, metall"
+1341,"Bandsågare, träfiberskivor"
+1303,Bandvävare
 6650,Bangårdsoperatör
+4881,Bankdirektör
+6178,Bankjurist
+5033,Banområdeschef
+2319,Bantekniker
+2122,Baptistpastor
+7339,Barchef
+6762,Barista/Kaffebartender
+496,"Barkmaskinskötare, skogsbruk"
+744,"Barkmaskinskötare, sågverk"
+6763,Barmästare
+438,Barnflicka/Barnvakt
 5701,Barnmorska
+6648,"Barnmorska, förlossning"
+7272,"Barnmorska, ungdomsmottagning"
+1433,"Barnmorska, vårdavdelning/BB-avdelning"
 1434,"Barnmorska, öppen vård/mödravård"
+6473,Barnombudsman
+1468,Barnpsykolog
 5759,Barnsjuksköterska
+7273,"Barnsjuksköterska, akutmottagning"
+1820,"Barnsjuksköterska, mottagning/vårdcentral"
+1821,"Barnsjuksköterska, vårdavdelning"
 5716,Barnskötare
 7419,Barnsköterska
+1475,Barnterapeut
+1777,Barntimmeledare
+5488,Bartender
+314,Batteriarbetare/Ackumulatorarbetare
+7271,Baxare
+5313,Bebyggelseantikvarie
+7648,"Befaren maskinpersonal, sjöfart"
+1443,Befolkningsstatistiker
+2774,Befraktare
+5368,Befälhavare
+1205,"Befälhavare, kustbevakningen"
+257,Begravningsassistent
+258,Begravningsbyråföreståndare
+5497,Begravningsentreprenör
+6880,Begravningsrådgivare
 5711,Behandlingsassistent/Socialpedagog
+4031,Belysningsmästare
+3535,Belysningstekniker
+2325,Beläggningsarbetare
+7169,"Beläggningsarbetare, utan yrkesbevis"
+505,Beläggningsmaskinförare
+3921,Ben- och fotanfångare
+3922,Benmakare
+5852,Bensinstationsbiträde/Servicebiträde
+7161,Bensinstationsföreståndare/Stationschef
+5694,Bergarbetare
+1376,"Bergarbetare, gruva"
+7171,"Bergarbetare, utan yrkesbevis"
+7256,Bergförstärkare
+1826,Berggrundsgeolog
+7250,Berglastare
+187,Bergsingenjör
+1389,Bergsprängare
+4222,"Beräkningsingenjör, elkraft"
+77,"Beräkningsingenjör, el-tele"
+377,Besiktningsassistent
+164,Besiktningsingenjör
+625,"Besiktningsingenjör, bilprovning"
+4243,"Besiktningsingenjör, elkraft"
+96,"Besiktningsingenjör, el-tele"
+2565,"Besiktningsingenjör, försäkring"
+5920,"Besiktningsman/Skadeinspektör, försäkring"
+624,"Besiktningstekniker, bilprovning"
+470,Bespisningsbiträde/Skolmåltidsbiträde
+2982,Beställningsfaktor
+4903,Beställningskontorist
+5375,Besöksbokare/Kundbokare
+5499,Betjänt
+5810,Betongarbetare
+7172,"Betongarbetare, utan yrkesbevis"
+6204,Betongblandare
+7191,Betongelementmontör
+5862,Betonghåltagare
+7175,"Betonghåltagare, utan yrkesbevis"
+4143,Betongstationskötare
+6207,Betongvaruarbetare
 5899,Bibliotekarie
 5901,Biblioteksassistent
+6262,Bibliotekschef
+2446,Bibliotekskonsulent
+5673,Bilbärgare
+4653,Bild- och reprografiker
+2438,Bildarkivarie
+2959,Bildemontör
+6257,Bildingenjör
+6186,Bildmixer
+7022,Bildpedagog
+4806,Bildproducent
+3890,Bildredaktör
+1624,Bildterapeut
+5854,Bilförsäljare
+2361,Bilglasmontör
+5580,Bilinspektör
+7688,Biljettkontrollör
+5973,Bilplåtslagare/Bilskade- och karosserireparatör
+396,Bilrekonditionerare
+2566,"Bilskadeinspektör, försäkring"
+2559,Bilskadereglerare
+4348,Biltapetserare
+7363,Biltestkoordinator
+2306,Biluthyrare
+397,Bilvårdare/Garagearbetare
+7074,"BING, film/TV"
+2250,Bingofunktionär/Bingovärd/Bingovärdinna
+5044,Biodlare/Biskötare
+6119,Biografmaskinist
+4126,Biografvaktmästare
+6902,Bioinformatiker
+1837,Biokemist
+6305,Biolog
+6906,Biomedicinare
 5734,Biomedicinsk analytiker
+1444,Biostatistiker
 6836,Biståndsbedömare/Biståndshandläggare
+7450,Biträdande butikschef
+7563,Biträdande förskolechef
+5399,Biträdande jurist
+7297,Biträdande rektor
+7466,Biträdande universitetslektor
+925,"Blandarskötare, sprängämnesindustri"
+926,"Blandningsuppvägare, sprängämnen"
+876,Blanksticksgravör
+3240,Blockgjutare
+4548,Blomsterodlare
+4655,"Blysättare, tryckeri"
+3017,"Blåsare, stålverk"
+5633,Blåsinstrumentmakare
+5838,Blästrare
+3939,"Blästrare, glas"
+4393,Blöjmaskinskötare
+5222,"Boendechef, kommun"
+5804,"Boendeföreståndare, kommunal"
+6686,Bohags- och flyttbilsförare
+4700,Bokbindare
+5672,Bokbussförare
+2895,Bokförare
+3070,Bokföringskontorist
+5063,Bokförläggare
+6181,Bolagsjurist
+6881,Borgerlig officiant
+1377,"Borrare, gruva"
+5938,"Borrare, metall"
+4352,"Borrare, trä"
+1390,"Borrförman, berg"
+7674,Borrkärnshanterare
+370,"Borrledare, petroleumutvinning"
+7610,Borrtekniker
+6325,Bostadsförmedlare
+2578,Bostadsförvaltare
+2580,Bostadsintendent
+4743,Botaniker
+2791,Boupptecknare
+5964,Boutredare
+2792,Boutredningsman
+6858,Bovärd/Fastighetsvärd/Husvärd
 5905,Brandbefäl/Räddningsledare/Insatsledare
+6647,Brandchef
 5567,Brandingenjör
 562,Brandinspektör
 5904,Brandman
+2560,Brandskadereglerare
+4080,Brandskadesanerare
+7513,Brandskyddsmålare
+564,Brandtekniker
+7623,Bredbandsinstallatör
+5830,Brevbärare
+3224,Brodös
+1395,Brottarbetare
+3156,Brottmålsadvokat
+2506,Brovakt
+5982,Brunnsborrare
+5661,Bryggeriarbetare
+1176,Brygghusarbetare
+5423,Bryggmästare
+1378,"Brytare, gruva"
+1396,"Brytare, stenbrott"
+3976,"Brännare, glas, keramik"
+1178,Brännmästare
+1179,Brännvinsbrännare
+4332,Budbilsförare
+6841,Buddhistpräst
+7467,Budget- och skuldrådgivare
+3071,Budgetassistent
+5069,Budgetchef
+4844,Budgetplanerare
+4845,Budgetsekreterare
+6533,Business controller
+5561,Bussförare/Busschaufför
+698,Bussguide
+598,Bussmekaniker
+4927,Butiksansvarig
+6646,Butikschef
+2289,Butiksdemonstratör
+4171,Butiksinspektör
+7211,Butikskommunikatör/Visual merchandiser
+5950,Butikskonsulent
+2475,Butikskontrollant
+5357,"Butikssäljare, fackhandel"
+2284,"Butikssäljare/Medarbetare, dagligvaror"
+6687,Bygg- och anläggningsförare
+7483,Byggledare
+7628,Bygglovshandläggare
+6369,Byggmästare
 4179,Byggnadsingenjör
 5586,Byggnadsinspektör
+2983,Byggnadskalkylator/Anbudsingenjör
+6645,Byggnadskonstruktör
+4180,Byggnadskonsult
+642,Byggnadskontrollant
+5972,Byggnadsplåtslagare
+4467,Byggnadsråd
+2615,Byggnadssmed
+449,Byggstädare
+4468,Byråchef
+2567,Båtbesiktningsman
+5815,Båtbyggare
+2282,Båtförsäljare
+2092,Båtinredare
+4047,"Båtman, Sjöfartsverket"
+2568,Båtskadeinspektör
+4086,Båtsman/Bås
+786,Båtvärdinna
+2629,Bänkarbetare
+2856,Bärgningsdykare
+4536,Bärodlare
+6810,Bärplockare
+4328,Bössmakare
+463,Cabin stewardess/Hyttvärdinna
+4929,Campingplatsföreståndare
+5936,Cateringarbetare
+4152,Cementbrännare
+3953,"Centrifugoperatör, glas"
+7449,Centrumledare
+7489,Centrumutvecklare/Handelsutvecklare
+2285,"Charkuteriarbetare, butik"
+7592,"Charkuteriarbetare, slakteri"
+5502,Charkuterist
+688,Charterresesäljare
+7555,Chef för valuta och fixed income
+7517,Chef inom kyrkogårdsförvaltningen
+7553,"Chef, Corporate Finance"
+6363,Chefredaktör
+1593,Chefsarbetsterapeut
+7560,Chefsbarnmorska
+217,Chefskock
+5960,Chefssekreterare
+1451,Chefssjuksköterska
+3145,Chefsåklagare
 5425,"CIO, Chief Information Officer/IT-chef"
+6106,Cirkelledare/Studiecirkelledare
+6095,Cirkusartist
+5622,Ciselör
+5975,Cisternreparatör
+2835,Cisternvårdare
+7448,Cityledare
+6644,Civilförsvarschef
+6497,"Civilingenjör, anläggning"
+6472,"Civilingenjör, anläggning, elkraft"
+7106,"Civilingenjör, bioteknik"
+6508,"Civilingenjör, bygg"
+6494,"Civilingenjör, byggnadskonstruktion"
+6470,"Civilingenjör, drift och underhåll, elkraft"
+6506,"Civilingenjör, elkraft"
+6505,"Civilingenjör, el-tele"
+6900,"Civilingenjör, energi"
+7427,"Civilingenjör, farkostteknik"
+7263,"Civilingenjör, forskning inom bygg/anläggning"
+6804,"Civilingenjör, forskning/utveckling, kemi"
+6491,"Civilingenjör, hamn"
+7268,"Civilingenjör, järnväg"
+6894,"Civilingenjör, kemi"
+6500,"Civilingenjör, kemiteknik"
+6460,"Civilingenjör, konstruktion, elektronik"
+6468,"Civilingenjör, konstruktion, elkraft"
+6456,"Civilingenjör, konstruktion, maskin"
+6467,"Civilingenjör, kontroll, elkraft"
+6458,"Civilingenjör, kvalitet, elektronik"
+6466,"Civilingenjör, kvalitet, elkraft"
+6449,"Civilingenjör, kvalitet, kemiteknik"
+6446,"Civilingenjör, kvalitet, metallurgi"
+6502,"Civilingenjör, lantmäteri"
+6504,"Civilingenjör, maskin"
+7378,"Civilingenjör, medicinsk teknik"
+4720,"Civilingenjör, organisationsutveckling"
+6447,"Civilingenjör, process, kemiteknik"
+6459,"Civilingenjör, produktion, elektronik"
+6463,"Civilingenjör, produktion, elkraft"
+6445,"Civilingenjör, produktion, gruv, metallurgi"
+6453,"Civilingenjör, produktion, maskin"
+6509,"Civilingenjör, systemutveckling"
+7318,"Civilingenjör, teknisk fysik"
+7491,"Civilingenjör, tillverkningsindustri"
+6485,"Civilingenjör, trafik"
+6450,"Civilingenjör, VVS"
+6483,"Civilingenjör, väg"
+6484,"Civilingenjör, väg- och vattenbyggnad"
+2569,Civilskadeinspektör
+2561,Civilskadereglerare
+3582,Clown
+7614,"CNC-operatör, trä"
+6004,CNC-operatör/FMS-operatör
+6850,Coldsettryckare
+7684,Colorist
+7689,Configuration Manager/CM
+6318,Controller
+6156,Copywriter
+7204,Creative director/CD
+5846,Croupier
+6882,Curator
+5577,Cykel- och mopedreparatör
+3470,Cykelbud
+4689,Cylindergravör
 6731,Cytodiagnostiker
 5717,Dagbarnvårdare
+240,Damfrisör
+2374,"Dammskötare, fiskodling"
+1415,Damskräddare
 6050,Dansare
+6383,"Dansare, show"
+6099,Danspedagog
+1625,Dansterapeut
+7135,Data Warehouse specialist
+5896,Databasadministratör
+2421,Databasdesigner
+2422,Databastekniker
+2423,Databasutvecklare
+7338,Dataingenjör
+3635,Datainstruktör
+6027,Dataoperatör
+3637,Datapedagog/IT-pedagog/Datautbildare
+5965,Dataregistrerare
+5944,Datasäkerhetsansvarig
+6677,Datorlingvist/Datalingvist
+2249,Dealer
+1342,Defibratorskötare
+6641,Degelmakare
+7246,"Dekorationsmålare, bygg"
+4062,"Dekorationsmålare, glas"
+4063,"Dekorationsmålare, porslin"
+3849,"Dekorationsmålare, skyltning"
+6152,Dekoratör
+4064,"Dekoratör, keramik, glas"
+3853,Dekormålare
+3940,"Dekorslipare, glas"
+5890,Delgivningsman
+1445,Demograf
+5857,Demonstratör
+2351,Demonteringsarbetare/Rivningsarbetare
+6006,Demontör/Återvinningsarbetare
+3722,Dentaltekniker
+6640,Departementschef
+6639,Departementsråd
+1890,Departementssekreterare
+6723,Deponiarbetare
+733,"Depåförare, spårburen trafik"
+5284,Depåman/Depåtekniker
+7673,"Depåtekniker, prospektering"
+7630,Designassistent
+3305,Designer
+4656,Desktopoperatör
+1129,Destruktionsmaskinist
+5808,Diakon
+1955,Dietetiker
 5769,Dietist
+218,Dietkock/Dietkokerska
+6835,Digitaltryckare
+2788,Direktionssekreterare
+4386,Direktris/Garment technician/Mönsterkonstruktör
+6059,Dirigent
+6792,Discjockey
+5556,Diskare
+4949,Diskrimineringsombudsman
+3638,Dispatcher
+2189,Distributionsassistent
+5116,Distributionschef
+384,"Distributionschef, energi"
+5616,Distributionselektriker
+534,Distributionsförare
+1435,Distriktsbarnmorska
+7308,"Distriktschef, bilprovning"
+6945,"Distriktschef, skogsbruk"
+3485,Distriktsinstruktör/Distriktstränare
+3486,Distriktskonsulent
 5760,Distriktssköterska
+3647,Distriktsstudieledare
+1847,Distriktsveterinär
+3146,Distriktsåklagare
+7624,DIT (Digital Imaging Technician)
+5987,Diversearbetare
+4821,Djuptryckare
+4686,Djuptrycksetsare
+4687,Djuptrycksgalvanisör
+1848,Djurhälsoveterinär
+5768,Djursjukskötare
+1914,Djurskyddsinspektör
+6285,"Djurskötare, djurpark"
+6279,"Djurskötare, djuruppfödning"
+6282,"Djurskötare, fjäderfä"
+6433,"Djurskötare, får"
+6427,"Djurskötare, gris"
+6281,"Djurskötare, häst"
+7460,"Djurskötare, mjölk"
+6694,Djurtransportförare
+7580,Djurvårdare
+4401,Dockmakare
+6053,Dockspelare
+7082,Dockteaterpedagog
+7589,Doktorand
+5903,Dokumentalist
+6030,Domare
+2112,Domprost
+3120,Domstolsjurist
+7401,Domstolssekreterare
+2159,Dopplackerare
+5634,Dragspelsbyggare
+956,Dragspelsreparatör
+3654,Dramalärare/Dramapedagog
+3873,Dramatiker
+3874,Dramaturg
+3242,Drejare
 7262,"Drift- och underhållsingenjör, anläggning"
+7114,Drift- och vägunderhållsarbetare
+5434,"Driftchef, data"
+5539,"Driftchef, energi"
+6811,"Driftchef, fastighet"
+5097,"Driftchef, lantbruk"
+7242,"Driftchef, skogsbruk"
+6378,"Driftchef, trädgård"
+385,"Driftchef, VA"
+796,Driftelektriker
+4229,"Driftingenjör, elkraft"
+7279,"Driftingenjör, el-tele"
+115,"Driftingenjör, maskin"
+4264,"Driftingenjör, reningsverk"
+4265,"Driftingenjör, vattenverk"
+4266,"Driftingenjör, värmeverk"
+3712,Driftkopplingstekniker
+3097,"Driftledare, IT"
+5098,"Driftledare, lantbruk"
+6778,"Driftledare, skogsbruk"
+278,"Driftmaskinist, reningsverk"
+5506,"Driftmaskinist, värmeverk"
+797,"Driftmontör, elkraft"
+5431,"Drifttekniker, data"
+280,"Drifttekniker, förbränningsstation"
+6637,"Drifttekniker, värmeverk"
+5979,Dykare
+7640,Dykinstruktör
+294,Däckmontör/Däck- och hjulmekaniker
+5649,Däcksbyggare
+4129,Dörrvakt
+1984,Dövblindkonsulent
+1985,Dövkonsulent
+7043,Efterbearbetningsredaktör
+4744,Ekolog
+3210,Ekonometriker
 6024,Ekonomiassistent
+237,"Ekonomibiträde, fartyg"
 472,"Ekonomibiträde, storhushåll"
 6367,Ekonomichef
+5071,Ekonomidirektör/Finanschef
 5478,Ekonomiföreståndare
+4721,Ekonomikonsult
+3072,Ekonomikontorist
+5072,Ekonomiledare
+2356,Ekotoxikolog
+291,Eldare
+4032,"Elektriker, film/TV"
+7072,"Elektrikerassistent, film/TV"
+3019,Elektrodskötare
+1130,Elektrofilterskötare
+798,Elektromekaniker
+7327,Elektronikkonstruktör
+307,Elektronikmontör
+842,Elektronikreparatör
+6724,Elektroniksanerare
+363,Elektrotekniker
 5718,Elevassistent
+6415,Elingenjör
+5365,"Elingenjör, fartyg/Fartygseltekniker"
+4223,Elkonstruktör
+4230,Elkrafttekniker
 6412,Elmontör
+799,Elreparatör
+4231,Eltekniker
+7564,"Eltekniker, järnväg/Kontaktledningsmontör"
+5113,Elverkschef
+857,Elverksmontör
+4065,"Emaljerare, keramik"
+2160,"Emaljerare, lackering"
+877,Emaljör
+5265,Emballerare
+7097,Embryolog
+4048,Endestyrman
+7456,Energideklarerare/Energiexpert
+4736,Energirådgivare
 6521,Enhetschef inom social omsorg
+6522,Enhetschef inom socialtjänst
+2035,"Enhetschef, hemtjänst/Områdeschef, hemtjänst"
 7305,"Enhetschef, hälso- och sjukvård"
+7530,"Enhetschef, offentlig förvaltning"
+7600,Enterprise Architect
+3686,Entertainer
+4745,Entomolog
+7261,Entreprenadingenjör
+1850,Epizootolog
+3243,Epoxigjutare
+5579,Ergonom/Företagsgymnast
+7086,Estradör
+4037,Etnolog
+6825,Etolog
+6298,"Etsare, tryckmedium"
+7504,EU-handläggare
+5177,Eurytmist
+2123,"Evangelist, resepastor"
+7153,Eventproducent
+7535,Eventsäljare/Eventförsäljare
+2702,"Excenterpressare/Pressoperatör, metallarbete"
+7591,Excerpist
+4470,"Expeditionschef, departement"
+2804,"Expeditionsföreståndare, sjukvård"
+4131,Expeditionsvakt
+2173,"Expeditör, spedition"
+88,"Experimentingenjör, el-tele"
+181,Exploateringsingenjör
+2753,Exportspeditör
+4104,"Extruderskötare, metall"
+801,Fabrikselektriker
+7147,FAD (First assistant director)
+3073,Fakturakontrollant
+5267,Falsare
+7375,"Falsare, bokbinderi"
+1795,Familjebehandlare
+1797,Familjehemssekreterare
+1970,Familjepedagog
 5788,Familjerådgivare/Familjeterapeut
+6251,Familjerättsjurist
+1798,Familjerättssekreterare
+1799,Familjevårdsinspektör
+1343,"Fanerarbetare, fanertillverkning"
+4353,Fanerare
+1344,"Fanerpressare, fanertillverkning"
+4354,Fanerskärare
+1597,Farmaceut/Apotekare
+6437,Farmaceut/Receptarie
+6194,Fartygsbefäl
+5618,Fartygselektriker
+5591,Fartygsinspektör
+207,Fartygsintendent
+2758,Fartygsklarerare
+132,Fartygskonstruktör
+2837,Fartygsplåtslagare
+4095,Fartygsreparatör
+451,Fartygsstädare
+2828,Fasadmontör
+7184,Fasadputsare
+7230,Fasadrengörare
+6636,Fastbränsleeldare
+2582,Fastighetsassistent
+6366,Fastighetschef
+5066,Fastighetsdirektör
+419,Fastighetsekonom
+2577,Fastighetsförmedlare
+5923,Fastighetsförvaltare
 6812,Fastighetsingenjör
+2584,Fastighetsinspektör
+2585,Fastighetsintendent
+4005,Fastighetsjurist
+2586,Fastighetskamrer
+7000,Fastighetsmäklarassistent
+5922,Fastighetsmäklare
+2587,Fastighetssekreterare
 5885,Fastighetsskötare/Fastighetsarbetare
+452,Fastighetsstädare
 2386,"Fastighetstekniker/Drifttekniker, fastighet"
+7362,FDO (Flight Data Operator)
+7507,Fibertekniker/Optotekniker
+2439,Filmarkivarie
+4813,Filmklippare
+4662,"Filmmontör, tryckeri"
+3908,Filmpassare
+6313,Filmredigerare
+5209,Filmtekniker
+3817,"Filosof, forskare"
+6532,Financial controller
+1233,Finansanalytiker
+5669,Finansekonom
+1234,Finanskonsult
+1218,Finmekaniker
+953,Fiolbyggare
+3121,Fiskal
+5883,Fiskare
+699,Fiskeguide
+4746,Fiskeribiolog
+4533,Fiskeriinspektör
+4534,Fiskeriintendent
+6270,Fiskerikonsulent
+2379,Fiskerikontrollant
+2380,Fiskeskeppare
+2375,Fiskmästare
+5882,Fiskodlare
+2376,Fiskodlingsarbetare
+6704,Fjärrbilsförare
+7013,Fjärrtågklarerare
+4823,Flexotryckare
+6962,"Flismaskinförare, skogsbruk"
+6696,Floormanager
+5863,Florist
+133,Flygingenjör
+4733,Flyginstruktör/Flyglärare
+1220,Flyginstrumentmekaniker
+6348,Flygklarerare
+7361,Flygledarassistent
+559,Flygledare
+5584,Flygmekaniker
+2766,Flygmäklare
+5585,Flygplanselektriker
+5277,Flygplanslastare
+286,Flygplansmontör
+7559,Flygplansplåtslagare
+4883,Flygplatschef
+2477,Flygplatskontrollant
+6587,Flygplatsman/Ramppersonal
+2754,Flygspeditör
+5574,Flygtekniker
+782,Flygvärd/Flygvärdinna/Flygsteward
+7120,Flyktingassistent
 2059,Flyktingsamordnare/Flyktingkonsulent
+5278,Flyttkarl/Stadsbud
+7540,Flödesoperatör
+7192,"Fogarbetare, hus och anläggning"
+4355,"Fogare, faner"
+4066,Folierare
+2183,Folkbokföringshandläggare
+6681,Folkhälsoplanerare
+6796,Folkhälsosekreterare
+6682,Folkhälsoutvecklare
+6184,Folkhögskolelärare
+2010,"Fondchef, statlig"
+5317,Fondförvaltare/Portföljförvaltare
+5609,Fordonselektriker
+6632,Fordonsingenjör
+622,"Fordonsingenjör, Trafikverket"
+5316,Fordonslackerare
+5508,Fordonsmontör
+600,Fordonstekniker/Bilmekaniker/Personbilsmekaniker
+7645,"Forensiker, biologi"
+6712,"Forensiker, biomedicinsk analytiker"
+6711,"Forensiker, fysiker"
+6710,"Forensiker, kemist"
+4161,"Formare, gipsplattor"
+6046,"Formare, keramik"
+1347,"Formatsågare, fiberskivor"
+6250,Formgivare
+3244,"Formgjutare, keramik"
+968,"Formmaskinskötare, plast"
+1348,"Formpressare, skiktträ"
+4156,Formsättare
+7465,Forskarassistent
+2357,"Forskare, farmakologi"
+7294,"Forskare, IT"
+7665,"Forskare, samhällsvetenskap"
+5803,Forskningschef
+7546,"Forskningschef, museum"
+347,"Forskningsingenjör, elkraft"
+350,"Forskningsingenjör, el-tele"
+7407,"Forskningsingenjör, kemi"
+353,"Forskningsingenjör, maskin"
+185,"Forskningsingenjör, metallurgi"
+324,"Forskningslaborant, fysik"
+319,"Forskningslaborant, kemi"
+3594,Fortbildningskonsulent
+2778,Fortbildningssekreterare
+3942,Fotoetsare
+4790,Fotograf
+7207,Fotografagent
 4791,Fotografassistent
+5877,Fotomodell
 253,Fotterapeut/Fotvårdsspecialist
+6375,Fraktchef
+6321,"Fraktexpeditör, flyg"
+3818,Framtidsforskare
+3819,Fredsforskare
 5726,Friskvårdskonsult
+1584,Friskvårdsledare
+5491,Frisör
+7574,Frisöraspirant
+1575,Fritidsassistent
+5226,Fritidschef
+1577,Fritidsinstruktör
+1578,Fritidskonsulent
 5725,Fritidsledare
+1779,"Fritidsledare/Ungdomsledare, församling"
+2550,"Fritidsombud, försäkringar"
+1971,Frivårdschef
+1972,Frivårdshandläggare
+5789,Frivårdsinspektör
+7633,Frontend-utvecklare
+7568,Frontofficepersonal
+474,Frukostvärd/Frukostvärdinna
+4537,Fruktodlare
+4507,Fruktodlingsrådgivare/Fruktodlingskonsulent
+5937,Fräsare
+4356,"Fräsare, trä"
+7629,Fukttekniker
+5752,Fysiker
+4747,"Fysiolog, allmän"
+331,"Fysiologassistent, laborant"
 5727,Fysioterapeut/Sjukgymnast
 1801,Fältassistent
+2562,Fältskadereglerare
+7672,"Fälttekniker, geologi"
+2551,"Fälttjänsteman, försäkringar"
+1008,Färdigmatlagare
+695,Färdledare/Turledare
+530,Färdtjänstbussförare
+531,Färdtjänstförare
+1052,Färgare
+4824,"Färgblandare, tryckeri"
+247,Färgkonsulent
+4067,"Färgtryckspåläggare, porslin"
+6631,Fögderidirektör
+5684,Fönsterputsare
+2022,Förbundschef
+6630,Förbundsdirektör
+4431,Förbundsjurist
+4848,Förbundskassör
+2024,Förbundsordförande
+5774,Förbundssekreterare
+3490,Förbundstränare
+7424,Föredragande/Beredningsjurist
+1786,Föreningsinstruktör
+5754,Föreningskonsulent
+4931,"Föreståndare, stugby"
+2050,"Föreståndare, äldreboende"
+700,Företagsguide
+4006,Företagsjurist
+4722,Företagskonsulent
+4723,Företagskonsult
+6324,Företagsledare
+1469,Företagspsykolog
+2969,Företagsrådgivare
 7277,Företagssjuksköterska/Företagssköterska
+6158,Författare
+2025,"Förhandlingschef, organisation"
+4473,"Förhandlingschef, statlig"
+4474,"Förhandlingssekreterare, statlig"
+6154,Förlagsredaktör
+4863,"Förman, snickeri"
+5419,"Förrådsarbetare, bygg"
+5021,Förrådschef
+6747,Församlingsdiakon
+2125,"Församlingsföreståndare, frikyrka"
+2128,"Församlingsföreståndare, Frälsningsarmén"
+5753,Församlingspedagog
+6798,Församlingspräst med specialuppgifter
+7420,Förskolechef
+3596,Förskolekonsulent
+1439,Försvarsmeteorolog
+1833,Försäkringsaktuarie
+7158,Försäkringsförmedlarassistent
+6876,Försäkringsförmedlare/Försäkringsmäklare
+2557,Försäkringshandläggare
+5570,"Försäkringshandläggare, försäkringskassa"
+3990,Försäkringsjurist
+2552,Försäkringskonsulent
+1834,Försäkringsmatematiker
+2554,Försäkringsombud
+2555,Försäkringsrådgivare/Försäkringssäljare
+2556,Försäkringsspecialist
+2558,Försäkringstjänsteman
+2563,Försäkringsutredare
+578,"Försäkringsutredare, försäkringskassa"
+4906,Försäljningsassistent
+6368,Försäljningschef
+4907,Försäljningssekreterare
+6343,Försöksdjurskötare/Försöksdjurstekniker
+2174,Förtullare
+3103,Förvalsare
+6806,"Förvaltare, skogsbruk"
+3074,Förvaltningsassistent
+5228,"Förvaltningschef, kommun"
+7303,"Förvaltningschef, landsting"
+5800,"Förvaltningsdirektör, statlig"
 422,Förvaltningsekonom
+6179,Förvaltningsjurist
+2494,Garagevakt
+4890,Garantihandläggare
+6012,Garderobiär/Garderobvaktmästare
+3410,Garvare/Skinnberedare
+3411,Garvarmästare
+5354,Gaspåfyllare
+5946,Gasskärare
+2727,Gassvetsare
+5229,Gatuchef
+3726,Gatuförsäljare
+2970,Gelbgjutare
+5623,Gemmolog
+3820,Genealog
+2011,Generaldirektör
+2012,Generalkonsul
+2026,Generalsekreterare
+4748,Genetiker
+5477,Geodet
+5762,Geofysiker
+6190,Geograf
+1827,Geokemist
+5761,Geolog
+332,Geologassistent
+5475,Geotekniker
+3245,Gipsgjutare
+1364,Gipstekniker
+5397,GIS-ingenjör
+7534,GIS-samordnare
+7533,GIS-utvecklare
+954,Gitarrbyggare
+955,Gitarrtekniker
+6011,Gjutare
+4158,"Gjutare, betongvaruindustri"
+3246,"Gjutare, keramik"
+7470,Gjutberedare
+6016,Gjuterioperatör
+5142,Gjutgodsrensare
+2973,Gjutmästare
+2364,Glas- och metallmontör
+6195,Glas- och porslinsmålare
+3954,Glasarbetare
+3924,Glasblåsare
+6172,Glasbruksarbetare
+4068,"Glaserare, keramik"
+3943,Glasetsare
+6173,Glasgravör
+3955,Glashärdare
+3956,Glasmaskinskötare
+4069,Glasmålare
+7311,Glaspolerare
+3957,Glaspressare
+1191,Glassberedare
+3926,Glasslipare
+3958,Glassmältare
+5878,Glastekniker/Glasmästare
+3959,Glastryckare
+3927,Glasverksarbetare
+3960,Glasögonslipare
+6201,Gnistare
+2223,Godsmottagare
+4570,Golfbanearbetare
+387,Golfbaneföreståndare
+7643,Golfinstruktör/Golftränare
+7193,"Golvbeläggningsarbetare, industri"
+5861,Golvläggare
+7174,"Golvläggare, utan yrkesbevis"
+7186,Golvslipare/trä
+2656,Gradare
+4382,Gradör
+7440,"Grafiker, game concept artist"
+7442,"Grafiker, texturerare"
+4039,Grafisk formgivare
+7376,"Grafisk operatör, digital produktion"
+2891,"Granskare, revision"
+2892,Granskningsman
+1399,Gravstenhuggare
+6185,Gravör
+4017,"Gravör, metall"
+6299,"Gravör, tryckmedier"
+878,"Gravör, ädelmetall"
+4571,Greenkeeper
+4572,Griftegårdsarbetare/Kyrkogårdsarbetare
+7017,Grillbiträde/Gatuköksbiträde
+225,"Grillkock, snabbmat"
+5874,"Grovarbetare, bygg och anläggning"
+2839,Grovplåtnitare
+5976,Grovplåtslagare
+7444,"Gruppchef, teknik"
+2963,"Gruppföreståndare, bank"
+7588,Gruppledare för kontorspersonal
+7687,Gruppledare inom socialtjänst
+1477,Gruppterapeut
+7543,Gruvbyggare
+1828,Gruvgeolog
+4214,Gruvmätare
+2483,Gränskontrollant/Passkontrollant
+7216,"Grävlastarförare, anläggning"
+507,Grävmaskinförare
+6963,"Grävmaskinförare, skogsbruk"
+4538,Grönsaksodlare
+6775,"Grönsaksodling, förman"
+5594,Guide
+5621,Guldsmed
+6272,"Gårdsmästare, växtodling/Rättare, växtodling"
+6288,"Gårdsmästare,blandad drift/Rättare,blandad drift"
+1493,Habiliteringsassistent
+7511,Habiliteringspedagog
+5540,Hallföreståndare
+5144,Halmvaruarbetare
+2616,Hammarsmed
+5280,Hamnarbetare/Stuveriarbetare
+4884,Hamnchef
+5037,Hamnkapten
+2752,"Handelsagent, partihandel"
+3247,Handformare
+7340,"Handformare, gjuteri"
+4690,"Handgravör, tryckmedier"
+5796,Handikappkonsulent
+4858,Handlingskoordinator
+5571,"Handläggare, utredare, arbetslöshetskassa"
+5776,"Handläggare/Utredare, offentlig förvaltning"
+6400,Handpaketerare
+1424,Handsksömmare
+3226,Handstickare
+3227,Handvirkare
+3228,Handvävare
+7270,Hantverkspedagog
+1413,Hattmakare
+6839,Heatsettryckare
+7558,"Helikopter, färdmekaniker"
+554,Helikopterförare/Helikopterpilot
+640,Helikoptermekaniker
+608,Helikoptertekniker
+7020,Helpdesktekniker/Supporttekniker
+3727,Hemförsäljare
+443,Hemhjälp
+1457,Hemsjukvårdare
+6107,Hemslöjdskonsulent
+1494,Hemterapeut
+991,Hemtextilsömmerska
+5713,Hemtjänstassistent
 5799,Hemvårdare
+1509,Hemvårdsassistent
+241,Herrfrisör
+1417,Herrskräddare
+5608,Hissmontör
+3821,"Historiker, forskare"
+7646,"Hjullastarförare, godshantering"
 1595,Hjälpmedelskonsulent
+5668,Hjälpmedelstekniker
+1626,Homeopat
+6265,Hortonom
+394,Hotellchef
+213,Hotellhusfru
+5596,Hotellreceptionist
+455,Hotellstädare
+4133,Hotellvaktmästare/Piccolo
+710,Hotellvärd/Hotellvärdinna
+5486,Hovmästare
+3124,Hovrättsassessor
+3126,Hovrättslagman
+4945,Hovrättspresident
+6519,Hovrättsråd
+5928,Hovslagare
+7095,HR-assistent
+6872,HR-konsult/PA-konsult
+6873,HR-specialist/HR-adviser
+3412,Hudsorterare
+5494,Hudterapeut
+3822,"Humanist, forskare"
+4619,Hunddressör
+6765,Hundförare
+4620,Hundgårdsförman
+1860,Hundpsykolog
+6286,Hundskötare/Hundvårdare
+4621,Hundtrimmare
+4622,Hunduppfödare
+4495,Husdjursrådgivare/Husdjurskonsulent
+6283,Husdjurstekniker
+810,Hushållsmaskinreparatör/Vitvarureparatör
+7187,Husmontör
+211,Husmor
+2283,Husvagnsförsäljare
+7480,"Huvudtillsyningsman, järnväg"
+859,Hydraulmontör
+860,Hydraulreparatör
+4749,Hydrobiolog
+1829,Hydrogeolog
+5766,Hydrolog
+7344,Hygiensjuksköterska
+2589,Hyresintendent
+2590,Hyreskonsulent
+3929,"Hyttmästare/Produktionsledare, glasbruk"
+3011,"Hyttskötare, järnbruk"
+6628,Hyvelmästare
+750,"Hyveloperatör, sågverk"
+5932,"Hyvlare, metall"
+4359,"Hyvlare, trä"
+2810,Hårdlödare
+7609,Hårdvarukonstruktör
+423,Hälsoekonom
+6699,Hälsoinformatör
+6700,Hälsopedagog
+6683,Hälsoplanerare
+1916,Hälsovårdsinspektör
+970,"Härdare, plast"
+3587,Hörselvårdsingenjör/Hörselingenjör
+3599,Hörselvårdskonsulent
+3588,Hörselvårdstekniker
+6550,Idéhistoriker
+2996,Idrottsagent/Sportagent
+6667,Idrottsdomare
+3494,Idrottsinstruktör/Idrottstränare
+6083,Idrottskonsulent
+3496,Idrottspedagog
+388,Idrottsplatschef
+6294,Idrottsplatsvaktmästare/Idrottsplatsarbetare
+3687,Illusionist
+6150,Illustratör
+2134,Imam
+3688,Imitatör
+6180,Immaterialrättsjurist
+4750,Immunolog
+5111,Importchef
+2755,Importspeditör
+768,Incheckare
+1478,Individualterapeut
+3307,Industridesigner
+5607,Industrielektriker
+5835,Industrilackerare
+5971,Industriplåtslagare
+5993,Industrirobotoperatör
+5818,Industrirörmontör
+6725,Industrisanerare
+458,Industristädare
+997,Industrisömmerska
+2467,Informatiker
+2464,Informatikerassistent
+6732,Informationsarkitekt
 7096,Informationsassistent
 5120,Informationschef/Kommunikationschef
+3883,Informationskonsult
+5321,Informationsmäklare
 3885,Informationssekreterare
+6846,Informationsspecialist
+6159,Informatör/Kommunikatör
+7602,Infrastrukturarkitekt
+196,Ingenjörsgeolog
+2402,Inkasserare
+5891,Inkassohandläggare
+2794,Inkodare
 5915,Inköpare
+4909,Inköpsassistent
+6373,Inköpschef
+2545,Inköpsingenjör
+4910,Inköpskontorist
+2546,Inköpsledare
+2547,Inköpsplanerare
+4911,Inköpssekreterare
+2548,Inköpstekniker
+3105,"Inläggare, valsverk"
+6112,Inläsare
+2603,Innesäljare
+5449,Inredningsarkitekt
+25,Inredningsdesigner
+5812,Inredningssnickare/Specialsnickare
+6697,Inspector dealer
+2857,Inspektionsdykare
+3465,"Inspektör, Polisen"
+1909,"Inspektör, Socialstyrelsen"
+7154,Inspelningsassistent
+7155,Inspelningskoordinator
+4446,Inspelningsledare
+4027,Inspelningstekniker
+6260,Inspicient
+6309,Installationselektriker
+4233,Installationsingenjör
+273,Installationstekniker
+2532,Institutionsmäklare
+5961,Institutionssekreterare
+431,Instruktionsförare
+446,Instruktionsstädare
+7596,Instruktör/Tränare inom specialidrott
+812,Instrumentelektriker/Instrumenttekniker
+326,"Instrumentingenjör, fysik"
+1224,Instrumentmekaniker
+1225,Instrumentmontör
+1891,Integrationshandläggare
+6526,"Intendenturpersonal, försvaret"
+6527,"Intendenturpersonal, sjöfart"
 1813,Intensivvårdssjuksköterska
+7575,Interaktionsdesigner
+5480,Internatföreståndare
+2598,Internationell säljare
+1239,Internrevisor
+6970,"Intervjuare, opinionsundersökning"
+959,Intonatör
+2061,Invandrarkonsulent
 2062,Invandrarsekreterare
+520,Ismaskinförare
+2367,Isoleringsmontör
+7264,Isoleringsplåtslagare
+6626,IT-arkitekt/Lösningsarkitekt
+7590,IT-forensiker
+4423,IT-jurist
+2910,IT-metodansvarig
+3898,IT-producent
+5398,IT-revisor
+2915,IT-samordnare
 5432,IT-strateg
+2717,IT-säkerhetschef
 6625,IT-tekniker/Datatekniker
+2917,IT-utredare
+4769,Jaktkonsulent/Viltkonsulent
+6307,Jaktvårdare/Viltvårdare
+4770,Jaktvårdskonsulent/Jaktvårdsrådgivare
+7429,Jobbcoach/Utbildningscoach
+3916,Jockey
+3689,Jonglör
+4497,Jordbruksforskare
+4499,Jordbruksrådgivare/Jordbrukskonsulent
+6056,Journalist/Reporter
+4088,Jungman
+4424,Juridisk ombudsman
+6520,"Jurist, allmän domstol"
+3129,"Jurist, förvaltningsdomstol"
+3130,"Jurist, specialdomstol"
+7463,Juristassistent/Paralegal
+4946,Justitiekansler
+4947,Justitieombudsman
+7322,Justitieråd
+873,Juvelerare
+874,Juvelfattare
+6344,Jägare
+6266,Jägmästare
+7488,Järnvägsingenjör
+318,Kabelmaskinoperatör
+850,"Kabelmontör, elkraft"
+783,Kabinchef/Purser
+2013,Kabinettsekreterare
+7635,Kabininstruktör
+5850,Kaféföreståndare
+3250,Kakelformare
+2098,Kakelugnsmakare
+971,"Kalanderskötare, plast"
+657,Kalandrerare
+7497,"Kalibreringsingenjör, tillverkningsindustri"
+1401,Kalkbrottsarbetare
+3414,"Kalkhusarbetare, garveri"
+5485,Kallskänka
+230,"Kallskänka, fartyg"
+2618,Kallslagare
+2708,"Kallsågare, metall"
+7062,Kameraassistent
+4808,"Kameraman, TV"
+3132,Kammarrättsassessor
+3133,Kammarrättsfiskal
+3134,Kammarrättslagman
+4950,Kammarrättspresident
+3135,Kammarrättsråd
+3148,Kammaråklagare
+2897,Kamrer
+6624,"Kanslichef, kommun"
+2027,"Kanslichef, organisation"
+6623,"Kanslichef, statlig"
+7518,"Kanslichef/verksamhetschef, församling"
+5168,Kanslijurist
+2184,Kanslist
+3362,Kantor
+7385,Kantpressare
+3931,"Kantslipare, glas"
+752,Kantsågare
+3670,Kapellmästare
+259,Kapellvaktmästare
+2130,Kaplan
+4865,Karosserisnickare
+5518,Kartingenjör
+338,Kartograf
+4395,Kartongmaskinskötare
+339,Kartritare
 340,Karttekniker
+2923,Karusellsvarvare
+6684,Kasinopersonal
+587,"Kassaföreståndare, arbetslöshetskassa"
+6658,"Kassaledare, butik"
+2155,Kassapersonal
+7421,Kategorichef/Kategoriansvarig
 4294,Kemiingenjör
+631,Kemikalieinspektör
+5764,Kemist
+6414,Kemitekniker
+1099,Kemtvättare
+4624,Kennelföreståndare
+4406,Keramiker
+3252,Keramikpressare
+6729,Key account manager
+1403,"Kilare, stenbrott"
+6995,Kinesiolog
+2275,Kioskbiträde
+5748,Kiropraktor
+2619,Klensmed
+4659,Klichémontör
+6874,Klinikapotekare
 2033,"Klinikchef, tandvård/Verksamhetschef, tandvård"
+1853,Klinikveterinär
+6968,Klinisk farmakolog
+1473,Klinisk psykolog
+5963,Klockare
+4081,Klottersanerare
+264,Klubbvärdinna
+1419,Klänningssömmerska
+7663,"Kock, à la carte"
+5359,"Kock, fartyg"
 7664,"Kock, storhushåll"
+5484,Kocksteward
+3003,Kokillgjutare
+3025,Kokillskötare
+1133,Kolare
+5660,Kolonnarbetare
+6871,Kolportör
+2113,Komminister
+3466,"Kommissarie, Polisen"
+6362,Kommunchef
 6818,Kommundirektör
+1892,Kommunhandläggare
+827,Kommunikationselektriker
+7626,Kommunikationsstrateg
+2514,Kommunikationstekniker
 3994,Kommunjurist
+6621,Kommunrevisor
 1893,Kommunsekreterare
+6058,Kompositör
+4851,Koncerncontroller
+2276,Konditoribiträde
+6668,Konduktör
+993,Konfektionssömmerska
+3700,Konferencier
+708,Konferenschef
+4134,Konferenstekniker
+3194,Konferenstolk
+712,Konferensvärd/Konferensvärdinna
+7203,Konsertarrangör
+3377,Konsertmästare
+7030,Konservator
+2974,Konstgjutare
+6044,Konsthantverkare
+4878,Konstinramare/Rammakare
+2440,Konstintendent
+7023,Konstkonsult
+3272,Konstnär
+4856,Konstnärsmodell
+7156,Konstpedagog
+6620,"Konstruktör, elkraft"
+5455,"Konstruktör, el-tele"
+6619,"Konstruktör, textil, trä, glas, förpackningar"
+7495,"Konstruktör, tillverkningsindustri"
+4412,Konstsmed
+4162,Konststensgjutare
+1782,Konsulent på stifts-/nationell nivå
+4951,Konsumentombudsman
 6304,Konsumentvägledare
+6548,Kontakttolk/Dialogtolk
+5841,Kontorist
+2198,Kontorsbiträde
+6365,"Kontorschef, bank"
+6379,"Kontorschef, offentlig förvaltning"
+6395,"Kontorschef, utbildningsföretag"
+6026,Kontorskassör
+721,Kontorsreceptionist
+459,Kontorsstädare
 4136,Kontorsvaktmästare
+7515,Kontraktsadjunkt
+167,Kontrollingenjör
+6222,"Kontrollingenjör, elektronik"
+6219,"Kontrollingenjör, elkraft"
+6235,"Kontrollingenjör, gruv, metallurgi"
+6232,"Kontrollingenjör, kemiteknik"
+6227,"Kontrollingenjör, maskin"
+6238,"Kontrollingenjör, textil, trä, glas, förpackn."
+4642,"Kontrollmätare, virke"
+2938,"Kontrolloperatör, metallprodukter"
+4256,"Kontrolltekniker, elektronik"
+4291,"Kontrolltekniker, kemiteknik"
+4317,"Kontrolltekniker, textil, trä, glas, förpackn."
+4360,"Kontursågare, snickeri"
+5147,"Konverteringsarbetare, papper"
+5677,Kopieringsmaskinskötare
+5631,Kopparslagare
+4692,"Kopparsticksgravör, tryckmedier"
+6117,Kopplingstekniker
+6183,Koreograf
+4009,Koreolog
+2403,Korgmakare
+5892,Korgmakeriarbetare
+2404,Korgmöbelmakare
+3870,Korrekturläsare
+208,Kostchef
 6813,Kostekonom
+1865,Kostkonsulent
+3911,Kostymassistent
+6169,Kostymmästare
+6151,Kostymtecknare
+3912,Kostymör
+274,Kraftstationsmaskinist
+275,Kraftverksoperatör
+7594,Kran- och hisstekniker
+6688,Kranbilsförare
+7621,Kravanalytiker
+2738,Kreditberedare
+2739,Kreditbevakare
+2740,Kreditchef
+5948,Kredithandläggare
+2741,Kreditman
+2742,Kreditrådgivare
+5498,Krematoriemästare/Föreståndare
+263,Krematorievaktmästare
+312,Kretskortsmontör
+2441,Krigsarkivarie
+2503,Kriminalvårdare
+4475,Kriminalvårdsdirektör
+1894,Kriminalvårdsinspektör
+3302,Kriminolog
+2399,Kronoassistent
+6832,Kronodirektör
+6072,Kronofogde
+5889,Kronoinspektör
+2869,"Krosskötare, malmkross"
+2859,Krossverksmaskinist
+3253,Krukmakare
+3933,"Kulare, glas"
+2870,"Kulkvarnskötare, malmanrikning"
+5231,Kulturchef
+4033,Kulturgeograf
 1896,Kultursekreterare
+5572,"Kundmottagare/Verkmästare, bilverkstad"
+7552,Kundmäklare
+7522,"Kundserviceingenjör, tillverkningsindustri"
+7627,Kundtjänstchef
+5918,"Kundtjänsteman, försäkring"
+2291,Kundtjänstmedarbetare
+5994,Kundvagnsuppsamlare
 5787,Kurator
+2779,Kursadministratör
+212,Kursgårdsföreståndare
+3625,Kursutvecklare
+5664,Kustbevakningstjänsteman
+4396,Kuvertmaskinskötare
+1371,Kvalificerad skattehandläggare
+5537,"Kvalitetsbedömare, livsmedel"
+4726,Kvalitetschef
+5457,"Kvalitetsingenjör, el-tele"
+4318,"Kvalitetsingenjör, textil, trä, glas, förpackn."
+4257,"Kvalitetsingenjör/-tekniker, elektronik"
+4246,"Kvalitetsingenjör/-tekniker, elkraft"
+4292,"Kvalitetsingenjör/-tekniker, kemiteknik"
+4276,"Kvalitetsingenjör/-tekniker, maskin"
+4305,"Kvalitetsingenjör/-tekniker, metallurgi"
+4728,Kvalitetskoordinator
+2939,"Kvalitetsmätare, metallprodukter"
+4729,Kvalitetsrevisor
+4730,Kvalitetssamordnare
+5652,Kvarnarbetare
+1117,Kvarnmaskinskötare
+1118,Kvarnoperatör
+2860,"Kvarnskötare, stenkross"
+1830,Kvartärgeolog
+1495,Kvinnojoursarbetare
+7611,Kyl- och värmepumpsmontör
+7612,Kyl- och värmepumpstekniker
+281,"Kylmaskinist, kyl- och frysanläggning"
+5819,Kylmontör/Kyltekniker
+4565,Kyrkogårdsförman
+2115,Kyrkoherde
+7519,Kyrkokamrer
+2393,Kyrkvaktmästare
+395,Källarmästare
+2906,Kärnborrare
+1769,Kärnfysiker
+6726,Kärnkraftsanerare
+7341,Kärnmakare
 483,Köksbiträde
+221,Kökschef
+209,Köksföreståndare
+222,Köksmästare
+3614,Körledare
+6243,Körsnär/Pälsmodellör
+5536,Köttklassificerare
+266,Köttmästare
+7644,"Laborant, biologi"
+327,"Laborant, fysik"
+322,"Laborant, kemi"
+1642,Laboratorieassistent
 5786,Laboratoriebiträde
+1960,"Laboratoriebiträde, fys.lab."
+1961,"Laboratoriebiträde, kem.lab."
+1962,"Laboratoriebiträde, sjukhus"
+2046,Laboratoriechef
+493,Laboratoriediskare
+5516,"Laboratorieingenjör, fysik"
+5515,"Laboratorieingenjör, kemi"
+7408,"Laboratorieingenjör, metallurgi"
+3723,Laboratorietandtekniker
+328,"Laboratorietekniker, fysik"
 323,"Laboratorietekniker, kemi"
+1855,Laboratorieveterinär
+2161,Lackerare
+4070,"Lackerare, porslin"
+1134,Lackkokare
+1381,"Laddare, gruva"
+6430,"Ladugårdsföreståndare/Ladugårdsförman, djuruppf."
+6423,"Ladugårdsförman, blandad drift"
+6422,"Ladugårdsskötare, blandad drift"
 5842,Lagerarbetare
+6353,Lagerchef
+2200,Lagerkontorist
+2243,Lagerplanerare
+3136,Lagman
+972,Laminatpressare
+973,"Laminerare, plast"
+4827,"Laminerare, tryckeri"
+6616,Landsantikvarie
+6615,Landsarkivarie
+4501,Landsbygdsutvecklare
+2016,Landshövding
+5447,Landskapsarkitekt
+6269,Landskapsingenjör
+7304,Landstingsdirektör
+3995,Landstingsjurist
+6614,Landstingsrevisor
+1897,Landstingssekreterare
+2138,Lantbrevbärare
+6287,"Lantbrukare, blandad drift"
+6277,"Lantbrukare, djuruppfödning"
+6271,"Lantbrukare, växtodling"
+4476,Lantbruksdirektör
+7354,Lantbruksekonom
+6421,"Lantbruksförman, blandad drift"
+5102,Lantbruksförvaltare
+6340,Lantbruksinspektor
+3090,Lantbrukskassör
+4503,Lantbruksrådgivare/Lantbrukskonsulent
+6267,Lantmästare
+5472,Lantmätare/Förrättningslantmätare
+4477,Lantmäteridirektör
+341,Lantmäteriingenjör
+5614,Larminstallatör/Larmtekniker
+6116,Larmoperatör
+7637,Laseroperatör/Laserskärare
+6402,Lastare
+5578,Lastbilsmekaniker
+6751,Lastbilssäljare
+509,Lastmaskinförare
+4993,Lastningsförman/Load master
+4041,Layoutare
+4040,Layoutchef
+4042,Layouttecknare
+3026,LD-operatör
+5408,"Ledande montör, el"
+828,"Ledningsmontör, tele"
+2001,Ledsagare
+1518,Lekterapeut
+3860,Lektör
+7438,Leveldesigner
+2201,Leveransbevakare
+5027,Leveranschef
+398,Leveransman
+3195,Lexikograf
+6211,Licenskontrollant
+2853,"Liftbyggare/Liftmontör/Montageledare, liftar"
+6690,Liftdumper- och lastväxlarförare
+1332,Liftmaskinist
+1333,Liftskötare
+1349,"Limberedare, träfiberindustri"
+1350,"Limmare, fiberskivtillverkning"
+4361,"Limmare, snickeri"
+4752,Limnolog
+4339,Limousineförare
+1334,Linbaneskötare
+3583,Lindansare
+6038,Lingvist
+2775,Linjeagent
+853,"Linjemontör, elkraft"
+855,"Linjereparatör, elkraft"
+1427,Linnesömmerska
+3962,Linsslipare
+4362,Listarbetare
+4363,Listmakare
+2997,Litterär agent
+5442,"Livsmedelsarbetare, mejeri"
+4323,Livsmedelsingenjör
+6819,Livsmedelsinspektör
+6239,Livsmedelstekniker
+3528,Ljudassistent
+3529,Ljudbandstekniker
+7042,Ljuddatatekniker
+7658,Ljuddesigner
+3531,Ljudingenjör
+7597,Ljudmixeroperatör
+6085,Ljudtekniker
+7598,Ljusbordsoperatör
+3537,Ljusdesigner
+1135,Ljusformare
+1136,Ljusstöpare
+6086,Ljussättare
+6189,Ljustekniker
+5118,Logistikchef
+5471,Logistiker
+176,Logistikingenjör
 5721,Logoped
+1627,Logopedassistent
+702,Lokalguide
+5550,Lokförare/Förare av tåg
+5620,Lokreparatör
+5569,"Lots, fartyg"
+6838,LSS-handläggare
+2965,Lånechef
+5625,Låssmed/Låstekniker
+3415,Läderfärgare
+7383,Lädervaruarbetare
 7239,Läkare
 5967,Läkarsekreterare/Vårdadmin/Medicinsk sekreterare
+7387,Läkeeurytmist
+7475,"Läkemedelsansvarig, apotekare"
+7476,"Läkemedelsansvarig, receptarie"
+2358,Läkemedelsinspektör
+2606,Läkemedelskonsulent
+3706,Läkepedagog
+6610,Länsantikvarie/1:e antikvarie
+4480,Länsarkitekt
+5169,Länsassessor
+6609,Länsbibliotekarie
+4481,Länsbostadsdirektör
+3652,Länshemslöjdskonsulent
+6942,Länsjaktvårdare
+4773,Länsjaktvårdskonsulent
+7595,Länsjurist
+4482,Länsjägmästare
+4952,Länspolismästare
+6608,Länsråd
+5171,Länsrättsassessor
+3137,Länsrättsfiskal
+3138,Länsrättsnotarie
+4483,Länsskattechef
+1856,Länsveterinär
+4953,Länsåklagare
 5809,Lärarassistent
 5715,Lärare i fritidshem/Fritidspedagog
 5714,Lärare i förskola/Förskollärare
+7295,Lärare i förskoleklass
 7652,"Lärare i grundskolan, årskurs 1-3"
+7653,"Lärare i grundskolan, årskurs 4-6"
 7654,"Lärare i grundskolan, årskurs 7-9"
 7127,Lärare i gymnasiet
 7128,Lärare i gymnasiet - yrkesämnen
+7165,Lärare i musik- och kulturskolan
+7164,Lärare i prakt./estet och annat ämne
 7126,Lärare i praktiska och estetiska ämnen
+6918,"Lärling, anläggningsdykare"
+7219,"Lärling, bandlastarförare"
+7220,"Lärling, bandschaktarförare"
+6916,"Lärling, beläggningsarbete"
+7221,"Lärling, beläggningsmaskinförare"
+6919,"Lärling, bergarbetare"
+6920,"Lärling, betongarbetare"
+6921,"Lärling, betonghåltagare"
+6923,"Lärling, byggnadsplåtslagare"
+6927,"Lärling, glastekniker"
+6928,"Lärling, golvläggare"
+7222,"Lärling, grävlastare"
+7223,"Lärling, grävmaskinförare"
+6929,"Lärling, hissmontör"
+7267,"Lärling, industrielektriker"
+6930,"Lärling, installationselektriker"
+7266,"Lärling, isoleringsplåtslagare"
+7225,"Lärling, lastmaskinförare"
+7196,"Lärling, mobilkranförare"
+7226,"Lärling, motorschaktvagnförare"
+6934,"Lärling, murare"
+6922,"Lärling, målare"
+6935,"Lärling, plattsättare"
+7227,"Lärling, pålmaskinförare"
+7189,"Lärling, stenmontör"
+6926,"Lärling, ställningsbyggare"
+6937,"Lärling, tak- och tätskiktsmontör"
+7248,"Lärling, teleskoptruckförare"
+7197,"Lärling, tornkranförare"
+6925,"Lärling, träarbetare"
+6938,"Lärling, undertaksmontör"
+6924,"Lärling, ventilationsplåtslagare"
+7265,"Lärling, VVS-isolerare"
+6932,"Lärling, VVS-montör"
+6917,"Lärling, väg- och anläggningsarbetare"
+7228,"Lärling, väghyvelförare"
+7131,Läromedelsassistent
+3602,Läromedelsintendent
+1182,Läskedrycksberedare
+4874,Lästmodellör
+4159,Lättbetongarbetare
+4089,Lättmatros
+3083,Löneadministratör
+3084,Löneassistent/Lönekontorist
+7622,Lösullsinstallatör
+7312,Make-up artist
+6758,Makroanalytiker
+2871,Malmanrikare
+1382,Malmarbetare
+2872,Malmförädlingsarbetare
+2873,Malmkrosskötare
+1383,"Malmlastare, gruva"
+372,Malmletare
+3407,Malmvägare
+2998,Manager
+249,Manikyrist/Manikurist
+2360,Mannekäng
+3877,Manusförfattare
+3214,Marinarkeolog
+4753,Marinbiolog
+6824,Marinmekaniker
+7325,Marinmeteorolog
+6961,"Markberedningsförare, skogsbruk"
+183,Markförhandlare
+4216,Markingenjör
+5548,Marknadsanalytiker
+6314,Marknadsassistent
+5090,Marknadschef
+5547,Marknadsförare
+406,Marknadskommunikatör
+407,Marknadskonsult
+408,Marknadskoordinator
+416,Marknadsplanerare
+417,Marknadsundersökare
 7274,"MAS, medicinskt ansvarig sjuksköterska"
+5590,"Maskinbefäl, fartyg"
+6300,Maskinbokbindare/Bokbinderiarbetare
+2899,Maskinbokförare
+861,Maskinbyggare
+802,Maskinelektriker
+3005,"Maskinformare, gjuteri"
+5557,"Maskinförare, lantbruk/Traktorförare, lantbruk"
+5689,"Maskinförare, träfiberskivor"
+4018,"Maskingravör, metall"
+4693,"Maskingravör, tryckmedier"
+7337,"Maskinist, energi"
+7326,Maskinkonstruktör
+3006,Maskinkärnmakare
+862,"Maskinmekaniker, industri/varvsindustri"
+6863,Maskinmekaniker/Skogsmaskinmekaniker
+863,Maskinmontör
+276,Maskinmästare
+1063,"Maskinoperatör, bageri"
+1005,"Maskinoperatör, fisk"
+1119,"Maskinoperatör, foder"
+5663,"Maskinoperatör, fotografiska produkter"
+1268,"Maskinoperatör, garnberedning"
+4163,"Maskinoperatör, gipsplattor"
+1069,"Maskinoperatör, gummiindustri"
+6389,"Maskinoperatör, hygienteknik"
+7373,"Maskinoperatör, hårdband"
+6761,"Maskinoperatör, juice, frukt, grönt o veg. olja"
+1094,"Maskinoperatör, konfektyrindustri"
+998,"Maskinoperatör, konservering"
+1000,"Maskinoperatör, kött"
+6409,"Maskinoperatör, läkemedel"
+5305,"Maskinoperatör, mekanisk verkstad"
+7374,"Maskinoperatör, mjukband"
+1014,"Maskinoperatör, rökning"
+1154,"Maskinoperatör, sockerindustri"
+929,"Maskinoperatör, sprängämnen och pyroteknik"
+1164,"Maskinoperatör, te-, kaffe- och kakaoberedning"
+1170,"Maskinoperatör, tobaksindustri"
+4829,"Maskinoperatör, tryckeri"
+5629,"Maskinoperatör, ytbehandling"
+4366,"Maskinoperatör, ytbehandling, trä"
+5619,Maskinreparatör
+864,"Maskinreparatör, stationära"
+4504,Maskinrådgivare/Maskinkonsulent
+4384,Maskinskärare
+3963,"Maskinskötare, glas"
+1193,"Maskinskötare, glasstillverkning"
+2164,"Maskinskötare, lackering"
+1194,"Maskinskötare, mejeri"
+3967,"Maskinskötare, tegelbruk"
+4364,"Maskinsnickare/Operatör, snickeri, inredning"
+6606,"Maskinsnickare/Operatör, trävaruindustri"
+2640,Maskinställare
+1297,"Maskinställare, textil"
+6752,"Maskinsäljare, entreprenad"
+279,"Maskintekniker, vattenverk"
+3107,Maskinvalsare
+5493,Maskör/Sminkör
+3979,"Massaberedare, keramik, tegel"
+7490,"Massaberedare, papper"
+645,"Massablekare, processoperatör"
+646,"Massakokare, processoperatör"
+647,Massamaskinförare
+6308,Massör/Massageterapeut
+3013,Masugnsarbetare
+1835,Matematiker
+1446,Matematisk statistiker
+6801,Materialkemist
+177,Materialplanerare
+7631,Materialprovare
+329,"Materialprovare, fysik"
+178,Materialstyrare
+6198,Matros
+7422,"Matros, inre fart"
+1102,Mattvättare
+6376,Mediachef
+409,Mediakonsulent
+410,Mediaplanerare
+2607,Mediasäljare
+4484,Medicinalråd
 6096,Medicinteknisk ingenjör
+7093,Mediehanterare
+6122,Mediepedagog
+7328,"Medlemsvärvare, intresseorg./Telefonkommunikatör"
+5662,Mejeriarbetare
+1137,Mesabrännare
+3068,Metallduksvävare
+2849,Metallkonstruktionsmontör
+5942,Metallsågare
+6022,Metalltryckare
+5473,Metallurg
+5702,Meteorolog
+335,"Meteorologassistent/Observatör, flygvapnet"
+7461,Meteorologisk observatör
+2410,"Metodanalytiker, IT"
+2126,Metodistpastor
+1447,Metodstatistiker
+4754,Mikrobiolog
+1230,Mikromekaniker
+336,Mikroskopist
 5777,Miljö- och hälsoskyddsinspektör
+7514,Miljö- och klimatstrateg
 5986,Miljöarbetare/Renhållningsarbetare
+6474,Miljöchef
+1927,Miljöcontroller
+427,Miljöekonom
 1919,Miljöhandläggare
+1920,Miljöingenjör
+1921,Miljöinspektör
+6182,Miljöjurist
+6514,Miljökemist
+5778,Miljörevisor
+1922,Miljösamordnare/Miljökoordinator
+1923,Miljöskyddschef
+1448,Miljöstatistiker
+6603,Miljövårdsdirektör
+1925,Miljövårdsingenjör
+6052,Mimartist
+5182,Mimpedagog
+2018,Minister
+6408,Missionär
+3532,"Mixare, ljudtekniker"
+2813,Mjuklödare
+80,Mjukvaruutvecklare
+379,Mjölkbedömare
+1120,Mjölnare
+1325,Mobilkranförare
+6320,Modell
+4875,Modellbyggare
+3255,"Modellgjutare, keramik"
+4876,Modellmakare
+2631,"Modellmakare, metall"
+6323,Modellsnickare
+3256,"Modellör, keramik"
+7314,Modersmålslärare i grundskolan
+7313,Modersmålslärare i gymnasiet
 7163,Modersmålslärare/Modersmålspedagog
+5697,Modist
+4755,Molekylärbiolog
+5512,"Montör, el- och teleutrustning"
+5510,"Montör, gummi- och plastprodukter"
+297,"Montör, metallprodukter"
+5513,"Montör, papp- och textilprodukter"
+5511,"Montör, träprodukter"
+1404,Monumentstenhuggare
+7018,Mopedbud
+3500,Motionskonsulent
+287,Motorbyggare
+3473,Motorcykelbud
+6823,Motorcykelmekaniker
+4098,"Motorelev, fartyg"
+6199,"Motorman, fartyg"
+288,Motormontör
+7218,Motorschaktvagnförare
+521,Mudderverkskötare
+5816,Murare
+7176,"Murare, utan yrkesbevis"
 6200,Museiassistent
+4459,Museichef/Museidirektör
+2459,Museiintendent
+3623,Museilektor
+6101,Museipedagog/Museilärare
+7567,Museitekniker
+2999,Musikagent
+3297,Musikalartist
+7083,"Musiker, folkmusik"
+7202,"Musiker, klassisk musik"
+6110,"Musiker, populärmusik"
+5064,Musikförläggare
+3649,Musikhandledare
+965,Musikinstrumentmakare
 3617,Musikpedagog/Musiklärare
+7200,Musikproducent
+4028,Musiktekniker
+1628,Musikterapeut
+2377,Musselodlare
+4756,Mykolog
+2079,Målare
+7113,"Måleri, servicearbetare"
+1183,Mältare
+3980,Mängberedare
+5489,"Mässman, fartyg"
+7309,"Mästare, glasbruk"
+2881,Mätaravläsare
+1231,Mätarjusterare
+6944,"Mätningschef, virkesmätning"
 6216,Mätningsingenjör/MBK-ingenjör
+4218,"Mätningstekniker, bygg"
+330,"Mättekniker, fysik"
+7671,"Mättekniker, geologi"
+7411,"Mättekniker, kemi"
+2940,"Mättekniker, metallprodukter"
+2165,Möbellackerare
+303,Möbelmontör/Inredningsmontör
+4866,Möbelrenoverare/Möbelrestauratör
+6322,Möbelsnickare
+7499,Mönsterkonstruktionsassistent
+4387,"Mönsterritare, tyger"
+3947,"Mönsterslipare, glas"
+5439,Nagelterapeut/Nagelteknolog
+5747,Naprapat
+6040,Nationalekonom
+716,Nattreceptionist/Nattportier
+4034,Naturgeograf
+6104,Naturskoleföreståndare
+1629,Naturterapeut
+1926,Naturvårdsingenjör
+6851,Neuropsykolog
+2967,"Notariatchef, bank"
+2968,"Notariattjänsteman, bank"
+3673,Notskrivare
 5785,Nutritionist/Näringsfysiolog
+7235,Nyhetsgrafiker
+7067,Nyhetstextare
+7428,Nämndsekreterare
+1956,Näringsforskare
+4954,Näringsfrihetsombudsman
+1866,Näringskonsulent
+5075,Näringslivschef
+1902,Näringslivssekreterare/Näringslivsutvecklare
+7608,Näringsterapeut
+4236,Nätplanerare
+5645,Nättillverkare
+2515,Nätverksadministratör
+2516,Nätverksansvarig
+6602,Nätverkskonstruktör
+2519,Nätverksoperatör
+5912,Nätverkstekniker
+6118,OB-assistent
+5059,Obduktionsbiträde
 6361,Obduktionstekniker/Obduktionsassistent
+3718,OB-tekniker
+5805,Oceanograf
+3257,Ocularist
+7531,Oddssättare
+2988,Offertberedare
+2989,Offertchef
+2990,Offertingenjör
+2204,Offertkontorist
+5541,Officer
+5825,"Officer, Frälsningsarmén"
+1846,Officiell veterinär
+4830,Offsettryckare
+4082,Oljesanerare
+5605,"Ombordansvarig, tåg"
+5775,Ombudsman
+589,"Omprövningshandläggare, arbetslöshetskassa"
 2034,"Områdeschef, barnomsorg"
+6807,"Områdeschef, skogsbruk"
 2036,"Områdeschef, äldre- och handikappomsorg"
+2591,Områdesförvaltare
+5232,Omsorgschef
+1966,Omsorgskurator
 7351,Onkologisjuksköterska
+6800,Oorganisk kemist
+7146,Operachef
 5781,Operationssjuksköterska
+7541,"Operatör, gruvventilation"
+7599,"Operatör, scenmaskineri"
 5704,Optiker
+7501,Optikerassistent
+5949,Orderadministratör
+2744,Orderfördelare
+6329,Ordermottagare
+2747,Orderplanerare
+2482,Ordningsvakt
+5801,Organisationschef
+6597,"Organisationschef, kommun"
+5172,Organisationsjurist
+4731,Organisationskonsult
+1880,"Organisationssekreterare, intresseorganisation"
+6302,Organisationsutvecklare
+1840,Organisk kemist
+7516,Organist
+5636,Orgelbyggare
+960,Orgelpipmakare
+961,Orgelstämmare
+6149,Originalare
+4665,Originalmontör
+3827,Originaltecknare
+3358,Orkesterledare
+1375,Ornamentstenhuggare
+1384,Ortdrivare/Tillredare
+7299,Ortodontiassistent
+6120,Ortopedingenjör
+3949,Ortopedskomakare
+3951,Ortopedskotekniker
 3721,Ortopedtekniker
+7386,Ortoptist
+1630,Osteopat
+4326,Ostmästare
+5258,Packare
+5270,Packmästare
+5418,Paketbilsförare
+5193,Paketläggare
+1831,Paleontolog
+2843,Pannplåtslagare
+5888,Pantlånare
+659,Pappersarbetare
+660,Pappersmaskinförare
+4704,"Pappersskärare, bokbinderi"
+6248,Pappersvaruarbetare
 6717,Parkarbetare/Utemiljöarbetare/Miljövärd
+5047,Parkchef
+5907,Parkeringsvakt
+1351,Parkettarbetare
+2297,Parkettläggare
+4566,Parkförman
+5253,Parkförvaltare
+1771,Partikelfysiker
+7426,Passagerarkoordinator
+5824,"Pastor, frikyrkoförsamling"
+2117,Pastorsadjunkt
+5469,Patentingenjör/Patentkonsult
+4002,Patentjurist
+3825,Patinerare
+5428,PC-koordinator
+5997,PC-samordnare
+2071,Pedagogassistent
+254,Pedikyrist/Pedikurist
+5417,Pendeltågsförare/Motorvagnsförare
+2536,Penningmarknadsmäklare
+5290,Penselmakare
+7396,Perfusionist
+298,Persiennmontör
 5546,Personaladministratör/Personalassistent
+401,Personalansvarig
 6327,Personalchef/HR-chef
+4892,Personaldirektör
+4894,Personalintendent
+2207,Personalkontorist
+2208,Personalredogörare
 6820,Personalsekreterare
+6102,Personalutbildare
+7680,Personalutvecklare
+6241,"Personbilsförare, persontransporter"
 5798,Personlig assistent
+582,"Personlig handläggare, försäkringskassa"
+7283,Personlig tränare/PT
+6862,Personligt ombud
+2564,Personskadereglerare
+6669,Peruk- och tupéfrisör
+245,Perukmakare
+957,Pianobyggare
+958,Pianostämmare
+5635,Pianotekniker
+550,Pilot/Trafikflygare/Flygkapten
+553,Pilot/Trafikflygare/Flygstyrman
+522,Pistmaskinförare
+5505,Pizzabagare
+4329,Pjäsmekaniker
+6666,Placeringsassistent
+2537,Placeringsrådgivare
+3934,"Planare, glas"
+7315,Planarkitekt
+4982,"Planerare, flygbolag"
+5,Planeringsarkitekt/Fysisk planerare
+5077,Planeringschef
+4251,"Planeringsingenjör, elektronik"
+4237,"Planeringsingenjör, elkraft"
+91,"Planeringsingenjör, el-tele"
+4285,"Planeringsingenjör, kemiteknik"
+4269,"Planeringsingenjör, maskin"
+4311,"Planeringsingenjör, textil, trä, glas, förpackn."
+2209,Planeringskontorist
+4286,"Planeringstekniker, kemiteknik"
+4298,"Planeringstekniker, metallurgi"
+4312,"Planeringstekniker, textil, glas, trä, förpackn."
+4369,"Planhyvlare, trä"
+3935,"Planslipare, glas"
+7243,"Plantskolearbetare, skog"
+5124,Plantskolechef
+2339,Plantör
+1772,Plasmafysiker
+5640,Plastarbetare
+974,Plastbåtbyggare
+975,Plastgjutare
+976,Plasthärdare
+977,Plastimpregnerare
+978,Plastmaskinoperatör
+299,Plastmontör
+980,Plastreparatör
+983,Plastsvetsare
+984,Plastvaruarbetare
+7254,"Platschef, anläggning"
+7307,"Platschef, bilprovning"
+5055,"Platschef, bygg"
+7234,"Platschef, film/TV"
+696,"Platschef, reseföretag"
+5129,"Platschef/Områdeschef, försäkringskassa"
+7233,Platskoordinator
+7625,"Platsletare, film/Location scout"
+6407,Plattsättare
+7177,"Plattsättare, utan yrkesbevis"
+1054,Plysare
+1352,Plywoodarbetare
+7366,Plåtbearbetare
+4107,Plåtriktare
+7430,Podiater/Podiatriker
+4877,"Polerare, trä"
+7639,Polisaspirant
+3464,Polisassistent
+4486,Polisintendent
+4487,Polismästare
+4488,Polissekreterare
+1326,Pontonkranförare
+4071,Porslinsdekoratör
+3258,Porslinsgjutare
+4072,Porslinsmålare
+3260,Porslinsputsare
+3261,Porslinsslipare
+1327,Portalkranförare
+2141,Postterminalarbetare
+5121,PR-chef
+3234,Preparator
+6857,Prepressoperatör
+1105,"Pressare, kläder"
+1353,"Pressare, spånskivor"
+1354,"Pressare, träfiber, spånskivor"
+4831,Pressbiträde
+5122,Presschef
+3886,Pressekreterare
+3007,Pressgjutare
+2621,Pressmed
+6888,"Pressoperatör, tryckmedier"
+1967,Primärvårdskurator
+2749,Prissättare
+6296,Privatbokbindare
+5911,Privatdetektiv
+428,Privatekonom
+6008,Privatekonomisk rådgivare
+411,PR-konsult
+412,PR-man
+7477,"Processansvarig, ITIL"
+69,"Processingenjör, elkraft"
+92,"Processingenjör, el-tele"
+192,"Processingenjör, gruv"
+6594,"Processingenjör, kemiteknik"
+120,"Processingenjör, maskin"
+203,"Processingenjör, metallurgi"
+1841,Processkemist
+4150,"Processoperatör, asfalt"
+4146,"Processoperatör, betong"
+1184,"Processoperatör, bryggeri"
+6206,"Processoperatör, cementtillverkning"
+6175,"Processoperatör, glas"
+5626,"Processoperatör, kemisk industri"
+1121,"Processoperatör, kvarn"
+5981,"Processoperatör, malmanrikning"
+1195,"Processoperatör, mejeri"
+7520,"Processoperatör, metallindustri"
+5589,"Processoperatör, papper"
+5588,"Processoperatör, pappersmassa"
+7335,"Processoperatör, smältverk"
+6018,"Processoperatör, stålindustri"
+6021,"Processoperatör, värmebehandling"
+7529,"Processtekniker, gjuteri"
+7521,"Processtekniker, tillverkningsindustri"
+7321,"Processtekniker, vattenrening"
+7410,"Processutvecklare, kemi"
+7047,"Producent: kultur, media, film"
+413,"Produktchef, marknadsföring"
+6168,Produktionsassistent
+7255,"Produktionschef, anläggning"
+6358,"Produktionschef, bygg"
+7550,"Produktionschef, Posten"
+5538,"Produktionschef, tillverkning"
+7064,Produktionsekonom
+6593,"Produktionsingenjör, bygg"
+6221,"Produktionsingenjör, elektronik"
+6592,"Produktionsingenjör, elkraft"
+5474,"Produktionsingenjör, gjuteri"
+193,"Produktionsingenjör, gruv"
+6234,"Produktionsingenjör, gruv, metallurgi"
+7409,"Produktionsingenjör, kemi"
+6591,"Produktionsingenjör, maskin"
+6590,"Produktionsingenjör, textil, trä, glas, förpackn"
+7232,Produktionskoordinator
+7551,"Produktionsledare, Posten"
+7492,"Produktionsledare, tillverkningsindustri"
+5016,"Produktionsledare: kultur, media, film"
+7493,"Produktionsplanerare, tillverkningsindustri"
+3888,"Produktionsplanerare: kultur, media, film"
+3909,Produktionssekreterare
+7002,"Produktionstekniker, maskin/verkstad"
+373,"Produktionstekniker, petroleumutvinning"
+5038,"Produktområdeschef, järnväg"
+7498,"Produkttekniker, konfektion"
+161,Produktutvecklare
+7500,"Produktutvecklare, konfektion"
+6170,Professionell idrottsutövare
+7269,Professor
+1440,Prognosmeteorolog
+3703,Programledare
+7432,"Programmerare, konsolspel"
+7433,"Programmerare, mobilspel"
+7570,"Programmerare, onlinespel"
+7431,"Programmerare, PC-spel"
+7435,"Programmerare, webbspel"
+3704,Programpresentatör
+3910,Programsekreterare
+6113,Programvärd/Programvärdinna
+7484,"Projekteringsingenjör, bygg och anläggning"
+57,"Projekteringsingenjör, elkraft"
+7485,"Projekteringsingenjör, el-tele och elektronik"
+7487,"Projekteringsingenjör, gruv och metallurgi"
+7486,"Projekteringsingenjör, maskin"
+7649,"Projektledare, bygg och anläggning"
+5388,"Projektledare, IT"
+5324,"Projektledare, reklam"
+7148,"Projektledare: kultur, media, film"
+7116,Prorektor
+7679,"Prototyptillverkare, metall"
+4225,"Provningsingenjör, elkraft"
+101,"Provningsingenjör, el-tele"
+127,"Provningsingenjör, maskin"
+6411,Provsmakare
+6777,Prydnadsväxtodlare
+2706,"Präglare, metall"
+5829,"Präst, annat trossamfund"
+5827,"Präst, grekisk-ortodox kyrka"
+5826,"Präst, romersk-katolsk kyrka"
+1479,Psykoanalytiker
 5709,Psykolog
+5710,Psykoterapeut
 7292,PTP-psykolog
+7662,Publikvärd
+2880,"Pumpman, oljeborrning"
+866,Pumpmontör
+867,Pumpreparatör
+2210,Punktskriftskontorist
+2695,Punktsvetsare
+265,Påklädare
+511,Pålmaskinförare
+4398,Påsmaskinskötare
+6342,Pälsdjursskötare
+4971,Pälsdjursuppfödare
+3413,Pälsskinnberedare
+4344,Pälssömmerska
+5828,Rabbin
+3517,Radio Officer
+3519,Radioexpeditör
+1773,Radiofysiker
+7603,Radiolokförare
+7571,Radioloksoperatör
+4994,Rampagent
+4983,"Rampförman, flygplats"
+7539,Raslastare
+7071,Recensent
 5597,"Receptionist, telefonist"
+5595,Receptionschef
+7068,Redaktionsassistent
+5065,Redaktionschef
+3327,Redaktionssekreterare
+3328,Redaktör
+2776,Rederiagent
+6153,Redigerare
+3076,Redovisningsassistent
+5078,Redovisningschef
+5989,Redovisningsekonom
+6854,Redovisningskonsult
+2900,Redovisningsman
+3404,Regiassistent
+5095,"Regionchef, butik"
+5094,"Regionchef, försäkring"
+5048,"Regionchef, skogsbruk"
+6067,Regissör
+5968,Registrator
+6017,"Reglerare, masugn"
+3030,"Reglerare, stålverk"
+3110,"Reglerare, valsverk"
+7682,Regulatorisk handläggare
+1085,Regummerare
+6840,Rehabhandläggare
+1496,Rehabiliteringsassistent
+4816,Reklamassistent
+4891,Reklamationshandläggare
+5123,Reklamchef
+4043,Reklamdesigner
+2675,Reklamdistributör/Reklamutdelare
+414,Reklamkonsulent
+415,Reklamman
+2802,Reklamsekreterare
+3855,Reklamtextare
+5404,Rekryterare/Rekryteringskonsult
 3422,Rektor
+6164,Rekvisitör
+7089,Rekvisitörsassistent
+7134,Relationsmarknadsförare
+6691,Renhållningsförare
+524,Renhållningsmaskinförare
+7329,Renserioperatör
+4868,Reparationssnickare
+3359,Repetitör
+4669,Reprofotograf
+1047,Repslagare
+6440,"Researcher, rekrytering"
+691,Resebyråassistent
+5109,Resebyråchef
+693,Resehandläggare
+5593,Reseledare
+5416,"Resemontör, maskin"
+5924,Reseproducent
+7582,Reservdelschef
+2280,Reservdelsspecialist/Bildelsspecialist
+5314,Resesäljare/Reseförsäljare/Resekonsulent
+5555,Restaurangbiträde
+5544,Restaurangchef
+4175,Restauranginspektör
+4673,Retuschör
+2893,Revisionsbiträde
+1243,Revisionschef
+5670,Revisor
+5988,Revisorsassistent
+7642,Ridinstruktör/Ridlärare
+2641,"Riggare, verktygsmaskiner"
+4450,Riksantikvarie
+4451,Riksarkivarie
+6518,Riksbibliotekarie
+6586,Riksdagsledamot
+5962,Riksdagsstenograf
+6585,Riksgäldsdirektör
+4956,Rikspolischef
+4957,Riksåklagare
+4109,Ringverksarbetare
+5921,Riskbedömare
+2574,"Riskingenjör, försäkring"
+7565,"Riskingenjör, risk management"
+4248,"Ritare, elektronik"
+4226,"Ritare, elkraft"
+4262,"Ritare, maskin"
+4308,"Ritare, textil, trä, glas, förpackning"
+868,Robotmontör
+7008,Robotoperatör
+2697,Robotsvetsare
+6672,Roddare/Roadie
+7605,Rosenterapeut
+399,Rostskyddsbehandlare
+7231,Rostskyddsmålare
+667,"Rullare, papper"
+4833,Rulloffsettryckare
+806,Rulltrappmontör
+703,Rundtursguide
+6525,Rymdingenjör
+3139,Rådman
+3416,Råhudsarbetare
 5233,Räddningschef
+6773,"Räddningsledare, statlig räddningstjänst"
+6759,Ränteanalytiker
+3303,Rättssociolog
+3197,Rättstolk
 5784,Röntgensjuksköterska
+3590,Röntgentekniker
+4110,Rörbockare
+3051,Rördragare
+7650,Rörinfodrare
+4111,Rörriktare
+3709,Röstpedagog
+7660,SAD (Second assistant director)
+6192,Sadelmakare
+3212,Samhällsekonom
+1905,Samhällsplanerare
+7532,Samhällsvägledare
+7536,Samplingspersonal
+6852,Samtalsterapeut
+3008,"Sandberedare, gjuteri"
+4436,Sandwichman
+6197,Saneringsarbetare
+6523,Satellitoperatör
+6187,Scannertekniker/Scanneroperatör
+3902,Scenförman
+6166,Scenmästare
+6258,Scenograf
+3903,Scentekniker
+4682,"Schablontillverkare, screentryck"
+1385,Schaktsänkare
+6297,Screentryckare
+6167,Scripta
+5699,Segelmakare
+1832,Seismolog
+5966,Sekreterare
+7676,"Sektionschef, gruva"
+7668,"Sektionschef, offentlig förvaltning"
+1453,"Sektionschef, sjukhus"
+3838,Serietecknare
+592,"Servicechef, bilverkstad"
+4781,"Serviceelektriker, installation"
+7667,Servicehandläggare
+2053,Servicehusföreståndare
+6223,"Serviceingenjör, elektronik"
+4241,"Serviceingenjör, elkraft"
+6233,"Serviceingenjör, kemiteknik"
+6228,"Serviceingenjör, maskin"
+4301,"Serviceingenjör, metallurgi"
+7400,"Servicetekniker, data"
+4259,"Servicetekniker, elektronik"
+4242,"Servicetekniker, elkraft"
+5306,"Servicetekniker, kontorsmaskiner"
+4278,"Servicetekniker, maskin"
+7544,"Servicetekniker, tåg"
+5487,Servitör/Servitris
+235,"Servitör/Servitris, fartyg"
+5490,"Servitör/Servitris, kafé och konditori"
 7382,SFI-lärare
+7473,Shiatsuterapeut
+2894,Siffergranskare
+105,Signalingenjör
+6889,Signalman
+817,Signaltekniker
+1122,Siloarbetare
+875,Silversmed
+389,Simhallsföreståndare
+2902,Simhallsvakt
+3014,Sintare
+3032,Sinterblandare
+6748,Sjukhusdiakon
+6398,Sjukhusdirektör
 1774,Sjukhusfysiker
+3591,Sjukhusingenjör
 1842,Sjukhuskemist
+1968,Sjukhuskurator
+2118,Sjukhuspräst
+462,Sjukhusstädare
+3724,Sjukhustandtekniker
+3592,Sjukhustekniker
+6766,Sjukhusvaktmästare
+1823,"Sjuksköterska, barnavårdscentral"
+1954,"Sjuksköterska, diagnostisk radiologi"
+7352,"Sjuksköterska, geriatrisk vård"
+7296,"Sjuksköterska, grundutbildad"
 5780,"Sjuksköterska, medicin och kirurgi"
 5783,"Sjuksköterska, psykiatrisk vård"
 7244,"Sjuksköterska, äldreomsorg och -vård/geriatrik"
+1462,Sjuktransportör
 5707,Sjukvårdsbiträde
+3198,Sjukvårdstolk
+3711,Sjöbevakningsassistent
+7583,Sjöfartskontrollant/Hamnskyddskontrollant
+7562,Skadedjurstekniker
+2571,"Skadeingenjör, försäkring"
+5919,Skadereglerare
+2573,Skadetekniker
+4489,Skattedirektör
+5691,Skattehandläggare
+6029,Skattejurist
+2211,Skeppningsassistent
+2777,Skeppningschef
+2212,Skeppningskontorist
+2769,Skeppningsplanerare
+5953,Skeppsklarerare/Waterclerk
+5958,Skeppsmäklare
+362,Skeppsmätare
+7641,Skidinstruktör/Skidlärare
+5686,Skidliftskötare
+7655,Skidliftvärd
+7136,Skidpatrullör/Pistör
+1405,Skifferbrottarbetare
+3417,Skinnfärgare
+1429,Skinnsömmerska
+3052,Skivställare
+5643,Skofabriksarbetare
+6959,"Skogsarbetare, motormanuell avverkning"
+6957,"Skogsarbetare, plantering"
+6958,"Skogsarbetare, röjning"
+7162,Skogsbrukare
+4517,Skogsbruksforskare
+6951,Skogsbruksinstruktör
+4708,Skogsbruksrådgivare
+6949,Skogsekonom
+6953,Skogsförvaltare
+4707,Skogsingenjör
+6946,Skogsinspektor
+4521,Skogskonsulent/Skogsvårdskonsulent
+5558,Skogsmaskinförare
+7458,Skogsmästare
+6948,Skogsplanläggare
+6693,Skogstransportförare
+6954,Skogsvårdschef
+6952,Skogsvärderare
 5840,Skolassistent
+2453,Skolbibliotekarie
 3423,Skolchef
+3424,Skoldirektör
+3426,Skolinspektör
+3605,Skolkonsulent
+1969,Skolkurator
+6073,Skolledare
+5479,Skolmåltidsföreståndare
+1474,Skolpsykolog
+1908,Skolsekreterare
 1824,Skolsköterska
+5886,Skolvaktmästare
+1544,Skolvärd/Skolvärdinna
+6174,Skomakare/Skoreparatör
+4437,Skoputsare
 6196,Skorstensfejare/Sotare
+5309,Skorstensfejarmästare
+4076,Skorstensfejartekniker
+7194,Skorstenstätare
 500,"Skotarförare, skogsbruk"
+3202,Skrivtolk/Vuxendövtolk
+1386,Skrotare
+5443,"Skrovbyggare, trä"
+5698,Skräddare
+6047,Skulptör
+986,Skumplastarbetare
+566,Skyddsingenjör
+7259,Skyddsrumsinspektör
+2486,Skyddsvakt
+4019,Skyltgravör
+4020,Skylttillverkare
+6051,Skådespelare
+3037,Skänkskötare
+501,"Skördarförare, skogsbruk"
+5873,Skördearbetare
 7298,Skötare
+5500,Slaktare
+7593,Slaktmästare
+7678,"Slipare, finbearbetning"
+5933,"Slipare, metall"
+4371,"Slipare, snickeri"
+3981,Slipmaterialarbetare
+3982,Slipskiveformare
+3983,Slipverktygsarbetare
+3984,Slipverktygsoperatör
+3985,Slipverktygstillverkare
+5909,Slussvakt
+3221,Slöjdare
+5927,Smed
+2624,Smidesmekaniker
+2625,Smidesoperatör
+5046,Smådjursskötare
+7549,Småmaskinsmekaniker
+3964,"Smältare, glas"
+7471,Smältare/Smältverksoperatör
+3986,Smärgelduksarbetare
 1874,Smärtsjuksköterska
+4372,Snickerimaskinskötare
+7656,Snöläggare
+1048,Snörmakare
+2890,Snöskottare
+6191,Socialantropolog
 5234,Socialchef
+5235,Socialdirektör
+5807,"Socialkonsulent, Arbetsförmedlingen"
 5757,Socialsekreterare
+6054,Sociolog
+7502,Socionom
+1790,Socioterapeut
+6579,Sodahusoperatör
+243,Solarievärd/Solarievärdinna
+7525,Soldat/Sjöman
+6326,Soliditetsupplysare
+300,Solskyddsmontör
+1306,Solvare
+236,Sommelier
+2861,"Sorteringsverksskötare, stenkross"
+5393,SOS-operatör
+224,Souschef
+6535,Spa- och kurterapeut
+3418,"Spaltmästare, garveri"
+1123,Spannmålsarbetare
+1124,Spannmålstorkare
+7505,Spannramsförare
 7238,Specialistläkare
+7526,Specialistofficer
 1573,Specialisttandläkare
+5483,Specialkock
 7403,Speciallärare
 6656,Specialpedagog
+6689,Specialtransportförare
+5839,Speditionsassistent
+5119,Speditionschef
+2756,Speditionsförman
+2757,Speditionstjänsteman
+5952,Speditör
+7437,Speldesigner
+7436,Speltestare
+4113,Spikmaskinskötare
+3507,Sportchef
+4650,Sporthallsvaktmästare
+3509,Sportledare
+1138,Sprayare
+7195,Sprinklermontör
+1185,Spritberedare
+3204,Språkforskare
+6676,Språkteknolog
+931,Sprängämnesarbetare
+2730,Spårsvetsare
+5671,Spårvagnsförare
+6786,Spärrexpeditör/Spärrvakt
+7464,SQE Supplier Quality Engineer
+1252,SSA-sekreterare
+3996,Stadsadvokat
+6576,Stadsarkivarie
+5236,Stadsbyggnadschef
+5237,Stadsbyggnadsdirektör
+6575,Stadsdirektör
+3997,Stadsjurist
+3999,Stadsombudsman
+4000,Stadssekreterare
+5049,Stadsträdgårdsmästare
+1859,Stadsveterinär
+4598,Stallchef/Stallförman
+162,Standardiseringsingenjör
+76,"Standardiseringsingenjör, elkraft"
+3690,Stand-up-komiker
+1030,"Stansare, skor"
+2827,"Stansare, tunnplåt"
+4021,Stansgravör
+2888,Stationsarbetare
+5040,"Stationschef, flyg"
+277,Stationsmontör
+858,"Stationsmontör, elkraft"
+6787,Stationsvärd
+6574,Stationär väktare/Receptionsväktare
+7659,Statist
+5703,Statistiker
+2215,Statistikkontorist
+4453,Statsheraldiker
+7355,Statssekreterare
+3153,Statsåklagare
+1406,Stenarbetare
+1407,Stenbildhuggare
+1392,Stenborrare
+1408,"Stenborrare, stenbrott"
+7380,Stenbrottsarbetare
+1409,Stenbrytare
+5692,Stengravör
+1410,Stenhuggare
+5980,Stenkrosskötare
+2862,Stenkrossmaskinist
+2863,Stenkrossmatare
+6209,Stenmaskinskötare
+7188,Stenmontör
+7178,"Stenmontör, utan yrkesbevis"
+2803,Stenograf
+4167,Stenslipare
+4168,Stensvarvare
+4169,Stensågare
+5868,Stensättare
+7353,"Steriltekniker/Undersköterska, sterilcentral"
+1311,"Stickare, textilindustri"
+2120,Stiftsadjunkt
+2070,Stiftsdiakon
+1387,Stigortsdrivare
 7237,ST-läkare
+7346,Stomiterapeut
+210,Storhushållsföreståndare
+2903,Strandvakt
+6802,Strukturkemist
+1775,Strålningsfysiker
+3041,"Stränggjutare, stålverk"
+5632,Stränginstrumentmakare
+4115,"Strängpressare, metall"
+987,Strängsprutare
+7300,ST-tandläkare
+6319,Stuckatör
 1253,Studie- och yrkesvägledare
+2780,Studieadministratör
+2781,Studieassistent
+3607,Studieinstruktör
+2782,Studiekonsulent
+3651,Studieledare
+2783,Studieorganisatör
+3427,Studierektor
+2784,Studiesekreterare
+5675,Studievägledare
+3901,Studioman
+4029,Studiotekniker
+6165,Studiovärdinna
+2312,Stuguthyrare
+726,Stugvärd
+3584,Stuntman
+4601,Stuteriarbetare
+4997,Stuveriförman
+5501,Styckare
+267,Styckmästare
+252,Stylist
+6573,Styr- och reglertekniker
+7377,Stålbyggare
+4022,Stålgravör
+4697,Stålsticksgravör
 464,Städare/Lokalvårdare
 5587,Städchef
+5814,Ställningsbyggare
+7180,"Ställningsbyggare, utan yrkesbevis"
+5617,Ställverksmontör
+6551,Stämningsman
+7446,Stängselmontör
+7669,Stödassistent
+7670,Stödpedagog
+6259,Sufflör
+6692,Sug- och spolbilsförare
+2926,Supportsvarvare
+3065,Supporttryckare
+6000,Svarvare
+7070,Svensktextare
+5945,"Svetsare, manuell"
+139,Svetsingenjör
+2698,Svetsoperatör/Automatsvetsare
+845,Symaskinsreparatör
+1989,Synkonsulent
+7510,Synpedagog
+7445,Syntolk
 2918,Systemadministratör
+2411,Systemanalytiker/Systemutredare
+5996,Systemansvarig
+7601,Systemarkitekt
+2413,Systemdesigner
+2919,Systemförvaltare
+4834,"Systemoperatör, tryckeri"
+2601,Systemsäljare
+5422,Systemtestare
 2419,Systemutvecklare/Programmerare
+760,Sågare
+762,Sågoperatör
+763,Sågverksarbetare
+5600,Sågverksoperatör
+7201,"Sångare, folkmusik"
+3346,"Sångare, klassisk musik"
+6109,"Sångare, populärmusik"
+6572,Sångpedagog
+4399,Säckmaskinskötare
+2718,"Säkerhetsadministratör, IT"
+2719,"Säkerhetsanalytiker, IT"
+2720,"Säkerhetsansvarig, IT"
+6377,Säkerhetschef
+568,Säkerhetsingenjör
+6997,Säkerhetsmontör
+6771,Säkerhetsrådgivare
+2489,Säkerhetsvakt
+4918,Säljassistent
+2609,Säljkonsulent
+2610,Säljledare
+694,"Säljledare, resebyrå"
+4919,Säljsekreterare
+7051,Sändningstekniker
+7620,"Sömmerska, möbeltillverkning"
+5859,Tak- och tätskiktsmontör
+7181,"Tak- och tätskiktsmontör, utan yrkesbevis"
+7545,"Takmålare, plåt"
+7474,Taktilterapeut
+4757,Talassolog
+7049,Talboksproducent
+2177,Tallyman
+7509,Talpedagog
+3333,Taltidningsredaktör
+6875,Taltjänsttolk
 5723,Tandhygienist
 5724,Tandläkare
 5722,Tandsköterska
 6121,Tandtekniker
+1369,Tandteknikerbiträde
+6360,Tandvårdsassistent
 5058,Tandvårdsbiträde
+541,Tank- och bulkbilsförare
+7617,"Tapetserare, hantverk"
+7616,"Tapetserare, industriell tillverkning"
+4835,Tapettryckare
+4698,Tapetvalsgravör
+1174,"Tappare, bryggeri"
+1388,"Tappare, gruva"
+1175,Tappmaskinskötare
+2575,Tarifferare
+270,Tarmförädlingsarbetare
+3839,Tatuerare
+6242,Taxiförare/Taxichaufför
+704,Taxiguide
+886,Taxitelefonist
+6516,Teamledare
+7149,Teateragent
+6475,Teaterchef
+4448,Teaterinspicient
+2152,Teaterkassör
+7381,Teatermålare
+6100,Teaterpedagog
+5211,Teatertekniker
+5184,Teckenspråkslärare
 3199,Teckenspråkstolk/Dövblindtolk
+6176,Tegelbruksarbetare
+6160,Teknikinformatör
 5238,"Teknisk chef, kommun"
+5372,"Teknisk chef/Maskinchef, fartyg"
+5239,"Teknisk direktör, kommun"
+7468,Telefonförsäljare
+5377,Telefonintervjuare
+6570,Teleingenjör
+6397,Teleområdeschef
+7249,Teleskoptruckförare
+7247,"Teleskoptruckförare, anläggning"
+839,Teletekniker
+1328,Telferförare
+2976,Tenngjutare
+3823,Teologisk forskare
+2233,Terminalarbetare
+6794,Testförare
+6826,Testledare
+163,Textilingenjör
+3277,Textilkonstnär
+1057,Textiltryckare
+3236,Textilvårdare
+2673,Tidningsbud/Tidningsdistributör
+6789,Tillgänglighetskonsult
+6247,"Tillskärare, konfektion"
+7618,"Tillskärare, möbeltillverkning"
+4389,"Tillskärare, skinnkläder"
+746,Timmersorterare
+3140,Tingsfiskal
+3141,Tingsnotarie/Notarie
+6013,Tivoliarbetare
+1139,Tjärkokare
+6568,TMP/CTMP-operatör
+6037,Tolk
+6188,"TOM, Technical Operation Manager"
+3355,Tonsättare
+7160,Torgförsäljare/Marknadsförsäljare
+668,"Torkare, papper"
+651,"Torkmaskinförare, massaindustri"
+1358,Torkskötare
+1329,Tornkranförare
+5875,Torvarbetare
+2359,Toxikolog
+7556,Trader
+5969,Traffic
+2808,Trafficman
+5601,Trafikassistent
+6354,Trafikchef
+5000,Trafikförman
+5602,Trafikinformatör
+4210,Trafikingenjör
+6566,Trafikinspektör
+7425,Trafikkoordinator
+7636,"Trafikledare, spårburen trafik"
+5003,"Trafikledare, vägtrafik"
+6797,Trafiklots
+6105,Trafiklärare
+7584,Trafiknykterhetskontrollant
+3645,Trafikpedagog
+7282,"Trafikplanerare, offentlig förvaltning"
+4980,"Trafikplanerare, transportföretag"
+6719,Trafiksamordnare
+5244,Trafikskolechef
+2495,Trafikvakt
+2496,Trafikvärd/Taxivärd
 2497,Trafikövervakare
+7343,Trailerreparatör
+1335,"Traktorförare, industri"
+619,Traktormekaniker
+2770,Transportadministratör
+5042,Transportchef
+2771,Transportingenjör
+6349,Transportledare
+5957,Transportplanerare
+2773,Transportsamordnare
+7084,Trapetskonstnär
+466,Trappstädare
+390,Travbaneföreståndare
+1330,Traversförare
+3917,Travkusk
+7506,Trikåstickare
+3692,Trollkarl
+5687,Truckförare
+621,Truckreparatör
+963,Trumtekniker
+5637,Trumtillverkare
+2993,Trycksaksfaktor
+3066,Trycksvarvare
+6020,Tråddragare
+3054,"Trådspolare, metall"
+5821,"Träarbetare, gruva"
+6581,Träarbetare/Snickare
+7182,"Träarbetare/Snickare, utan yrkesbevis"
+4869,Träbildhuggare
+6275,Trädgårdsanläggare/Trädgårdsanläggningsarbetare
+6274,"Trädgårdsarbetare/Plantskolearbetare, trädgård"
+4509,Trädgårdsforskare
+4554,Trädgårdsförman
+6268,Trädgårdsingenjör/Trädgårdstekniker
+4568,"Trädgårdsmästare, anläggning"
+6273,"Trädgårdsmästare, odling"
+4511,Trädgårdsrådgivare/Trädgårdskonsulent
+1359,Träfiberskivarbetare
+6345,Träförgyllare
+7615,Trähusarbetare/Spikare
+3222,Träslöjdare
+3223,Träsnidare
+4378,Träsvarvare
+5153,Träullsarbetare
+2178,Tulldeklarant
+6563,Tulldirektör
+6330,Tullkontorist
+2180,Tullombud
+1338,Tulltaxerare
+5665,Tulltjänsteman
+5154,Tunnbindare
+1393,Tunnelsprängare
+5551,Tunneltågförare
+6754,Tunnplåtslagare
+869,Turbinmontör
+870,Turbinreparatör
 727,Turistassistent
+5131,Turistbyråchef
+5598,Turistbyråtjänsteman
+5240,Turistchef
+728,Turistinformatör
 5241,Turistintendent
+729,Turistsekreterare
+730,Turistvärd/Turistvärdinna
+7090,Turnéledare
+7150,Turnéläggare
+6883,Turnéproducent för utställningar
+5212,Turnétekniker
+7145,TV-chef
+4449,TV-inspicient
+3158,Tvistemålsadvokat
+4814,TV-redigerare
+847,TV-tekniker/Hemelektroniktekniker
+643,Tvättchef
 1111,Tvätteriarbetare/Tvättbiträde
+7012,Tågklarerare
+7358,Tågledare
+6671,Tågvarnare
+795,Tågvärd/Tågvärdinna
+272,Tårtmakare
+3918,Tävlingsryttare
+2101,Ugnsmurare
+6417,Ugnsoperatör
+3988,"Ugnsskötare, glas, keramik"
+3045,"Ugnsskötare, stålverk"
+3974,"Ugnsuppsättare, keramik"
+2352,Underhållsarbetare
+7416,Underhållschef
+871,Underhållsmekaniker
+7412,Underhållsplanerare
+5507,"Underhållstekniker, vattenrening"
 7586,"Undersköterska, hemtjänst och äldreboende"
 7587,"Undersköterska, vård- o specialavd. o mottagning"
+5858,Undertaksmontör
+7183,"Undertaksmontör, utan yrkesbevis"
+7066,Undertextare
+3610,Undervisningsråd
+5916,Underwriter
+1497,Ungdomsassistent
+1580,Ungdomsgårdsföreståndare
+3512,Ungdomsinstruktör/Ungdomstränare
+1581,"Ungdomskonsulent, fritid"
+1582,Ungdomsledare
+1809,"Ungdomssekreterare, socialtjänst"
+7139,Universitets- och högskoleadjunkt
 7138,Universitets- och högskolelektor
+6364,Universitetsrektor
+2234,Uppackare/Furnerare
+3938,Uppblåsare
+7503,Upphandlare
+4003,Upphovsrättsjurist
+2549,Uppköpare
+989,Uppläggare
+7585,"Uppräkningspersonal, bevakningsföretag"
+5155,"Uppslagare, gjuteri"
+5666,Urmakare
+7345,Uroterapeut
+5959,Utbildningsadministratör/Utbildningssekreterare
+2785,Utbildningsassistent
+5245,Utbildningschef
+7666,Utbildningshandläggare
+3428,Utbildningsintendent
+3629,"Utbildningskonsulent, företag"
+6097,"Utbildningskonsulent, skola"
+7094,Utbildningskoordinator
 3630,Utbildningsledare
+3646,"Utbildningsledare, trafikskola"
+3633,"Utbildningsplanerare, företag"
+7117,Utesäljare
+5866,Uthyrare
+2313,Uthyrningschef
+6705,Utlandsförare
+891,Utlandstelefonist
+7512,Utredningsassistent
+5079,Utredningschef
+1911,Utredningssekreterare
+6893,Utryckningsväktare
+7025,Utställningskoordinator
+7048,Utställningsproducent
+2350,Utsättarbiträde
+7324,Utvecklingschef
+59,"Utvecklingsingenjör, elkraft"
+83,"Utvecklingsingenjör, el-tele"
+194,"Utvecklingsingenjör, gruv"
+7414,"Utvecklingsingenjör, kemi"
+112,"Utvecklingsingenjör, maskin"
+7413,"Utvecklingsingenjör, metallurgi"
+7494,"Utvecklingsingenjör, tillverkningsindustri"
+4870,Vagnmakare
+872,"Vagnreparatör, järnväg"
+468,Vagnsstädare
+7647,"Vaktgående maskinpersonal, sjöfart"
+6904,Valideringsingenjör
+3114,Valsare
+204,Valsverksingenjör
+6028,Valsverksoperatör
+5302,Valutaförsäljare
+2538,Valutahandlare
+2539,Valutamäklare
+719,Vandrarhemsföreståndare
+6240,Vapenmekaniker
+4330,Vapentekniker
+6111,Varietéartist
+1307,Varpare
+4886,Varuhuschef
+5263,Varumärkare
+6559,Varumärkesjurist
+2095,Varvssnickare
+2378,Vattenbrukare
+5114,Vattenverkschef
+2977,Vaxgjutare
+2790,VD-sekreterare
+2523,Webbansvarig/Webbstrateg
+3919,Webbdesigner
+6739,Webbredaktör
+7046,Webbtekniker
+2525,Webmaster
+4400,Wellpappmaskinförare
+7252,Ventilationsingenjör
+2369,Ventilationsisolerare
+7190,Ventilationsmontör
+5991,Ventilationsplåtslagare
+4084,Ventilationssanerare
+7253,Ventilationstekniker
+962,Verkmakare
+7538,Verksamhetsanalytiker
+7537,Verksamhetsarkitekt
 2032,"Verksamhetschef, hälso- och sjukvård"
+4732,Verksamhetskonsult
+7578,"Verksamhetskonsult, IT"
+6558,Verksjurist
+5115,Verkstadschef
+805,Verkstadselektriker
+4273,Verkstadsingenjör
+2216,Verkstadskontorist
+2930,Verkstadsmekaniker/Verkstadstekniker
+4380,Verkstadssnickare
+4887,Verkställande direktör
+7281,Verktygskonstruktör
+5929,Verktygsmakare
+2627,Verktygssmed
+2645,Verktygsställare
+5931,Verktygsuppsättare
+5767,Veterinär
+1862,Veterinärassistent
+7569,Veterinärinspektör
+7685,VFX Artist (Visual Effects Artist)
+6890,Videografiker
+7651,Videojournalist/Videoreporter
+4815,Videoredigerare
+5214,Videotekniker/VB-tekniker
+705,Vildmarksguide
+4775,Viltmästare
+1187,Vinberedare
+7681,Vindkraftsprojektör
+7548,Vindkraftstekniker
+7019,Vinodlare
+380,Vinprovare
+6955,Virkeschef
+5200,Virkesimpregnerare
+7399,Virkesköpare/Virkesinköpare
+6293,Virkesmätare
+6956,Virkesområdeschef
+6388,Virkessorterare
+1317,Virkmaskinskötare
+4758,Virolog
+7317,Vitvarumontör
+7634,VTS- och lotsoperatör
+6557,VVS-ingenjör
+5879,VVS-isolerare
+5817,VVS-montör
+7199,VVS-tekniker
+6068,Vågskötare
 6317,Vårdare/Arbetshandledare/Boendestödjare
 5797,Vårdbiträde
+1810,Vårdnadsutredare
+1933,Vårdutvecklare
+5984,Väderobservatör
+7168,"Väg- och anläggningsarbetare, utan yrkesbevis"
+6555,Väg- och vattenbyggnadsingenjör
+4491,Vägdirektör
+513,Väghyvelförare
 7260,Vägingenjör
 5871,Väg-och anläggningsarbetare
+4177,Vägvakt
+5906,Väktare
+2613,Värderingsassistent
+5926,Värderingsman
+5332,Värdetransportör
+3965,"Värmare, glas"
+3116,"Värmare, valsverk"
+7198,Värmepumpsmontör
+7306,Värmeverkschef
+1043,Väskmakare
+1308,Vävare
+1301,Vävlagare
+5624,Växeltelefonist
+6776,"Växthusodling, förman"
+4513,Växtodlingsrådgivare/Växtodlingskonsulent
+4514,Växtskyddsspecialist
+2345,Växtskötare
+7604,Yogamassör
+5470,Yrkeshygieniker
+7293,Yrkesjägare
+4879,"Ytbehandlare/Sprutlackerare, manuell, trä"
+1843,Ytkemist
+1631,Zonterapeut
+4759,Zoolog
+3154,Åklagarassistent
+6031,Åklagare
+292,Ångmaskinist
+293,Ångpanneeldare
+880,Ädelstensslipare
+7119,Äggplockare
 2043,Äldreomsorgschef
+7657,Äldrepedagog
+1422,Ändringsskräddare
+4760,Ärftlighetsforskare
+1188,Ättiksberedare
+7349,Ögonsjuksköterska/Oftamologassistent
+4461,Överbibliotekarie
+6553,Överdirektör
+3534,Överspelningstekniker
+4061,Överstyrman
+3203,Översättare
+3155,Överåklagare
