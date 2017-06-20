@@ -122,6 +122,12 @@ output = OutputBuilder.new(packet)
 File.write('output.xml', output.to_xml)
 ```
 
+## Arbetsförmedlingen TaxonomyService
+
+Some requests had to be made to Arbetsförmedlingens TaxonomyService in order to fetch the data for the occupation codes. You can find that (plus some more) here :point_down: Postman.
+
+[![Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/9a27ec2518c1005f8aea)
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
