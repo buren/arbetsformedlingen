@@ -93,7 +93,14 @@ position = Position.new(
   application_method: application_method,
   attributes: {
     title: 'A title',
-    purpose: 'A purpose'
+    purpose: 'A purpose',
+    address: {
+      country_code: 'SE',
+      zip: '11356',
+      municipality: 'Stockholm',
+      street: 'Birger Jarlsgatan 57',
+      city: 'stockholm'
+    }
   }
 )
 
