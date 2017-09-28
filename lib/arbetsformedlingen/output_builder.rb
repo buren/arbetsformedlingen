@@ -60,7 +60,9 @@ module Arbetsformedlingen
 
         pos.JPPExtension do |jpp|
           company = position.fetch(:company)
-          jpp.HiringOrgDescription(company.fetch(:description))
+          if description = company.fetch(:description, nil)
+            jpp.HiringOrgDescription(description)
+          end
           jpp.OccupationGroup(code: packet_data.fetch(:occupation), codename: 'OccupationNameID')
         end
       end

@@ -11,7 +11,8 @@ module Arbetsformedlingen
 
     required(:name, Types::StrippedString).filled
     required(:cin, Types::CIN).filled(:str?, :cin?)
-    required(:description, Types::StrippedString).filled
+
+    optional(:description, Types::StrippedString).filled
 
     required(:address).schema do
       required(:municipality, Types::Municipality).filled(:municipality?)
