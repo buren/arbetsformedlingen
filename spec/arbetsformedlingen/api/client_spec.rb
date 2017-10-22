@@ -115,11 +115,11 @@ RSpec.describe Arbetsformedlingen::API::Client do
     end
   end
 
-  describe '#area', vcr: true do
-    it 'returns a list of area' do
+  describe '#areas', vcr: true do
+    it 'returns a list of areas' do
       client = described_class.new
 
-      county = client.area
+      county = client.areas
 
       expect(county.list_name).to eq('omrade')
       expect(county.raw_data).to be_a(Hash)

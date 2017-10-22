@@ -135,6 +135,23 @@ Some requests had to be made to Arbetsförmedlingens TaxonomyService in order to
 
 [![Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/9a27ec2518c1005f8aea)
 
+
+## Terms translation table
+
+This gem has translated the attribute names in Arbetsförmedlingens (AF) API from Swedish to English. You can find the translations below.
+
+| AF Term              | Gem term           |
+|--------------------- |--------------------|
+| landområde/värdsdel | areas |
+| kommun | municipality |
+| län | county |
+| län2 | county2 |
+| yrkesområde | occupational_field |
+| yrkesgrupp | occupational_group |
+| yrkesgrupp | occupational_group |
+| yrkesnamn | occupation |
+
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.

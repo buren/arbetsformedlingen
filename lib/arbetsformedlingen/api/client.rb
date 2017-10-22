@@ -36,8 +36,8 @@ module Arbetsformedlingen
         AdSearch.new(request: request).search(**args)
       end
 
-      # area => landområde/värdsdel
-      def area
+      # areas => landområde/värdsdel
+      def areas
         response = request.get('platsannonser/soklista/omrade')
 
         SoklistaResult.build(response.json)
