@@ -1,4 +1,4 @@
-# Arbetsförmedlingen
+# Arbetsförmedlingen [![Build Status](https://travis-ci.org/buren/arbetsformedlingen.svg?branch=master)](https://travis-ci.org/buren/arbetsformedlingen)
 
 Post job ads to the Swedish employment agency (Arbetsförmedlingen).
 
