@@ -17,6 +17,8 @@ module Arbetsformedlingen
       Response.new(response, xml)
     end
 
+    # private
+
     def self.post_job_url
       return ROUTES.fetch(:test_post_job_url) if Arbetsformedlingen.config.test
       ROUTES.fetch(:post_job_url)

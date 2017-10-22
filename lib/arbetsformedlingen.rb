@@ -7,6 +7,8 @@ require 'dry-types'
 
 require 'arbetsformedlingen/version'
 
+require 'arbetsformedlingen/key_struct'
+
 require 'arbetsformedlingen/codes/country_code'
 require 'arbetsformedlingen/codes/drivers_license_code'
 require 'arbetsformedlingen/codes/experience_required_code'
