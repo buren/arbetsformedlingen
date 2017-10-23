@@ -73,7 +73,7 @@ module Arbetsformedlingen
           organisationsnummer: organization_number
         }
 
-        response = request.get('platsannonser/matchning', query: query)
+        response = request.get('matchning', query: query)
 
         MatchningResult.build(response.json)
       end
