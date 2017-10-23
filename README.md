@@ -1,6 +1,13 @@
 # Arbetsförmedlingen
 
-Post job ads to the Swedish employment agency (Arbetsförmedlingen).
+Arbetsförmedlingen API client (Swedish Public Employment Service).
+
+__Features__
+* Post job ad (a.k.a Direktöverförda annonser)
+* Platsannons API Client
+
+
+__Index__
 
 * [Installation](#installation)
 * [API usage](#api-usage)
@@ -32,8 +39,8 @@ client = Arbetsformedlingen::Platsannonser::Client.new(locale: 'en')
 
 __Fetch all ads containing specified keyword:__
 ```ruby
-result = client.ads(keywords: 'ruby')
-result.data.each do |ad|
+ads = client.ads(keywords: 'ruby')
+ads.each do |ad|
   puts ad.title
 end
 ```
@@ -48,8 +55,8 @@ puts ad.application.last_application_at
 
 __Fetch countries in area:__
 ```ruby
-result = client.countries(area_id: 2)
-result.data.each do |country|
+countries = client.countries(area_id: 2)
+countries.each do |country|
   puts "#{country.name} has #{country.total_vacancies} total vacancies."
 end
 ```

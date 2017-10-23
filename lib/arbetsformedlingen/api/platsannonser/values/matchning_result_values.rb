@@ -13,6 +13,12 @@ module Arbetsformedlingen
         :raw_data
       )
       class MatchningResultsPage
+        include Enumerable
+
+        def each(&block)
+          data.each(&block)
+        end
+
         def to_h
           hash = super.to_h
           hash[:data].map!(&:to_h)

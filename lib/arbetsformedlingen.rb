@@ -33,6 +33,9 @@ require 'arbetsformedlingen/models/schedule'
 require 'arbetsformedlingen/models/application_method'
 require 'arbetsformedlingen/models/packet'
 
+# API Client
+require 'arbetsformedlingen/api/platsannonser/client'
+
 module Arbetsformedlingen
   def self.post_job(packet)
     Client.post_job(OutputBuilder.new(packet).to_xml)
