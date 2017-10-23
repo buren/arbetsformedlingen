@@ -10,7 +10,7 @@ module Arbetsformedlingen
         :occupation_id,
         :published_at,
         :total_vacancies,
-        :municipality,
+        :municipalities,
         :municipality_id,
         :total_vacancies_with_visa,
         :employment_type,

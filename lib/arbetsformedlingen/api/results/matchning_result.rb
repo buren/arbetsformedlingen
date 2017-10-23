@@ -25,7 +25,7 @@ module Arbetsformedlingen
           occupation: ad_data.fetch('yrkesbenamning'),
           occupation_id: ad_data.fetch('yrkesbenamningId'),
           company: ad_data.fetch('arbetsplatsnamn'),
-          municipality: ad_data.fetch('kommunnamn'),
+          municipalities: ad_data.fetch('kommunnamn'),
           municipality_id: ad_data.fetch('kommunkod'),
           published_at: ad_data.fetch('publiceraddatum'),
           last_application_at: ad_data.fetch('sista_ansokningsdag'),
@@ -34,7 +34,7 @@ module Arbetsformedlingen
           total_vacancies: ad_data.fetch('antalplatser'),
           total_vacancies_with_visa: ad_data.fetch('antalPlatserVisa'),
           duration_id: ad_data.fetch('varaktighetId'),
-          county: ad_data.fetch('lan'),
+          counties: ad_data.fetch('lan'),
           country_id: ad_data.fetch('lanid'),
           employment_type: ad_data.fetch('anstallningstyp')
         )

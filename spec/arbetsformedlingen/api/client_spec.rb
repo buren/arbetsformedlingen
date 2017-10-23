@@ -23,7 +23,7 @@ RSpec.describe Arbetsformedlingen::API::Client do
       expect(ad.body).not_to be_nil
       expect(ad.occupation).not_to be_nil
       expect(ad.occupation_id).not_to be_nil
-      expect(ad.municipality).not_to be_nil
+      expect(ad.municipalities).not_to be_nil
       expect(ad.municipality_id).not_to be_nil
       expect(ad.published_at).not_to be_nil
       expect(ad.total_vacancies).not_to be_nil
@@ -83,24 +83,24 @@ RSpec.describe Arbetsformedlingen::API::Client do
       client = described_class.new
 
       page_size = 30
-      county = client.ads(county_id: 1, page_size: page_size)
+      counties = client.ads(county_id: 1, page_size: page_size)
 
-      expect(county.list_name).to eq('annonser')
-      expect(county.raw_data).to be_a(Hash)
-      expect(county.total_ads).not_to be_nil
-      expect(county.list_name).not_to be_nil
-      expect(county.total_vacancies_on_page).not_to be_zero
-      expect(county.data.length).to eq(page_size)
-      expect(county.data).to be_a(Array)
+      expect(counties.list_name).to eq('annonser')
+      expect(counties.raw_data).to be_a(Hash)
+      expect(counties.total_ads).not_to be_nil
+      expect(counties.list_name).not_to be_nil
+      expect(counties.total_vacancies_on_page).not_to be_zero
+      expect(counties.data.length).to eq(page_size)
+      expect(counties.data).to be_a(Array)
 
-      result = county.data.first
+      result = counties.data.first
 
       expect(result.id).not_to be_nil
       expect(result.title).not_to be_nil
       expect(result.occupation).not_to be_nil
       expect(result.occupation_id).not_to be_nil
       expect(result.company).not_to be_nil
-      expect(result.municipality).not_to be_nil
+      expect(result.municipalities).not_to be_nil
       expect(result.municipality_id).not_to be_nil
       expect(result.published_at).not_to be_nil
       expect(result.last_application_at).not_to be_nil
@@ -109,7 +109,7 @@ RSpec.describe Arbetsformedlingen::API::Client do
       expect(result.total_vacancies).not_to be_nil
       expect(result.total_vacancies_with_visa).not_to be_nil
       expect(result.duration_id).not_to be_nil
-      expect(result.county).not_to be_nil
+      expect(result.counties).not_to be_nil
       expect(result.country_id).not_to be_nil
       expect(result.employment_type).not_to be_nil
     end
@@ -119,17 +119,17 @@ RSpec.describe Arbetsformedlingen::API::Client do
     it 'returns a list of areas' do
       client = described_class.new
 
-      county = client.areas
+      counties = client.areas
 
-      expect(county.list_name).to eq('omrade')
-      expect(county.raw_data).to be_a(Hash)
-      expect(county.total_ads).not_to be_nil
-      expect(county.list_name).not_to be_nil
-      expect(county.total_vacancies).not_to be_nil
-      expect(county.data.length).to eq(21)
-      expect(county.data).to be_a(Array)
+      expect(counties.list_name).to eq('omrade')
+      expect(counties.raw_data).to be_a(Hash)
+      expect(counties.total_ads).not_to be_nil
+      expect(counties.list_name).not_to be_nil
+      expect(counties.total_vacancies).not_to be_nil
+      expect(counties.data.length).to eq(21)
+      expect(counties.data).to be_a(Array)
 
-      result = county.data.first
+      result = counties.data.first
 
       expect(result.id).to eq('8')
       expect(result.name).to eq('Antarktis')
@@ -142,17 +142,17 @@ RSpec.describe Arbetsformedlingen::API::Client do
     it 'returns a list of countries' do
       client = described_class.new
 
-      county = client.countries(area_id: 2)
+      counties = client.countries(area_id: 2)
 
-      expect(county.list_name).to eq('land')
-      expect(county.raw_data).to be_a(Hash)
-      expect(county.total_ads).not_to be_nil
-      expect(county.list_name).not_to be_nil
-      expect(county.total_vacancies).not_to be_nil
-      expect(county.data.length).to eq(33)
-      expect(county.data).to be_a(Array)
+      expect(counties.list_name).to eq('land')
+      expect(counties.raw_data).to be_a(Hash)
+      expect(counties.total_ads).not_to be_nil
+      expect(counties.list_name).not_to be_nil
+      expect(counties.total_vacancies).not_to be_nil
+      expect(counties.data.length).to eq(33)
+      expect(counties.data).to be_a(Array)
 
-      result = county.data.first
+      result = counties.data.first
 
       expect(result.id).to eq('21')
       expect(result.name).to eq('Belgien')
@@ -161,21 +161,21 @@ RSpec.describe Arbetsformedlingen::API::Client do
     end
   end
 
-  describe '#municipality', vcr: true do
-    it 'returns a list of municipality' do
+  describe '#municipalities', vcr: true do
+    it 'returns a list of municipalities' do
       client = described_class.new
 
-      county = client.municipality
+      counties = client.municipalities
 
-      expect(county.list_name).to eq('kommuner')
-      expect(county.raw_data).to be_a(Hash)
-      expect(county.total_ads).not_to be_nil
-      expect(county.list_name).not_to be_nil
-      expect(county.total_vacancies).not_to be_nil
-      expect(county.data.length).to eq(47)
-      expect(county.data).to be_a(Array)
+      expect(counties.list_name).to eq('kommuner')
+      expect(counties.raw_data).to be_a(Hash)
+      expect(counties.total_ads).not_to be_nil
+      expect(counties.list_name).not_to be_nil
+      expect(counties.total_vacancies).not_to be_nil
+      expect(counties.data.length).to eq(47)
+      expect(counties.data).to be_a(Array)
 
-      result = county.data.first
+      result = counties.data.first
 
       expect(result.id).to eq('10165')
       expect(result.name).to eq('Albertslund')
@@ -184,21 +184,21 @@ RSpec.describe Arbetsformedlingen::API::Client do
     end
   end
 
-  describe '#county', vcr: true do
-    it 'returns a list of county' do
+  describe '#counties', vcr: true do
+    it 'returns a list of counties' do
       client = described_class.new
 
-      county = client.county
+      counties = client.counties
 
-      expect(county.list_name).to eq('lan')
-      expect(county.raw_data).to be_a(Hash)
-      expect(county.total_ads).not_to be_zero
-      expect(county.list_name).not_to be_nil
-      expect(county.total_vacancies).not_to be_zero
-      expect(county.data.length).to eq(22)
-      expect(county.data).to be_a(Array)
+      expect(counties.list_name).to eq('lan')
+      expect(counties.raw_data).to be_a(Hash)
+      expect(counties.total_ads).not_to be_zero
+      expect(counties.list_name).not_to be_nil
+      expect(counties.total_vacancies).not_to be_zero
+      expect(counties.data.length).to eq(22)
+      expect(counties.data).to be_a(Array)
 
-      result = county.data.first
+      result = counties.data.first
 
       expect(result.id).to eq('10')
       expect(result.name).to eq('Blekinge län')
@@ -207,21 +207,21 @@ RSpec.describe Arbetsformedlingen::API::Client do
     end
   end
 
-  describe '#county2', vcr: true do
-    it 'returns a list of county2' do
+  describe '#counties2', vcr: true do
+    it 'returns a list of counties2' do
       client = described_class.new
 
-      county = client.county2
+      counties = client.counties2
 
-      expect(county.list_name).to eq('lan2')
-      expect(county.raw_data).to be_a(Hash)
-      expect(county.total_ads).not_to be_zero
-      expect(county.list_name).not_to be_nil
-      expect(county.total_vacancies).not_to be_zero
-      expect(county.data.length).to eq(23)
-      expect(county.data).to be_a(Array)
+      expect(counties.list_name).to eq('lan2')
+      expect(counties.raw_data).to be_a(Hash)
+      expect(counties.total_ads).not_to be_zero
+      expect(counties.list_name).not_to be_nil
+      expect(counties.total_vacancies).not_to be_zero
+      expect(counties.data.length).to eq(23)
+      expect(counties.data).to be_a(Array)
 
-      result = county.data.first
+      result = counties.data.first
 
       expect(result.id).to eq('199')
       expect(result.name).to eq('Utomlands')
@@ -230,11 +230,11 @@ RSpec.describe Arbetsformedlingen::API::Client do
     end
   end
 
-  describe '#occupational_field', vcr: true do
-    it 'returns a list of occupational_field' do
+  describe '#occupational_fields', vcr: true do
+    it 'returns a list of occupational_fields' do
       client = described_class.new
 
-      field = client.occupational_field
+      field = client.occupational_fields
 
       expect(field.list_name).to eq('yrkesomraden')
       expect(field.raw_data).to be_a(Hash)

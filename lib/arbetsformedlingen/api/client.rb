@@ -22,28 +22,48 @@ module Arbetsformedlingen
         @locale = locale
       end
 
+      # Get version of API
+      # @return [String] the version of the API.
+      # @example Get API version
+      #    client.version
       def version
         request.get('platsannonser/version').body
       end
 
+      # Fetch ad from API (ad => annons)
+      # @return [AdResult] the result.
+      # @param id [String] Ad ID.
+      # @example Get ad
+      #    client.ad(id: id)
       def ad(id:)
         response = request.get("platsannonser/#{id}")
 
         AdResult.build(response.json)
       end
 
+      # Fetch areas from API (areas => landområde/värdsdel)
+      # @return [MatchningResult] the result.
+      # @see AdSearch#search
+      # @see MatchningResult#build
       def ads(**args)
         AdSearch.new(request: request).search(**args)
       end
 
-      # areas => landområde/värdsdel
+      # Fetch areas from API (areas => landområde/värdsdel)
+      # @return [AdResult] the result.
+      # @example Get areas
+      #    client.areas
       def areas
         response = request.get('platsannonser/soklista/omrade')
 
         SoklistaResult.build(response.json)
       end
 
-      # countries
+      # Fetch counties from API (countries => land)
+      # @return [AdResult] the result.
+      # @param area_id [String] Area ID.
+      # @example Get countries within area
+      #    client.countries(area_id: id)
       def countries(area_id:)
         query = { omradeid: area_id }
         response = request.get('platsannonser/soklista/land', query: query)
@@ -51,8 +71,12 @@ module Arbetsformedlingen
         SoklistaResult.build(response.json)
       end
 
-      # municipality => kommun
-      def municipality(county_id: nil)
+      # Fetch municipalities from API (municipality => kommun)
+      # @return [AdResult] the result.
+      # @param county_id [String] County ID.
+      # @example Get counties
+      #    client.counties
+      def municipalities(county_id: nil)
         # NOTE: Due to a quirck in the API the lanid-param
         #       *must* be present though it *can* be nil
         query = { lanid: county_id }
@@ -61,28 +85,43 @@ module Arbetsformedlingen
         SoklistaResult.build(response.json)
       end
 
-      # county => län
-      def county
+      # Fetch counties from API (county => län)
+      # @return [AdResult] the result.
+      # @example Get counties
+      #    client.counties
+      def counties
         response = request.get('platsannonser/soklista/lan')
 
         SoklistaResult.build(response.json)
       end
 
-      # county2 => län2
-      def county2
+      # Fetch counties2 from API (county2 => län2)
+      # @return [AdResult] the result.
+      # @example Get counties2
+      #    client.counties2
+      def counties2
         response = request.get('platsannonser/soklista/lan2')
 
         SoklistaResult.build(response.json)
       end
 
-      # occupational_field => yrkesområde
-      def occupational_field
+      # Fetch occupational fields from API (occupational_fields => yrkesområde)
+      # @return [AdResult] the result.
+      # @example Get occupational fields
+      #    client.occupational_field
+      def occupational_fields
         response = request.get('platsannonser/soklista/yrkesomraden')
 
         SoklistaResult.build(response.json)
       end
 
-      # occupational_group => yrkesgrupp
+      # Fetch occupational group from API (occupational_group => yrkesgrupp)
+      # @return [AdResult] the result.
+      # @param occupational_field_id [String] Occupational field ID.
+      # @example Get all occupational group
+      #    client.occupational_group
+      # @example Get occupational group within occupational field
+      #    client.occupational_group(occupational_field_id: id)
       def occupational_group(occupational_field_id: nil)
         # NOTE: Due to a quirck in the API the yrkesomradeid-param
         #       *must* be present though it *can* be nil
@@ -92,9 +131,10 @@ module Arbetsformedlingen
         SoklistaResult.build(response.json)
       end
 
-      # occupation => yrkesnamn
-      # Fetch occupation from API
-      # @example Get one occupation using name
+      # Fetch occupation from API (occupation => yrkesnamn)
+      # @return [AdResult] the result.
+      # @param name [String] Name of the occupation.
+      # @example Get occupation
       #    client.occupation(name: 'Marknadskommunikatör')
       def occupation(name:)
         response = request.get("platsannonser/soklista/yrken/#{URI.encode(name)}")
@@ -102,7 +142,9 @@ module Arbetsformedlingen
         SoklistaResult.build(response.json)
       end
 
-      # Fetch occupations from API
+      # Fetch occupations from API (occupation => yrkesnamn)
+      # @return [AdResult] the result.
+      # @param occupational_group_id [String] Occupational group ID.
       # @example Get stats of available positions for all occupations
       #    client.occupations
       # @example Get stats of available positions for some occupations

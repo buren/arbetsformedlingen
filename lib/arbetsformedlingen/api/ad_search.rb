@@ -9,7 +9,30 @@ module Arbetsformedlingen
         @request = request
       end
 
-      # Page 14-15 in AF API docs
+      # Find matching ads from API
+      # @return [MatchningResult] the result.
+      # @param area_id [String] Area ID.
+      # @param county_id [String] County ID.
+      # @param municipality_id [String] Municipality ID.
+      # @param occupation_id [String] Occupation ID.
+      # @param keywords [String] Keywords.
+      # @param page [Integer] Page ID.
+      # @param page_size [Integer] Page size ID.
+      # @param occupation_group_id [String] Occupation_group ID.
+      # @param employment_type [String] Employment type ID.
+      # @param occupation_field_id [String] Occupation field ID.
+      # @param published_after [String] Published after ID (ISO8601 format: YYYY-MM-DDThh:mm:ssTZD).
+      # @param organization_number [String] Organization_number ID.
+      # @example Get ads within county
+      #    client.countries(county: id)
+      # @example Get ads within municipality
+      #    client.countries(municipality: id)
+      # @example Get ads with keyword
+      #    client.countries(keywrods: 'ruby')
+      # @example Get ads with keyword on page 3 and with a page size of 10
+      #    client.countries(keywrods: 'ruby', page: 3, page_size: 10)
+      # @example Get ads with keyword and organsiation numer
+      #    client.countries(keywrods: 'ruby', organization_number: org_no)
       def search(
         # one of these must be present
         county_id: nil,
@@ -54,6 +77,8 @@ module Arbetsformedlingen
 
         MatchningResult.build(response.json)
       end
+
+      private
 
       def santize_employment_type_query(employment_type)
         # Sökkriterier anställningstyp.

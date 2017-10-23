@@ -2,6 +2,10 @@
 
 Post job ads to the Swedish employment agency (Arbetsförmedlingen).
 
+* [Installation](#installation)
+* [API usage](#api-usage)
+* [Post ad usage](#post-ad-usage)
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -18,7 +22,39 @@ Or install it yourself as:
 
     $ gem install arbetsformedlingen
 
-## Usage
+## API usage
+
+__Instantiate the client:__
+
+```ruby
+client = Arbetsformedlingen::API::Client.new(locale: 'en')
+```
+
+__Fetch all ads containing specified keyword:__
+```ruby
+result = client.ads(keywords: 'ruby')
+result.data.each do |ad|
+  puts ad.title
+end
+```
+
+__Fetch one ad:__
+```ruby
+ad = client.ad(id: 7408089)
+puts ad.title
+puts ad.occupation
+puts ad.application.last_application_at
+```
+
+__Fetch countries in area:__
+```ruby
+result = client.countries(area_id: 2)
+result.data.each do |country|
+  puts "#{country.name} has #{country.total_vacancies} total vacancies."
+end
+```
+
+## Post ad usage
 
 __Complete example__
 
@@ -135,7 +171,6 @@ Some requests had to be made to Arbetsförmedlingens TaxonomyService in order to
 
 [![Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/9a27ec2518c1005f8aea)
 
-
 ## Terms translation table
 
 This gem has translated the attribute names in Arbetsförmedlingens (AF) API from Swedish to English. You can find the translations below.
@@ -144,9 +179,9 @@ This gem has translated the attribute names in Arbetsförmedlingens (AF) API fro
 |--------------------- |--------------------|
 | landområde/värdsdel | areas |
 | kommun | municipality |
-| län | county |
-| län2 | county2 |
-| yrkesområde | occupational_field |
+| län | counties |
+| län2 | counties2 |
+| yrkesområde | occupational_fields |
 | yrkesgrupp | occupational_group |
 | yrkesgrupp | occupational_group |
 | yrkesnamn | occupation |

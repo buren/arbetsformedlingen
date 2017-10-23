@@ -26,7 +26,7 @@ module Arbetsformedlingen
         :occupation,
         :occupation_id,
         :company,
-        :municipality,
+        :municipalities,
         :municipality_id,
         :published_at,
         :last_application_at,
@@ -35,7 +35,7 @@ module Arbetsformedlingen
         :total_vacancies,
         :total_vacancies_with_visa,
         :duration_id,
-        :county,
+        :counties,
         :country_id,
         :employment_type
       )
