@@ -13,7 +13,7 @@ require 'arbetsformedlingen/api/platsannons/results/ad_result'
 module Arbetsformedlingen
   module Platsannons
     class Client
-      BASE_URL = 'http://api.arbetsformedlingen.se/af/v0/'.freeze
+      BASE_URL = 'http://api.arbetsformedlingen.se/af/v0/platsannonser/'.freeze
 
       attr_reader :request, :locale
 
@@ -27,7 +27,7 @@ module Arbetsformedlingen
       # @example Get API version
       #    client.version
       def version
-        request.get('platsannonser/version').body
+        request.get('version').body
       end
 
       # Fetch ad from API (ad => annons)
@@ -36,7 +36,7 @@ module Arbetsformedlingen
       # @example Get ad
       #    client.ad(id: id)
       def ad(id:)
-        response = request.get("platsannonser/#{id}")
+        response = request.get("#{id}")
 
         AdResult.build(response.json)
       end
@@ -54,7 +54,7 @@ module Arbetsformedlingen
       # @example Get areas
       #    client.areas
       def areas
-        response = request.get('platsannonser/soklista/omrade')
+        response = request.get('soklista/omrade')
 
         SoklistaResult.build(response.json)
       end
@@ -66,7 +66,7 @@ module Arbetsformedlingen
       #    client.countries(area_id: id)
       def countries(area_id:)
         query = { omradeid: area_id }
-        response = request.get('platsannonser/soklista/land', query: query)
+        response = request.get('soklista/land', query: query)
 
         SoklistaResult.build(response.json)
       end
@@ -80,7 +80,7 @@ module Arbetsformedlingen
         # NOTE: Due to a quirck in the API the lanid-param
         #       *must* be present though it *can* be nil
         query = { lanid: county_id }
-        response = request.get('platsannonser/soklista/kommuner', query: query)
+        response = request.get('soklista/kommuner', query: query)
 
         SoklistaResult.build(response.json)
       end
@@ -90,7 +90,7 @@ module Arbetsformedlingen
       # @example Get counties
       #    client.counties
       def counties
-        response = request.get('platsannonser/soklista/lan')
+        response = request.get('soklista/lan')
 
         SoklistaResult.build(response.json)
       end
@@ -100,7 +100,7 @@ module Arbetsformedlingen
       # @example Get counties2
       #    client.counties2
       def counties2
-        response = request.get('platsannonser/soklista/lan2')
+        response = request.get('soklista/lan2')
 
         SoklistaResult.build(response.json)
       end
@@ -110,7 +110,7 @@ module Arbetsformedlingen
       # @example Get occupational fields
       #    client.occupational_field
       def occupational_fields
-        response = request.get('platsannonser/soklista/yrkesomraden')
+        response = request.get('soklista/yrkesomraden')
 
         SoklistaResult.build(response.json)
       end
@@ -126,7 +126,7 @@ module Arbetsformedlingen
         # NOTE: Due to a quirck in the API the yrkesomradeid-param
         #       *must* be present though it *can* be nil
         query = { yrkesomradeid: occupational_field_id }
-        response = request.get('platsannonser/soklista/yrkesgrupper', query: query)
+        response = request.get('soklista/yrkesgrupper', query: query)
 
         SoklistaResult.build(response.json)
       end
@@ -137,7 +137,7 @@ module Arbetsformedlingen
       # @example Get occupation
       #    client.occupation(name: 'Marknadskommunikatör')
       def occupation(name:)
-        response = request.get("platsannonser/soklista/yrken/#{URI.encode(name)}")
+        response = request.get("soklista/yrken/#{URI.encode(name)}")
 
         SoklistaResult.build(response.json)
       end
@@ -153,7 +153,7 @@ module Arbetsformedlingen
         # NOTE: Due to a quirck in the API the yrkesgruppid-param
         #       *must* be present though it *can* be nil
         query = { yrkesgruppid: occupational_group_id }
-        response = request.get('platsannonser/soklista/yrken', query: query)
+        response = request.get('soklista/yrken', query: query)
 
         SoklistaResult.build(response.json)
       end
