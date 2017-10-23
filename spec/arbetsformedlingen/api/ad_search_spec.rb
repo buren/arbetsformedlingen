@@ -1,8 +1,8 @@
 require 'spec_helper'
 
-require 'arbetsformedlingen/api/platsannons/ad_search'
+require 'arbetsformedlingen/api/platsannonser/ad_search'
 
-RSpec.describe Arbetsformedlingen::Platsannons::AdSearch do
+RSpec.describe Arbetsformedlingen::Platsannonser::AdSearch do
   describe '::search' do
     it 'raises argument error if missing required arguments' do
       client = described_class.new

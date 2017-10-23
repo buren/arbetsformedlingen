@@ -1,7 +1,7 @@
-require 'arbetsformedlingen/api/platsannons/client'
+require 'arbetsformedlingen/api/platsannonser/client'
 
 module Arbetsformedlingen
-  module Platsannons
+  module Platsannonser
     class AdSearch
       attr_reader :request
 

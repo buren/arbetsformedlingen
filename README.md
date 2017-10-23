@@ -27,7 +27,7 @@ Or install it yourself as:
 __Instantiate the client:__
 
 ```ruby
-client = Arbetsformedlingen::Platsannons::Client.new(locale: 'en')
+client = Arbetsformedlingen::Platsannonser::Client.new(locale: 'en')
 ```
 
 __Fetch all ads containing specified keyword:__

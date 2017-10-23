@@ -2,16 +2,16 @@ require 'uri'
 require 'net/http'
 require 'json'
 
-require 'arbetsformedlingen/api/platsannons/request'
+require 'arbetsformedlingen/api/platsannonser/request'
 
-require 'arbetsformedlingen/api/platsannons/results/matchning_result'
-require 'arbetsformedlingen/api/platsannons/results/soklista_result'
+require 'arbetsformedlingen/api/platsannonser/results/matchning_result'
+require 'arbetsformedlingen/api/platsannonser/results/soklista_result'
 
-require 'arbetsformedlingen/api/platsannons/ad_search'
-require 'arbetsformedlingen/api/platsannons/results/ad_result'
+require 'arbetsformedlingen/api/platsannonser/ad_search'
+require 'arbetsformedlingen/api/platsannonser/results/ad_result'
 
 module Arbetsformedlingen
-  module Platsannons
+  module Platsannonser
     class Client
       BASE_URL = 'http://api.arbetsformedlingen.se/af/v0/platsannonser/'.freeze
 

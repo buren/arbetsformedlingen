@@ -3,7 +3,7 @@ require 'net/http'
 require 'json'
 
 module Arbetsformedlingen
-  module Platsannons
+  module Platsannonser
     class Request
       Response = KeyStruct.new(:code, :body, :json)
 

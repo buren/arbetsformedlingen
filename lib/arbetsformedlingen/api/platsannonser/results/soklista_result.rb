@@ -1,7 +1,7 @@
-require 'arbetsformedlingen/api/platsannons/values/soklista_values'
+require 'arbetsformedlingen/api/platsannonser/values/soklista_values'
 
 module Arbetsformedlingen
-  module Platsannons
+  module Platsannonser
     module SoklistaResult
       def self.build(response_data)
         data = response_data.fetch('soklista')
