@@ -1,5 +1,5 @@
 module Arbetsformedlingen
-  module API
+  module Platsannons
     module Values
       MatchningResultsPage = KeyStruct.new(
         :list_name,

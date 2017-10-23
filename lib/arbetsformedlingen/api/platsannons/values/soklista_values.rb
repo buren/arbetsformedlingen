@@ -1,5 +1,5 @@
 module Arbetsformedlingen
-  module API
+  module Platsannons
     module Values
       SoklistaResultPage = KeyStruct.new(
         :list_name,

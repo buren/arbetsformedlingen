@@ -1,7 +1,7 @@
-require 'arbetsformedlingen/api/values/matchning_result_values'
+require 'arbetsformedlingen/api/platsannons/values/matchning_result_values'
 
 module Arbetsformedlingen
-  module API
+  module Platsannons
     module MatchningResult
       def self.build(response_data)
         data = response_data.fetch('matchningslista')

@@ -1,5 +1,5 @@
 module Arbetsformedlingen
-  module API
+  module Platsannons
     module Values
       Ad = KeyStruct.new(
         :id,
