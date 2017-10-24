@@ -6,7 +6,7 @@ module Arbetsformedlingen
       def self.build(response_data)
         data = response_data.fetch('soklista')
 
-        Values::SoklistaResultPage.new(
+        Values::SoklistaPage.new(
           list_name: data.fetch('listnamn'),
           total_ads: data.fetch('totalt_antal_platsannonser'),
           total_vacancies: data.fetch('totalt_antal_ledigajobb'),

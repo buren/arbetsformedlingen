@@ -31,7 +31,7 @@ Or install it yourself as:
 
 ## API usage
 
-__Instantiate the client:__
+__Create a client:__
 
 ```ruby
 client = Arbetsformedlingen::Platsannonser::Client.new(locale: 'en')
@@ -40,24 +40,22 @@ client = Arbetsformedlingen::Platsannonser::Client.new(locale: 'en')
 __Fetch all ads containing specified keyword:__
 ```ruby
 ads = client.ads(keywords: 'ruby')
-ads.each do |ad|
-  puts ad.title
-end
+ads.map(&:title)
 ```
 
 __Fetch one ad:__
 ```ruby
 ad = client.ad(id: 7408089)
-puts ad.title
-puts ad.occupation
-puts ad.application.last_application_at
+ad.title
+ad.occupation
+ad.application.last_application_at
 ```
 
 __Fetch countries in area:__
 ```ruby
 countries = client.countries(area_id: 2)
-countries.each do |country|
-  puts "#{country.name} has #{country.total_vacancies} total vacancies."
+countries.map do |country|
+  "#{country.name} has #{country.total_vacancies} total vacancies."
 end
 ```
 
@@ -168,8 +166,13 @@ puts "application_method.valid?: #{application_method.valid?}"
 puts "position.valid?: #{position.valid?}"
 puts "packet.valid?: #{packet.valid?}"
 
+# Write the packet to an XML-file
 output = OutputBuilder.new(packet)
 File.write('output.xml', output.to_xml)
+
+# or post it to the API
+
+client.create_ad(packet) # assuming an instantiated client
 ```
 
 ## Arbetsförmedlingen TaxonomyService

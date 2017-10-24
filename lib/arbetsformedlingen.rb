@@ -19,9 +19,6 @@ require 'arbetsformedlingen/codes/salary_type_code'
 require 'arbetsformedlingen/models/dry/types'
 require 'arbetsformedlingen/models/dry/predicates'
 
-require 'arbetsformedlingen/output_builder'
-require 'arbetsformedlingen/client'
-
 require 'arbetsformedlingen/models/model'
 require 'arbetsformedlingen/models/document'
 require 'arbetsformedlingen/models/company'
@@ -37,10 +34,6 @@ require 'arbetsformedlingen/models/packet'
 require 'arbetsformedlingen/api/platsannonser/client'
 
 module Arbetsformedlingen
-  def self.post_job(packet)
-    Client.post_job(OutputBuilder.new(packet).to_xml)
-  end
-
   class << self
     attr_accessor :config
   end

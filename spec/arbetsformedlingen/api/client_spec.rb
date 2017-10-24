@@ -11,6 +11,21 @@ RSpec.describe Arbetsformedlingen::Platsannonser::Client do
     end
   end
 
+  describe '#create_ad', vcr: true do
+    it 'returns error if passed empty data' do
+      client = described_class.new
+      data = Struct.new(:to_xml).new('')
+      response = client.create_ad(data)
+
+      expect(response.valid?).to eq(false)
+
+      message = response.messages.first
+
+      expect(message.detail).to eq("Sent data is not valid XML. \r\nRoot element is missing.")
+      expect(message.error_code).to eq(1500)
+    end
+  end
+
   describe '#ad', vcr: true do
     it 'returns an ad' do
       client = described_class.new

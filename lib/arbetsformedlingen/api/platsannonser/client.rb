@@ -4,11 +4,13 @@ require 'json'
 
 require 'arbetsformedlingen/api/platsannonser/request'
 
+require 'arbetsformedlingen/api/platsannonser/results/ad_result'
 require 'arbetsformedlingen/api/platsannonser/results/matchning_result'
 require 'arbetsformedlingen/api/platsannonser/results/soklista_result'
 
-require 'arbetsformedlingen/api/platsannonser/ad_search'
-require 'arbetsformedlingen/api/platsannonser/results/ad_result'
+# Sub-clients
+require 'arbetsformedlingen/api/platsannonser/matchning_client'
+require 'arbetsformedlingen/api/platsannonser/ledigtarbete_client'
 
 module Arbetsformedlingen
   module Platsannonser
@@ -30,6 +32,16 @@ module Arbetsformedlingen
         request.get('version').body
       end
 
+      # Post ad to API (ad => annons)
+      # @return [AdResult] the result.
+      # @param [Arbetsformedlingen::Packet] Packet object.
+      # @example Post ad
+      #    client.ad(packet)
+      def create_ad(packet)
+        client = LedigtarbeteClient.new
+        client.create_ad(packet)
+      end
+
       # Fetch ad from API (ad => annons)
       # @return [AdResult] the result.
       # @param id [String] Ad ID.
@@ -43,10 +55,10 @@ module Arbetsformedlingen
 
       # Fetch areas from API (areas => landområde/värdsdel)
       # @return [MatchningResult] the result.
-      # @see AdSearch#search
+      # @see MatchningClient#ads
       # @see MatchningResult#build
       def ads(**args)
-        AdSearch.new(request: request).search(**args)
+        MatchningClient.new(request: request).ads(**args)
       end
 
       # Fetch areas from API (areas => landområde/värdsdel)

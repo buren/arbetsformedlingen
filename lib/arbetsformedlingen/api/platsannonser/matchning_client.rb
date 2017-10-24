@@ -1,8 +1,9 @@
-require 'arbetsformedlingen/api/platsannonser/client'
+require 'arbetsformedlingen/api/platsannonser/request'
+require 'arbetsformedlingen/api/platsannonser/results/matchning_result'
 
 module Arbetsformedlingen
   module Platsannonser
-    class AdSearch
+    class MatchningClient
       attr_reader :request
 
       def initialize(request: Request.new)
@@ -24,16 +25,16 @@ module Arbetsformedlingen
       # @param published_after [String] Published after ID (ISO8601 format: YYYY-MM-DDThh:mm:ssTZD).
       # @param organization_number [String] Organization_number ID.
       # @example Get ads within county
-      #    client.countries(county: id)
+      #    client.ads(county: id)
       # @example Get ads within municipality
-      #    client.countries(municipality: id)
+      #    client.ads(municipality: id)
       # @example Get ads with keyword
-      #    client.countries(keywrods: 'ruby')
+      #    client.ads(keywrods: 'ruby')
       # @example Get ads with keyword on page 3 and with a page size of 10
-      #    client.countries(keywrods: 'ruby', page: 3, page_size: 10)
+      #    client.ads(keywrods: 'ruby', page: 3, page_size: 10)
       # @example Get ads with keyword and organsiation numer
-      #    client.countries(keywrods: 'ruby', organization_number: org_no)
-      def search(
+      #    client.ads(keywrods: 'ruby', organization_number: org_no)
+      def ads(
         # one of these must be present
         county_id: nil,
         municipality_id: nil,

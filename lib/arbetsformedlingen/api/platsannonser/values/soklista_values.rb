@@ -1,14 +1,14 @@
 module Arbetsformedlingen
   module Platsannonser
     module Values
-      SoklistaResultPage = KeyStruct.new(
+      SoklistaPage = KeyStruct.new(
         :list_name,
         :total_ads,
         :total_vacancies,
         :data,
         :raw_data
       )
-      class SoklistaResultPage
+      class SoklistaPage
         include Enumerable
 
         def each(&block)

@@ -6,7 +6,7 @@ module Arbetsformedlingen
       def self.build(response_data)
         data = response_data.fetch('matchningslista')
 
-        Values::MatchningResultsPage.new(
+        Values::MatchningPage.new(
           list_name: 'annonser',
           total_ads: data.fetch('antal_platsannonser'),
           total_ads_exact: data.fetch('antal_platsannonser_exakta'),

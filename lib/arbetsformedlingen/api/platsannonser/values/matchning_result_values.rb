@@ -1,7 +1,7 @@
 module Arbetsformedlingen
   module Platsannonser
     module Values
-      MatchningResultsPage = KeyStruct.new(
+      MatchningPage = KeyStruct.new(
         :list_name,
         :total_ads,
         :total_ads_exact,
@@ -12,7 +12,7 @@ module Arbetsformedlingen
         :data,
         :raw_data
       )
-      class MatchningResultsPage
+      class MatchningPage
         include Enumerable
 
         def each(&block)
