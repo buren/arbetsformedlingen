@@ -7,6 +7,8 @@ require 'dry-types'
 
 require 'arbetsformedlingen/version'
 
+require 'arbetsformedlingen/key_struct'
+
 require 'arbetsformedlingen/codes/country_code'
 require 'arbetsformedlingen/codes/drivers_license_code'
 require 'arbetsformedlingen/codes/experience_required_code'
@@ -16,9 +18,6 @@ require 'arbetsformedlingen/codes/salary_type_code'
 
 require 'arbetsformedlingen/models/dry/types'
 require 'arbetsformedlingen/models/dry/predicates'
-
-require 'arbetsformedlingen/output_builder'
-require 'arbetsformedlingen/client'
 
 require 'arbetsformedlingen/models/model'
 require 'arbetsformedlingen/models/document'
@@ -31,11 +30,10 @@ require 'arbetsformedlingen/models/schedule'
 require 'arbetsformedlingen/models/application_method'
 require 'arbetsformedlingen/models/packet'
 
-module Arbetsformedlingen
-  def self.post_job(packet)
-    Client.post_job(OutputBuilder.new(packet).to_xml)
-  end
+# API Client
+require 'arbetsformedlingen/api/client'
 
+module Arbetsformedlingen
   class << self
     attr_accessor :config
   end

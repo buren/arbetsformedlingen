@@ -1,6 +1,16 @@
 # Arbetsförmedlingen [![Build Status](https://travis-ci.org/buren/arbetsformedlingen.svg?branch=master)](https://travis-ci.org/buren/arbetsformedlingen)
 
-Post job ads to the Swedish employment agency (Arbetsförmedlingen).
+Arbetsförmedlingen API client (Swedish Public Employment Service).
+
+__Features__
+* Post job ad (a.k.a Direktöverförda annonser)
+* Platsannons API Client
+
+
+__Index__
+* [Installation](#installation)
+* [API usage](#api-usage)
+* [Post ad usage](#post-ad-usage)
 
 ## Installation
 
@@ -18,15 +28,47 @@ Or install it yourself as:
 
     $ gem install arbetsformedlingen
 
-## Usage
+## API usage
 
-__Complete example__
+__Create a client:__
+
+```ruby
+client = Arbetsformedlingen::API::Client.new(locale: 'en')
+```
+
+__Fetch all ads containing specified keyword:__
+```ruby
+ads = client.ads(keywords: 'ruby')
+ads.map(&:title)
+```
+
+__Fetch one ad:__
+```ruby
+ad = client.ad(id: 7408089)
+ad.title
+ad.occupation
+ad.application.last_application_at
+```
+
+__Fetch countries in area:__
+```ruby
+countries = client.countries(area_id: 2)
+countries.map do |country|
+  "#{country.name} has #{country.total_vacancies} total vacancies."
+end
+```
+
+## Post ad usage
+
+__Complete example creating a packet__
+
+:information_source: There is quite a lot of data you can/must send to the API when creating an ad.
 
 ```ruby
 require 'date'
 require 'arbetsformedlingen'
 
-include Arbetsformedlingen
+include Arbetsformedlingen # just for brevity
 
 document = Document.new(
   customer_id: 'XXXYYYZZZ',
@@ -125,8 +167,8 @@ puts "application_method.valid?: #{application_method.valid?}"
 puts "position.valid?: #{position.valid?}"
 puts "packet.valid?: #{packet.valid?}"
 
-output = OutputBuilder.new(packet)
-File.write('output.xml', output.to_xml)
+client = API::Client.new(locale: 'sv')
+client.create_ad(packet)
 ```
 
 ## Arbetsförmedlingen TaxonomyService
@@ -134,6 +176,22 @@ File.write('output.xml', output.to_xml)
 Some requests had to be made to Arbetsförmedlingens TaxonomyService in order to fetch the data for the occupation codes. You can find that (plus some more) here :point_down: Postman.
 
 [![Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/9a27ec2518c1005f8aea)
+
+## Terms translation table
+
+This gem has translated the attribute names in Arbetsförmedlingens (AF) API from Swedish to English. You can find the translations below.
+
+| AF Term              | Gem term           |
+|--------------------- |--------------------|
+| landområde/värdsdel | areas |
+| kommun | municipality |
+| län | counties |
+| län2 | counties2 |
+| yrkesområde | occupational_fields |
+| yrkesgrupp | occupational_group |
+| yrkesgrupp | occupational_group |
+| yrkesnamn | occupation |
+
 
 ## Development
 

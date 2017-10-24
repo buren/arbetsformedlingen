@@ -1,4 +1,5 @@
 require 'builder'
+require 'arbetsformedlingen/models/packet_xml_builder'
 
 module Arbetsformedlingen
   PacketSchema = Dry::Validation.Form do
@@ -34,6 +35,10 @@ module Arbetsformedlingen
       hash[:document] = @document.to_h
       hash[:position] = @position.to_h
       hash
+    end
+
+    def to_xml
+      PacketXMLBuilder.new(self).to_xml
     end
   end
 end

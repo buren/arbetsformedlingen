@@ -15,3 +15,5 @@
 example.rb
 output.xml
 test.xml
+
+spec/cassettes
