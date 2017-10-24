@@ -15,7 +15,7 @@ require 'arbetsformedlingen/api/ledigtarbete_client'
 module Arbetsformedlingen
   module API
     class Client
-      BASE_URL = 'http://api.arbetsformedlingen.se/af/v0/'.freeze
+      BASE_URL = 'http://api.arbetsformedlingen.se/af/v0/platsannonser/'.freeze
 
       attr_reader :request, :locale
 
