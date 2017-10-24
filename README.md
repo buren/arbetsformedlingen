@@ -8,7 +8,6 @@ __Features__
 
 
 __Index__
-
 * [Installation](#installation)
 * [API usage](#api-usage)
 * [Post ad usage](#post-ad-usage)
@@ -69,7 +68,7 @@ __Complete example creating a packet__
 require 'date'
 require 'arbetsformedlingen'
 
-include Arbetsformedlingen # just of brevity
+include Arbetsformedlingen # just for brevity
 
 document = Document.new(
   customer_id: 'XXXYYYZZZ',

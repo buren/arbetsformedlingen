@@ -1,3 +1,5 @@
+require 'time'
+
 module Arbetsformedlingen
   module Predicates
     include Dry::Logic::Predicates

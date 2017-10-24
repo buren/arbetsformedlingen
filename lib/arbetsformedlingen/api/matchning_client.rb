@@ -1,3 +1,5 @@
+require 'date'
+require 'time'
 require 'arbetsformedlingen/api/request'
 require 'arbetsformedlingen/api/results/matchning_result'
 
@@ -22,7 +24,7 @@ module Arbetsformedlingen
       # @param occupation_group_id [String] Occupation_group ID.
       # @param employment_type [String] Employment type ID.
       # @param occupation_field_id [String] Occupation field ID.
-      # @param published_after [String] Published after ID (ISO8601 format: YYYY-MM-DDThh:mm:ssTZD).
+      # @param published_after [Time, Date, String] Published after ID (ISO8601 format: YYYY-MM-DDThh:mm:ssTZD).
       # @param organization_number [String] Organization_number ID.
       # @example Get ads within county
       #    client.ads(county: id)
@@ -70,7 +72,7 @@ module Arbetsformedlingen
           yrkesgruppid: occupation_group_id,
           anstallningstyp: santize_employment_type_query(employment_type),
           yrkesomradeid: occupation_field_id,
-          sokdatum: published_after,
+          sokdatum: normalize_date_to_iso8601(published_after),
           organisationsnummer: organization_number
         }
 
@@ -80,6 +82,17 @@ module Arbetsformedlingen
       end
 
       private
+
+      # @raise [ArgumentError] raises error if passed invalid value
+      def normalize_date_to_iso8601(date_time_or_string)
+        return unless date_time_or_string
+
+        time = date_time_or_string
+        time = time.to_time if time.is_a?(Date)
+        time = Time.parse(time) if time.is_a?(String)
+
+        time.iso8601
+      end
 
       def santize_employment_type_query(employment_type)
         # Sökkriterier anställningstyp.
