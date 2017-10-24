@@ -31,7 +31,7 @@ require 'arbetsformedlingen/models/application_method'
 require 'arbetsformedlingen/models/packet'
 
 # API Client
-require 'arbetsformedlingen/api/platsannonser/client'
+require 'arbetsformedlingen/api/client'
 
 module Arbetsformedlingen
   class << self

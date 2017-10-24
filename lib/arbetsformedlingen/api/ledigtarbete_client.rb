@@ -1,8 +1,8 @@
-require 'arbetsformedlingen/api/platsannonser/request'
-require 'arbetsformedlingen/api/platsannonser/values/create_ad_page'
+require 'arbetsformedlingen/api/request'
+require 'arbetsformedlingen/api/values/create_ad_page'
 
 module Arbetsformedlingen
-  module Platsannonser
+  module API
     class LedigtarbeteClient
       BASE_URL = 'http://api.arbetsformedlingen.se/ledigtarbete'.freeze
 

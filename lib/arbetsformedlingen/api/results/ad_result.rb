@@ -1,8 +1,8 @@
-require 'arbetsformedlingen/api/platsannonser/values/ad_result_values'
+require 'arbetsformedlingen/api/values/ad_result_values'
 
 module Arbetsformedlingen
-  module Platsannonser
-    class AdResult
+  module API
+    module AdResult
       def self.build(response_data)
         data = response_data.fetch('platsannons')
 

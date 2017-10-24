@@ -1,8 +1,8 @@
 require 'spec_helper'
 
-require 'arbetsformedlingen/api/platsannonser/client'
+require 'arbetsformedlingen/api/client'
 
-RSpec.describe Arbetsformedlingen::Platsannonser::Client do
+RSpec.describe Arbetsformedlingen::API::Client do
   describe '#version', vcr: true do
     it 'returns the version of the API' do
       client = described_class.new

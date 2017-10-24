@@ -2,20 +2,20 @@ require 'uri'
 require 'net/http'
 require 'json'
 
-require 'arbetsformedlingen/api/platsannonser/request'
+require 'arbetsformedlingen/api/request'
 
-require 'arbetsformedlingen/api/platsannonser/results/ad_result'
-require 'arbetsformedlingen/api/platsannonser/results/matchning_result'
-require 'arbetsformedlingen/api/platsannonser/results/soklista_result'
+require 'arbetsformedlingen/api/results/ad_result'
+require 'arbetsformedlingen/api/results/matchning_result'
+require 'arbetsformedlingen/api/results/soklista_result'
 
 # Sub-clients
-require 'arbetsformedlingen/api/platsannonser/matchning_client'
-require 'arbetsformedlingen/api/platsannonser/ledigtarbete_client'
+require 'arbetsformedlingen/api/matchning_client'
+require 'arbetsformedlingen/api/ledigtarbete_client'
 
 module Arbetsformedlingen
-  module Platsannonser
+  module API
     class Client
-      BASE_URL = 'http://api.arbetsformedlingen.se/af/v0/platsannonser/'.freeze
+      BASE_URL = 'http://api.arbetsformedlingen.se/af/v0/'.freeze
 
       attr_reader :request, :locale
 
@@ -48,7 +48,7 @@ module Arbetsformedlingen
       # @example Get ad
       #    client.ad(id: id)
       def ad(id:)
-        response = request.get("#{id}")
+        response = request.get(id)
 
         AdResult.build(response.json)
       end
@@ -58,7 +58,8 @@ module Arbetsformedlingen
       # @see MatchningClient#ads
       # @see MatchningResult#build
       def ads(**args)
-        MatchningClient.new(request: request).ads(**args)
+        client = MatchningClient.new(request: request)
+        client.ads(**args)
       end
 
       # Fetch areas from API (areas => landområde/värdsdel)

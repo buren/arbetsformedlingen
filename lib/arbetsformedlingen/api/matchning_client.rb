@@ -1,8 +1,8 @@
-require 'arbetsformedlingen/api/platsannonser/request'
-require 'arbetsformedlingen/api/platsannonser/results/matchning_result'
+require 'arbetsformedlingen/api/request'
+require 'arbetsformedlingen/api/results/matchning_result'
 
 module Arbetsformedlingen
-  module Platsannonser
+  module API
     class MatchningClient
       attr_reader :request
 

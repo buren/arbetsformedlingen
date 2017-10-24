@@ -1,5 +1,5 @@
 module Arbetsformedlingen
-  module Platsannonser
+  module API
     module Values
       class CreateAdPage
         ResponseMessage = KeyStruct.new(:detail, :error_code)
