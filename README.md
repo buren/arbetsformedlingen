@@ -61,13 +61,15 @@ end
 
 ## Post ad usage
 
-__Complete example__
+__Complete example creating a packet__
+
+:information_source: There is quite a lot of data you can/must send to the API when creating an ad.
 
 ```ruby
 require 'date'
 require 'arbetsformedlingen'
 
-include Arbetsformedlingen
+include Arbetsformedlingen # just of brevity
 
 document = Document.new(
   customer_id: 'XXXYYYZZZ',
@@ -166,13 +168,8 @@ puts "application_method.valid?: #{application_method.valid?}"
 puts "position.valid?: #{position.valid?}"
 puts "packet.valid?: #{packet.valid?}"
 
-# Write the packet to an XML-file
-output = OutputBuilder.new(packet)
-File.write('output.xml', output.to_xml)
-
-# or post it to the API
-
-client.create_ad(packet) # assuming an instantiated client
+client = API::Client.new(locale: 'sv')
+client.create_ad(packet)
 ```
 
 ## Arbetsförmedlingen TaxonomyService
