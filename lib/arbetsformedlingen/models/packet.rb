@@ -1,5 +1,5 @@
 require 'builder'
-require 'arbetsformedlingen/output_builder'
+require 'arbetsformedlingen/models/packet_xml_builder'
 
 module Arbetsformedlingen
   PacketSchema = Dry::Validation.Form do
@@ -38,7 +38,7 @@ module Arbetsformedlingen
     end
 
     def to_xml
-      OutputBuilder.new(self).to_xml
+      PacketXMLBuilder.new(self).to_xml
     end
   end
 end

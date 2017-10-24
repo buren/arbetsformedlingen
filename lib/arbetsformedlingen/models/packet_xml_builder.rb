@@ -1,15 +1,17 @@
 require 'builder'
 
 module Arbetsformedlingen
-  class OutputBuilder
+  class PacketXMLBuilder
     def initialize(packet)
       @packet = packet
     end
 
     def to_xml
-      # TODO: Set option so that åäö isn't encoded
-      builder = Builder::XmlMarkup.new(indent: 2)
-      append_envelope(builder, @packet.to_h)
+      @xml ||= begin
+        # TODO: Set option so that åäö isn't encoded
+        builder = Builder::XmlMarkup.new(indent: 2)
+        append_envelope(builder, @packet.to_h)
+      end
     end
 
     private
