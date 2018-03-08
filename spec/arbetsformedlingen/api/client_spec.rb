@@ -7,7 +7,7 @@ RSpec.describe Arbetsformedlingen::API::Client do
     it 'returns the version of the API' do
       client = described_class.new
 
-      expect(client.version).to eq('version: 1.0.90')
+      expect(client.version).to eq('version: 1.0.95')
     end
   end
 
@@ -30,8 +30,7 @@ RSpec.describe Arbetsformedlingen::API::Client do
     it 'returns an ad' do
       client = described_class.new
 
-      page_size = 30
-      ad = client.ad(id: 7333612)
+      ad = client.ad(id: 7612136)
 
       expect(ad.id).not_to be_nil
       expect(ad.title).not_to be_nil
@@ -62,7 +61,6 @@ RSpec.describe Arbetsformedlingen::API::Client do
       # check application
       application = ad.application
 
-      expect(application.reference).not_to be_nil
       expect(application.application_url).not_to be_nil
       expect(application.last_application_at).not_to be_nil
       expect(application.application_comment).not_to be_nil
