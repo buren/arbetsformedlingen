@@ -171,7 +171,9 @@ client = API::Client.new(locale: 'sv')
 client.create_ad(packet)
 ```
 
-## Arbetsförmedlingen TaxonomyService
+## Notes
+
+__Arbetsförmedlingen TaxonomyService__
 
 Some requests had to be made to Arbetsförmedlingens TaxonomyService in order to fetch the data for the occupation codes. You can find that (plus some more) here :point_down: Postman.
 
