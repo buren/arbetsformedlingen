@@ -10,11 +10,11 @@ RSpec.describe Arbetsformedlingen::SOAPBuilder do
 
     body = <<~XMLDATA
     <?xml version=\"1.0\" encoding=\"UTF-8\"?>
-    <SOAP12:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap12=\"http://www.w3.org/2003/05/soap-envelope\">
-      <SOAP12:Body>
+    <soap12:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap12=\"http://www.w3.org/2003/05/soap-envelope\">
+      <soap12:Body>
         <GetAllOccupationsShort xmlns=\"urn:ams.se:wsoccupation\"/>
-      </SOAP12:Body>
-    </SOAP12:Envelope>
+      </soap12:Body>
+    </soap12:Envelope>
     XMLDATA
 
     expect(builder.to_xml).to eq(body)

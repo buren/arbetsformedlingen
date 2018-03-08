@@ -20,8 +20,8 @@ module Arbetsformedlingen
     end
 
     def wrap
-      @builder.SOAP12(:Envelope, SOAP_ATTRIBUTES) do |envelope|
-        envelope.SOAP12(:Body) { |body| yield(body) }
+      @builder.soap12(:Envelope, SOAP_ATTRIBUTES) do |envelope|
+        envelope.soap12(:Body) { |body| yield(body) }
       end
 
       self
