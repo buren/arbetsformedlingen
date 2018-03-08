@@ -40,7 +40,7 @@ module Arbetsformedlingen
 
       def self.build_application(data)
         Values::Application.new(
-          reference: data.fetch('referens'),
+          reference: data['referens'],
           application_url: data.fetch('webbplats'),
           email: data['epostadress'],
           last_application_at: data.fetch('sista_ansokningsdag'),
