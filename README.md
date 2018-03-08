@@ -1,4 +1,4 @@
-# Arbetsförmedlingen [![Build Status](https://travis-ci.org/buren/arbetsformedlingen.svg?branch=master)](https://travis-ci.org/buren/arbetsformedlingen)
+# Arbetsförmedlingen [![Build Status](https://travis-ci.org/buren/arbetsformedlingen.svg?branch=master)](https://travis-ci.org/buren/arbetsformedlingen) [![Gem Version](https://badge.fury.io/rb/arbetsformedlingen.svg)](https://badge.fury.io/rb/arbetsformedlingen)
 
 Arbetsförmedlingen API client (Swedish Public Employment Service).
 
@@ -11,8 +11,8 @@ __Features__
 __Index__
 * [Installation](#installation)
 * [API Client](#api-client)
-* [Post job ad](#post-ad)
-* [WSOccupation Client API](#wsoccupation-client-api)
+* [Post job ad](#post-job-ad)
+* [WSOccupation API Client](#wsoccupation-api-client)
 * [RDoc](http://www.rubydoc.info/gems/arbetsformedlingen/).
 
 ## Installation
@@ -61,7 +61,7 @@ countries.map do |country|
 end
 ```
 
-## Post ad
+## Post job ad
 
 __Complete example creating a packet__
 
@@ -174,7 +174,7 @@ client = API::Client.new(locale: 'sv')
 client.create_ad(packet)
 ```
 
-## WSOccupation API
+## WSOccupation API Client
 
 There is some support for Arbetsförmedlingen's `WSOccupation` SOAP API. See [PR#3](https://github.com/buren/arbetsformedlingen/pull/3).
 
