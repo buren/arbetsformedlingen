@@ -7,11 +7,6 @@ module Arbetsformedlingen
     class Request
       Response = KeyStruct.new(:code, :body, :json)
 
-      HEADERS = {
-        'Content-Type' => 'application/json',
-        'Accept-Language' => 'sv'
-      }.freeze
-
       attr_reader :locale, :base_url
 
       def initialize(base_url: '', locale: 'sv')
@@ -25,7 +20,7 @@ module Arbetsformedlingen
         http = Net::HTTP.new(uri.host, uri.port)
 
         request = Net::HTTP::Get.new(uri)
-        request['Content-Type'] = HEADERS['Content-Type']
+        request['Content-Type'] = 'application/json'
         request['Accept-Language'] = locale
 
         response = http.request(request)
