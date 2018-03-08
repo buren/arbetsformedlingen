@@ -25,6 +25,16 @@ RSpec.describe Arbetsformedlingen::API::WSOccupationClient do
     end
   end
 
+  describe '#find_occupations' do
+    it 'returns response that includes first occupation name', vcr: true do
+      client = described_class.new
+      response = client.find_occupations('Kall')
+
+      first_name = response.xml.css('Name').first.text
+      expect(first_name).to eq('Kallskänka')
+    end
+  end
+
   describe '#occupations_short' do
     it 'returns response that includes first occupation name', vcr: true do
       client = described_class.new

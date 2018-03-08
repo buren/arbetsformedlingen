@@ -22,6 +22,16 @@ module Arbetsformedlingen
         request.post(soap_body.to_xml)
       end
 
+      def find_occupations(name)
+        soap_body = SOAPBuilder.wrap do |body|
+          body.FindOccupation(xmlns: 'urn:ams.se:wsoccupation') do |node|
+            node.name(name)
+          end
+        end
+
+        request.post(soap_body.to_xml)
+      end
+
       def occupations
         soap_body = SOAPBuilder.wrap do |body|
           body.GetAllOccupations(xmlns: 'urn:ams.se:wsoccupation')
