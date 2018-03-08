@@ -32,6 +32,7 @@ require 'arbetsformedlingen/models/packet'
 
 # API Client
 require 'arbetsformedlingen/api/client'
+require 'arbetsformedlingen/api/ws_occupation_client'
 
 module Arbetsformedlingen
   class << self

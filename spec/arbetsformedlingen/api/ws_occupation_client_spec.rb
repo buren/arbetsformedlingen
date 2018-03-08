@@ -1,7 +1,5 @@
 require 'spec_helper'
 
-require 'arbetsformedlingen/api/ws_occupation_client'
-
 RSpec.describe Arbetsformedlingen::API::WSOccupationClient do
   describe '#occupation' do
     it 'returns response that includes occupation name', vcr: true do
