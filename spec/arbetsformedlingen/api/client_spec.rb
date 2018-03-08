@@ -7,7 +7,7 @@ RSpec.describe Arbetsformedlingen::API::Client do
     it 'returns the version of the API' do
       client = described_class.new
 
-      expect(client.version).to eq('version: 1.0.95')
+      expect(client.version).to match(/\Aversion: 1.0.+([0-9])\z/)
     end
   end
 
