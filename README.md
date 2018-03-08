@@ -181,8 +181,8 @@ Some requests had to be made to Arbetsförmedlingens TaxonomyService in order to
 
 This gem has translated the attribute names in Arbetsförmedlingens (AF) API from Swedish to English. You can find the translations below.
 
-| AF Term              | Gem term           |
-|--------------------- |--------------------|
+| Arbetsförmedlingen Term | Gem term           |
+|------------------------ |--------------------|
 | landområde/värdsdel | areas |
 | kommun | municipality |
 | län | counties |
