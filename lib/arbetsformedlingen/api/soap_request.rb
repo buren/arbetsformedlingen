@@ -13,7 +13,7 @@ module Arbetsformedlingen
 
       attr_reader :locale, :base_url
 
-      def initialize(base_url: '')
+      def initialize(base_url: '', locale: nil)
         unless Object.const_defined?(:Nokogiri)
           raise(ArgumentError, "unable to require 'nokogiri' gem, please install it")
         end
@@ -30,6 +30,7 @@ module Arbetsformedlingen
 
         request = Net::HTTP::Post.new(uri)
         request['Content-Type'] = 'text/xml'
+        request['Accept-Language'] = locale if locale
         request.body = body
 
         response = http.request(request)
