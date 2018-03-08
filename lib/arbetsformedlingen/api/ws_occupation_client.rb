@@ -27,6 +27,14 @@ module Arbetsformedlingen
 
         request.post('/wsoccupation.asmx', soap_body.to_xml)
       end
+
+      def occupations_detailed
+        soap_body = Arbetsformedlingen::SOAPBuilder.wrap do |body|
+          body.GetAllOccupationsDetailed(xmlns: 'urn:ams.se:wsoccupation')
+        end
+
+        request.post('/wsoccupation.asmx', soap_body.to_xml)
+      end
     end
   end
 end
