@@ -53,7 +53,7 @@ module Arbetsformedlingen
         AdResult.build(response.json)
       end
 
-      # Fetch areas from API (areas => landområde/värdsdel)
+      # Fetch ads from API (areas => landområde/värdsdel)
       # @return [MatchningResult] the result.
       # @see MatchningClient#ads
       # @see MatchningResult#build
