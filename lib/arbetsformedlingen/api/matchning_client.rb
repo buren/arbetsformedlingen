@@ -60,6 +60,10 @@ module Arbetsformedlingen
         end
 
         # TODO: Should we validate the IDs passed? What if they're invalid? Do we crash?
+        #
+        #       Currently when an invalid value is passed MatchningResult::build returns
+        #         => KeyError: key not found: "matchningslista"
+        #       which isn't really helpful..
 
         query = {
           lanid: county_id,
