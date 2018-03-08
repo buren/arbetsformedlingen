@@ -8,8 +8,8 @@ module Arbetsformedlingen
 
       BASE_URL = 'https://api.arbetsformedlingen.se/af/v0/Occupation'.freeze
 
-      def initialize(locale: 'sv')
-        @request = request || SOAPRequest.new(base_url: BASE_URL, locale: locale)
+      def initialize
+        @request = request || SOAPRequest.new(base_url: BASE_URL)
       end
 
       def occupation(id)
