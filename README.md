@@ -5,12 +5,15 @@ Arbetsförmedlingen API client (Swedish Public Employment Service).
 __Features__
 * Post job ad (a.k.a Direktöverförda annonser)
 * Platsannons API Client
+* WSOccupation SOAP API Client
 
 
 __Index__
 * [Installation](#installation)
-* [API usage](#api-usage)
-* [Post ad usage](#post-ad-usage)
+* [API Client](#api-client)
+* [Post job ad](#post-ad)
+* [WSOccupation Client API](#wsoccupation-client-api)
+* [RDoc](http://www.rubydoc.info/gems/arbetsformedlingen/).
 
 ## Installation
 
@@ -28,7 +31,7 @@ Or install it yourself as:
 
     $ gem install arbetsformedlingen
 
-## API usage
+## API Client
 
 __Create a client:__
 
@@ -58,7 +61,7 @@ countries.map do |country|
 end
 ```
 
-## Post ad usage
+## Post ad
 
 __Complete example creating a packet__
 
@@ -170,6 +173,19 @@ puts "packet.valid?: #{packet.valid?}"
 client = API::Client.new(locale: 'sv')
 client.create_ad(packet)
 ```
+
+## WSOccupation API
+
+There is some support for Arbetsförmedlingen's `WSOccupation` SOAP API. See [PR#3](https://github.com/buren/arbetsformedlingen/pull/3).
+
+```ruby
+client = Arbetsformedlingen::API::WSOccupationClient.new
+response = client.occupations
+response.xml.css('Name').first.text
+# => "Landskapsarkitekter och landskapsingenjörer"
+```
+
+[WSOccupationClient documentation](http://www.rubydoc.info/gems/arbetsformedlingen/Arbetsformedlingen/API/WSOccupationClient).
 
 ## Notes
 
