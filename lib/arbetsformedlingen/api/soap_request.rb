@@ -11,20 +11,19 @@ module Arbetsformedlingen
     class SOAPRequest
       Response = KeyStruct.new(:code, :body, :xml)
 
-      attr_reader :locale, :base_url
+      attr_reader :locale, :uri, :url
 
-      def initialize(base_url: '', locale: nil)
+      def initialize(url, locale: nil)
         unless Object.const_defined?(:Nokogiri)
           raise(ArgumentError, "unable to require 'nokogiri' gem, please install it")
         end
 
-        @base_url = base_url
+        @url = url
+        @uri = URI(url)
         @locale = locale
       end
 
-      def post(url, body)
-        uri = URI("#{base_url}#{url}")
-
+      def post(body)
         http = Net::HTTP.new(uri.host, uri.port)
         http.use_ssl = true if uri.scheme == 'https'
 
