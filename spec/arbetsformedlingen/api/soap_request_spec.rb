@@ -6,17 +6,17 @@ RSpec.describe Arbetsformedlingen::API::SOAPRequest do
   describe '#initialize' do
     it 'raises ArgumentError if Nokogiri constant is not defined' do
       allow(Object).to receive(:const_defined?).and_return(false)
-      expect { described_class.new }.to raise_error(ArgumentError)
+      expect { described_class.new('') }.to raise_error(ArgumentError)
     end
 
     it 'does not raise ArgumentError if Nokogiri constant is defined' do
-      expect { described_class.new }.not_to raise_error(ArgumentError)
+      expect { described_class.new('') }.not_to raise_error(ArgumentError)
     end
   end
 
   describe '#parse_xml' do
     it 'returns a Nokogiri document' do
-      request = described_class.new
+      request = described_class.new('')
       expect(request.parse_xml('')).to be_a(Nokogiri::XML::Document)
     end
 
@@ -37,7 +37,7 @@ RSpec.describe Arbetsformedlingen::API::SOAPRequest do
       </soap:Envelope>
       XMLDATA
 
-      request = described_class.new
+      request = described_class.new('')
 
       document = request.parse_xml(xml_with_namespace)
       result = document.css('Id').map(&:text)
