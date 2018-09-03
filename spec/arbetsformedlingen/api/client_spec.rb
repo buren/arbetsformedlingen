@@ -30,7 +30,7 @@ RSpec.describe Arbetsformedlingen::API::Client do
     it 'returns an ad' do
       client = described_class.new
 
-      ad = client.ad(id: 7612136)
+      ad = client.ad(id: 7911776)
 
       expect(ad.id).not_to be_nil
       expect(ad.title).not_to be_nil

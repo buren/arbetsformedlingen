@@ -1,6 +1,11 @@
 require 'spec_helper'
 
 RSpec.describe Arbetsformedlingen::API::WSOccupationClient do
+  let(:expected_first_name) do
+    # TODO: Use a cassette instead
+    'Undersköterska inom vårdavdelning och mottagning'
+  end
+
   describe '#occupation' do
     it 'returns response that includes occupation name', vcr: true do
       client = described_class.new
@@ -18,8 +23,7 @@ RSpec.describe Arbetsformedlingen::API::WSOccupationClient do
       response = client.occupations
 
       first_name = response.xml.css('Name').first.text
-      expected = 'Landskapsarkitekter och landskapsingenjörer'
-      expect(first_name).to eq(expected)
+      expect(first_name).to eq(expected_first_name)
     end
   end
 
@@ -39,8 +43,7 @@ RSpec.describe Arbetsformedlingen::API::WSOccupationClient do
       response = client.occupations_short
 
       first_name = response.xml.css('Name').first.text
-      expected = 'Landskapsarkitekter och landskapsingenjörer'
-      expect(first_name).to eq(expected)
+      expect(first_name).to eq(expected_first_name)
     end
   end
 
@@ -50,8 +53,7 @@ RSpec.describe Arbetsformedlingen::API::WSOccupationClient do
       response = client.occupations_detailed
 
       first_name = response.xml.css('Name').first.text
-      expected = 'Landskapsarkitekter och landskapsingenjörer'
-      expect(first_name).to eq(expected)
+      expect(first_name).to eq(expected_first_name)
     end
   end
 end

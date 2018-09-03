@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.arbetsformedlingen.se/af/v0/platsannonser/soklista/omrade
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.arbetsformedlingen.se
+      Content-Type:
+      - application/json
+      Accept-Language:
+      - sv
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 08 Mar 2018 19:26:04 GMT
+      Server:
+      - WildFly/8
+      Www-Authenticate:
+      - Basic realm="CT"
+      Cache-Control:
+      - no-transform, max-age=600
+      X-Powered-By:
+      - Undertow/1
+      Access-Control-Allow-Headers:
+      - X-JWT-Assertion, Origin, X-Requested-With, Content-Type, Accept
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept,Accept-Language
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '1780'
+      Access-Control-Allow-Methods:
+      - GET, OPTIONS, HEAD, PUT, POST, DELETE
+      Connection:
+      - close
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJzb2tsaXN0YSI6eyJsaXN0bmFtbiI6Im9tcmFkZSIsInRvdGFsdF9hbnRhbF9wbGF0c2Fubm9uc2VyIjo0NzksInRvdGFsdF9hbnRhbF9sZWRpZ2Fqb2JiIjoxNDg3LCJzb2tkYXRhIjpbeyJpZCI6IjgiLCJuYW1uIjoiQW50YXJrdGlzIiwiYW50YWxfcGxhdHNhbm5vbnNlciI6MCwiYW50YWxfbGVkaWdham9iYiI6MH0seyJpZCI6IjIzIiwibmFtbiI6IkF1c3RyYWxpZW4gb2NoIE55YSBaZWVsYW5kIiwiYW50YWxfcGxhdHNhbm5vbnNlciI6MCwiYW50YWxfbGVkaWdham9iYiI6MH0seyJpZCI6IjExIiwibmFtbiI6IkNlbnRyYWxhZnJpa2EiLCJhbnRhbF9wbGF0c2Fubm9uc2VyIjowLCJhbnRhbF9sZWRpZ2Fqb2JiIjowfSx7ImlkIjoiMTYiLCJuYW1uIjoiQ2VudHJhbGFtZXJpa2EiLCJhbnRhbF9wbGF0c2Fubm9uc2VyIjoxLCJhbnRhbF9sZWRpZ2Fqb2JiIjoxfSx7ImlkIjoiMTgiLCJuYW1uIjoiQ2VudHJhbGFzaWVuIiwiYW50YWxfcGxhdHNhbm5vbnNlciI6MCwiYW50YWxfbGVkaWdham9iYiI6MH0seyJpZCI6IjkiLCJuYW1uIjoiRXVyb3BhL2VqIEVVL0VFUy9FVVJFUyIsImFudGFsX3BsYXRzYW5ub25zZXIiOjIsImFudGFsX2xlZGlnYWpvYmIiOjJ9LHsiaWQiOiIyIiwibmFtbiI6IkV1cm9wYS9FVS9FRVMvRVVSRVMiLCJhbnRhbF9wbGF0c2Fubm9uc2VyIjo0NTYsImFudGFsX2xlZGlnYWpvYmIiOjE0MjB9LHsiaWQiOiIxNyIsIm5hbW4iOiJLYXJpYmllbiIsImFudGFsX3BsYXRzYW5ub25zZXIiOjAsImFudGFsX2xlZGlnYWpvYmIiOjB9LHsiaWQiOiIyNCIsIm5hbW4iOiJNZWxhbmVzaWVuIiwiYW50YWxfcGxhdHNhbm5vbnNlciI6MCwiYW50YWxfbGVkaWdham9iYiI6MH0seyJpZCI6IjI1IiwibmFtbiI6Ik1pa3JvbmVzaWVuIiwiYW50YWxfcGxhdHNhbm5vbnNlciI6MCwiYW50YWxfbGVkaWdham9iYiI6MH0seyJpZCI6IjEyIiwibmFtbiI6Ik5vcmRhZnJpa2EiLCJhbnRhbF9wbGF0c2Fubm9uc2VyIjoxLCJhbnRhbF9sZWRpZ2Fqb2JiIjoxfSx7ImlkIjoiNiIsIm5hbW4iOiJOb3JkYW1lcmlrYSIsImFudGFsX3BsYXRzYW5ub25zZXIiOjEyLCJhbnRhbF9sZWRpZ2Fqb2JiIjo0N30seyJpZCI6IjI2IiwibmFtbiI6IlBvbHluZXNpZW4iLCJhbnRhbF9wbGF0c2Fubm9uc2VyIjowLCJhbnRhbF9sZWRpZ2Fqb2JiIjowfSx7ImlkIjoiMyIsIm5hbW4iOiJTeWRhbWVyaWthIiwiYW50YWxfcGxhdHNhbm5vbnNlciI6MCwiYW50YWxfbGVkaWdham9iYiI6MH0seyJpZCI6IjIxIiwibmFtbiI6IlN5ZG9zdGFzaWVuIiwiYW50YWxfcGxhdHNhbm5vbnNlciI6MiwiYW50YWxfbGVkaWdham9iYiI6M30seyJpZCI6IjEzIiwibmFtbiI6IlPDtmRyYSBBZnJpa2EiLCJhbnRhbF9wbGF0c2Fubm9uc2VyIjowLCJhbnRhbF9sZWRpZ2Fqb2JiIjowfSx7ImlkIjoiMjAiLCJuYW1uIjoiU8O2ZHJhIEFzaWVuIiwiYW50YWxfcGxhdHNhbm5vbnNlciI6MSwiYW50YWxfbGVkaWdham9iYiI6MX0seyJpZCI6IjE0IiwibmFtbiI6IlbDpHN0YWZyaWthIiwiYW50YWxfcGxhdHNhbm5vbnNlciI6MCwiYW50YWxfbGVkaWdham9iYiI6MH0seyJpZCI6IjIyIiwibmFtbiI6IlbDpHN0YXNpZW4iLCJhbnRhbF9wbGF0c2Fubm9uc2VyIjoxLCJhbnRhbF9sZWRpZ2Fqb2JiIjo0fSx7ImlkIjoiMTAiLCJuYW1uIjoiw5ZzdGFmcmlrYSIsImFudGFsX3BsYXRzYW5ub25zZXIiOjIsImFudGFsX2xlZGlnYWpvYmIiOjd9LHsiaWQiOiIxOSIsIm5hbW4iOiLDlnN0YXNpZW4iLCJhbnRhbF9wbGF0c2Fubm9uc2VyIjoxLCJhbnRhbF9sZWRpZ2Fqb2JiIjoxfV19fQ==
+    http_version: 
+  recorded_at: Thu, 08 Mar 2018 19:26:04 GMT
+recorded_with: VCR 3.0.3

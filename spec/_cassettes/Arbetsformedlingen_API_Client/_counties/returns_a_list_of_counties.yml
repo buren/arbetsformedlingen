@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.arbetsformedlingen.se/af/v0/platsannonser/soklista/lan
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.arbetsformedlingen.se
+      Content-Type:
+      - application/json
+      Accept-Language:
+      - sv
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 08 Mar 2018 19:26:04 GMT
+      Server:
+      - WildFly/8
+      Www-Authenticate:
+      - Basic realm="CT"
+      Cache-Control:
+      - no-transform, max-age=600
+      X-Powered-By:
+      - Undertow/1
+      Access-Control-Allow-Headers:
+      - X-JWT-Assertion, Origin, X-Requested-With, Content-Type, Accept
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept,Accept-Language
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '2057'
+      Access-Control-Allow-Methods:
+      - GET, OPTIONS, HEAD, PUT, POST, DELETE
+      Connection:
+      - close
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJzb2tsaXN0YSI6eyJsaXN0bmFtbiI6ImxhbiIsInRvdGFsdF9hbnRhbF9wbGF0c2Fubm9uc2VyIjo1MTQ2MywidG90YWx0X2FudGFsX2xlZGlnYWpvYmIiOjE0ODA3MSwic29rZGF0YSI6W3siaWQiOiIxMCIsIm5hbW4iOiJCbGVraW5nZSBsw6RuIiwiYW50YWxfcGxhdHNhbm5vbnNlciI6NjI5LCJhbnRhbF9sZWRpZ2Fqb2JiIjozODY5fSx7ImlkIjoiMjAiLCJuYW1uIjoiRGFsYXJuYXMgbMOkbiIsImFudGFsX3BsYXRzYW5ub25zZXIiOjEyMjcsImFudGFsX2xlZGlnYWpvYmIiOjQwNTl9LHsiaWQiOiI5IiwibmFtbiI6IkdvdGxhbmRzIGzDpG4iLCJhbnRhbF9wbGF0c2Fubm9uc2VyIjozNzUsImFudGFsX2xlZGlnYWpvYmIiOjE2NTN9LHsiaWQiOiIyMSIsIm5hbW4iOiJHw6R2bGVib3JncyBsw6RuIiwiYW50YWxfcGxhdHNhbm5vbnNlciI6OTk0LCJhbnRhbF9sZWRpZ2Fqb2JiIjozMzY2fSx7ImlkIjoiMTMiLCJuYW1uIjoiSGFsbGFuZHMgbMOkbiIsImFudGFsX3BsYXRzYW5ub25zZXIiOjEyNTMsImFudGFsX2xlZGlnYWpvYmIiOjM2MjV9LHsiaWQiOiIyMyIsIm5hbW4iOiJKw6RtdGxhbmRzIGzDpG4iLCJhbnRhbF9wbGF0c2Fubm9uc2VyIjo1MzYsImFudGFsX2xlZGlnYWpvYmIiOjE1Njl9LHsiaWQiOiI2IiwibmFtbiI6IkrDtm5rw7ZwaW5ncyBsw6RuIiwiYW50YWxfcGxhdHNhbm5vbnNlciI6MTk2MywiYW50YWxfbGVkaWdham9iYiI6Njc4Nn0seyJpZCI6IjgiLCJuYW1uIjoiS2FsbWFyIGzDpG4iLCJhbnRhbF9wbGF0c2Fubm9uc2VyIjoxMTc0LCJhbnRhbF9sZWRpZ2Fqb2JiIjo0OTQ2fSx7ImlkIjoiNyIsIm5hbW4iOiJLcm9ub2JlcmdzIGzDpG4iLCJhbnRhbF9wbGF0c2Fubm9uc2VyIjoxMDc2LCJhbnRhbF9sZWRpZ2Fqb2JiIjozNzY1fSx7ImlkIjoiMjUiLCJuYW1uIjoiTm9ycmJvdHRlbnMgbMOkbiIsImFudGFsX3BsYXRzYW5ub25zZXIiOjEyNDAsImFudGFsX2xlZGlnYWpvYmIiOjQ0NDJ9LHsiaWQiOiIxMiIsIm5hbW4iOiJTa8OlbmUgbMOkbiIsImFudGFsX3BsYXRzYW5ub25zZXIiOjU3OTksImFudGFsX2xlZGlnYWpvYmIiOjE2NDAxfSx7ImlkIjoiMSIsIm5hbW4iOiJTdG9ja2hvbG1zIGzDpG4iLCJhbnRhbF9wbGF0c2Fubm9uc2VyIjoxNDMwNSwiYW50YWxfbGVkaWdham9iYiI6Mjc1NTR9LHsiaWQiOiI0IiwibmFtbiI6IlPDtmRlcm1hbmxhbmRzIGzDpG4iLCJhbnRhbF9wbGF0c2Fubm9uc2VyIjoxMzE2LCJhbnRhbF9sZWRpZ2Fqb2JiIjozNDI3fSx7ImlkIjoiMyIsIm5hbW4iOiJVcHBzYWxhIGzDpG4iLCJhbnRhbF9wbGF0c2Fubm9uc2VyIjoxNzM4LCJhbnRhbF9sZWRpZ2Fqb2JiIjo0NjI5fSx7ImlkIjoiMTciLCJuYW1uIjoiVsOkcm1sYW5kcyBsw6RuIiwiYW50YWxfcGxhdHNhbm5vbnNlciI6OTY1LCJhbnRhbF9sZWRpZ2Fqb2JiIjozMjIwfSx7ImlkIjoiMjQiLCJuYW1uIjoiVsOkc3RlcmJvdHRlbnMgbMOkbiIsImFudGFsX3BsYXRzYW5ub25zZXIiOjExNjUsImFudGFsX2xlZGlnYWpvYmIiOjQwNzV9LHsiaWQiOiIyMiIsIm5hbW4iOiJWw6RzdGVybm9ycmxhbmRzIGzDpG4iLCJhbnRhbF9wbGF0c2Fubm9uc2VyIjoxMDYwLCJhbnRhbF9sZWRpZ2Fqb2JiIjozMzI2fSx7ImlkIjoiMTkiLCJuYW1uIjoiVsOkc3RtYW5sYW5kcyBsw6RuIiwiYW50YWxfcGxhdHNhbm5vbnNlciI6MTEzMSwiYW50YWxfbGVkaWdham9iYiI6MzQwNn0seyJpZCI6IjE0IiwibmFtbiI6IlbDpHN0cmEgR8O2dGFsYW5kcyBsw6RuIiwiYW50YWxfcGxhdHNhbm5vbnNlciI6OTIyMCwiYW50YWxfbGVkaWdham9iYiI6MjkzOTh9LHsiaWQiOiIxOCIsIm5hbW4iOiLDlnJlYnJvIGzDpG4iLCJhbnRhbF9wbGF0c2Fubm9uc2VyIjoxMjQ3LCJhbnRhbF9sZWRpZ2Fqb2JiIjo0Mjk0fSx7ImlkIjoiNSIsIm5hbW4iOiLDlnN0ZXJnw7Z0bGFuZHMgbMOkbiIsImFudGFsX3BsYXRzYW5ub25zZXIiOjIzMjksImFudGFsX2xlZGlnYWpvYmIiOjc5ODh9LHsiaWQiOiI5MCIsIm5hbW4iOiJPc3BlY2lmaWNlcmFkIGFyYmV0c29ydCIsImFudGFsX3BsYXRzYW5ub25zZXIiOjcyMSwiYW50YWxfbGVkaWdham9iYiI6MjI3M31dfX0=
+    http_version: 
+  recorded_at: Thu, 08 Mar 2018 19:26:04 GMT
+recorded_with: VCR 3.0.3
