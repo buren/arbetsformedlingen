@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module Arbetsformedlingen
-  CompanySchema = Dry::Validation.Form do
+  CompanySchema = Dry::Validation.Params do
     configure do
       config.type_specs = true
       config.messages_file = File.expand_path('../../../../config/locales/errors.yml', __FILE__)

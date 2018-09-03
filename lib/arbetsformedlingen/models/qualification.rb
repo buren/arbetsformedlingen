@@ -1,5 +1,5 @@
 module Arbetsformedlingen
-  QualificationSchema = Dry::Validation.Form do
+  QualificationSchema = Dry::Validation.Params do
     configure do
       config.type_specs = true
       config.messages_file = File.expand_path('../../../../config/locales/errors.yml', __FILE__)
