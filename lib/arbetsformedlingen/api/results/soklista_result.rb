@@ -3,15 +3,15 @@ require 'arbetsformedlingen/api/values/soklista_values'
 module Arbetsformedlingen
   module API
     module SoklistaResult
-      def self.build(response_data)
-        data = response_data.fetch('soklista')
+      def self.build(response_data, list_name: nil)
+        data = response_data.fetch('soklista', {})
 
         Values::SoklistaPage.new(
-          list_name: data.fetch('listnamn'),
-          total_ads: data.fetch('totalt_antal_platsannonser'),
-          total_vacancies: data.fetch('totalt_antal_ledigajobb'),
+          list_name: data.fetch('listnamn', list_name),
+          total_ads: data.fetch('totalt_antal_platsannonser', 0),
+          total_vacancies: data.fetch('totalt_antal_ledigajobb', 0),
           raw_data: response_data,
-          data: data.fetch('sokdata').map do |result|
+          data: data.fetch('sokdata', []).map do |result|
             Values::SoklistaResult.new(
               id: result.fetch('id'),
               name: result.fetch('namn'),
