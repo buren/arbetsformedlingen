@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.arbetsformedlingen.se/af/v0/platsannonser/7911776
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.arbetsformedlingen.se
+      Content-Type:
+      - application/json
+      Accept-Language:
+      - sv
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 03 Sep 2018 18:40:43 GMT
+      Server:
+      - WildFly/8
+      Www-Authenticate:
+      - Basic realm="CT"
+      Cache-Control:
+      - no-transform, max-age=600
+      X-Powered-By:
+      - Undertow/1
+      Access-Control-Allow-Headers:
+      - X-JWT-Assertion, Origin, X-Requested-With, Content-Type, Accept
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept,Accept-Language
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '3408'
+      Access-Control-Allow-Methods:
+      - GET, OPTIONS, HEAD, PUT, POST, DELETE
+      Connection:
+      - close
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJwbGF0c2Fubm9ucyI6eyJhbm5vbnMiOnsiYW5ub25zaWQiOiI3OTExNzc2IiwicGxhdHNhbm5vbnNVcmwiOiJodHRwczovL3d3dy5hcmJldHNmb3JtZWRsaW5nZW4uc2UvVGphbnN0ZXIvQXJiZXRzc29rYW5kZS9QbGF0c2Jhbmtlbi9hbm5vbnNlci83OTExNzc2IiwiYW5ub25zcnVicmlrIjoiRmFudGFzdGlza3QgSGVsdGlkc2pvYmIgc29tIGlubmVzw6RsamFyZSBob3MgVmVuZG8gLSBBbnPDtmsgdXRhbiBDViIsImFubm9uc3RleHQiOiJPbSBmw7ZyZXRhZ2V0XG5cbkbDtnJlYnlnZyBncnVuZGFkZXMgMjAxNSBtZWQgdmlsamFuIG9tIGF0dCBza2FwYSBlbiB0cnlnZ2FyZSB2YXJkYWcuIElkYWcga2FuIEbDtnJlYnlnZyBzdG9sdCBlcmJqdWRhIGVuIGF2IGRlIG1vZGVybmFzdGUgbMO2c25pbmdhcm5hIGlub20gYnJhbmRzw6RrZXJoZXQgb2NoIGlkLXNreWRkLlxuXG5PbSB0asOkbnN0ZW5cbk1lZCB0ZWxlZm9uZW4gc29tIHZlcmt0eWcga29tbWVyIGR1IGF0dCB0YSBrb250YWt0IG1lZCBiw6VkZSBueWEgb2NoIGJlZmludGxpZ2Ega3VuZGVyIG9jaCBzw6RsamEgaW4gdsOlcmEgdGrDpG5zdGVyLiBEdSBrb21tZXIgYXR0IGluZ8OlIGkgZXR0IHRlYW0gYXYgZHJpdm5hIG9jaCBhbWJpdGnDtnNhIGluZGl2aWRlciBzb20gZ2VtZW5zYW10IGFyYmV0YXIgbW90IHVwcHNhdHRhIG3DpWwgb2NoIGJ1ZGdldGFyLiBIb3MgRsO2cmVieWdnIGbDpXIgZHUgZW4gZ2VkaWdlbiB1dGJpbGRuaW5nIG9tIHRqw6Ruc3RlbiBvY2ggaSBzw6RsanRla25pay4gVmkgYXJiZXRhciBtZWQgZGFnbGlnIGNvYWNobmluZyBmw7ZyIGF0dCBkdSBzb20gc8OkbGphcmUgc2thbGwgZsOlIGRlIGLDpHN0YSBmw7ZydXRzw6R0dG5pbmdhcm5hIGbDtnIgYXR0IHV0dmVja2xhcyBpIGRpbiByb2xsLiBWaSBlcmJqdWRlciBldHQgdXRhdiBtYXJrbmFkZW5zIGLDpHN0YSBwcm92aXNpb25zc3lzdGVtLiBBbnN0w6RsbG5pbmdlbiBww6Viw7ZyamFzIGFsbHRpZCBtZWQgdXRiaWxkbmluZyBvY2ggcHJvdmlzaW9uc2Fydm9kZSBvY2ggdGltbMO2bmVuIGxpZ2dlciBtZWxsYW4gMTAwLTMwMGtyIGkgc25pdHQgaG9zIHbDpXJhIGFuc3TDpGxsZGEgbWVkIHVwcCB0aWxsIDE4LjAwMCBpIGdhcmFudGllcnPDpHR0bmluZyB2aWQgZmFzdGFuc3TDpGxsbmluZyBlZnRlciA2IG3DpW5hZGVyLlxuXG5WaSBzw7ZrZXIgZGlnIHNvbTpcblxuLSBGbHl0YW5kZSBpIHRhbCBvY2ggc2tyaWZ0IGkgZGV0IHN2ZW5za2Egc3Byw6VrZXQuXG4tIEhhciByw6R0dCBpbnN0w6RsbG5pbmcuXG4tIEhhciBow7ZnYSBhbWJpdGlvbmVyLlxuLSDDhGxza2FyIHV0bWFuaW5nYXIuXG4tIEJyaW5uZXIgZsO2ciBhdHQgam9iYmEgbWVkIG3DpG5uaXNrb3IuXG4tIMOEciB0w6R2bGluZ3MtIG9jaCBtw6VsaW5yaWt0YWQuXG5cblZpIGVyYmp1ZGVyOlxuXG4tIFByb2R1a3QtICYgc8OkbGp1dGJpbGRuaW5nIChpbmdlbiBlcmZhcmVuaGV0IGJlaMO2dnMpXG4tIE1hcmtuYWRlbnMgaMO2Z3N0YSBwcm92aXNpb25lciBzYW10IGdhcmFudGlsw7ZuXG4tIERhZ2xpZyBjb2FjaGluZyBzw6UgYXR0IGR1IHV0dmVja2xhcyBww6UgYsOkc3RhIG3DtmpsaWdhIHPDpHR0XG4tIE3DtmpsaWdoZXRlciBhdHQgam9iYmEgbMOlbmdzaWt0aWd0IG9jaCBrbMOkdHRyYSBpbm9tIGJvbGFnZXRcblxuVmlsbCBkdSB0aWxsc2FtbWFucyBtZWQgb3NzIHNrYXBhIGVuIGluc3BpcmVyYW5kZSBtaWxqw7YgZMOkciB2aSBtb3RpdmVyYXIgb2NoIHB1c2hhciB2YXJhbmRyYSB0aWxsIGF0dCB1cHBuw6UgZ29kYSByZXN1bHRhdC4gw4RyIGR1IGRyaXZlbiBvY2ggaHVuZ3JpZz8gVmlsbCBkdSBqb2JiYSBmw7ZyIGV0dCBkZWRpa2VyYXQgb2NoIHByb2Zmc2lndCBib2xhZyBtZWQgYnJhIGbDtnJ1dHPDpHR0bmluZ2FyPyBWaSBnZXIgZGlnIHV0dmVja2xpbmcgYsOlZGUgcMOlIGV0dCBwZXJzb25saWd0IHBsYW4gb2NoIHV0ZSBpIGFyYmV0c2xpdmV0LiBEZXQgw6RyIG1lcml0ZXJhbmRlIG9tIGR1IGhhciB0aWRpZ2FyZSBlcmZhcmVuaGV0ZXIgYXYgZsO2cnPDpGxqbmluZyBlbGxlciBlbiBiYWtncnVuZCBpbm9tIGlkcm90dCBtZW4gZGV0IMOkciBpbmdldCBrcmF2LiBPYXZzZXR0IGbDtnJ1dHPDpHR0bmluZ2FyIGdlciB2aSBkaWcgZGUgdmVya3R5Z2VuIHNvbSBrcsOkdnMgZsO2ciBhdHQgZHUgc2thbGwgdXR2ZWNrbGFzIHNvbSBzw6RsamFyZSBvY2ggbcOkbm5pc2thIHNhbXQgdXBwbsOlIGRpbmEgcGVyc29ubGlnYSBtw6VsLlxuXG5Ww6Rsa29tbWVuISIsInlya2VzYmVuYW1uaW5nIjoiVGVsZWZvbmbDtnJzw6RsamFyZSIsInlya2VzaWQiOjc0NjgsInB1YmxpY2VyYWRkYXR1bSI6IjIwMTgtMDktMDNUMTc6MDc6NDkuODgzKzAyOjAwIiwiYW50YWxfcGxhdHNlciI6IjEiLCJrb21tdW5uYW1uIjoiU3RvY2tob2xtIiwia29tbXVua29kIjoxODAsImFudGFscGxhdHNlclZpc2EiOjEsImFuc3RhbGxuaW5nc3R5cCI6IlZhbmxpZyBhbnN0w6RsbG5pbmcifSwidmlsbGtvciI6eyJ2YXJha3RpZ2hldCI6IlRpbGxzdmlkYXJlIiwiYXJiZXRzdGlkIjoiSGVsdGlkIiwiYXJiZXRzdGlkdmFyYWt0aWdoZXQiOiJIZWx0aWRcclxuSGVsdGlkIG3DpW4tZnJlLCA3IGFyYmV0c3RpbW1hciBwZXIgZGFnIiwibG9uZXR5cCI6IkZhc3QgbcOlbmFkcy0gdmVja28tIGVsbGVyIHRpbWzDtm4iLCJsb25lZm9ybSI6IkzDtm4gZW5saWd0IMO2dmVyZW5za29tbWVsc2UifSwiYW5zb2thbiI6eyJ3ZWJicGxhdHMiOiJodHRwczovL3d3dy53b3JrZW5jeS5zZS9qb2JzLzExMjAwMC1mYW50YXN0aXNrdC1oZWx0aWRzam9iYi1zb20taW5uZXNhbGphcmUtaG9zLXZlbmRvLWFuc29rLXV0YW4tY3Y/cHJvbW90aW9uPTQ4NjEyLWFyYmV0c2Zvcm1lZGxpbmdlbiIsInNpc3RhX2Fuc29rbmluZ3NkYWciOiIyMDE5LTAyLTIwVDAwOjAwOjAwKzAxOjAwIiwib3ZyaWd0X29tX2Fuc29rYW4iOiIifSwiYXJiZXRzcGxhdHMiOnsiYXJiZXRzcGxhdHNuYW1uIjoiV29ya2VuY3kiLCJwb3N0bnVtbWVyIjoiMTI2NTMiLCJwb3N0YWRyZXNzIjoiSW5zdHJ1bWVudHbDpGdlbiA0NSIsInBvc3RvcnQiOiJIw6RnZXJzdGVuIiwicG9zdGxhbmQiOiJTdmVyaWdlIiwibGFuZCI6IlN2ZXJpZ2UiLCJiZXNva3NhZHJlc3MiOiJJbnN0cnVtZW50dsOkZ2VuIDQ1LCBIw6RnZXJzdGVuIiwibG9nb3R5cHVybCI6Imh0dHA6Ly9hcGkuYXJiZXRzZm9ybWVkbGluZ2VuLnNlL3BsYXRzYW5ub25zLzc5MTE3NzYvbG9nb3R5cCIsImhlbXNpZGEiOiIiLCJrb250YWt0cGVyc29ubGlzdGEiOnsia29udGFrdHBlcnNvbmRhdGEiOlt7Im5hbW4iOiJIYWJpYiBUb3VtYSIsInRlbGVmb25udW1tZXIiOiIwNzYtMzI1IDI2IDY2IiwiZXBvc3RhZHJlc3MiOiJoYWJpYi50b3VtYUB3b3JrZW5jeS5zZSJ9XX19LCJrcmF2Ijp7ImVnZW5iaWwiOmZhbHNlfX19
+    http_version: 
+  recorded_at: Mon, 03 Sep 2018 18:40:43 GMT
+recorded_with: VCR 3.0.3

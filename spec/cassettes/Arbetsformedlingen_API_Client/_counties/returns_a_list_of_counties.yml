@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.arbetsformedlingen.se/af/v0/platsannonser/soklista/lan
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.arbetsformedlingen.se
+      Content-Type:
+      - application/json
+      Accept-Language:
+      - sv
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 03 Sep 2018 18:40:45 GMT
+      Server:
+      - WildFly/8
+      Www-Authenticate:
+      - Basic realm="CT"
+      Cache-Control:
+      - no-transform, max-age=600
+      X-Powered-By:
+      - Undertow/1
+      Access-Control-Allow-Headers:
+      - X-JWT-Assertion, Origin, X-Requested-With, Content-Type, Accept
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept,Accept-Language
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '2041'
+      Access-Control-Allow-Methods:
+      - GET, OPTIONS, HEAD, PUT, POST, DELETE
+      Connection:
+      - close
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJzb2tsaXN0YSI6eyJsaXN0bmFtbiI6ImxhbiIsInRvdGFsdF9hbnRhbF9wbGF0c2Fubm9uc2VyIjo0MDM3NywidG90YWx0X2FudGFsX2xlZGlnYWpvYmIiOjgzODA2LCJzb2tkYXRhIjpbeyJpZCI6IjEwIiwibmFtbiI6IkJsZWtpbmdlIGzDpG4iLCJhbnRhbF9wbGF0c2Fubm9uc2VyIjozODEsImFudGFsX2xlZGlnYWpvYmIiOjU0NX0seyJpZCI6IjIwIiwibmFtbiI6IkRhbGFybmFzIGzDpG4iLCJhbnRhbF9wbGF0c2Fubm9uc2VyIjo5MDgsImFudGFsX2xlZGlnYWpvYmIiOjIwMDB9LHsiaWQiOiI5IiwibmFtbiI6IkdvdGxhbmRzIGzDpG4iLCJhbnRhbF9wbGF0c2Fubm9uc2VyIjoxNTUsImFudGFsX2xlZGlnYWpvYmIiOjI2Mn0seyJpZCI6IjIxIiwibmFtbiI6IkfDpHZsZWJvcmdzIGzDpG4iLCJhbnRhbF9wbGF0c2Fubm9uc2VyIjo3OTksImFudGFsX2xlZGlnYWpvYmIiOjE3NTN9LHsiaWQiOiIxMyIsIm5hbW4iOiJIYWxsYW5kcyBsw6RuIiwiYW50YWxfcGxhdHNhbm5vbnNlciI6OTYxLCJhbnRhbF9sZWRpZ2Fqb2JiIjoxOTc2fSx7ImlkIjoiMjMiLCJuYW1uIjoiSsOkbXRsYW5kcyBsw6RuIiwiYW50YWxfcGxhdHNhbm5vbnNlciI6NDQ3LCJhbnRhbF9sZWRpZ2Fqb2JiIjo5NTR9LHsiaWQiOiI2IiwibmFtbiI6IkrDtm5rw7ZwaW5ncyBsw6RuIiwiYW50YWxfcGxhdHNhbm5vbnNlciI6MTM5MCwiYW50YWxfbGVkaWdham9iYiI6MjQ5MX0seyJpZCI6IjgiLCJuYW1uIjoiS2FsbWFyIGzDpG4iLCJhbnRhbF9wbGF0c2Fubm9uc2VyIjo1NTMsImFudGFsX2xlZGlnYWpvYmIiOjkyMn0seyJpZCI6IjciLCJuYW1uIjoiS3Jvbm9iZXJncyBsw6RuIiwiYW50YWxfcGxhdHNhbm5vbnNlciI6ODg0LCJhbnRhbF9sZWRpZ2Fqb2JiIjoyMTM4fSx7ImlkIjoiMjUiLCJuYW1uIjoiTm9ycmJvdHRlbnMgbMOkbiIsImFudGFsX3BsYXRzYW5ub25zZXIiOjg0NiwiYW50YWxfbGVkaWdham9iYiI6MTQ3OH0seyJpZCI6IjEyIiwibmFtbiI6IlNrw6VuZSBsw6RuIiwiYW50YWxfcGxhdHNhbm5vbnNlciI6NDY2NiwiYW50YWxfbGVkaWdham9iYiI6OTUwNn0seyJpZCI6IjEiLCJuYW1uIjoiU3RvY2tob2xtcyBsw6RuIiwiYW50YWxfcGxhdHNhbm5vbnNlciI6MTI3ODcsImFudGFsX2xlZGlnYWpvYmIiOjI3ODA4fSx7ImlkIjoiNCIsIm5hbW4iOiJTw7ZkZXJtYW5sYW5kcyBsw6RuIiwiYW50YWxfcGxhdHNhbm5vbnNlciI6OTQ4LCJhbnRhbF9sZWRpZ2Fqb2JiIjoxNjA5fSx7ImlkIjoiMyIsIm5hbW4iOiJVcHBzYWxhIGzDpG4iLCJhbnRhbF9wbGF0c2Fubm9uc2VyIjoxNTEzLCJhbnRhbF9sZWRpZ2Fqb2JiIjoyMzU2fSx7ImlkIjoiMTciLCJuYW1uIjoiVsOkcm1sYW5kcyBsw6RuIiwiYW50YWxfcGxhdHNhbm5vbnNlciI6NTg3LCJhbnRhbF9sZWRpZ2Fqb2JiIjoxMDQ4fSx7ImlkIjoiMjQiLCJuYW1uIjoiVsOkc3RlcmJvdHRlbnMgbMOkbiIsImFudGFsX3BsYXRzYW5ub25zZXIiOjc2MiwiYW50YWxfbGVkaWdham9iYiI6MTcyN30seyJpZCI6IjIyIiwibmFtbiI6IlbDpHN0ZXJub3JybGFuZHMgbMOkbiIsImFudGFsX3BsYXRzYW5ub25zZXIiOjYzNiwiYW50YWxfbGVkaWdham9iYiI6MTE5MX0seyJpZCI6IjE5IiwibmFtbiI6IlbDpHN0bWFubGFuZHMgbMOkbiIsImFudGFsX3BsYXRzYW5ub25zZXIiOjkwOCwiYW50YWxfbGVkaWdham9iYiI6MTc4N30seyJpZCI6IjE0IiwibmFtbiI6IlbDpHN0cmEgR8O2dGFsYW5kcyBsw6RuIiwiYW50YWxfcGxhdHNhbm5vbnNlciI6Njg3NCwiYW50YWxfbGVkaWdham9iYiI6MTM1ODV9LHsiaWQiOiIxOCIsIm5hbW4iOiLDlnJlYnJvIGzDpG4iLCJhbnRhbF9wbGF0c2Fubm9uc2VyIjo5MjQsImFudGFsX2xlZGlnYWpvYmIiOjE2NjN9LHsiaWQiOiI1IiwibmFtbiI6IsOWc3RlcmfDtnRsYW5kcyBsw6RuIiwiYW50YWxfcGxhdHNhbm5vbnNlciI6MTcwNCwiYW50YWxfbGVkaWdham9iYiI6MzM1NX0seyJpZCI6IjkwIiwibmFtbiI6Ik9zcGVjaWZpY2VyYWQgYXJiZXRzb3J0IiwiYW50YWxfcGxhdHNhbm5vbnNlciI6NzQ0LCJhbnRhbF9sZWRpZ2Fqb2JiIjozNjUyfV19fQ==
+    http_version: 
+  recorded_at: Mon, 03 Sep 2018 18:40:45 GMT
+recorded_with: VCR 3.0.3

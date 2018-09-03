@@ -30,7 +30,7 @@ RSpec.describe Arbetsformedlingen::API::Client do
     it 'returns an ad' do
       client = described_class.new
 
-      ad = client.ad(id: 7612136)
+      ad = client.ad(id: 7911776)
 
       expect(ad.id).not_to be_nil
       expect(ad.title).not_to be_nil
@@ -309,6 +309,21 @@ RSpec.describe Arbetsformedlingen::API::Client do
       expect(result.name).to eq('Marknadskommunikatör')
       expect(result.total_ads).not_to be_nil
       expect(result.total_vacancies).not_to be_nil
+    end
+  end
+
+  describe '#occupation', vcr: true do
+    it 'returns no occupation if unknown' do
+      client = described_class.new
+
+      occupations = client.occupation(name: '{{}}}}')
+
+      expect(occupations.list_name).to eq('Yrken')
+      expect(occupations.raw_data).to be_a(Hash)
+      expect(occupations.total_ads).to be_zero
+      expect(occupations.total_vacancies).to be_zero
+      expect(occupations.data).to be_a(Array)
+      expect(occupations.data).to be_empty
     end
   end
 

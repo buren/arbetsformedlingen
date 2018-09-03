@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.arbetsformedlingen.se/af/v0/platsannonser/soklista/lan2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.arbetsformedlingen.se
+      Content-Type:
+      - application/json
+      Accept-Language:
+      - sv
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 03 Sep 2018 18:40:45 GMT
+      Server:
+      - WildFly/8
+      Www-Authenticate:
+      - Basic realm="CT"
+      Cache-Control:
+      - no-transform, max-age=600
+      X-Powered-By:
+      - Undertow/1
+      Access-Control-Allow-Headers:
+      - X-JWT-Assertion, Origin, X-Requested-With, Content-Type, Accept
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept,Accept-Language
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '2124'
+      Access-Control-Allow-Methods:
+      - GET, OPTIONS, HEAD, PUT, POST, DELETE
+      Connection:
+      - close
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJzb2tsaXN0YSI6eyJsaXN0bmFtbiI6ImxhbjIiLCJ0b3RhbHRfYW50YWxfcGxhdHNhbm5vbnNlciI6NDA3NjcsInRvdGFsdF9hbnRhbF9sZWRpZ2Fqb2JiIjo4NDg0NCwic29rZGF0YSI6W3siaWQiOiIxOTkiLCJuYW1uIjoiVXRvbWxhbmRzIiwiYW50YWxfcGxhdHNhbm5vbnNlciI6MzkwLCJhbnRhbF9sZWRpZ2Fqb2JiIjoxMDM4fSx7ImlkIjoiOTAiLCJuYW1uIjoiT3NwZWNpZmljZXJhZCBhcmJldHNvcnQiLCJhbnRhbF9wbGF0c2Fubm9uc2VyIjo3NDQsImFudGFsX2xlZGlnYWpvYmIiOjM2NTJ9LHsiaWQiOiIxMCIsIm5hbW4iOiJCbGVraW5nZSBsw6RuIiwiYW50YWxfcGxhdHNhbm5vbnNlciI6MzgxLCJhbnRhbF9sZWRpZ2Fqb2JiIjo1NDV9LHsiaWQiOiIyMCIsIm5hbW4iOiJEYWxhcm5hcyBsw6RuIiwiYW50YWxfcGxhdHNhbm5vbnNlciI6OTA4LCJhbnRhbF9sZWRpZ2Fqb2JiIjoyMDAwfSx7ImlkIjoiOSIsIm5hbW4iOiJHb3RsYW5kcyBsw6RuIiwiYW50YWxfcGxhdHNhbm5vbnNlciI6MTU1LCJhbnRhbF9sZWRpZ2Fqb2JiIjoyNjJ9LHsiaWQiOiIyMSIsIm5hbW4iOiJHw6R2bGVib3JncyBsw6RuIiwiYW50YWxfcGxhdHNhbm5vbnNlciI6Nzk5LCJhbnRhbF9sZWRpZ2Fqb2JiIjoxNzUzfSx7ImlkIjoiMTMiLCJuYW1uIjoiSGFsbGFuZHMgbMOkbiIsImFudGFsX3BsYXRzYW5ub25zZXIiOjk2MSwiYW50YWxfbGVkaWdham9iYiI6MTk3Nn0seyJpZCI6IjIzIiwibmFtbiI6IkrDpG10bGFuZHMgbMOkbiIsImFudGFsX3BsYXRzYW5ub25zZXIiOjQ0NywiYW50YWxfbGVkaWdham9iYiI6OTU0fSx7ImlkIjoiNiIsIm5hbW4iOiJKw7Zua8O2cGluZ3MgbMOkbiIsImFudGFsX3BsYXRzYW5ub25zZXIiOjEzOTAsImFudGFsX2xlZGlnYWpvYmIiOjI0OTF9LHsiaWQiOiI4IiwibmFtbiI6IkthbG1hciBsw6RuIiwiYW50YWxfcGxhdHNhbm5vbnNlciI6NTUzLCJhbnRhbF9sZWRpZ2Fqb2JiIjo5MjJ9LHsiaWQiOiI3IiwibmFtbiI6Iktyb25vYmVyZ3MgbMOkbiIsImFudGFsX3BsYXRzYW5ub25zZXIiOjg4NCwiYW50YWxfbGVkaWdham9iYiI6MjEzOH0seyJpZCI6IjI1IiwibmFtbiI6Ik5vcnJib3R0ZW5zIGzDpG4iLCJhbnRhbF9wbGF0c2Fubm9uc2VyIjo4NDYsImFudGFsX2xlZGlnYWpvYmIiOjE0Nzh9LHsiaWQiOiIxMiIsIm5hbW4iOiJTa8OlbmUgbMOkbiIsImFudGFsX3BsYXRzYW5ub25zZXIiOjQ2NjYsImFudGFsX2xlZGlnYWpvYmIiOjk1MDZ9LHsiaWQiOiIxIiwibmFtbiI6IlN0b2NraG9sbXMgbMOkbiIsImFudGFsX3BsYXRzYW5ub25zZXIiOjEyNzg3LCJhbnRhbF9sZWRpZ2Fqb2JiIjoyNzgwOH0seyJpZCI6IjQiLCJuYW1uIjoiU8O2ZGVybWFubGFuZHMgbMOkbiIsImFudGFsX3BsYXRzYW5ub25zZXIiOjk0OCwiYW50YWxfbGVkaWdham9iYiI6MTYwOX0seyJpZCI6IjMiLCJuYW1uIjoiVXBwc2FsYSBsw6RuIiwiYW50YWxfcGxhdHNhbm5vbnNlciI6MTUxMywiYW50YWxfbGVkaWdham9iYiI6MjM1Nn0seyJpZCI6IjE3IiwibmFtbiI6IlbDpHJtbGFuZHMgbMOkbiIsImFudGFsX3BsYXRzYW5ub25zZXIiOjU4NywiYW50YWxfbGVkaWdham9iYiI6MTA0OH0seyJpZCI6IjI0IiwibmFtbiI6IlbDpHN0ZXJib3R0ZW5zIGzDpG4iLCJhbnRhbF9wbGF0c2Fubm9uc2VyIjo3NjIsImFudGFsX2xlZGlnYWpvYmIiOjE3Mjd9LHsiaWQiOiIyMiIsIm5hbW4iOiJWw6RzdGVybm9ycmxhbmRzIGzDpG4iLCJhbnRhbF9wbGF0c2Fubm9uc2VyIjo2MzYsImFudGFsX2xlZGlnYWpvYmIiOjExOTF9LHsiaWQiOiIxOSIsIm5hbW4iOiJWw6RzdG1hbmxhbmRzIGzDpG4iLCJhbnRhbF9wbGF0c2Fubm9uc2VyIjo5MDgsImFudGFsX2xlZGlnYWpvYmIiOjE3ODd9LHsiaWQiOiIxNCIsIm5hbW4iOiJWw6RzdHJhIEfDtnRhbGFuZHMgbMOkbiIsImFudGFsX3BsYXRzYW5ub25zZXIiOjY4NzQsImFudGFsX2xlZGlnYWpvYmIiOjEzNTg1fSx7ImlkIjoiMTgiLCJuYW1uIjoiw5ZyZWJybyBsw6RuIiwiYW50YWxfcGxhdHNhbm5vbnNlciI6OTI0LCJhbnRhbF9sZWRpZ2Fqb2JiIjoxNjYzfSx7ImlkIjoiNSIsIm5hbW4iOiLDlnN0ZXJnw7Z0bGFuZHMgbMOkbiIsImFudGFsX3BsYXRzYW5ub25zZXIiOjE3MDQsImFudGFsX2xlZGlnYWpvYmIiOjMzNTV9XX19
+    http_version: 
+  recorded_at: Mon, 03 Sep 2018 18:40:45 GMT
+recorded_with: VCR 3.0.3
