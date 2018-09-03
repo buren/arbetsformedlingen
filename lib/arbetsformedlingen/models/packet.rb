@@ -2,7 +2,7 @@ require 'builder'
 require 'arbetsformedlingen/models/packet_xml_builder'
 
 module Arbetsformedlingen
-  PacketSchema = Dry::Validation.Form do
+  PacketSchema = Dry::Validation.Params do
     configure do
       config.type_specs = true
       config.messages_file = File.expand_path('../../../../config/locales/errors.yml', __FILE__)
@@ -13,7 +13,7 @@ module Arbetsformedlingen
     required(:active, Types::Bool).filled
     required(:job_id, Types::StrippedString).filled
     required(:id, Types::StrippedString).filled
-    required(:number_to_fill, Types::Int).filled(gt?: 0)
+    required(:number_to_fill, Types::Integer).filled(gt?: 0)
     required(:occupation, Types::Occupation).filled(:occupation_code?)
   end
 

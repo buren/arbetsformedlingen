@@ -23,7 +23,7 @@ module Arbetsformedlingen
     Occupation = Types::Strict::String.constructor do |string|
       OccupationCode.to_code(string)
     end
-    PositionDuration = Types::Strict::Int
+    PositionDuration = Types::Strict::Integer
     DriversLicense = Types::Strict::String.constructor do |value|
       DriversLicenseCode.to_code(value)
     end

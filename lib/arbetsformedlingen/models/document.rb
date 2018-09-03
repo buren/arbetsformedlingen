@@ -1,7 +1,7 @@
 require 'securerandom'
 
 module Arbetsformedlingen
-  DocumentSchema = Dry::Validation.Form do
+  DocumentSchema = Dry::Validation.Params do
     configure do
       config.type_specs = true
       config.messages_file = File.expand_path('../../../../config/locales/errors.yml', __FILE__)
