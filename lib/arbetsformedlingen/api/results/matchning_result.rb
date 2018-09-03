@@ -28,7 +28,7 @@ module Arbetsformedlingen
           municipalities: ad_data.fetch('kommunnamn'),
           municipality_id: ad_data.fetch('kommunkod'),
           published_at: ad_data.fetch('publiceraddatum'),
-          last_application_at: ad_data.fetch('sista_ansokningsdag'),
+          last_application_at: ad_data.fetch('sista_ansokningsdag', nil),
           url: ad_data.fetch('annonsurl'),
           relevance: ad_data.fetch('relevans'),
           total_vacancies: ad_data.fetch('antalplatser'),

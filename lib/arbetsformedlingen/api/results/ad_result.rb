@@ -43,7 +43,7 @@ module Arbetsformedlingen
           reference: data['referens'],
           application_url: data.fetch('webbplats'),
           email: data['epostadress'],
-          last_application_at: data.fetch('sista_ansokningsdag'),
+          last_application_at: data.fetch('sista_ansokningsdag', nil),
           application_comment: data.fetch('ovrigt_om_ansokan')
         )
       end
