@@ -318,7 +318,7 @@ RSpec.describe Arbetsformedlingen::API::Client do
 
       occupations = client.occupation(name: '{{}}}}')
 
-      expect(occupations.list_name).to be_nil
+      expect(occupations.list_name).to eq('Yrken')
       expect(occupations.raw_data).to be_a(Hash)
       expect(occupations.total_ads).to be_zero
       expect(occupations.total_vacancies).to be_zero

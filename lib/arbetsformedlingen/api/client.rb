@@ -69,7 +69,7 @@ module Arbetsformedlingen
       def areas
         response = request.get('soklista/omrade')
 
-        SoklistaResult.build(response.json)
+        SoklistaResult.build(response.json, list_name: 'omrade')
       end
 
       # Fetch counties from API (countries => land)
@@ -81,7 +81,7 @@ module Arbetsformedlingen
         query = { omradeid: area_id }
         response = request.get('soklista/land', query: query)
 
-        SoklistaResult.build(response.json)
+        SoklistaResult.build(response.json, list_name: 'land')
       end
 
       # Fetch municipalities from API (municipality => kommun)
@@ -95,7 +95,7 @@ module Arbetsformedlingen
         query = { lanid: county_id }
         response = request.get('soklista/kommuner', query: query)
 
-        SoklistaResult.build(response.json)
+        SoklistaResult.build(response.json, list_name: 'kommuner')
       end
 
       # Fetch counties from API (county => län)
@@ -105,7 +105,7 @@ module Arbetsformedlingen
       def counties
         response = request.get('soklista/lan')
 
-        SoklistaResult.build(response.json)
+        SoklistaResult.build(response.json, list_name: 'lan')
       end
 
       # Fetch counties2 from API (county2 => län2)
@@ -115,7 +115,7 @@ module Arbetsformedlingen
       def counties2
         response = request.get('soklista/lan2')
 
-        SoklistaResult.build(response.json)
+        SoklistaResult.build(response.json, list_name: 'lan2')
       end
 
       # Fetch occupational fields from API (occupational_fields => yrkesområde)
@@ -125,7 +125,7 @@ module Arbetsformedlingen
       def occupational_fields
         response = request.get('soklista/yrkesomraden')
 
-        SoklistaResult.build(response.json)
+        SoklistaResult.build(response.json, list_name: 'yrkesomraden')
       end
 
       # Fetch occupational group from API (occupational_group => yrkesgrupp)
@@ -141,7 +141,7 @@ module Arbetsformedlingen
         query = { yrkesomradeid: occupational_field_id }
         response = request.get('soklista/yrkesgrupper', query: query)
 
-        SoklistaResult.build(response.json)
+        SoklistaResult.build(response.json, list_name: 'yrkesgrupper')
       end
 
       # Fetch occupation from API (occupation => yrkesnamn)
@@ -152,7 +152,7 @@ module Arbetsformedlingen
       def occupation(name:)
         response = request.get("soklista/yrken/#{URI.encode(name)}")
 
-        SoklistaResult.build(response.json)
+        SoklistaResult.build(response.json, list_name: 'Yrken')
       end
 
       # Fetch occupations from API (occupation => yrkesnamn)
@@ -168,7 +168,7 @@ module Arbetsformedlingen
         query = { yrkesgruppid: occupational_group_id }
         response = request.get('soklista/yrken', query: query)
 
-        SoklistaResult.build(response.json)
+        SoklistaResult.build(response.json, list_name: 'yrken')
       end
     end
   end
