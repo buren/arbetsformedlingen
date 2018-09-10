@@ -126,6 +126,14 @@ RSpec.describe Arbetsformedlingen::API::Client do
       expect(result.country_id).not_to be_nil
       expect(result.employment_type).not_to be_nil
     end
+
+    it 'returns empty list when no results are found', vcr: true do
+      client = described_class.new
+
+      counties = client.ads(municipality_id: '0780', page: 23, page_size: 100)
+
+      expect(counties.data.length).to equal(0)
+    end
   end
 
   describe '#areas', vcr: true do

@@ -14,8 +14,14 @@ module Arbetsformedlingen
           total_vacancies_on_page: data.fetch('antal_platserTotal'),
           total_pages: data.fetch('antal_sidor'),
           raw_data: response_data,
-          data: data.fetch('matchningdata').map { |ad_data| build_ad_result(ad_data) }
+          data: build_ad_results(data)
         )
+      end
+
+      def self.build_ad_results(data)
+        data.fetch('matchningdata', []).map do |ad_data|
+          build_ad_result(ad_data)
+        end
       end
 
       def self.build_ad_result(ad_data)
