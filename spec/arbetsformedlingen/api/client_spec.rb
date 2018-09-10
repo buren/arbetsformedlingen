@@ -134,6 +134,12 @@ RSpec.describe Arbetsformedlingen::API::Client do
 
       expect(counties.data.length).to equal(0)
     end
+
+    it 'handles error from arbetsförmedlingen', vcr: true do
+      client = described_class.new
+
+      client.ads(county_id: 1, page: 9999, page_size: 1000)
+    end
   end
 
   describe '#areas', vcr: true do
