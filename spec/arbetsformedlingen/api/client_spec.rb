@@ -140,7 +140,7 @@ RSpec.describe Arbetsformedlingen::API::Client do
 
       expect { client.ads(county_id: 1, page: 9999, page_size: 1000) }
         .to raise_error(Arbetsformedlingen::API::Values::MatchningError,
-                        /Fel vid hämtning av annonslista/)
+                        /Fel vid h.+mtning av annonslista/)
     end
   end
 
