@@ -82,7 +82,7 @@ module Arbetsformedlingen
 
         response = request.get('matchning', query: query)
 
-        MatchningResult.build(response.json)
+        MatchningResult.build(response)
       end
 
       private

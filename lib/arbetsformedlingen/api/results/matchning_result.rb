@@ -3,7 +3,13 @@ require 'arbetsformedlingen/api/values/matchning_result_values'
 module Arbetsformedlingen
   module API
     module MatchningResult
-      def self.build(response_data)
+      def self.build(response)
+        raise Values::MatchningError, response unless response.code == '200'
+
+        build_matchning_page(response.json)
+      end
+
+      def self.build_matchning_page(response_data)
         data = response_data.fetch('matchningslista')
 
         Values::MatchningPage.new(

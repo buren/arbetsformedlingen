@@ -26,6 +26,13 @@ module Arbetsformedlingen
         end
       end
 
+      # Error thrown when matchning response is invalid
+      class MatchningError < StandardError
+        def initialize(response)
+          super(response.body.gsub(%r{<\/?[^>]*>}, ' ').strip)
+        end
+      end
+
       MatchningAd = KeyStruct.new(
         :id,
         :title,
