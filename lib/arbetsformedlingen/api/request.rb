@@ -1,12 +1,11 @@
 require 'uri'
 require 'net/http'
 require 'json'
+require 'arbetsformedlingen/api/response'
 
 module Arbetsformedlingen
   module API
     class Request
-      Response = KeyStruct.new(:code, :body, :json)
-
       attr_reader :locale, :base_url
 
       def initialize(base_url: '', locale: 'sv')
@@ -25,17 +24,7 @@ module Arbetsformedlingen
 
         response = http.request(request)
 
-        Response.new(
-          code: response.code,
-          body: response.read_body,
-          json: parse_json(response.read_body)
-        )
-      end
-
-      def parse_json(string)
-        JSON.parse(string.to_s)
-      rescue JSON::ParserError => _e
-        {}
+        Response.new(response)
       end
     end
   end
