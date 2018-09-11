@@ -5,14 +5,20 @@ require 'arbetsformedlingen/api/response'
 
 module Arbetsformedlingen
   module API
+    # API request object
     class Request
       attr_reader :locale, :base_url
 
+      # Initialize request
       def initialize(base_url: '', locale: 'sv')
         @base_url = base_url
         @locale = locale
       end
 
+      # Perform GEt request
+      # @param [String] url to be fetched
+      # @param [Hash] query params
+      # @return [Response] response object
       def get(url, query: {})
         uri = URI("#{base_url}#{url}?#{URI.encode_www_form(query.to_a)}")
 

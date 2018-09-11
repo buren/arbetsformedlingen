@@ -8,11 +8,14 @@ end
 
 module Arbetsformedlingen
   module API
+    # API SOAP request
     class SOAPRequest
+      # SOAP response
       Response = KeyStruct.new(:code, :body, :xml)
 
       attr_reader :locale, :uri, :url
 
+      # Initialize SOAP request
       def initialize(url, locale: nil)
         unless Object.const_defined?(:Nokogiri)
           raise(ArgumentError, "unable to require 'nokogiri' gem, please install it")
@@ -23,6 +26,9 @@ module Arbetsformedlingen
         @locale = locale
       end
 
+      # Performs a POST request
+      # @param [String] the post body
+      # @return [Response] the response
       def post(body)
         http = Net::HTTP.new(uri.host, uri.port)
         http.use_ssl = true if uri.scheme == 'https'

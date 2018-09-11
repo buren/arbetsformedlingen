@@ -3,6 +3,10 @@ require 'arbetsformedlingen/api/values/soklista_values'
 module Arbetsformedlingen
   module API
     module SoklistaResult
+      # Build API result object for "soklista"
+      # @param [API::Response] response
+      # @param list_name [String] result list name
+      # @return [Values::SoklistaPage]
       def self.build(response, list_name: nil)
         return build_empty_page(response, list_name) unless response.success?
 

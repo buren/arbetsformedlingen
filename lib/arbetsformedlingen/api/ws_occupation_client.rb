@@ -3,13 +3,16 @@ require 'arbetsformedlingen/api/soap_request'
 
 module Arbetsformedlingen
   module API
+    # WsOccupation API client
     class WSOccupationClient
       attr_reader :request
 
+      # Service URL
       SERVICE_URL = 'https://api.arbetsformedlingen.se/af/v0/Occupation/wsoccupation.asmx'.freeze
 
+      # Initialize client
       def initialize
-        @request = request || SOAPRequest.new(SERVICE_URL)
+        @request = SOAPRequest.new(SERVICE_URL)
       end
 
       def occupation(id)

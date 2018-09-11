@@ -3,6 +3,9 @@ require 'arbetsformedlingen/api/values/matchning_result_values'
 module Arbetsformedlingen
   module API
     module MatchningResult
+      # Build API result object for matchning result
+      # @param [API::Response] response
+      # @return [Values::MatchningPage]
       def self.build(response)
         return empty_matchning_page(response) unless response.success?
 
