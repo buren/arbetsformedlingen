@@ -23,6 +23,7 @@ module Arbetsformedlingen
       class Ad
         def to_h
           hash = super.to_h
+          hash.delete(:response) # we don't want to return the raw response object
           hash[:terms] = hash[:terms].to_h
           hash[:application] = hash[:application].to_h
           hash[:workplace] = hash[:workplace].to_h

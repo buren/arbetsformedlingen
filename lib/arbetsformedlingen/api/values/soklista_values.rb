@@ -18,6 +18,7 @@ module Arbetsformedlingen
 
         def to_h
           hash = super.to_h
+          hash.delete(:response) # we don't want to return the raw response object
           hash[:data].map!(&:to_h)
           hash
         end
