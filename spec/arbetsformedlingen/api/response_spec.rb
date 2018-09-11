@@ -32,4 +32,35 @@ RSpec.describe Arbetsformedlingen::API::Response do
       end.to raise_error(NoMethodError)
     end
   end
+
+  context 'xml' do
+    it 'returns a Nokogiri document' do
+      request = described_class.new(Struct.new(:read_body).new(''))
+      expect(request.xml).to be_a(Nokogiri::XML::Document)
+    end
+
+    it 'returns a Nokogiri document with namespaces removed' do
+      xml_with_namespace = <<~XMLDATA
+      <?xml version="1.0" encoding="utf-8"?>
+      <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <soap:Body>
+          <GetAllOccupationsShortResponse xmlns="urn:ams.se:wsoccupation">
+            <OccupationsShort>
+              <OccupationShort>
+                <Id>718</Id>
+                <Name>Landskapsarkitekter och landskapsingenjörer</Name>
+              </OccupationShort>
+            </OccupationsShort>
+          </GetAllOccupationsShortResponse>
+        </soap:Body>
+      </soap:Envelope>
+      XMLDATA
+
+      request = described_class.new(Struct.new(:read_body).new(xml_with_namespace))
+
+      document = request.xml
+      result = document.css('Id').map(&:text)
+      expect(result).to eq(%w[718])
+    end
+  end
 end

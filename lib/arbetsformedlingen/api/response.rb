@@ -1,3 +1,8 @@
+begin
+  require 'nokogiri'
+rescue LoadError
+end
+
 module Arbetsformedlingen
   module API
     # API response object
@@ -21,9 +26,15 @@ module Arbetsformedlingen
       end
 
       # Response JSON
-      # @return [Hash] response json Hash, empty is JSON is invalid
+      # @return [Hash] response json - empty if JSON is invalid
       def json
         @json ||= parse_json(body)
+      end
+
+      # Response XML
+      # @return [Nokogiri::XML::Document] response - empty is XML is invalid
+      def xml
+        @xml ||= parse_xml(body)
       end
 
       # Delegate missing values to response
@@ -48,6 +59,10 @@ module Arbetsformedlingen
         JSON.parse(string.to_s)
       rescue JSON::ParserError => _e
         {}
+      end
+
+      def parse_xml(string)
+        Nokogiri::XML(string).tap { |doc| doc.remove_namespaces! }
       end
     end
   end

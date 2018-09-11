@@ -1,5 +1,6 @@
 require 'uri'
 require 'net/http'
+require 'arbetsformedlingen/api/response'
 
 begin
   require 'nokogiri'
@@ -11,7 +12,7 @@ module Arbetsformedlingen
     # API SOAP request
     class SOAPRequest
       # SOAP response
-      Response = KeyStruct.new(:code, :body, :xml)
+      # Response = KeyStruct.new(:code, :body, :xml)
 
       attr_reader :locale, :uri, :url
 
@@ -40,15 +41,7 @@ module Arbetsformedlingen
 
         response = http.request(request)
 
-        Response.new(
-          code: response.code,
-          body: response.read_body,
-          xml: parse_xml(response.read_body)
-        )
-      end
-
-      def parse_xml(string)
-        Nokogiri::XML(string).tap { |doc| doc.remove_namespaces! }
+        Response.new(response)
       end
     end
   end
