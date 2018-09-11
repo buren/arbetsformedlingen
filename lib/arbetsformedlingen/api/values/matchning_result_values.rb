@@ -10,7 +10,9 @@ module Arbetsformedlingen
         :total_places_total,
         :total_pages,
         :data,
-        :raw_data
+        :raw_data,
+        :response,
+        :success
       )
       class MatchningPage
         include Enumerable
@@ -24,12 +26,9 @@ module Arbetsformedlingen
           hash[:data].map!(&:to_h)
           hash
         end
-      end
 
-      # Error thrown when matchning response is invalid
-      class MatchningError < StandardError
-        def initialize(response)
-          super(response.body.gsub(%r{<\/?[^>]*>}, ' ').strip)
+        def success?
+          success
         end
       end
 

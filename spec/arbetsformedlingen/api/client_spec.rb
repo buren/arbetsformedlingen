@@ -130,17 +130,24 @@ RSpec.describe Arbetsformedlingen::API::Client do
     it 'returns empty list when no results are found', vcr: true do
       client = described_class.new
 
-      counties = client.ads(municipality_id: '0780', page: 23, page_size: 100)
+      page = client.ads(municipality_id: '0780', page: 23, page_size: 100)
 
-      expect(counties.data.length).to equal(0)
+      expect(page.data.length).to equal(0)
+      expect(page).to be_success
+      expect(page.response).to be_a(Arbetsformedlingen::API::Request::Response)
+      expect(page.response.code).to eq('200')
     end
 
     it 'handles error from arbetsförmedlingen', vcr: true do
       client = described_class.new
 
-      expect { client.ads(county_id: 1, page: 9999, page_size: 1000) }
-        .to raise_error(Arbetsformedlingen::API::Values::MatchningError,
-                        /Fel vid h.+mtning av annonslista/)
+      page = client.ads(county_id: 1, page: 9999, page_size: 1000)
+
+      expect(page.data.length).to equal(0)
+      expect(page).to be_a(Arbetsformedlingen::API::Values::MatchningPage)
+      expect(page).not_to be_success
+      expect(page.response).to be_a(Arbetsformedlingen::API::Request::Response)
+      expect(page.response.code).to eq('500')
     end
   end
 
