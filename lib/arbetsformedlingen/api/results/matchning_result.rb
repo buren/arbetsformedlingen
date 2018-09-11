@@ -4,7 +4,7 @@ module Arbetsformedlingen
   module API
     module MatchningResult
       def self.build(response)
-        return empty_matchning_page(response) unless response.code == '200'
+        return empty_matchning_page(response) unless response.success?
 
         build_matchning_page(response)
       end
@@ -21,8 +21,7 @@ module Arbetsformedlingen
           total_pages: 0,
           raw_data: response_data,
           data: [],
-          response: response,
-          success: false
+          response: response
         )
       end
 
@@ -39,10 +38,11 @@ module Arbetsformedlingen
           total_pages: data.fetch('antal_sidor'),
           raw_data: response_data,
           data: build_ad_results(data),
-          response: response,
-          success: true
+          response: response
         )
       end
+
+      # private
 
       def self.build_ad_results(data)
         data.fetch('matchningdata', []).map do |ad_data|

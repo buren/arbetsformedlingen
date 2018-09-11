@@ -133,9 +133,8 @@ RSpec.describe Arbetsformedlingen::API::Client do
       page = client.ads(municipality_id: '0780', page: 23, page_size: 100)
 
       expect(page.data.length).to equal(0)
-      expect(page).to be_success
       expect(page.response).to be_a(Arbetsformedlingen::API::Response)
-      expect(page.response.code).to eq('200')
+      expect(page.response.success?).to eq(true)
     end
 
     it 'handles error from arbetsförmedlingen', vcr: true do
