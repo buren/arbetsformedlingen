@@ -9,6 +9,8 @@ module Arbetsformedlingen
         build_matchning_page(response)
       end
 
+      # private
+
       def self.empty_matchning_page(response)
         response_data = response.json
 
