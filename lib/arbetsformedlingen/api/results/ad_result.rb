@@ -7,6 +7,8 @@ module Arbetsformedlingen
       # @param [API::Response] response
       # @return [Values::Ad]
       def self.build(response)
+        return build_empty(response) unless response.success?
+
         response_data = response.json
         data = response_data.fetch('platsannons')
 
@@ -34,6 +36,10 @@ module Arbetsformedlingen
       end
 
       # private
+
+      def self.build_empty(response)
+        Values::Ad.new(response: response)
+      end
 
       def self.build_terms(data)
         Values::Terms.new(
