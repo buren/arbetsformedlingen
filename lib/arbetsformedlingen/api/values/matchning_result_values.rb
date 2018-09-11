@@ -10,7 +10,9 @@ module Arbetsformedlingen
         :total_places_total,
         :total_pages,
         :data,
-        :raw_data
+        :raw_data,
+        :response,
+        :success
       )
       class MatchningPage
         include Enumerable
@@ -23,6 +25,10 @@ module Arbetsformedlingen
           hash = super.to_h
           hash[:data].map!(&:to_h)
           hash
+        end
+
+        def success?
+          success
         end
       end
 
