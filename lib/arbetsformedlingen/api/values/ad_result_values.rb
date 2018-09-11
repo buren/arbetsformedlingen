@@ -17,7 +17,8 @@ module Arbetsformedlingen
         :terms,
         :application,
         :workplace,
-        :requirements
+        :requirements,
+        :response
       )
       class Ad
         def to_h

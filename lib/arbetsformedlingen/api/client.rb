@@ -50,7 +50,7 @@ module Arbetsformedlingen
       def ad(id:)
         response = request.get(id)
 
-        AdResult.build(response.json)
+        AdResult.build(response)
       end
 
       # Fetch ads from API (areas => landområde/värdsdel)

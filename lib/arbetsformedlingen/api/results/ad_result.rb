@@ -3,7 +3,11 @@ require 'arbetsformedlingen/api/values/ad_result_values'
 module Arbetsformedlingen
   module API
     module AdResult
-      def self.build(response_data)
+      # Build API result object for ad result
+      # @param [API::Response] response
+      # @return [Values::Ad]
+      def self.build(response)
+        response_data = response.json
         data = response_data.fetch('platsannons')
 
         ad_data = data.fetch('annons')
@@ -24,9 +28,12 @@ module Arbetsformedlingen
           terms: build_terms(data.fetch('villkor')),
           application: build_application(data.fetch('ansokan')),
           workplace: build_workplace(data.fetch('arbetsplats')),
-          requirements: build_requirements(data.fetch('krav'))
+          requirements: build_requirements(data.fetch('krav')),
+          response: response
         )
       end
+
+      # private
 
       def self.build_terms(data)
         Values::Terms.new(
