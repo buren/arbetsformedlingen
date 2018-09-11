@@ -144,7 +144,7 @@ RSpec.describe Arbetsformedlingen::API::Client do
 
       expect(page.data.length).to equal(0)
       expect(page).to be_a(Arbetsformedlingen::API::Values::MatchningPage)
-      expect(page).not_to be_success
+      expect(page.response).not_to be_success
       expect(page.response).to be_a(Arbetsformedlingen::API::Response)
       expect(page.response.code).to eq('500')
     end

@@ -11,8 +11,7 @@ module Arbetsformedlingen
         :total_pages,
         :data,
         :raw_data,
-        :response,
-        :success
+        :response
       )
       class MatchningPage
         include Enumerable

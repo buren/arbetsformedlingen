@@ -6,7 +6,8 @@ module Arbetsformedlingen
         :total_ads,
         :total_vacancies,
         :data,
-        :raw_data
+        :raw_data,
+        :response
       )
       class SoklistaPage
         include Enumerable
@@ -19,6 +20,18 @@ module Arbetsformedlingen
           hash = super.to_h
           hash[:data].map!(&:to_h)
           hash
+        end
+
+        def method_missing(method_name, *arguments, &block)
+          if response.respond_to?(method_name)
+            response.public_send(method_name, *arguments, &block)
+          else
+            super
+          end
+        end
+
+        def respond_to_missing?(method_name, include_private = false)
+          response.respond_to?(method_name) || super
         end
       end
 
