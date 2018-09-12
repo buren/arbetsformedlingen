@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Arbetsformedlingen
   class Model
     def self.from_schema(schema)

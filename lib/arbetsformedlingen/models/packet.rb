@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'builder'
 require 'arbetsformedlingen/models/packet_xml_builder'
 
@@ -5,7 +7,7 @@ module Arbetsformedlingen
   PacketSchema = Dry::Validation.Params do
     configure do
       config.type_specs = true
-      config.messages_file = File.expand_path('../../../../config/locales/errors.yml', __FILE__)
+      config.messages_file = File.expand_path('../../../config/locales/errors.yml', __dir__)
 
       predicates(Predicates)
     end

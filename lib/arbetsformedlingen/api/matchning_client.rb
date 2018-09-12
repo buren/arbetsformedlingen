@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'date'
 require 'time'
 require 'arbetsformedlingen/api/request'
@@ -79,7 +81,7 @@ module Arbetsformedlingen
           anstallningstyp: santize_employment_type_query(employment_type),
           yrkesomradeid: occupation_field_id,
           sokdatum: normalize_date_to_iso8601(published_after),
-          organisationsnummer: organization_number
+          organisationsnummer: organization_number,
         }
 
         response = request.get('matchning', query: query)

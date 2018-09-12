@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'arbetsformedlingen/soap_builder'
 require 'arbetsformedlingen/api/soap_request'
 

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Arbetsformedlingen
   module Types
     include Dry::Types.module
@@ -5,14 +7,14 @@ module Arbetsformedlingen
     StrippedString = Types::Strict::String.constructor { |value| value.to_s.strip }
     UUIDString = Types::Strict::String.constrained(size: 36)
     Currency = Types::Strict::String.constructor do |string|
-      string.strip.upcase if string
+      string&.strip&.upcase
     end
     # Company Identification Number
     CIN = Types::Strict::String.constructor do |string|
-      string.delete(' ').delete('-') if string
+      string&.delete(' ')&.delete('-')
     end
     Zip = Types::Strict::String.constructor do |string|
-      string.delete(' ') if string
+      string&.delete(' ')
     end
     Municipality = Types::Strict::String.constructor do |string|
       MunicipalityCode.to_code(string)

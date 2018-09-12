@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'arbetsformedlingen/api/values/ad_result_values'
 
 module Arbetsformedlingen

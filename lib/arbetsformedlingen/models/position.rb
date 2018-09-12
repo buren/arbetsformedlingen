@@ -1,8 +1,10 @@
+# frozen_string_literal: true
+
 module Arbetsformedlingen
   PositionSchema = Dry::Validation.Params do
     configure do
       config.type_specs = true
-      config.messages_file = File.expand_path('../../../../config/locales/errors.yml', __FILE__)
+      config.messages_file = File.expand_path('../../../config/locales/errors.yml', __dir__)
 
       predicates(Predicates)
     end
@@ -49,7 +51,7 @@ module Arbetsformedlingen
       [
         address.fetch(:street),
         address.fetch(:zip),
-        address[:city]
+        address[:city],
       ].compact.join(', ')
     end
   end

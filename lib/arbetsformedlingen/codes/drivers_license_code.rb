@@ -1,10 +1,12 @@
+# frozen_string_literal: true
+
 require 'set'
 
 module Arbetsformedlingen
   module DriversLicenseCode
     CODES = Set.new([
-      'AM', 'A1', 'A2', 'A', 'B', 'Utökad B', 'BE', 'C1', 'C1E', 'C', 'CE', 'D1', 'D1E', 'D', 'DE'
-    ]).freeze
+                      'AM', 'A1', 'A2', 'A', 'B', 'Utökad B', 'BE', 'C1', 'C1E', 'C', 'CE', 'D1', 'D1E', 'D', 'DE'
+                    ]).freeze
 
     def self.codes
       CODES.to_a

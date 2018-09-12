@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'arbetsformedlingen/api/request'
 require 'arbetsformedlingen/api/values/create_ad_page'
 
@@ -10,7 +12,7 @@ module Arbetsformedlingen
 
       # HTTP headers
       HEADERS = {
-        'Content-type' => 'text/xml'
+        'Content-type' => 'text/xml',
       }.freeze
 
       # Post ad to API

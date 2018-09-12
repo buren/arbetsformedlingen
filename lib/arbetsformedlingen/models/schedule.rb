@@ -1,8 +1,10 @@
+# frozen_string_literal: true
+
 module Arbetsformedlingen
   ScheduleSchema = Dry::Validation.Params do
     configure do
       config.type_specs = true
-      config.messages_file = File.expand_path('../../../../config/locales/errors.yml', __FILE__)
+      config.messages_file = File.expand_path('../../../config/locales/errors.yml', __dir__)
 
       predicates(Predicates)
     end
@@ -22,7 +24,7 @@ module Arbetsformedlingen
       from_11_days_to_3_months: 7,
       from_june_to_august: 4, # summer months (June to August)
       from_3_months_to_6_months: 3,
-      from_6_months_to_longer: 2
+      from_6_months_to_longer: 2,
     }.freeze
 
     def initialize(hash)

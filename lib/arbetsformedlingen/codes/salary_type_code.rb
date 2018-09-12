@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'set'
 
 module Arbetsformedlingen
@@ -5,7 +7,7 @@ module Arbetsformedlingen
     CODE_MAP = {
       'fixed' => '1',
       'fixed_and_commission' => '2',
-      'commission' => '3'
+      'commission' => '3',
     }.freeze
 
     CODES = Set.new(CODE_MAP.values).freeze

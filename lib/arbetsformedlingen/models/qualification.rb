@@ -1,8 +1,10 @@
+# frozen_string_literal: true
+
 module Arbetsformedlingen
   QualificationSchema = Dry::Validation.Params do
     configure do
       config.type_specs = true
-      config.messages_file = File.expand_path('../../../../config/locales/errors.yml', __FILE__)
+      config.messages_file = File.expand_path('../../../config/locales/errors.yml', __dir__)
 
       predicates(Predicates)
     end

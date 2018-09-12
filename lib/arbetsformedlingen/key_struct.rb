@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Arbetsformedlingen
   class KeyStruct < Struct
     def initialize(**keyword_args)
