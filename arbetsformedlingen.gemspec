@@ -1,6 +1,6 @@
-# coding: utf-8
+# frozen_string_literal: true
 
-lib = File.expand_path('../lib', __FILE__)
+lib = File.expand_path('lib', __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'arbetsformedlingen/version'
 
@@ -22,15 +22,16 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = %w[lib config]
 
-  spec.add_dependency 'httparty', '~> 0.13' # Easy HTTP requests
-  spec.add_dependency 'dry-validation', '~> 0.12'
   spec.add_dependency 'builder', '~> 3.2'
+  spec.add_dependency 'dry-validation', '~> 0.12'
+  spec.add_dependency 'httparty', '~> 0.13' # Easy HTTP requests
 
-  spec.add_development_dependency 'nokogiri', '~> 1.8'
   spec.add_development_dependency 'bundler', '~> 1.14'
+  spec.add_development_dependency 'byebug'
+  spec.add_development_dependency 'nokogiri', '~> 1.8'
   spec.add_development_dependency 'rake', '~> 10.0'
   spec.add_development_dependency 'rspec', '~> 3.0'
-  spec.add_development_dependency 'webmock', '~> 3.1'
+  spec.add_development_dependency 'rubocop', '~> 0.59'
   spec.add_development_dependency 'vcr', '~> 3.0'
-  spec.add_development_dependency 'byebug'
+  spec.add_development_dependency 'webmock', '~> 3.1'
 end

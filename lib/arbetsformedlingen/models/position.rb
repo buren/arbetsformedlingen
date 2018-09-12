@@ -1,8 +1,10 @@
+# frozen_string_literal: true
+
 module Arbetsformedlingen
   PositionSchema = Dry::Validation.Params do
     configure do
       config.type_specs = true
-      config.messages_file = File.expand_path('../../../../config/locales/errors.yml', __FILE__)
+      config.messages_file = File.expand_path('../../../config/locales/errors.yml', __dir__) # rubocop:disable Metrics/LineLength
 
       predicates(Predicates)
     end
@@ -20,7 +22,7 @@ module Arbetsformedlingen
   end
 
   class Position < Model
-    def initialize(attributes:, company:, schedule:, salary:, qualifications:, application_method:)
+    def initialize(attributes:, company:, schedule:, salary:, qualifications:, application_method:) # rubocop:disable Metrics/LineLength
       hash = attributes
       @company = company
       @schedule = schedule
@@ -49,7 +51,7 @@ module Arbetsformedlingen
       [
         address.fetch(:street),
         address.fetch(:zip),
-        address[:city]
+        address[:city],
       ].compact.join(', ')
     end
   end

@@ -1,6 +1,6 @@
+# frozen_string_literal: true
+
 require 'uri'
-require 'net/http'
-require 'json'
 
 require 'arbetsformedlingen/api/request'
 
@@ -57,7 +57,7 @@ module Arbetsformedlingen
         AdResult.build(response)
       end
 
-      # Fetch ads from API (areas => landområde/värdsdel)
+      # Fetch ads from API (areas => landområde/värdsdel)
       # @return [Values::MatchningPage] the result.
       # @see Values::MatchningPage
       def ads(**args)
@@ -65,7 +65,7 @@ module Arbetsformedlingen
         client.ads(**args)
       end
 
-      # Fetch areas from API (areas => landområde/värdsdel)
+      # Fetch areas from API (areas => landområde/värdsdel)
       # @return [Values::SoklistaPage] the result.
       # @example Get areas
       #    client.areas
@@ -126,7 +126,7 @@ module Arbetsformedlingen
         SoklistaResult.build(response, list_name: 'lan2')
       end
 
-      # Fetch occupational fields from API (occupational_fields => yrkesområde)
+      # Fetch occupational fields from API (occupational_fields => yrkesområde)
       # @return [Values::SoklistaPage] the result.
       # @example Get occupational fields
       #    client.occupational_field
@@ -161,7 +161,7 @@ module Arbetsformedlingen
       #    client.occupation(name: 'Marknadskommunikatör')
       # @see Values::SoklistaPage
       def occupation(name:)
-        response = request.get("soklista/yrken/#{URI.encode(name)}")
+        response = request.get("soklista/yrken/#{uri_escape(name)}")
 
         SoklistaResult.build(response, list_name: 'Yrken')
       end
@@ -181,6 +181,12 @@ module Arbetsformedlingen
         response = request.get('soklista/yrken', query: query)
 
         SoklistaResult.build(response, list_name: 'yrken')
+      end
+
+      private
+
+      def uri_escape(string)
+        URI.encode_www_form_component(string)
       end
     end
   end

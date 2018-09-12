@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Arbetsformedlingen
   module API
     module Values
@@ -6,7 +8,7 @@ module Arbetsformedlingen
 
         attr_reader :code, :messages, :body, :request_body
 
-        def initialize(httparty_response, request_boby)
+        def initialize(httparty_response, _request_boby)
           @code = httparty_response.code
           @body = httparty_response.body
           @request_body = request_body

@@ -4,7 +4,7 @@ module Arbetsformedlingen
   CompanySchema = Dry::Validation.Params do
     configure do
       config.type_specs = true
-      config.messages_file = File.expand_path('../../../../config/locales/errors.yml', __FILE__)
+      config.messages_file = File.expand_path('../../../config/locales/errors.yml', __dir__)
 
       predicates(Predicates)
     end
@@ -34,7 +34,7 @@ module Arbetsformedlingen
       hash[:address][:full_address] = [
         address.fetch(:street),
         address.fetch(:zip),
-        address.fetch(:city)
+        address.fetch(:city),
       ].join(', ')
       hash[:cin_arbetsformedlingen] = cin_arbetsformedlingen(hash.fetch(:cin))
       hash

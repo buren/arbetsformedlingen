@@ -1,10 +1,12 @@
+# frozen_string_literal: true
+
 require 'csv'
 require 'set'
 
 module Arbetsformedlingen
   class CountryCode
     CODES = CSV.read(
-      File.expand_path('../../../../data/country-codes.csv', __FILE__)
+      File.expand_path('../../../data/country-codes.csv', __dir__)
     ).to_h.freeze
 
     COUNTRY_CODES = Set.new(CODES.values).freeze

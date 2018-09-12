@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'spec_helper'
 
 require 'arbetsformedlingen/api/client'
@@ -30,7 +32,7 @@ RSpec.describe Arbetsformedlingen::API::Client do
     it 'returns an ad' do
       client = described_class.new
 
-      ad = client.ad(id: 7911776)
+      ad = client.ad(id: 7_911_776)
 
       expect(ad.id).not_to be_nil
       expect(ad.title).not_to be_nil

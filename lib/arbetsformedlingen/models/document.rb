@@ -1,10 +1,12 @@
+# frozen_string_literal: true
+
 require 'securerandom'
 
 module Arbetsformedlingen
   DocumentSchema = Dry::Validation.Params do
     configure do
       config.type_specs = true
-      config.messages_file = File.expand_path('../../../../config/locales/errors.yml', __FILE__)
+      config.messages_file = File.expand_path('../../../config/locales/errors.yml', __dir__)
 
       predicates(Predicates)
     end
@@ -19,7 +21,7 @@ module Arbetsformedlingen
     def initialize(hash)
       data = {
         id: SecureRandom.uuid,
-        timestamp: Time.now.utc.iso8601
+        timestamp: Time.now.utc.iso8601,
       }.merge!(hash)
 
       super(DocumentSchema.call(data))

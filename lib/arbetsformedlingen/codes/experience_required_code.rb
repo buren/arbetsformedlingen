@@ -1,10 +1,12 @@
+# frozen_string_literal: true
+
 require 'set'
 
 module Arbetsformedlingen
   class ExperienceRequiredCode
     CODES_MAP = {
       'true' => '1',
-      'false' => '4'
+      'false' => '4',
     }.freeze
     CODES_MAP_INVERTED = CODES_MAP.invert.freeze
 

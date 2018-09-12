@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'builder'
 
 module Arbetsformedlingen
@@ -5,7 +7,7 @@ module Arbetsformedlingen
     SOAP_ATTRIBUTES = {
       'xmlns:xsi' => 'http://www.w3.org/2001/XMLSchema-instance',
       'xmlns:xsd' => 'http://www.w3.org/2001/XMLSchema',
-      'xmlns:soap12' => 'http://www.w3.org/2003/05/soap-envelope'
+      'xmlns:soap12' => 'http://www.w3.org/2003/05/soap-envelope',
     }.freeze
 
     def self.wrap(&block)
