@@ -3,7 +3,18 @@ require 'arbetsformedlingen/api/values/soklista_values'
 module Arbetsformedlingen
   module API
     module SoklistaResult
-      def self.build(response_data, list_name: nil)
+      # Build API result object for "soklista"
+      # @param [API::Response] response
+      # @param list_name [String] result list name
+      # @return [Values::SoklistaPage]
+      def self.build(response, list_name: nil)
+        build_page(response, list_name)
+      end
+
+      # private
+
+      def self.build_page(response, list_name)
+        response_data = response.json
         data = response_data.fetch('soklista', {})
 
         Values::SoklistaPage.new(
@@ -13,7 +24,8 @@ module Arbetsformedlingen
           raw_data: response_data,
           data: data.fetch('sokdata', []).map do |result|
             build_search_result(result)
-          end
+          end,
+          response: response
         )
       end
 

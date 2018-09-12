@@ -3,9 +3,20 @@ require 'arbetsformedlingen/api/values/ad_result_values'
 module Arbetsformedlingen
   module API
     module AdResult
-      def self.build(response_data)
-        data = response_data.fetch('platsannons')
+      # Build API result object for ad result
+      # @param [API::Response] response
+      # @return [Values::Ad]
+      def self.build(response)
+        return build_empty(response) unless response.success?
 
+        build_page(response)
+      end
+
+      # private
+
+      def self.build_page(response)
+        response_data = response.json
+        data = response_data.fetch('platsannons')
         ad_data = data.fetch('annons')
 
         Values::Ad.new(
@@ -24,27 +35,32 @@ module Arbetsformedlingen
           terms: build_terms(data.fetch('villkor')),
           application: build_application(data.fetch('ansokan')),
           workplace: build_workplace(data.fetch('arbetsplats')),
-          requirements: build_requirements(data.fetch('krav'))
+          requirements: build_requirements(data.fetch('krav')),
+          response: response
         )
+      end
+
+      def self.build_empty(response)
+        Values::Ad.new(response: response)
       end
 
       def self.build_terms(data)
         Values::Terms.new(
-          duration: data.fetch('varaktighet'),
-          working_hours: data.fetch('arbetstid'),
-          working_hours_description: data.fetch('arbetstidvaraktighet'),
+          duration: data.fetch('varaktighet', nil),
+          working_hours: data.fetch('arbetstid', nil),
+          working_hours_description: data.fetch('arbetstidvaraktighet', nil),
           salary_type: data.fetch('lonetyp'),
-          salary_form: data.fetch('loneform')
+          salary_form: data.fetch('loneform', nil)
         )
       end
 
       def self.build_application(data)
         Values::Application.new(
           reference: data['referens'],
-          application_url: data.fetch('webbplats'),
+          application_url: data.fetch('webbplats', nil),
           email: data['epostadress'],
           last_application_at: data.fetch('sista_ansokningsdag', nil),
-          application_comment: data.fetch('ovrigt_om_ansokan')
+          application_comment: data.fetch('ovrigt_om_ansokan', nil)
         )
       end
 
@@ -54,8 +70,8 @@ module Arbetsformedlingen
           postal: build_postal(data),
           country: data.fetch('land'),
           visit_address: data.fetch('besoksadress'),
-          logotype_url: data.fetch('logotypurl'),
-          website: data.fetch('hemsida'),
+          logotype_url: data.fetch('logotypurl', nil),
+          website: data.fetch('hemsida', nil),
           contacts: (
             data.dig('kontaktpersonlista', 'kontaktpersonlista') || []
           ).map do |contact_data|

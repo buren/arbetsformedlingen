@@ -3,9 +3,12 @@ require 'arbetsformedlingen/api/values/create_ad_page'
 
 module Arbetsformedlingen
   module API
+    # API client for ledigtarbete
     class LedigtarbeteClient
+      # Base URL for ledigtarbete
       BASE_URL = 'http://api.arbetsformedlingen.se/ledigtarbete'.freeze
 
+      # HTTP headers
       HEADERS = {
         'Content-type' => 'text/xml'
       }.freeze

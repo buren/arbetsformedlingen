@@ -17,11 +17,13 @@ module Arbetsformedlingen
         :terms,
         :application,
         :workplace,
-        :requirements
+        :requirements,
+        :response
       )
       class Ad
         def to_h
           hash = super.to_h
+          hash.delete(:response) # don't return the raw response object
           hash[:terms] = hash[:terms].to_h
           hash[:application] = hash[:application].to_h
           hash[:workplace] = hash[:workplace].to_h

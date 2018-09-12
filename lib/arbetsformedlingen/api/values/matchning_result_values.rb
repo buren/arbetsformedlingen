@@ -10,7 +10,8 @@ module Arbetsformedlingen
         :total_places_total,
         :total_pages,
         :data,
-        :raw_data
+        :raw_data,
+        :response
       )
       class MatchningPage
         include Enumerable
@@ -21,8 +22,13 @@ module Arbetsformedlingen
 
         def to_h
           hash = super.to_h
+          hash.delete(:response) # don't return the raw response object
           hash[:data].map!(&:to_h)
           hash
+        end
+
+        def success?
+          success
         end
       end
 

@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.arbetsformedlingen.se/af/v0/platsannonser/matchning?anstallningstyp&antalrader=1000&kommunid&lanid=1&nyckelord&omradeid&organisationsnummer&sida=9999&sokdatum&yrkesgruppid&yrkesid&yrkesomradeid
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.arbetsformedlingen.se
+      Content-Type:
+      - application/json
+      Accept-Language:
+      - sv
+  response:
+    status:
+      code: 500
+      message: Internal Server Error
+    headers:
+      Date:
+      - Mon, 10 Sep 2018 13:26:09 GMT
+      Server:
+      - WildFly/8
+      Www-Authenticate:
+      - Basic realm="CT"
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Powered-By:
+      - Undertow/1
+      Access-Control-Allow-Headers:
+      - X-JWT-Assertion, Origin, X-Requested-With, Content-Type, Accept
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '333'
+      Access-Control-Allow-Methods:
+      - GET, OPTIONS, HEAD, PUT, POST, DELETE
+      Connection:
+      - close
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        PGh0bWw+PGhlYWQ+PC9oZWFkPjxib2R5PiA8aDE+RXJyb3I8L2gxPkJlc2tyaXZuaW5nOiBGZWwgdmlkIGjDpG10bmluZyBhdiBhbm5vbnNsaXN0YSBtZWQgc8O2a2tyaXRlcmllcihsYW5pZDoxOyBsYW5kaWQ6OyBvbXJhZGVpZDo7IGtvbW11bmlkOjsgeXJrZXNpZDo7IHlya2VzZ3J1cHBpZDo7IHZhcmFrdGlnaGV0aWQ6OyB5cmtlc29tcmFkZWlkOjsgIG55Y2tlbG9yZDo7IHNpZGE6OTk5OTsgYW50YWxyYWRlcjoxMDAwKTxiciAvPlN0YXR1c2tvZDogSW50ZXJuYWwgU2VydmVyIEVycm9yPGJyIC8+VGl0ZWw6IEludGVybmFsIFNlcnZlciBFcnJvcjxiciAvPjwvYm9keT48L2h0bWw+
+    http_version: 
+  recorded_at: Mon, 10 Sep 2018 13:26:09 GMT
+recorded_with: VCR 3.0.3

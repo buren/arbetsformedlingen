@@ -3,7 +3,35 @@ require 'arbetsformedlingen/api/values/matchning_result_values'
 module Arbetsformedlingen
   module API
     module MatchningResult
-      def self.build(response_data)
+      # Build API result object for matchning result
+      # @param [API::Response] response
+      # @return [Values::MatchningPage]
+      def self.build(response)
+        return empty_matchning_page(response) unless response.success?
+
+        build_matchning_page(response)
+      end
+
+      # private
+
+      def self.empty_matchning_page(response)
+        response_data = response.json
+
+        Values::MatchningPage.new(
+          list_name: 'annonser',
+          total_ads: 0,
+          total_ads_exact: 0,
+          total_ads_nearby: 0,
+          total_vacancies_on_page: 0,
+          total_pages: 0,
+          raw_data: response_data,
+          data: [],
+          response: response
+        )
+      end
+
+      def self.build_matchning_page(response)
+        response_data = response.json
         data = response_data.fetch('matchningslista')
 
         Values::MatchningPage.new(
@@ -14,8 +42,17 @@ module Arbetsformedlingen
           total_vacancies_on_page: data.fetch('antal_platserTotal'),
           total_pages: data.fetch('antal_sidor'),
           raw_data: response_data,
-          data: data.fetch('matchningdata').map { |ad_data| build_ad_result(ad_data) }
+          data: build_ad_results(data),
+          response: response
         )
+      end
+
+      # private
+
+      def self.build_ad_results(data)
+        data.fetch('matchningdata', []).map do |ad_data|
+          build_ad_result(ad_data)
+        end
       end
 
       def self.build_ad_result(ad_data)

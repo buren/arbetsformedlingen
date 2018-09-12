@@ -14,7 +14,7 @@ RSpec.describe Arbetsformedlingen::API::Client do
   describe '#create_ad', vcr: true do
     it 'returns error if passed empty data' do
       client = described_class.new
-      data = Struct.new(:to_xml).new('')
+      data = double(to_xml: '')
       response = client.create_ad(data)
 
       expect(response.valid?).to eq(false)
@@ -125,6 +125,28 @@ RSpec.describe Arbetsformedlingen::API::Client do
       expect(result.counties).not_to be_nil
       expect(result.country_id).not_to be_nil
       expect(result.employment_type).not_to be_nil
+    end
+
+    it 'returns empty list when no results are found', vcr: true do
+      client = described_class.new
+
+      page = client.ads(municipality_id: '0780', page: 23, page_size: 100)
+
+      expect(page.data.length).to equal(0)
+      expect(page.response).to be_a(Arbetsformedlingen::API::Response)
+      expect(page.response.success?).to eq(true)
+    end
+
+    it 'handles error from arbetsförmedlingen', vcr: true do
+      client = described_class.new
+
+      page = client.ads(county_id: 1, page: 9999, page_size: 1000)
+
+      expect(page.data.length).to equal(0)
+      expect(page).to be_a(Arbetsformedlingen::API::Values::MatchningPage)
+      expect(page.response).not_to be_success
+      expect(page.response).to be_a(Arbetsformedlingen::API::Response)
+      expect(page.response.code).to eq('500')
     end
   end
 

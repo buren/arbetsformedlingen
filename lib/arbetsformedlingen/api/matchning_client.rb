@@ -5,9 +5,11 @@ require 'arbetsformedlingen/api/results/matchning_result'
 
 module Arbetsformedlingen
   module API
+    # API client for matchning
     class MatchningClient
       attr_reader :request
 
+      # Initialize client
       def initialize(request: Request.new)
         @request = request
       end
@@ -82,7 +84,7 @@ module Arbetsformedlingen
 
         response = request.get('matchning', query: query)
 
-        MatchningResult.build(response.json)
+        MatchningResult.build(response)
       end
 
       private
