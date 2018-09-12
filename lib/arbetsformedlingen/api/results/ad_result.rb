@@ -43,21 +43,21 @@ module Arbetsformedlingen
 
       def self.build_terms(data)
         Values::Terms.new(
-          duration: data.fetch('varaktighet'),
-          working_hours: data.fetch('arbetstid'),
-          working_hours_description: data.fetch('arbetstidvaraktighet'),
+          duration: data.fetch('varaktighet', nil),
+          working_hours: data.fetch('arbetstid', nil),
+          working_hours_description: data.fetch('arbetstidvaraktighet', nil),
           salary_type: data.fetch('lonetyp'),
-          salary_form: data.fetch('loneform')
+          salary_form: data.fetch('loneform', nil)
         )
       end
 
       def self.build_application(data)
         Values::Application.new(
           reference: data['referens'],
-          application_url: data.fetch('webbplats'),
+          application_url: data.fetch('webbplats', nil),
           email: data['epostadress'],
           last_application_at: data.fetch('sista_ansokningsdag', nil),
-          application_comment: data.fetch('ovrigt_om_ansokan')
+          application_comment: data.fetch('ovrigt_om_ansokan', nil)
         )
       end
 
@@ -67,8 +67,8 @@ module Arbetsformedlingen
           postal: build_postal(data),
           country: data.fetch('land'),
           visit_address: data.fetch('besoksadress'),
-          logotype_url: data.fetch('logotypurl'),
-          website: data.fetch('hemsida'),
+          logotype_url: data.fetch('logotypurl', nil),
+          website: data.fetch('hemsida', nil),
           contacts: (
             data.dig('kontaktpersonlista', 'kontaktpersonlista') || []
           ).map do |contact_data|
