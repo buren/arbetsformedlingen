@@ -71,7 +71,7 @@ module Arbetsformedlingen
           url: ad_data.fetch('annonsurl'),
           relevance: ad_data.fetch('relevans'),
           total_vacancies: ad_data.fetch('antalplatser'),
-          total_vacancies_with_visa: ad_data.fetch('antalPlatserVisa'),
+          total_vacancies_with_visa: ad_data.fetch('antalPlatserVisa', nil),
           duration_id: ad_data.fetch('varaktighetId', nil),
           counties: ad_data.fetch('lan'),
           country_id: ad_data.fetch('lanid'),
