@@ -49,7 +49,7 @@ module Arbetsformedlingen
     end
 
     def append_job_position(payload, packet_data)
-      payload.JobPositionPosting(status: "#{'in' unless packet_data.fetch(:active)}active") do |pos|
+      payload.JobPositionPosting(status: "#{'in' unless packet_data.fetch(:active)}active") do |pos| # rubocop:disable Metrics/LineLength
         cin = packet_data[:position][:company].fetch(:cin_arbetsformedlingen)
         job_pos_id = "#{cin}-#{packet_data.fetch(:job_id)}"
         pos.JobPositionPostingId(job_pos_id)
@@ -67,7 +67,10 @@ module Arbetsformedlingen
           if description = company.fetch(:description, nil)
             jpp.HiringOrgDescription(description)
           end
-          jpp.OccupationGroup(code: packet_data.fetch(:occupation), codename: 'OccupationNameID')
+          jpp.OccupationGroup(
+            code: packet_data.fetch(:occupation),
+            codename: 'OccupationNameID'
+          )
         end
       end
     end
@@ -89,7 +92,7 @@ module Arbetsformedlingen
 
       payload.HiringOrg do |org|
         org.HiringOrgName(company.fetch(:name))
-        org.HiringOrgId(company.fetch(:cin_arbetsformedlingen), idOwner: company.fetch(:cin))
+        org.HiringOrgId(company.fetch(:cin_arbetsformedlingen), idOwner: company.fetch(:cin)) # rubocop:disable Metrics/LineLength
         append_company_contact(org, company)
       end
     end

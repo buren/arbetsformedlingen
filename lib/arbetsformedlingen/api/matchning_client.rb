@@ -16,6 +16,7 @@ module Arbetsformedlingen
         @request = request
       end
 
+      # rubocop:disable Metrics/LineLength
       # Find matching ads from API
       # @return [MatchningResult] the result.
       # @param area_id [String] Area ID.
@@ -40,6 +41,7 @@ module Arbetsformedlingen
       #    client.ads(keywrods: 'ruby', page: 3, page_size: 10)
       # @example Get ads with keyword and organsiation numer
       #    client.ads(keywrods: 'ruby', organization_number: org_no)
+      # rubocop:enable Metrics/LineLength
       def ads(
         # one of these must be present
         county_id: nil,
@@ -59,7 +61,7 @@ module Arbetsformedlingen
 
         one_of_required = [county_id, municipality_id, occupation_id, keywords]
         if one_of_required.all?(&:nil?)
-          error_message = 'One of: county_id, municipality_id, occupation_id, keywords is required'
+          error_message = 'One of: county_id, municipality_id, occupation_id, keywords is required' # rubocop:disable Metrics/LineLength
           raise ArgumentError, error_message
         end
 
@@ -118,7 +120,7 @@ module Arbetsformedlingen
       def santize_keywords_query(keywords)
         #
         # Sökord kan separeras eller kombineras med något av följande exempel:
-        # mellanslag (” ”)
+        # mellanslag (" ")
         #
         # [Example]
         # /matchning?nyckelord="bagare""test"

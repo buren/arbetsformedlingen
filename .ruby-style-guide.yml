@@ -39,6 +39,14 @@ Naming/UncommunicativeMethodParamName:
                 Checks for method parameter names that contain capital letters,
                 end in numbers, or do not meet a minimal length.
   Enabled: false
+Style/AsciiComments:
+  Description: This cop checks for non-ascii (non-English) characters in comments.
+  StyleGuide: https://github.com/bbatsov/ruby-style-guide#no-nested-conditionals
+  AllowedChars:
+    - å
+    - ä
+    - ö
+  Enabled: true
 Style/GuardClause:
   Description: Check for conditionals that can be replaced with guard clauses
   StyleGuide: https://github.com/bbatsov/ruby-style-guide#no-nested-conditionals
