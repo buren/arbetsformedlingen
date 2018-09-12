@@ -103,11 +103,11 @@ module Arbetsformedlingen
       end
 
       def santize_employment_type_query(employment_type)
-        # Sökkriterier anställningstyp.
-        # Värdena ska ligga mellan 1 och 3.
+        # Sökkriterier anställningstyp.
+        # Värdena ska ligga mellan 1 och 3.
         # 1 är XXX (EJ DOKUMENTERAT)
-        # 2 är somarjobb / feriejobb
-        # 3 är utlandsjobb
+        # 2 är somarjobb / feriejobb
+        # 3 är utlandsjobb
 
         # TODO: The question is what we do if an invalid parameter is passed
         #       should we crash?
@@ -117,7 +117,7 @@ module Arbetsformedlingen
 
       def santize_keywords_query(keywords)
         #
-        # Sökord kan separeras eller kombineras med något av följande exempel:
+        # Sökord kan separeras eller kombineras med något av följande exempel:
         # mellanslag (” ”)
         #
         # [Example]
@@ -125,7 +125,7 @@ module Arbetsformedlingen
         # /matchning?nyckelord="bagare"OR"test" /matchning?nyckelord="automatisk"AND"test"
 
         # Valid characters
-        # abcdefghijklmnopqrstuvwxyzåäö0123456789: ,.-"
+        # abcdefghijklmnopqrstuvwxyzåäö0123456789: ,.-"
 
         # TODO: What do we do if invalid characters are passed? Crash?
         keywords

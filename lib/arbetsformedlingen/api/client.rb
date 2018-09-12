@@ -59,7 +59,7 @@ module Arbetsformedlingen
         AdResult.build(response)
       end
 
-      # Fetch ads from API (areas => landområde/värdsdel)
+      # Fetch ads from API (areas => landområde/värdsdel)
       # @return [Values::MatchningPage] the result.
       # @see Values::MatchningPage
       def ads(**args)
@@ -67,7 +67,7 @@ module Arbetsformedlingen
         client.ads(**args)
       end
 
-      # Fetch areas from API (areas => landområde/värdsdel)
+      # Fetch areas from API (areas => landområde/värdsdel)
       # @return [Values::SoklistaPage] the result.
       # @example Get areas
       #    client.areas
@@ -128,7 +128,7 @@ module Arbetsformedlingen
         SoklistaResult.build(response, list_name: 'lan2')
       end
 
-      # Fetch occupational fields from API (occupational_fields => yrkesområde)
+      # Fetch occupational fields from API (occupational_fields => yrkesområde)
       # @return [Values::SoklistaPage] the result.
       # @example Get occupational fields
       #    client.occupational_field

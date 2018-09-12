@@ -201,7 +201,7 @@ This gem has translated the attribute names in Arbetsförmedlingens (AF) API fro
 
 | Arbetsförmedlingen Term | Gem term           |
 |------------------------ |--------------------|
-| landområde/värdsdel | areas |
+| landområde/värdsdel | areas |
 | kommun | municipality |
 | län | counties |
 | län2 | counties2 |
