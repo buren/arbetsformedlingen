@@ -14,7 +14,7 @@ RSpec.describe Arbetsformedlingen::API::Client do
   describe '#create_ad', vcr: true do
     it 'returns error if passed empty data' do
       client = described_class.new
-      data = Struct.new(:to_xml).new('')
+      data = double(to_xml: '')
       response = client.create_ad(data)
 
       expect(response.valid?).to eq(false)

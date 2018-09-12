@@ -5,13 +5,13 @@ require 'arbetsformedlingen/api/response'
 RSpec.describe Arbetsformedlingen::API::Response do
   describe '#success?' do
     it 'returns true when response code is 200' do
-      response = described_class.new(Struct.new(:code).new('200'))
+      response = described_class.new(double(code: '200'))
 
       expect(response.success?).to eq(true)
     end
 
     it 'returns false when response code is 500' do
-      response = described_class.new(Struct.new(:code).new('500'))
+      response = described_class.new(double(code: '500'))
 
       expect(response.success?).to eq(false)
     end
@@ -19,13 +19,13 @@ RSpec.describe Arbetsformedlingen::API::Response do
 
   context 'delegates missing' do
     it 'returns response value' do
-      response = described_class.new(Struct.new(:some_method).new(true))
+      response = described_class.new(double(some_method: true))
 
       expect(response.some_method).to eq(true)
     end
 
     it 'raises when no method does not exist on response' do
-      response = described_class.new(Struct.new(:some_method).new(true))
+      response = described_class.new(double(some_method: true))
 
       expect do
         response.other_method
@@ -35,7 +35,7 @@ RSpec.describe Arbetsformedlingen::API::Response do
 
   context 'xml' do
     it 'returns a Nokogiri document' do
-      request = described_class.new(Struct.new(:read_body).new(''))
+      request = described_class.new(double(read_body: ''))
       expect(request.xml).to be_a(Nokogiri::XML::Document)
     end
 
@@ -56,7 +56,7 @@ RSpec.describe Arbetsformedlingen::API::Response do
       </soap:Envelope>
       XMLDATA
 
-      request = described_class.new(Struct.new(:read_body).new(xml_with_namespace))
+      request = described_class.new(double(read_body: xml_with_namespace))
 
       document = request.xml
       result = document.css('Id').map(&:text)
