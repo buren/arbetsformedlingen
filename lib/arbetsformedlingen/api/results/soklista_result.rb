@@ -8,24 +8,10 @@ module Arbetsformedlingen
       # @param list_name [String] result list name
       # @return [Values::SoklistaPage]
       def self.build(response, list_name: nil)
-        return build_empty_page(response, list_name) unless response.success?
-
         build_page(response, list_name)
       end
 
       # private
-
-      def self.build_empty_page(response, list_name)
-        response_data = response.json
-        Values::SoklistaPage.new(
-          list_name: list_name,
-          total_ads: 0,
-          total_vacancies: 0,
-          raw_data: response_data,
-          data: [],
-          response: response
-        )
-      end
 
       def self.build_page(response, list_name)
         response_data = response.json

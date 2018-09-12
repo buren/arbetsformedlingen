@@ -62,7 +62,7 @@ module Arbetsformedlingen
       end
 
       def parse_xml(string)
-        Nokogiri::XML(string).tap { |doc| doc.remove_namespaces! }
+        Nokogiri::XML(string).tap(&:remove_namespaces!)
       end
     end
   end
