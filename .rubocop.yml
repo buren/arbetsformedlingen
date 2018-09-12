@@ -1,0 +1,6 @@
+inherit_from: .ruby-style-guide.yml
+AllCops:
+  UseCache: true
+  CacheRootDirectory: tmp
+  Exclude:
+    - 'tmp/*.rb'
