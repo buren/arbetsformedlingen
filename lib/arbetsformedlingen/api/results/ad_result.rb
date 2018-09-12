@@ -9,9 +9,14 @@ module Arbetsformedlingen
       def self.build(response)
         return build_empty(response) unless response.success?
 
+        build_page(response)
+      end
+
+      # private
+
+      def self.build_page(response)
         response_data = response.json
         data = response_data.fetch('platsannons')
-
         ad_data = data.fetch('annons')
 
         Values::Ad.new(
@@ -34,8 +39,6 @@ module Arbetsformedlingen
           response: response
         )
       end
-
-      # private
 
       def self.build_empty(response)
         Values::Ad.new(response: response)
