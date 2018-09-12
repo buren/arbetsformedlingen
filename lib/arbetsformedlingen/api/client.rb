@@ -163,7 +163,7 @@ module Arbetsformedlingen
       #    client.occupation(name: 'Marknadskommunikatör')
       # @see Values::SoklistaPage
       def occupation(name:)
-        response = request.get("soklista/yrken/#{URI.encode(name)}")
+        response = request.get("soklista/yrken/#{uri_escape(name)}")
 
         SoklistaResult.build(response, list_name: 'Yrken')
       end
@@ -183,6 +183,12 @@ module Arbetsformedlingen
         response = request.get('soklista/yrken', query: query)
 
         SoklistaResult.build(response, list_name: 'yrken')
+      end
+
+      private
+
+      def uri_escape(string)
+        URI.encode_www_form_component(string)
       end
     end
   end
