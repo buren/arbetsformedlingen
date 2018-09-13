@@ -85,7 +85,7 @@ module Arbetsformedlingen
       def self.build_postal(data)
         Values::Postal.new(
           code: data.fetch('postnummer'),
-          address: data.fetch('postadress'),
+          address: data.fetch('postadress', nil),
           city: data.fetch('postort'),
           country: data.fetch('postland')
         )
