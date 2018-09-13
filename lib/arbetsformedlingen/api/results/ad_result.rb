@@ -32,7 +32,7 @@ module Arbetsformedlingen
           total_vacancies: ad_data.fetch('antal_platser'),
           municipalities: ad_data.fetch('kommunnamn'),
           municipality_id: ad_data.fetch('kommunkod'),
-          total_vacancies_with_visa: ad_data.fetch('antalplatserVisa'),
+          total_vacancies_with_visa: ad_data.fetch('antalplatserVisa', nil),
           employment_type: ad_data.fetch('anstallningstyp'),
           terms: build_terms(data.fetch('villkor')),
           application: build_application(data.fetch('ansokan')),
@@ -85,7 +85,7 @@ module Arbetsformedlingen
       def self.build_postal(data)
         Values::Postal.new(
           code: data.fetch('postnummer'),
-          address: data.fetch('postadress'),
+          address: data.fetch('postadress', nil),
           city: data.fetch('postort'),
           country: data.fetch('postland')
         )
