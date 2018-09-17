@@ -75,7 +75,7 @@ module Arbetsformedlingen
           logotype_url: data.fetch('logotypurl', nil),
           website: data.fetch('hemsida', nil),
           contacts: (
-            data.dig('kontaktpersonlista', 'kontaktpersonlista') || []
+            data.dig('kontaktpersonlista', 'kontaktpersondata') || []
           ).map do |contact_data|
             build_workplace_contacts(contact_data)
           end

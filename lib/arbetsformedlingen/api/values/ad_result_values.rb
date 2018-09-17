@@ -67,6 +67,7 @@ module Arbetsformedlingen
         end
       end
 
+      Contact = KeyStruct.new(:name, :title, :phone)
       Postal = KeyStruct.new(:code, :address, :city, :country)
       Requirements = KeyStruct.new(:own_car)
     end

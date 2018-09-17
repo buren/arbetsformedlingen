@@ -76,7 +76,9 @@ RSpec.describe Arbetsformedlingen::API::Client do
       expect(workplace.visit_address).not_to be_nil
       expect(workplace.logotype_url).not_to be_nil
       expect(workplace.website).not_to be_nil
-      expect(workplace.contacts).to be_a(Array)
+      expect(workplace.contacts).not_to be_empty
+      expect(workplace.contacts.first.name).not_to be_nil
+      expect(workplace.contacts.first.phone).not_to be_nil
 
       # check workplace postal
       postal = ad.workplace.postal
