@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.email         = ['burenstam@gmail.com']
 
   spec.summary       = 'Arbetsförmedlingen API client'
-  spec.description   = 'Arbetsförmedlingen API client (Swedish Public Employment Service)'
+  spec.description   = 'Arbetsförmedlingen API client (Swedish Public Employment Service). Post job ads, Platsannons (ads) API client and WSOccupation SOAP API client.'
   spec.homepage      = 'https://github.com/buren/arbetsformedlingen'
   spec.license       = 'MIT'
 
