@@ -1,5 +1,17 @@
 # Change Log
 
+# v0.6.0
+
+* Return "empty result" object when no results are found
+* Fix `workplace.contacts` - [PR #14](https://github.com/buren/arbetsformedlingen/pull/14)
+* Fix crashes when ad data doesn't contain some keys  - [PR #15](https://github.com/buren/arbetsformedlingen/pull/15), [PR #11](https://github.com/buren/arbetsformedlingen/pull/11)
+* Replace `URI#encode` with `#encode_www_form_component`
+* Add `WSOccupationClient` docs
+* Refactor `SOAPRequest` to use new `API::Reponse#xml` method
+* Add `#response` to `SoklistaPage`, `MatchningPage`, `AdResult` and `Values::Ad`
+* Proper `API::Response` class
+* Introduce `MatchningPage` `#success?` and `#response`
+
 # v0.5.0
 
 * Upgrade `dry-valdation` dependency from `~> 0.11` to `~> 0.12`
