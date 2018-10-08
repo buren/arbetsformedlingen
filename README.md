@@ -7,7 +7,6 @@ __Features__
 * Platsannons API Client
 * WSOccupation SOAP API Client
 
-
 __Index__
 * [Installation](#installation)
 * [API Client](#api-client)
@@ -63,9 +62,14 @@ end
 
 ## Post job ad
 
+:warning: In order to post live job ads to Arbetsförmedlingen you need to contact them and go through a test procedure. You can find their own documentation and some additional notes [here](https://goo.gl/c5jtBv).
+
+You can find Arbetsförmedlingens own documentation and some additional notes [here](https://goo.gl/c5jtBv). Note that the documentation provided by Arbetsförmedlingen can be pretty hard to follow.
+
 __Complete example creating a packet__
 
-:information_source: There is quite a lot of data you can/must send to the API when creating an ad.
+There's a lot of data you can/must send to the API when creating an ad. See files in `lib/arbetsformedlingen/models` for details.
+
 
 ```ruby
 require 'date'
