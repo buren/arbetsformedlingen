@@ -112,7 +112,7 @@ module Arbetsformedlingen
       private
 
       def client_request(name, args: {})
-        soap_body = SOAPBuilder.wrap do |body|
+        soap_body = SOAPBuilder.wrap do |body| # rubocop:disable Lint/UnusedBlockArgument
           # HACK: Work around the XMLBuilder DSL
           xml_builder = <<-RUBY
           body.#{name}(xmlns: NAMESPACE) do |node|
