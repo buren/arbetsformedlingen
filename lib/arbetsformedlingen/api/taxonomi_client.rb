@@ -23,12 +23,24 @@ module Arbetsformedlingen
       # Returns occupation names
       # @return [Response] the response
       # @see Response
-      # @see Response#xml
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllOccupationNames
       def occupation_names(language_id:)
         soap_body = SOAPBuilder.wrap do |body|
           body.GetAllOccupationNames(xmlns: NAMESPACE) do |node|
             node.languageId(language_id)
           end
+        end
+
+        request.post(soap_body.to_xml)
+      end
+
+      # Returns AID occupation names
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllAIDOccupationNames
+      def aid_occupation_names
+        soap_body = SOAPBuilder.wrap do |body|
+          body.GetAllAIDOccupationNames(xmlns: NAMESPACE)
         end
 
         request.post(soap_body.to_xml)

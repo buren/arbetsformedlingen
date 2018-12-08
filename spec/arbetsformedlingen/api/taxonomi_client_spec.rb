@@ -10,8 +10,22 @@ RSpec.describe Arbetsformedlingen::API::TaxonomiClient do
       client = described_class.new
       response = client.occupation_names(language_id: sv_lang_id)
 
-      first_name = response.xml.css('OccupationName Term').first.text
+      names = response.xml.css('OccupationName Term')
+      first_name = names.first.text
       expect(first_name).to eq('1:e Fartygsingenjör/1:e Maskinist')
+      expect(names.length).to eq(3262)
+    end
+  end
+
+  describe '#aid_occupation_names' do
+    it 'returns response that includes first AID occupation id', vcr: true do
+      client = described_class.new
+      response = client.aid_occupation_names
+
+      ids = response.xml.css('AIDOccupationName OccupationNameID')
+      first_name = ids.first.text
+      expect(first_name).to eq('6818')
+      expect(ids.length).to eq(199)
     end
   end
 end
