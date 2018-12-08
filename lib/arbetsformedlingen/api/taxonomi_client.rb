@@ -26,7 +26,7 @@ module Arbetsformedlingen
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllOccupationNames
       def occupation_names(language_id:)
-        simple_soap_request('GetAllOccupationNames', args: { languageId: language_id })
+        client_request('GetAllOccupationNames', args: { languageId: language_id })
       end
 
       # Returns AID occupation names
@@ -34,7 +34,7 @@ module Arbetsformedlingen
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllAIDOccupationNames
       def aid_occupation_names
-        simple_soap_request('GetAllAIDOccupationNames')
+        client_request('GetAllAIDOccupationNames')
       end
 
       # Returns continents
@@ -42,7 +42,7 @@ module Arbetsformedlingen
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllContinents
       def continents(language_id:)
-        simple_soap_request('GetAllContinents', args: { languageId: language_id })
+        client_request('GetAllContinents', args: { languageId: language_id })
       end
 
       # Returns countries
@@ -50,7 +50,7 @@ module Arbetsformedlingen
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllCountries
       def countries(language_id:)
-        simple_soap_request('GetAllCountries', args: { languageId: language_id })
+        client_request('GetAllCountries', args: { languageId: language_id })
       end
 
       # Returns drivers_licenses
@@ -58,7 +58,7 @@ module Arbetsformedlingen
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllDrivingLicences
       def drivers_licenses(language_id:)
-        simple_soap_request('GetAllDrivingLicences', args: { languageId: language_id })
+        client_request('GetAllDrivingLicences', args: { languageId: language_id })
       end
 
       # Returns eu regions
@@ -66,7 +66,7 @@ module Arbetsformedlingen
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllEURegions
       def eu_regions(language_id:)
-        simple_soap_request('GetAllEURegions', args: { languageId: language_id })
+        client_request('GetAllEURegions', args: { languageId: language_id })
       end
 
       # Returns employment durations
@@ -74,12 +74,12 @@ module Arbetsformedlingen
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllEmploymentDurations
       def employment_durations(language_id:)
-        simple_soap_request('GetAllEmploymentDurations', args: { languageId: language_id })
+        client_request('GetAllEmploymentDurations', args: { languageId: language_id })
       end
 
       private
 
-      def simple_soap_request(name, args: {})
+      def client_request(name, args: {})
         # HACK: Work around the XMLBuilder DSL
         soap_body = <<-RUBY
         body.#{name}(xmlns: NAMESPACE) do |node|
