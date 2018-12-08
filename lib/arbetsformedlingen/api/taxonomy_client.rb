@@ -173,6 +173,14 @@ module Arbetsformedlingen
         client_request('GetOccupationNamesArt', args: { languageId: language_id })
       end
 
+      # Returns SUN guide tree
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetSUNGuideTree
+      def sun_guide_tree(language_id:)
+        client_request('GetSUNGuideTree', args: { languageId: language_id })
+      end
+
       private
 
       def client_request(name, args: {})

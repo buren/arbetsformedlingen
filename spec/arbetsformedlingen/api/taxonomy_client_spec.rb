@@ -110,6 +110,12 @@ RSpec.describe Arbetsformedlingen::API::TaxonomyClient do
       css: 'OccupationName Term',
       expected: { value: 'Akrobat', length: 178 },
     },
+    {
+      method_name: :sun_guide_tree,
+      args: { language_id: 502 },
+      css: 'SUNGuideBranch SUNLevel1 Term',
+      expected: { value: 'Saknar formell, grundläggande utbildning', length: 7 },
+    },
   ].each do |data|
     method = data.fetch(:method_name)
     expected = data.fetch(:expected)
