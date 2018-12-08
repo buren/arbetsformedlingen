@@ -28,4 +28,18 @@ RSpec.describe Arbetsformedlingen::API::TaxonomiClient do
       expect(ids.length).to eq(199)
     end
   end
+
+  describe '#continents' do
+    let(:sv_lang_id) { 502 }
+
+    it 'returns continents', vcr: true do
+      client = described_class.new
+      response = client.continents(language_id: sv_lang_id)
+
+      names = response.xml.css('Continent Term')
+      first_name = names.first.text
+      expect(first_name).to eq('Antarktis')
+      expect(names.length).to eq(22)
+    end
+  end
 end

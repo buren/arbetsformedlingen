@@ -45,6 +45,20 @@ module Arbetsformedlingen
 
         request.post(soap_body.to_xml)
       end
+
+      # Returns continents
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllContinents
+      def continents(language_id:)
+        soap_body = SOAPBuilder.wrap do |body|
+          body.GetAllContinents(xmlns: NAMESPACE) do |node|
+            node.languageId(language_id)
+          end
+        end
+
+        request.post(soap_body.to_xml)
+      end
     end
   end
 end
