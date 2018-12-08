@@ -45,6 +45,12 @@ RSpec.describe Arbetsformedlingen::API::TaxonomiClient do
       css: 'EmploymentDuration Term',
       expected: { value: 'Tillsvidare', length: 5 }
     },
+    {
+      method_name: :employment_types,
+      args: { language_id: 502  },
+      css: 'EmploymentType Term',
+      expected: { value: 'Vanlig anställning', length: 4 }
+    },
   ].each do |data|
     method = data.fetch(:method_name)
     expected = data.fetch(:expected)

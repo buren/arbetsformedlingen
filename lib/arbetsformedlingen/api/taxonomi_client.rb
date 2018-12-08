@@ -77,6 +77,14 @@ module Arbetsformedlingen
         client_request('GetAllEmploymentDurations', args: { languageId: language_id })
       end
 
+      # Returns employment durations
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllEmploymentTypes
+      def employment_types(language_id:)
+        client_request('GetAllEmploymentTypes', args: { languageId: language_id })
+      end
+
       private
 
       def client_request(name, args: {})
