@@ -33,7 +33,7 @@ require 'arbetsformedlingen/models/packet'
 # API Client
 require 'arbetsformedlingen/api/client'
 require 'arbetsformedlingen/api/ws_occupation_client'
-require 'arbetsformedlingen/api/taxonomi_client'
+require 'arbetsformedlingen/api/taxonomy_client'
 
 module Arbetsformedlingen
   class << self
