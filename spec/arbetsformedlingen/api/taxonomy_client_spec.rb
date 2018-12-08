@@ -93,10 +93,10 @@ RSpec.describe Arbetsformedlingen::API::TaxonomyClient do
       expected: { value: 'Abkhasiska', length: 435 },
     },
     {
-      method_name: :languages_with_iso,
+      method_name: :locale_fields,
       args: { language_id: 502 },
-      css: 'LanguageISO ISOCode',
-      expected: { value: 'ABK', length: 435 },
+      css: 'LocaleField Term',
+      expected: { value: 'Administration, ekonomi, juridik', length: 21 },
     },
   ].each do |data|
     method = data.fetch(:method_name)
