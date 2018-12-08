@@ -57,6 +57,12 @@ RSpec.describe Arbetsformedlingen::API::TaxonomiClient do
       css: 'OccupationExperienceLast OccupationExperienceLastID',
       expected: { value: '1', length: 28 }
     },
+    {
+      method_name: :experiences_year,
+      args: { language_id: 502  },
+      css: 'OccupationExperienceYear OccupationExperienceYearID',
+      expected: { value: '1', length: 5 }
+    },
   ].each do |data|
     method = data.fetch(:method_name)
     expected = data.fetch(:expected)

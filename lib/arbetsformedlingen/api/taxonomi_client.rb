@@ -93,6 +93,14 @@ module Arbetsformedlingen
         client_request('GetAllExperiencesLast', args: { languageId: language_id })
       end
 
+      # Returns experiences year
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllExperiencesYear
+      def experiences_year(language_id:)
+        client_request('GetAllExperiencesYear', args: { languageId: language_id })
+      end
+
       private
 
       def client_request(name, args: {})
