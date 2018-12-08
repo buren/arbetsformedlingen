@@ -81,6 +81,12 @@ RSpec.describe Arbetsformedlingen::API::TaxonomyClient do
       expected: { value: 'Arbetslös/Studerande', length: 5 },
     },
     {
+      method_name: :language_levels,
+      args: { language_id: 502 },
+      css: 'LanguageLevel Term',
+      expected: { value: 'Lite', length: 4 },
+    },
+    {
       method_name: :languages,
       args: { language_id: 502 },
       css: 'Language Term',
