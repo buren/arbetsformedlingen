@@ -74,6 +74,12 @@ RSpec.describe Arbetsformedlingen::API::TaxonomyClient do
       css: 'JobSituation Term',
       expected: { value: 'Öppet arbetslös', length: 49 },
     },
+    {
+      method_name: :job_situations,
+      args: { language_id: 502 },
+      css: 'JobSituation Term',
+      expected: { value: 'Arbetslös/Studerande', length: 5 },
+    },
   ].each do |data|
     method = data.fetch(:method_name)
     expected = data.fetch(:expected)
