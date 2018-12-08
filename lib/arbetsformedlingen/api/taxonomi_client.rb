@@ -109,6 +109,14 @@ module Arbetsformedlingen
         client_request('GetAIDOccupationNameByLabel', args: { label: label })
       end
 
+      # Returns internal job situations
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllInternalJobSituations
+      def internal_job_situations
+        client_request('GetAllInternalJobSituations')
+      end
+
       private
 
       def client_request(name, args: {})

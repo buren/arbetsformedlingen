@@ -69,6 +69,11 @@ RSpec.describe Arbetsformedlingen::API::TaxonomiClient do
       css: 'GetAIDOccupationNameByLabelResult OccupationNameID',
       expected: { value: '6818', length: 1 },
     },
+    {
+      method_name: :internal_job_situations,
+      css: 'JobSituation Term',
+      expected: { value: 'Öppet arbetslös', length: 49 },
+    },
   ].each do |data|
     method = data.fetch(:method_name)
     expected = data.fetch(:expected)
