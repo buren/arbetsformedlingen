@@ -122,7 +122,15 @@ module Arbetsformedlingen
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllJobSituations
       def job_situations(language_id:)
-        client_request('GetAllJobSituations', args: { language_id: language_id })
+        client_request('GetAllJobSituations', args: { languageId: language_id })
+      end
+
+      # Returns job situations
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllLanguages
+      def languages(language_id:)
+        client_request('GetAllLanguages', args: { languageId: language_id })
       end
 
       private
