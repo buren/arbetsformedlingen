@@ -53,6 +53,14 @@ module Arbetsformedlingen
         simple_soap_request('GetAllCountries', args: { languageId: language_id })
       end
 
+      # Returns drivers_licenses
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllDrivingLicences
+      def drivers_licenses(language_id:)
+        simple_soap_request('GetAllDrivingLicences', args: { languageId: language_id })
+      end
+
       private
 
       def simple_soap_request(name, args: {})

@@ -55,4 +55,17 @@ RSpec.describe Arbetsformedlingen::API::TaxonomiClient do
       expect(names.length).to eq(250)
     end
   end
+
+  describe '#drivers_licenses' do
+    let(:sv_lang_id) { 502 }
+
+    it 'returns drivers_licenses', vcr: true do
+      client = described_class.new
+      response = client.drivers_licenses(language_id: sv_lang_id)
+      names = response.xml.css('DrivingLicence Term')
+      first_name = names.first.text
+      expect(first_name).to eq('A1')
+      expect(names.length).to eq(15)
+    end
+  end
 end
