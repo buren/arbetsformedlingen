@@ -39,6 +39,12 @@ RSpec.describe Arbetsformedlingen::API::TaxonomiClient do
       css: 'EURegion Term',
       expected: { value: 'A Coruña', length: 1362 }
     },
+    {
+      method_name: :employment_durations,
+      args: { language_id: 502  },
+      css: 'EmploymentDuration Term',
+      expected: { value: 'Tillsvidare', length: 5 }
+    },
   ].each do |data|
     method = data.fetch(:method_name)
     expected = data.fetch(:expected)
