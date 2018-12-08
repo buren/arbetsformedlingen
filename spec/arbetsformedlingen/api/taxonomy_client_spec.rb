@@ -92,6 +92,12 @@ RSpec.describe Arbetsformedlingen::API::TaxonomyClient do
       css: 'Language Term',
       expected: { value: 'Abkhasiska', length: 435 },
     },
+    {
+      method_name: :languages_with_iso,
+      args: { language_id: 502 },
+      css: 'LanguageISO ISOCode',
+      expected: { value: 'ABK', length: 435 },
+    },
   ].each do |data|
     method = data.fetch(:method_name)
     expected = data.fetch(:expected)

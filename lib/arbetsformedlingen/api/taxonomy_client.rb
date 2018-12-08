@@ -141,6 +141,14 @@ module Arbetsformedlingen
         client_request('GetAllLanguages', args: { languageId: language_id })
       end
 
+      # Returns languages with ISO
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllLanguagesWithISO
+      def languages_with_iso(language_id:)
+        client_request('GetAllLanguagesWithISO', args: { languageId: language_id })
+      end
+
       private
 
       def client_request(name, args: {})
