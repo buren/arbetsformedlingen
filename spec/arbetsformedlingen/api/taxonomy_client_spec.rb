@@ -98,6 +98,12 @@ RSpec.describe Arbetsformedlingen::API::TaxonomyClient do
       css: 'LocaleField Term',
       expected: { value: 'Administration, ekonomi, juridik', length: 21 },
     },
+    {
+      method_name: :municipalities,
+      args: { language_id: 502 },
+      css: 'Municipality NationalNUTSLAU2Code',
+      expected: { value: '1440', length: 290 },
+    },
   ].each do |data|
     method = data.fetch(:method_name)
     expected = data.fetch(:expected)

@@ -157,6 +157,14 @@ module Arbetsformedlingen
         client_request('GetAllLocaleFields', args: { languageId: language_id })
       end
 
+      # Returns municipalities
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllMunicipalities
+      def municipalities(language_id:)
+        client_request('GetAllMunicipalities', args: { languageId: language_id })
+      end
+
       private
 
       def client_request(name, args: {})
