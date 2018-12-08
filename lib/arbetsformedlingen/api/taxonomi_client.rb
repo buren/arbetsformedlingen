@@ -25,13 +25,7 @@ module Arbetsformedlingen
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllOccupationNames
       def occupation_names(language_id:)
-        soap_body = SOAPBuilder.wrap do |body|
-          body.GetAllOccupationNames(xmlns: NAMESPACE) do |node|
-            node.languageId(language_id)
-          end
-        end
-
-        request.post(soap_body.to_xml)
+        simple_soap_request('GetAllOccupationNames', args: { languageId: language_id })
       end
 
       # Returns AID occupation names
@@ -39,11 +33,7 @@ module Arbetsformedlingen
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllAIDOccupationNames
       def aid_occupation_names
-        soap_body = SOAPBuilder.wrap do |body|
-          body.GetAllAIDOccupationNames(xmlns: NAMESPACE)
-        end
-
-        request.post(soap_body.to_xml)
+        simple_soap_request('GetAllAIDOccupationNames')
       end
 
       # Returns continents
@@ -51,10 +41,19 @@ module Arbetsformedlingen
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllContinents
       def continents(language_id:)
+        simple_soap_request('GetAllContinents', args: { languageId: language_id })
+      end
+
+      private
+
+      def simple_soap_request(name, args: {})
         soap_body = SOAPBuilder.wrap do |body|
-          body.GetAllContinents(xmlns: NAMESPACE) do |node|
-            node.languageId(language_id)
+          # HACK: Work around the XMLBuilder DSL
+          <<-RUBY_EVAL
+          body.#{name}(xmlns: NAMESPACE) do |node|
+            #{args.map { |k, v| "node.#{k}(#{v})" }.join(';')}
           end
+          RUBY_EVAL
         end
 
         request.post(soap_body.to_xml)
