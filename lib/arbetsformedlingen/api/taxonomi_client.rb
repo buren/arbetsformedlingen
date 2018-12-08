@@ -112,14 +112,16 @@ module Arbetsformedlingen
       private
 
       def client_request(name, args: {})
-        # HACK: Work around the XMLBuilder DSL
-        soap_body = <<-RUBY
-        body.#{name}(xmlns: NAMESPACE) do |node|
-          #{args.map { |k, v| "node.#{k}(#{v})" }.join(';')}
-        end
-        RUBY
+        soap_body = SOAPBuilder.wrap do |body|
+          # HACK: Work around the XMLBuilder DSL
+          xml_builder = <<-RUBY
+          body.#{name}(xmlns: NAMESPACE) do |node|
+            #{args.map { |k, v| "node.#{k}(#{v})" }.join(';')}
+          end
+          RUBY
 
-        soap_body = SOAPBuilder.wrap { |body| instance_eval(soap_body) }
+          instance_eval(xml_builder)
+        end
 
         request.post(soap_body.to_xml)
       end
