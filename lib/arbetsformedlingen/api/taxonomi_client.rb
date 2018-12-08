@@ -44,17 +44,25 @@ module Arbetsformedlingen
         simple_soap_request('GetAllContinents', args: { languageId: language_id })
       end
 
+      # Returns countries
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllCountries
+      def countries(language_id:)
+        simple_soap_request('GetAllCountries', args: { languageId: language_id })
+      end
+
       private
 
       def simple_soap_request(name, args: {})
-        soap_body = SOAPBuilder.wrap do |body|
-          # HACK: Work around the XMLBuilder DSL
-          <<-RUBY_EVAL
-          body.#{name}(xmlns: NAMESPACE) do |node|
-            #{args.map { |k, v| "node.#{k}(#{v})" }.join(';')}
-          end
-          RUBY_EVAL
+        # HACK: Work around the XMLBuilder DSL
+        soap_body = <<-RUBY
+        body.#{name}(xmlns: NAMESPACE) do |node|
+          #{args.map { |k, v| "node.#{k}(#{v})" }.join(';')}
         end
+        RUBY
+
+        soap_body = SOAPBuilder.wrap { |body| instance_eval(soap_body) }
 
         request.post(soap_body.to_xml)
       end

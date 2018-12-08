@@ -42,4 +42,17 @@ RSpec.describe Arbetsformedlingen::API::TaxonomiClient do
       expect(names.length).to eq(22)
     end
   end
+
+  describe '#countries' do
+    let(:sv_lang_id) { 502 }
+
+    it 'returns countries', vcr: true do
+      client = described_class.new
+      response = client.countries(language_id: sv_lang_id)
+      names = response.xml.css('Country Term')
+      first_name = names.first.text
+      expect(first_name).to eq('Afghanistan')
+      expect(names.length).to eq(250)
+    end
+  end
 end
