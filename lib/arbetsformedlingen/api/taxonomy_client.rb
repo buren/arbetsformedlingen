@@ -7,7 +7,7 @@ module Arbetsformedlingen
   module API
     # WsOccupation API client
     # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx
-    class TaxonomiClient
+    class TaxonomyClient
       attr_reader :request
 
       # Service URL

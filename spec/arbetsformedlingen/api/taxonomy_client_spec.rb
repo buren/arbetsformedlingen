@@ -2,7 +2,7 @@
 
 require 'spec_helper'
 
-RSpec.describe Arbetsformedlingen::API::TaxonomiClient do
+RSpec.describe Arbetsformedlingen::API::TaxonomyClient do
   [
     {
       method_name: :occupation_names,
