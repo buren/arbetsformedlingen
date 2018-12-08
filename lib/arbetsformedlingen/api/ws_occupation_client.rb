@@ -6,6 +6,7 @@ require 'arbetsformedlingen/api/soap_request'
 module Arbetsformedlingen
   module API
     # WsOccupation API client
+    # @see https://api.arbetsformedlingen.se/af/v0/Occupation/wsoccupation.asmx
     class WSOccupationClient
       attr_reader :request
 

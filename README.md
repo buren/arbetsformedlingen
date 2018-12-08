@@ -191,6 +191,10 @@ response.xml.css('Name').first.text
 
 [WSOccupationClient documentation](http://www.rubydoc.info/gems/arbetsformedlingen/Arbetsformedlingen/API/WSOccupationClient).
 
+https://api.arbetsformedlingen.se/af/v0/Occupation/wsoccupation.asmx
+
+:link: [Arbetsformedlingen WsOccupation API documentation](https://api.arbetsformedlingen.se/af/v0/Occupation/wsoccupation.asmx)
+
 ## Taxonomy API Client
 
 There is some support for Arbetsförmedlingen's `Taxonomi` SOAP API. See [#3](https://github.com/buren/arbetsformedlingen/issues/20).
@@ -201,6 +205,8 @@ response = client.occupation_names(language_id: 502) # sv language id
 response.xml.css('OccupationName Term').first.text
 # => "1:e Fartygsingenjör/1:e Maskinist"
 ```
+
+:link: [Arbetsformedlingen TaxonomiService API documentation](http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx)
 
 ## Notes
 
