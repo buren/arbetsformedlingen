@@ -104,6 +104,12 @@ RSpec.describe Arbetsformedlingen::API::TaxonomyClient do
       css: 'Municipality NationalNUTSLAU2Code',
       expected: { value: '1440', length: 290 },
     },
+    {
+      method_name: :occupation_names_art,
+      args: { language_id: 502 },
+      css: 'OccupationName Term',
+      expected: { value: 'Akrobat', length: 178 },
+    },
   ].each do |data|
     method = data.fetch(:method_name)
     expected = data.fetch(:expected)
