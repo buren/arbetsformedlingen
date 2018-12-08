@@ -5,12 +5,14 @@ Arbetsförmedlingen API client (Swedish Public Employment Service).
 __Features__
 * Post job ad (a.k.a Direktöverförda annonser)
 * Platsannons API Client
+* Taxonomy SOAP API Client
 * WSOccupation SOAP API Client
 
 __Index__
 * [Installation](#installation)
 * [API Client](#api-client)
 * [Post job ad](#post-job-ad)
+* [Taxonomy API Client](#taxonomy-api-client)
 * [WSOccupation API Client](#wsoccupation-api-client)
 * [RDoc](http://www.rubydoc.info/gems/arbetsformedlingen/).
 
