@@ -63,6 +63,12 @@ RSpec.describe Arbetsformedlingen::API::TaxonomiClient do
       css: 'OccupationExperienceYear OccupationExperienceYearID',
       expected: { value: '1', length: 5 }
     },
+    {
+      method_name: :aido_occupation_names,
+      args: { label: '101010'  },
+      css: 'GetAIDOccupationNameByLabelResult OccupationNameID',
+      expected: { value: '6818', length: 1 }
+    },
   ].each do |data|
     method = data.fetch(:method_name)
     expected = data.fetch(:expected)

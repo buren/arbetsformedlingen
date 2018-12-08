@@ -101,6 +101,14 @@ module Arbetsformedlingen
         client_request('GetAllExperiencesYear', args: { languageId: language_id })
       end
 
+      # Returns AIDO occupation names
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAIDOccupationNameByLabel
+      def aido_occupation_names(label:)
+        client_request('GetAIDOccupationNameByLabel', args: { label: label })
+      end
+
       private
 
       def client_request(name, args: {})
