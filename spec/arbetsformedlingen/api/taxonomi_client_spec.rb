@@ -68,4 +68,17 @@ RSpec.describe Arbetsformedlingen::API::TaxonomiClient do
       expect(names.length).to eq(15)
     end
   end
+
+  describe '#eu_regions' do
+    let(:sv_lang_id) { 502 }
+
+    it 'returns eu_regions', vcr: true do
+      client = described_class.new
+      response = client.eu_regions(language_id: sv_lang_id)
+      names = response.xml.css('EURegion Term')
+      first_name = names.first.text
+      expect(first_name).to eq('A Coruña')
+      expect(names.length).to eq(1362)
+    end
+  end
 end

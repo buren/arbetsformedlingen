@@ -61,6 +61,14 @@ module Arbetsformedlingen
         simple_soap_request('GetAllDrivingLicences', args: { languageId: language_id })
       end
 
+      # Returns eu_regions
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllEURegions
+      def eu_regions(language_id:)
+        simple_soap_request('GetAllEURegions', args: { languageId: language_id })
+      end
+
       private
 
       def simple_soap_request(name, args: {})
