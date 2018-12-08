@@ -4,9 +4,8 @@ require 'csv'
 
 module Arbetsformedlingen
   class OccupationCode
-    CODE_MAP = CSV.read(
-      File.expand_path('../../../data/occupation-codes.csv', __dir__)
-    ).to_h.invert.freeze
+    DATA_PATH = File.expand_path('../../../data/occupation-codes.csv', __dir__)
+    CODE_MAP = CSV.read(DATA_PATH).to_h.invert.freeze
     CODES_MAP_INVERTED = CODE_MAP.invert.freeze
 
     def self.to_code(name)

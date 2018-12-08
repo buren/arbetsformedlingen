@@ -1,0 +1,17 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require 'bundler/setup'
+require 'arbetsformedlingen'
+require 'csv'
+
+SWEDISH_LANGUAGE_ID = 502
+
+client = Arbetsformedlingen::API::TaxonomiClient.new
+response = client.occupation_names(language_id: SWEDISH_LANGUAGE_ID)
+
+CSV.open(Arbetsformedlingen::OccupationCode::DATA_PATH, 'w') do |csv|
+  response.xml.css('OccupationName').each do |node|
+    csv << [node.css('OccupationNameID').text, node.css('Term').text]
+  end
+end
