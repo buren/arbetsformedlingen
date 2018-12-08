@@ -6,6 +6,7 @@ require 'arbetsformedlingen/api/soap_request'
 module Arbetsformedlingen
   module API
     # WsOccupation API client
+    # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx
     class TaxonomiClient
       attr_reader :request
 
