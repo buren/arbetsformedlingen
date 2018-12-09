@@ -20,7 +20,7 @@ module Arbetsformedlingen
           # HACK: Work around the XMLBuilder DSL
           xml_builder = <<-RUBY
           body.#{name}(xmlns: namespace) do |node|
-            #{args.map { |k, v| "node.#{k}(#{v})" }.join(';')}
+            #{args.map { |k, v| "node.#{k}('#{v}')" }.join(';')}
           end
           RUBY
 
