@@ -423,13 +423,22 @@ module Arbetsformedlingen
         client_request('GetLocaleGroupSkillsByLocaleCode', args: args)
       end
 
-      # Returns locale group by occupation name id
+      # Returns locale groups by locale field id
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetLocaleGroupsByLocaleFieldId
       def locale_groups_by_locale_field_id(language_id:, locale_field_id:)
         args = { languageId: language_id, localeFieldId: locale_field_id }
         client_request('GetLocaleGroupsByLocaleFieldId', args: args)
+      end
+
+      # Returns locale groups by text
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetLocaleGroupsByText
+      def locale_groups_by_text(language_id:, text:, extact_match: false)
+        args = { languageId: language_id, term: text, exactMatch: extact_match }
+        client_request('GetLocaleGroupsByText', args: args)
       end
 
       # Returns SUN guide tree

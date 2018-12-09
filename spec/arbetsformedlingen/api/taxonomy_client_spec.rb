@@ -301,6 +301,12 @@ RSpec.describe Arbetsformedlingen::API::TaxonomyClient do
       expected: { value: 'Statistiker', length: 39 },
     },
     {
+      method_name: :locale_groups_by_text,
+      args: { language_id: 502, text: 'A' },
+      css: 'LocaleGroup Term',
+      expected: { value: 'Officerare', length: 338 },
+    },
+    {
       method_name: :sun_guide_tree,
       args: { language_id: 502 },
       css: 'SUNGuideBranch SUNLevel1 Term',
