@@ -259,6 +259,12 @@ RSpec.describe Arbetsformedlingen::API::TaxonomyClient do
       expected: { value: '2421', length: 1 },
     },
     {
+      method_name: :isco_by_iso2_code,
+      args: { iso2_code: nil },
+      css: 'GetLanguageIDByISO2CodeResult',
+      expected: { value: '10265', length: 1 },
+    },
+    {
       method_name: :sun_guide_tree,
       args: { language_id: 502 },
       css: 'SUNGuideBranch SUNLevel1 Term',

@@ -363,12 +363,20 @@ module Arbetsformedlingen
         client_request('GetEURegionsByCountryID', args: args)
       end
 
-      # Returns EU regions by country
+      # Returns ISCO by local code
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetISCOByLocaleCode
       def isco_by_locale_code(locale_code:)
         client_request('GetISCOByLocaleCode', args: { localeCode: locale_code })
+      end
+
+      # Returns ISCO by ISO2 code
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetLanguageIDByISO2Code
+      def isco_by_iso2_code(iso2_code:)
+        client_request('GetLanguageIDByISO2Code', args: { ISO2Code: iso2_code })
       end
 
       # Returns SUN guide tree
