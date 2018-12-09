@@ -205,6 +205,12 @@ RSpec.describe Arbetsformedlingen::API::TaxonomyClient do
       expected: { value: 'Övrig/ospec förskoleutbildning', length: 50 },
     },
     {
+      method_name: :skill_headlines,
+      args: { language_id: 502 },
+      css: 'SkillHeadline Term',
+      expected: { value: 'Datakunskaper', length: 104 },
+    },
+    {
       method_name: :sun_guide_tree,
       args: { language_id: 502 },
       css: 'SUNGuideBranch SUNLevel1 Term',
