@@ -354,6 +354,15 @@ module Arbetsformedlingen
         client_request('GetAllWorkTimeExtents', args: { languageId: language_id })
       end
 
+      # Returns EU regions by country
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetEURegionsByCountryID
+      def eu_regions_by_country(language_id:, country_id:)
+        args = { countryId: country_id, languageId: language_id }
+        client_request('GetEURegionsByCountryID', args: args)
+      end
+
       # Returns SUN guide tree
       # @return [Response] the response
       # @see Response

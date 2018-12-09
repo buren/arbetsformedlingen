@@ -247,6 +247,12 @@ RSpec.describe Arbetsformedlingen::API::TaxonomyClient do
       expected: { value: 'Heltid', length: 3 },
     },
     {
+      method_name: :eu_regions_by_country,
+      args: { language_id: 502, country_id: 199 },
+      css: 'EURegion Term',
+      expected: { value: 'Blekinge län', length: 21 },
+    },
+    {
       method_name: :sun_guide_tree,
       args: { language_id: 502 },
       css: 'SUNGuideBranch SUNLevel1 Term',
