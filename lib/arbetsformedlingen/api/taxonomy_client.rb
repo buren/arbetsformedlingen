@@ -388,6 +388,18 @@ module Arbetsformedlingen
         client_request('GetLocaleFieldsByLocaleCode', args: args)
       end
 
+      # Returns locale fields by locale fields
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetLocaleFieldsByLocaleFieldIds
+      def locale_fields_by_locale_field_ids(language_id:, locale_field_ids:)
+        args = {
+          languageId: language_id,
+          localeFieldIds: locale_field_ids.map { |id| [:int, id] },
+        }
+        client_request('GetLocaleFieldsByLocaleFieldIds', args: args)
+      end
+
       # Returns locale fields by text
       # @return [Response] the response
       # @see Response
@@ -413,6 +425,18 @@ module Arbetsformedlingen
       def locale_group_skills_by_locale_code(locale_code:)
         args = { localeCode: locale_code }
         client_request('GetLocaleGroupSkillsByLocaleCode', args: args)
+      end
+
+      # Returns locale group skills by locale code
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetLocaleGroupsByLocaleCodes
+      def locale_groups_by_locale_codes(language_id:, locale_codes:)
+        args = {
+          languageId: language_id,
+          localeCodes: locale_codes.map { |code| [:string, code] },
+        }
+        client_request('GetLocaleGroupsByLocaleCodes', args: args)
       end
 
       # Returns locale groups by locale field id
@@ -448,6 +472,30 @@ module Arbetsformedlingen
       def occupation_names_by_locale_code(language_id:, locale_code:)
         args = { languageId: language_id, localeCode: locale_code }
         client_request('GetOccupationNamesByLocaleCode', args: args)
+      end
+
+      # Returns occupation names by occupation name ids
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetOccupationNamesByOccupationNameIds
+      def occupation_names_by_occupation_name_ids(language_id:, occupation_name_ids:)
+        args = {
+          languageId: language_id,
+          occupationNameIds: occupation_name_ids.map { |id| [:int, id] },
+        }
+        client_request('GetOccupationNamesByOccupationNameIds', args: args)
+      end
+
+      # Returns occupation names versions by occupation name ids
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetOccupationNamesByOccupationNameIdsVersion
+      def occupation_names_versions_by_occupation_name_ids(language_id:, occupation_name_ids:)
+        args = {
+          languageId: language_id,
+          occupationNameIds: occupation_name_ids.map { |id| [:int, id] },
+        }
+        client_request('GetOccupationNamesByOccupationNameIdsVersion', args: args)
       end
 
       # Returns occupation names by text
@@ -524,6 +572,18 @@ module Arbetsformedlingen
       # Returns skill headlines by main headline
       # @return [Response] the response
       # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetSkillHeadlinesBySkillHeadlineIds
+      def skill_headlines_by_headline_ids(language_id:, skill_headline_ids:)
+        args = {
+          languageId: language_id,
+          skillHeadlineIds: skill_headline_ids.map { |id| [:int, id] },
+        }
+        client_request('GetSkillHeadlinesBySkillHeadlineIds', args: args)
+      end
+
+      # Returns skill headlines by main headline
+      # @return [Response] the response
+      # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetSkillHeadlinesBySkillMainHeadlineId
       def skill_headlines_by_main_headline(language_id:, skill_main_headline_id:)
         args = { languageId: language_id, skillMainHeadlineId: skill_main_headline_id }
@@ -537,6 +597,18 @@ module Arbetsformedlingen
       def skill_headlines_by_text(language_id:, text:, extact_match: false)
         args = { languageId: language_id, term: text, exactMatch: extact_match }
         client_request('GetSkillHeadlinesByText', args: args)
+      end
+
+      # Returns skill headlines by text
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetSkillMainHeadlinesBySkillMainHeadlineIds
+      def skill_headlines_by_skill_main_headlines_ids(language_id:, skill_main_headline_ids:)
+        args = {
+          languageId: language_id,
+          skillMainHeadlineIds: skill_main_headline_ids.map { |id| [:int, id] },
+        }
+        client_request('GetSkillMainHeadlinesBySkillMainHeadlineIds', args: args)
       end
 
       # Returns skill main headlines by text
@@ -558,13 +630,37 @@ module Arbetsformedlingen
         client_request('GetSkillsByLocaleCode', args: args)
       end
 
-      # Returns skill headlines by main headlin
+      # Returns skills by main headline
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetSkillsBySkillHeadlineId
       def skills_by_headline(language_id:, skill_headline_id:)
         args = { languageId: language_id, skillHeadlineId: skill_headline_id }
         client_request('GetSkillsBySkillHeadlineId', args: args)
+      end
+
+      # Returns skills by skill ids
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetSkillsBySkillIds
+      def skills_by_skill_ids(language_id:, skill_ids:)
+        args = {
+          languageId: language_id,
+          skillIds: skill_ids.map { |id| [:int, id] },
+        }
+        client_request('GetSkillsBySkillIds', args: args)
+      end
+
+      # Returns skills versions by skill ids
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetSkillsBySkillIdsVersion
+      def skills_versions_by_skill_ids(language_id:, skill_ids:)
+        args = {
+          languageId: language_id,
+          skillIds: skill_ids.map { |id| [:int, id] },
+        }
+        client_request('GetSkillsBySkillIdsVersion', args: args)
       end
 
       # Returns skill headlines by main headline

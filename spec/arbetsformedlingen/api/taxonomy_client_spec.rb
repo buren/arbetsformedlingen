@@ -277,6 +277,12 @@ RSpec.describe Arbetsformedlingen::API::TaxonomyClient do
       expected: { value: 'Administration, ekonomi, juridik', length: 1 },
     },
     {
+      method_name: :locale_fields_by_locale_field_ids,
+      args: { language_id: 502, locale_field_ids: [3, 5] },
+      css: 'LocaleField Term',
+      expected: { value: 'Data/IT', length: 2 },
+    },
+    {
       method_name: :locale_fields_by_text,
       args: { language_id: 502, text: 'A' },
       css: 'LocaleField Term',
@@ -295,6 +301,12 @@ RSpec.describe Arbetsformedlingen::API::TaxonomyClient do
       expected: { value: '870', length: 37 },
     },
     {
+      method_name: :locale_groups_by_locale_codes,
+      args: { language_id: 502, locale_codes: [2421] },
+      css: 'LocaleGroup Term',
+      expected: { value: 'Lednings- och organisationsutvecklare', length: 1 },
+    },
+    {
       method_name: :locale_groups_by_locale_field_id,
       args: { language_id: 502, locale_field_id: 1 },
       css: 'LocaleGroup Term',
@@ -311,6 +323,18 @@ RSpec.describe Arbetsformedlingen::API::TaxonomyClient do
       args: { language_id: 502, locale_code: 2421 },
       css: 'OccupationName Term',
       expected: { value: 'Administrativ utvecklare', length: 13 },
+    },
+    {
+      method_name: :occupation_names_by_occupation_name_ids,
+      args: { language_id: 502, occupation_name_ids: [7441, 5373] },
+      css: 'OccupationName Term',
+      expected: { value: '2D-grafiker', length: 2 },
+    },
+    {
+      method_name: :occupation_names_versions_by_occupation_name_ids,
+      args: { language_id: 502, occupation_name_ids: [7441, 5373] },
+      css: 'OccupationNameExt Term',
+      expected: { value: '2D-grafiker', length: 2 },
     },
     {
       method_name: :occupation_names_by_text,
@@ -361,6 +385,12 @@ RSpec.describe Arbetsformedlingen::API::TaxonomyClient do
       expected: { value: 'Saknar formell, grundläggande utbildning', length: 7 },
     },
     {
+      method_name: :skill_headlines_by_headline_ids,
+      args: { language_id: 502, skill_headline_ids: [2] },
+      css: 'SkillMainHeadline Term',
+      expected: { value: 'Datakunskaper', length: 1 },
+    },
+    {
       method_name: :skill_headlines_by_main_headline,
       args: { language_id: 502, skill_main_headline_id: 2 },
       css: 'SkillMainHeadline Term',
@@ -371,6 +401,12 @@ RSpec.describe Arbetsformedlingen::API::TaxonomyClient do
       args: { language_id: 502, text: 'A' },
       css: 'SkillMainHeadline Term',
       expected: { value: 'Datakunskaper', length: 39 },
+    },
+    {
+      method_name: :skill_headlines_by_skill_main_headlines_ids,
+      args: { language_id: 502, skill_main_headline_ids: [2, 3] },
+      css: 'SkillMainHeadline Term',
+      expected: { value: 'Datakunskaper', length: 1 },
     },
     {
       method_name: :skill_main_headlines_by_text,
@@ -389,6 +425,18 @@ RSpec.describe Arbetsformedlingen::API::TaxonomyClient do
       args: { language_id: 502, skill_headline_id: 2 },
       css: 'SkillHeadline Term',
       expected: { value: 'Datakunskaper', length: 52 },
+    },
+    {
+      method_name: :skills_by_skill_ids,
+      args: { language_id: 502, skill_ids: [2, 3] },
+      css: 'Skill',
+      expected: { length: 2 },
+    },
+    {
+      method_name: :skills_versions_by_skill_ids,
+      args: { language_id: 502, skill_ids: [2, 3] },
+      css: 'SkillVersion',
+      expected: { length: 2 },
     },
     {
       method_name: :skills_by_main_headline,
@@ -421,8 +469,10 @@ RSpec.describe Arbetsformedlingen::API::TaxonomyClient do
                    end
 
         ids = response.xml.css(data.fetch(:css))
-        first_name = ids.first.text
-        expect(first_name).to eq(expected.fetch(:value))
+        if expected.key?(:value)
+          first_name = ids.first.text
+          expect(first_name).to eq(expected.fetch(:value))
+        end
         expect(ids.length).to eq(expected.fetch(:length))
       end
     end
