@@ -211,6 +211,12 @@ RSpec.describe Arbetsformedlingen::API::TaxonomyClient do
       expected: { value: 'Datakunskaper', length: 104 },
     },
     {
+      method_name: :skill_main_headlines,
+      args: { language_id: 502 },
+      css: 'SkillMainHeadline Term',
+      expected: { value: 'Datakunskaper', length: 2 },
+    },
+    {
       method_name: :sun_guide_tree,
       args: { language_id: 502 },
       css: 'SUNGuideBranch SUNLevel1 Term',
