@@ -24,7 +24,8 @@ company = Company.new(
 )
 
 publication = Publication.new(
-  publish_at_date: Date.today,
+  publish_at: Date.today,
+  unpublish_at: Date.today + 21,
   name: 'John Doe',
   email: 'john@example.com'
 )
