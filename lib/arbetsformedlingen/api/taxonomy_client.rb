@@ -154,6 +154,38 @@ module Arbetsformedlingen
         client_request('GetAllLocaleFields', args: { languageId: language_id })
       end
 
+      # Returns occupation names for jobs with culture
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetOccupationNamesArt
+      def occupation_names_art(language_id:)
+        client_request('GetOccupationNamesArt', args: { languageId: language_id })
+      end
+
+      # Returns locale group skills
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllLocaleGroupSkills
+      def locale_group_skills
+        client_request('GetAllLocaleGroupSkills')
+      end
+
+      # Returns locale groups
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllLocaleGroups
+      def locale_groups(language_id:)
+        client_request('GetAllLocaleGroups', args: { languageId: language_id })
+      end
+
+      # Returns locale groups
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllLocaleLevel3
+      def locale_level3(language_id:)
+        client_request('GetAllLocaleLevel3', args: { languageId: language_id })
+      end
+
       # Returns municipalities
       # @return [Response] the response
       # @see Response
@@ -162,12 +194,44 @@ module Arbetsformedlingen
         client_request('GetAllMunicipalities', args: { languageId: language_id })
       end
 
-      # Returns occupation names for jobs with culture
+      # Returns municipality homepages
       # @return [Response] the response
       # @see Response
-      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetOccupationNamesArt
-      def occupation_names_art(language_id:)
-        client_request('GetOccupationNamesArt', args: { languageId: language_id })
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllMunicipalityHomePages
+      def municipality_homepages
+        client_request('GetAllMunicipalityHomePages')
+      end
+
+      # Returns occupation name synonyms
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllOccupationNameSynonyms
+      def occupation_name_synonyms(language_id:)
+        client_request('GetAllOccupationNameSynonyms', args: { languageId: language_id })
+      end
+
+      # Returns occupation name versions
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllOccupationNameSynonyms
+      def occupation_name_versions(language_id:)
+        client_request('GetAllOccupationNamesVersion', args: { languageId: language_id })
+      end
+
+      # Returns post codes
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllPostCodes
+      def post_codes(language_id:)
+        client_request('GetAllPostCodes', args: { languageId: language_id })
+      end
+
+      # Returns post localities
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllPostLocalities
+      def post_localities(language_id:)
+        client_request('GetAllPostLocalities', args: { languageId: language_id })
       end
 
       # Returns SUN guide tree
