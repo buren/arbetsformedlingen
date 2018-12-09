@@ -229,6 +229,12 @@ RSpec.describe Arbetsformedlingen::API::TaxonomyClient do
       expected: { value: 'Övriga kompetensrubriker', length: 12138 },
     },
     {
+      method_name: :unemployment_benefit_societies,
+      args: { language_id: 502 },
+      css: 'UnemploymentBenefitSociety Code',
+      expected: { value: '00', length: 28 },
+    },
+    {
       method_name: :sun_guide_tree,
       args: { language_id: 502 },
       css: 'SUNGuideBranch SUNLevel1 Term',
