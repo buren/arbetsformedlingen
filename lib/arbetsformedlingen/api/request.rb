@@ -30,7 +30,8 @@ module Arbetsformedlingen
         request['Accept-Language'] = locale
 
         response = http.request(request)
-        if response.code == '303' && response.header['Location'] # AFs APIs somtimes redirects with HTTP 303
+        # AFs APIs somtimes redirects with HTTP 303
+        if response.code == '303' && response.header['Location']
           return get(response.header['Location'], query: query)
         end
 

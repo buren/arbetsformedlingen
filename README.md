@@ -5,6 +5,7 @@ Arbetsförmedlingen API client (Swedish Public Employment Service).
 __Features__
 * Post job ad (a.k.a Direktöverförda annonser)
 * Platsannons API Client
+* Ontology API Client
 * Taxonomy SOAP API Client
 * WSOccupation SOAP API Client
 
@@ -12,6 +13,7 @@ __Index__
 * [Installation](#installation)
 * [API Client](#api-client)
 * [Post job ad](#post-job-ad)
+* [Ontology API Client](#ontology-api-client)
 * [Taxonomy API Client](#taxonomy-api-client)
 * [WSOccupation API Client](#wsoccupation-api-client)
 * [RDoc](http://www.rubydoc.info/gems/arbetsformedlingen/).
@@ -189,11 +191,22 @@ response.xml.css('Name').first.text
 # => "Landskapsarkitekter och landskapsingenjörer"
 ```
 
-[WSOccupationClient documentation](http://www.rubydoc.info/gems/arbetsformedlingen/Arbetsformedlingen/API/WSOccupationClient).
-
-https://api.arbetsformedlingen.se/af/v0/Occupation/wsoccupation.asmx
+[`WSOccupationClient` documentation](http://www.rubydoc.info/gems/arbetsformedlingen/Arbetsformedlingen/API/WSOccupationClient).
 
 :link: [Arbetsformedlingen WsOccupation API documentation](https://api.arbetsformedlingen.se/af/v0/Occupation/wsoccupation.asmx)
+
+## Ontology API Client
+
+```ruby
+client = Arbetsformedlingen::API::OntologyClient.new
+response = client.concepts(filter: 'ruby', type: 'skill')
+response.json
+# => [{"uuid"=>"035fc466-605e-5684-a106-a458929f27c6", "name"=>"Ruby", "type"=>"skill"}, ...]
+```
+
+[`OntologyClient` documentation](http://www.rubydoc.info/gems/arbetsformedlingen/Arbetsformedlingen/API/WSOccupationClient).
+
+:link: [Arbetsformedlingen Ontology API documentation](http://ontologi.arbetsformedlingen.se/ontology/v1/?url=swagger.json#/Ontology)
 
 ## Taxonomy API Client
 
@@ -205,6 +218,8 @@ response = client.occupation_names(language_id: 502) # sv language id
 response.xml.css('OccupationName Term').first.text
 # => "1:e Fartygsingenjör/1:e Maskinist"
 ```
+
+[`TaxonomyClient` documentation](http://www.rubydoc.info/gems/arbetsformedlingen/Arbetsformedlingen/API/WSOccupationClient).
 
 :link: [Arbetsformedlingen TaxonomiService API documentation](http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx)
 

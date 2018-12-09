@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://ontologi.arbetsformedlingen.se/ontology/v1/concept/4808a9d5-f35a-53b7-bb67-16b972c2a1de
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - ontologi.arbetsformedlingen.se
+      Content-Type:
+      - application/json
+      Accept-Language:
+      - sv
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 09 Dec 2018 12:59:15 GMT
+      Server:
+      - nginx/1.10.3 (Ubuntu)
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '78'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - X-JWT-Assertion, Origin, X-Requested-With, Content-Type, Accept
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, OPTIONS, HEAD, PUT, POST
+      Access-Control-Max-Age:
+      - '1209600'
+    body:
+      encoding: UTF-8
+      string: '{"uuid":"4808a9d5-f35a-53b7-bb67-16b972c2a1de","name":"Kunder","type":"skill"}'
+    http_version: 
+  recorded_at: Sun, 09 Dec 2018 12:59:15 GMT
+recorded_with: VCR 3.0.3
