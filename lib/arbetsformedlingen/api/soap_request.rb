@@ -43,7 +43,7 @@ module Arbetsformedlingen
 
         response = http.request(request)
 
-        Response.new(response)
+        Response.new(response, uri)
       end
     end
   end
