@@ -108,7 +108,7 @@ RSpec.describe Arbetsformedlingen::API::OntologyClient do
 
   describe '#text_to_structure', vcr: true do
     it 'returns correct data' do
-      text = 'Som rekryteringsassistent kommer du att stötta våra rekryterare i olika delar av rekryteringsprocessen. Du kommer bland annat att. Skriva annonser för våra tjänster Göra telefonavstämningar med intressanta kandidater Intervjua kandidater Skriva kandidatpresentationer som sedan skickas till kunder. Skriva arbetsgivarintyg.' # rubocop:disable Metrics/LineLength
+      text = 'Som rekryteringsassistent kommer du att stötta våra rekryterare i olika delar av rekryteringsprocessen. Du kommer bland annat att. Skriva annonser för våra tjänster Göra telefonavstämningar med intressanta kandidater Intervjua kandidater Skriva kandidatpresentationer som sedan skickas till kunder. Skriva arbetsgivarintyg.'
       expected = %w[Arbetsgivarintyg Kunder Rekryterare Rekryteringsassistent]
 
       client = described_class.new

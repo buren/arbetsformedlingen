@@ -3,14 +3,14 @@
 require 'date'
 require 'arbetsformedlingen'
 
-include Arbetsformedlingen # just for brevity
+AF = Arbetsformedlingen # for brevity
 
-document = Document.new(
+document = AF::Document.new(
   customer_id: 'XXXYYYZZZ',
   email: 'a@example.com'
 )
 
-company = Company.new(
+company = AF::Company.new(
   name: 'ACME AB',
   cin: 'XXYYZZXXYY',
   description: 'A company description',
@@ -19,32 +19,32 @@ company = Company.new(
     zip: '11356',
     municipality: 'Stockholm',
     street: 'Birger Jarlsgatan 57',
-    city: 'stockholm'
+    city: 'stockholm',
   }
 )
 
-publication = Publication.new(
+publication = AF::Publication.new(
   publish_at: Date.today,
   unpublish_at: Date.today + 21,
   name: 'John Doe',
   email: 'john@example.com'
 )
 
-schedule = Schedule.new(
+schedule = AF::Schedule.new(
   full_time: false,
   summary: '3 days a week 8.00-17.00',
   start_date: Date.today,
   end_date: nil
 )
 
-salary = Salary.new(
+salary = AF::Salary.new(
   currency: 'SEK',
   type: :fixed, # :fixed, :fixed_and_commission, :commission
   summary: 'Your salary will be...'
 )
 
 qualifications = []
-qualifications << Qualification.new(
+qualifications << AF::Qualification.new(
   summary: 'A summary', # optional, but recommended field
   required: true,
   experience: true,
@@ -52,18 +52,18 @@ qualifications << Qualification.new(
   car: true
 )
 
-qualifications << Qualification.new(
+qualifications << AF::Qualification.new(
   summary: 'A summary', # optional, but recommended field
   required: false
 )
 
-application_method = ApplicationMethod.new(
+application_method = AF::ApplicationMethod.new(
   external: true, # applications are not made through AF
   url: 'https://example.com',
   summary: 'Goto our website'
 )
 
-position = Position.new(
+position = AF::Position.new(
   company: company,
   schedule: schedule,
   salary: salary,
@@ -77,12 +77,12 @@ position = Position.new(
       zip: '11356',
       municipality: 'Stockholm',
       street: 'Birger Jarlsgatan 57',
-      city: 'stockholm'
-    }
+      city: 'stockholm',
+    },
   }
 )
 
-packet = Packet.new(
+packet = AF::Packet.new(
   publication: publication,
   document: document,
   position: position,
@@ -90,7 +90,7 @@ packet = Packet.new(
     active: true,
     job_id: 1,
     number_to_fill: 1,
-    occupation: '4896'
+    occupation: '4896',
   }
 )
 
@@ -103,5 +103,5 @@ puts "application_method.valid?: #{application_method.valid?}"
 puts "position.valid?: #{position.valid?}"
 puts "packet.valid?: #{packet.valid?}"
 
-client = API::Client.new(locale: 'sv')
+client = API::AF::Client.new(locale: 'sv')
 client.create_ad(packet)

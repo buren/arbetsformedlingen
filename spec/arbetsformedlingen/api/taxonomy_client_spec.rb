@@ -107,7 +107,7 @@ RSpec.describe Arbetsformedlingen::API::TaxonomyClient do
     {
       method_name: :locale_group_skills,
       css: 'LocaleGroupSkill LocaleCode',
-      expected: { value: '0110', length: 13334 },
+      expected: { value: '0110', length: 13_334 },
     },
     {
       method_name: :locale_groups,
@@ -148,7 +148,7 @@ RSpec.describe Arbetsformedlingen::API::TaxonomyClient do
       method_name: :post_codes,
       args: { language_id: 502 },
       css: 'PostCode Code',
-      expected: { value: '10005', length: 17389 },
+      expected: { value: '10005', length: 17_389 },
     },
     {
       method_name: :post_localities,
@@ -220,13 +220,13 @@ RSpec.describe Arbetsformedlingen::API::TaxonomyClient do
       method_name: :skills,
       args: { language_id: 502 },
       css: 'SkillHeadline Term',
-      expected: { value: 'Övriga kompetensrubriker', length: 11028 },
+      expected: { value: 'Övriga kompetensrubriker', length: 11_028 },
     },
     {
       method_name: :skill_versions,
       args: { language_id: 502 },
       css: 'SkillVersion SkillHeadline Term',
-      expected: { value: 'Övriga kompetensrubriker', length: 12138 },
+      expected: { value: 'Övriga kompetensrubriker', length: 12_138 },
     },
     {
       method_name: :unemployment_benefit_societies,
@@ -338,7 +338,7 @@ RSpec.describe Arbetsformedlingen::API::TaxonomyClient do
     },
     {
       method_name: :post_codes_by_post_code,
-      args: { language_id: 502, post_code: 11846 },
+      args: { language_id: 502, post_code: 11_846 },
       css: 'PostCode PostLocality',
       expected: { value: 'Stockholm', length: 1 },
     },
@@ -346,7 +346,7 @@ RSpec.describe Arbetsformedlingen::API::TaxonomyClient do
       method_name: :post_codes_by_post_locality,
       args: { language_id: 502, post_locality_id: 0 },
       css: 'PostCode PostLocality',
-      expected: { value: 'Stockholm', length: 17389 },
+      expected: { value: 'Stockholm', length: 17_389 },
     },
     {
       method_name: :sun_field3_by_guide,
