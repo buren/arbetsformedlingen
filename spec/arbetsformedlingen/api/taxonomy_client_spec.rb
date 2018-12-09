@@ -139,6 +139,12 @@ RSpec.describe Arbetsformedlingen::API::TaxonomyClient do
       expected: { value: 'Sjöman', length: 1577 },
     },
     {
+      method_name: :occupation_name_versions,
+      args: { language_id: 502 },
+      css: 'OccupationNameExt Term',
+      expected: { value: '1:e Fartygsingenjör/1:e Maskinist', length: 4595 },
+    },
+    {
       method_name: :sun_guide_tree,
       args: { language_id: 502 },
       css: 'SUNGuideBranch SUNLevel1 Term',
