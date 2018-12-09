@@ -521,7 +521,7 @@ module Arbetsformedlingen
         client_request('GetSUNGuideTree', args: { languageId: language_id })
       end
 
-      # Returns skill headlines by main headlin
+      # Returns skill headlines by main headline
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetSkillHeadlinesBySkillMainHeadlineId
@@ -556,6 +556,15 @@ module Arbetsformedlingen
         # NOTE: Yes there is a typo, "localCode" instead of "localeCode", in the API
         args = { languageId: language_id, localCode: locale_code }
         client_request('GetSkillsByLocaleCode', args: args)
+      end
+
+      # Returns skill headlines by main headlin
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetSkillsBySkillHeadlineId
+      def skills_by_headline(language_id:, skill_headline_id:)
+        args = { languageId: language_id, skillHeadlineId: skill_headline_id }
+        client_request('GetSkillsBySkillHeadlineId', args: args)
       end
 
       # Returns version information
