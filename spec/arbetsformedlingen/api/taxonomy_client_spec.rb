@@ -409,6 +409,12 @@ RSpec.describe Arbetsformedlingen::API::TaxonomyClient do
       expected: { value: 'Datakunskaper', length: 52 },
     },
     {
+      method_name: :skills_by_skill_ids,
+      args: { language_id: 502, skill_ids: [2, 3] },
+      css: 'Skill',
+      expected: { length: 2 },
+    },
+    {
       method_name: :skills_by_main_headline,
       args: { language_id: 502, skill_main_headline_id: 2 },
       css: 'SkillHeadline Term',
@@ -439,8 +445,10 @@ RSpec.describe Arbetsformedlingen::API::TaxonomyClient do
                    end
 
         ids = response.xml.css(data.fetch(:css))
-        first_name = ids.first.text
-        expect(first_name).to eq(expected.fetch(:value))
+        if expected.key?(:value)
+          first_name = ids.first.text
+          expect(first_name).to eq(expected.fetch(:value))
+        end
         expect(ids.length).to eq(expected.fetch(:length))
       end
     end
