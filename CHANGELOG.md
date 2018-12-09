@@ -1,5 +1,15 @@
 # Change Log
 
+# HEAD
+
+This is a pretty big release that adds support Ontology and Taxonomy APIs and completes WSOccupation :tada:
+
+* Implement Ontology API
+* Implement Taxonomy API (84 endpoints!)
+* Implement remaining WSOccupation API endpoints
+* Add `Response#uri` method
+* Improved documentation
+
 # v0.6.0
 
 * Return "empty result" object when no results are found
