@@ -241,6 +241,12 @@ RSpec.describe Arbetsformedlingen::API::TaxonomyClient do
       expected: { value: 'Fast månads- vecko- eller timlön', length: 3 },
     },
     {
+      method_name: :work_time_extents,
+      args: { language_id: 502 },
+      css: 'WorkTimeExtent Term',
+      expected: { value: 'Heltid', length: 3 },
+    },
+    {
       method_name: :sun_guide_tree,
       args: { language_id: 502 },
       css: 'SUNGuideBranch SUNLevel1 Term',

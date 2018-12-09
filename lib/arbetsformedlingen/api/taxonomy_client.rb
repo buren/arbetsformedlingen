@@ -346,6 +346,14 @@ module Arbetsformedlingen
         client_request('GetAllWageTypes', args: { languageId: language_id })
       end
 
+      # Returns work time extents
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllWorkTimeExtents
+      def work_time_extents(language_id:)
+        client_request('GetAllWorkTimeExtents', args: { languageId: language_id })
+      end
+
       # Returns SUN guide tree
       # @return [Response] the response
       # @see Response
