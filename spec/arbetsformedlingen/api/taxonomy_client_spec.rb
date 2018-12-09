@@ -313,6 +313,12 @@ RSpec.describe Arbetsformedlingen::API::TaxonomyClient do
       expected: { value: 'Administrativ utvecklare', length: 13 },
     },
     {
+      method_name: :occupation_names_by_text,
+      args: { language_id: 502, text: 'A' },
+      css: 'OccupationName Term',
+      expected: { value: '1:e Fartygsingenjör/1:e Maskinist', length: 2654 },
+    },
+    {
       method_name: :sun_guide_tree,
       args: { language_id: 502 },
       css: 'SUNGuideBranch SUNLevel1 Term',
