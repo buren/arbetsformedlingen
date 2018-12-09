@@ -19,6 +19,7 @@ module Arbetsformedlingen
       end
 
       # Returns occupation names
+      # @param language_id [String, Integer]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllOccupationNames
@@ -35,6 +36,7 @@ module Arbetsformedlingen
       end
 
       # Returns continents
+      # @param language_id [String, Integer]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllContinents
@@ -43,6 +45,7 @@ module Arbetsformedlingen
       end
 
       # Returns countries
+      # @param language_id [String, Integer]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllCountries
@@ -51,6 +54,7 @@ module Arbetsformedlingen
       end
 
       # Returns drivers_licenses
+      # @param language_id [String, Integer]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllDrivingLicences
@@ -59,6 +63,7 @@ module Arbetsformedlingen
       end
 
       # Returns eu regions
+      # @param language_id [String, Integer]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllEURegions
@@ -67,6 +72,7 @@ module Arbetsformedlingen
       end
 
       # Returns employment durations
+      # @param language_id [String, Integer]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllEmploymentDurations
@@ -75,6 +81,7 @@ module Arbetsformedlingen
       end
 
       # Returns employment durations
+      # @param language_id [String, Integer]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllEmploymentTypes
@@ -83,6 +90,7 @@ module Arbetsformedlingen
       end
 
       # Returns experiences last
+      # @param language_id [String, Integer]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllExperiencesLast
@@ -91,6 +99,7 @@ module Arbetsformedlingen
       end
 
       # Returns experiences year
+      # @param language_id [String, Integer]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllExperiencesYear
@@ -99,6 +108,7 @@ module Arbetsformedlingen
       end
 
       # Returns AIDO occupation names
+      # @param label [String]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAIDOccupationNameByLabel
@@ -115,6 +125,7 @@ module Arbetsformedlingen
       end
 
       # Returns job situations
+      # @param language_id [String, Integer]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllJobSituations
@@ -123,6 +134,7 @@ module Arbetsformedlingen
       end
 
       # Returns language_levels
+      # @param language_id [String, Integer]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllLanguageLevels
@@ -131,6 +143,7 @@ module Arbetsformedlingen
       end
 
       # Returns languages
+      # @param language_id [String, Integer]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllLanguages
@@ -139,6 +152,7 @@ module Arbetsformedlingen
       end
 
       # Returns languages with ISO
+      # @param language_id [String, Integer]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllLanguagesWithISO
@@ -147,6 +161,7 @@ module Arbetsformedlingen
       end
 
       # Returns locale fields
+      # @param language_id [String, Integer]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllLanguagesWithISO
@@ -163,6 +178,7 @@ module Arbetsformedlingen
       end
 
       # Returns locale groups
+      # @param language_id [String, Integer]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllLocaleGroups
@@ -171,6 +187,7 @@ module Arbetsformedlingen
       end
 
       # Returns locale groups
+      # @param language_id [String, Integer]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllLocaleLevel3
@@ -179,6 +196,7 @@ module Arbetsformedlingen
       end
 
       # Returns municipalities
+      # @param language_id [String, Integer]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllMunicipalities
@@ -195,6 +213,7 @@ module Arbetsformedlingen
       end
 
       # Returns occupation name synonyms
+      # @param language_id [String, Integer]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllOccupationNameSynonyms
@@ -203,6 +222,7 @@ module Arbetsformedlingen
       end
 
       # Returns occupation name versions
+      # @param language_id [String, Integer]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllOccupationNameSynonyms
@@ -211,6 +231,7 @@ module Arbetsformedlingen
       end
 
       # Returns post codes
+      # @param language_id [String, Integer]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllPostCodes
@@ -219,6 +240,7 @@ module Arbetsformedlingen
       end
 
       # Returns post localities
+      # @param language_id [String, Integer]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllPostLocalities
@@ -227,6 +249,7 @@ module Arbetsformedlingen
       end
 
       # Returns SNI level 1
+      # @param language_id [String, Integer]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllSNILevel1
@@ -235,6 +258,7 @@ module Arbetsformedlingen
       end
 
       # Returns SNI level 2
+      # @param language_id [String, Integer]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllSNILevel2
@@ -243,6 +267,7 @@ module Arbetsformedlingen
       end
 
       # Returns SUN field 1
+      # @param language_id [String, Integer]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllSUNField1
@@ -251,6 +276,7 @@ module Arbetsformedlingen
       end
 
       # Returns SUN field 2
+      # @param language_id [String, Integer]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllSUNField2
@@ -259,6 +285,7 @@ module Arbetsformedlingen
       end
 
       # Returns SUN field 3
+      # @param language_id [String, Integer]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllSUNField3
@@ -267,6 +294,7 @@ module Arbetsformedlingen
       end
 
       # Returns SUN level 1
+      # @param language_id [String, Integer]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllSUNLevel1
@@ -275,6 +303,7 @@ module Arbetsformedlingen
       end
 
       # Returns SUN level 2
+      # @param language_id [String, Integer]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllSUNLevel2
@@ -283,6 +312,7 @@ module Arbetsformedlingen
       end
 
       # Returns SUN level 3
+      # @param language_id [String, Integer]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllSUNLevel3
@@ -290,7 +320,8 @@ module Arbetsformedlingen
         client_request('GetAllSUNLevel3', args: { languageId: language_id })
       end
 
-      # Returns skill headline
+      # Returns skill headlines
+      # @param language_id [String, Integer]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllSkillHeadlines
@@ -298,7 +329,8 @@ module Arbetsformedlingen
         client_request('GetAllSkillHeadlines', args: { languageId: language_id })
       end
 
-      # Returns skill main headline
+      # Returns skill main headlines
+      # @param language_id [String, Integer]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllSkillMainHeadlines
@@ -307,6 +339,7 @@ module Arbetsformedlingen
       end
 
       # Returns skills
+      # @param language_id [String, Integer]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllSkills
@@ -315,6 +348,7 @@ module Arbetsformedlingen
       end
 
       # Returns skill versions
+      # @param language_id [String, Integer]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllSkillsVersion
@@ -323,6 +357,7 @@ module Arbetsformedlingen
       end
 
       # Returns unemployment benefit societies
+      # @param language_id [String, Integer]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllUnemploymentBenefitSocieties
@@ -331,6 +366,7 @@ module Arbetsformedlingen
       end
 
       # Returns unemployment benefit societies
+      # @param language_id [String, Integer]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllWageTypes
@@ -340,6 +376,7 @@ module Arbetsformedlingen
 
       # Returns work time extents
       # @return [Response] the response
+      # @param language_id [String, Integer]
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllWorkTimeExtents
       def work_time_extents(language_id:)
@@ -348,6 +385,8 @@ module Arbetsformedlingen
 
       # Returns EU regions by country
       # @return [Response] the response
+      # @param language_id [String, Integer]
+      # @param country_id [String, Integer]
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetEURegionsByCountryID
       def eu_regions_by_country(language_id:, country_id:)
@@ -356,6 +395,7 @@ module Arbetsformedlingen
       end
 
       # Returns ISCO by local code
+      # @param locale_code [String, Integer]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetISCOByLocaleCode
@@ -364,6 +404,7 @@ module Arbetsformedlingen
       end
 
       # Returns ISCO by ISO2 code
+      # @param iso2_code [String]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetLanguageIDByISO2Code
@@ -380,6 +421,8 @@ module Arbetsformedlingen
       end
 
       # Returns locale fields by locale code
+      # @param language_id [String, Integer]
+      # @param locale_code [String, Integer]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetLocaleFieldsByLocaleCode
@@ -389,6 +432,8 @@ module Arbetsformedlingen
       end
 
       # Returns locale fields by locale fields
+      # @param language_id [String, Integer]
+      # @param locale_field_ids [Array<String>, Array<Integer>]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetLocaleFieldsByLocaleFieldIds
@@ -401,6 +446,9 @@ module Arbetsformedlingen
       end
 
       # Returns locale fields by text
+      # @param language_id [String, Integer]
+      # @param text [String]
+      # @param exact_match [true, false]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetLocaleFieldsByText
@@ -410,6 +458,8 @@ module Arbetsformedlingen
       end
 
       # Returns locale group by occupation name id
+      # @param language_id [String, Integer]
+      # @param occupation_name_id [String, Integer]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetLocaleGroupByOccupationNameId
@@ -419,6 +469,7 @@ module Arbetsformedlingen
       end
 
       # Returns locale group skills by locale code
+      # @param locale_code [String, Integer]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetLocaleGroupSkillsByLocaleCode
@@ -428,6 +479,8 @@ module Arbetsformedlingen
       end
 
       # Returns locale group skills by locale code
+      # @param language_id [String, Integer]
+      # @param locale_codes [Array<String>, Array<Integer>]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetLocaleGroupsByLocaleCodes
@@ -440,6 +493,8 @@ module Arbetsformedlingen
       end
 
       # Returns locale groups by locale field id
+      # @param language_id [String, Integer]
+      # @param locale_field_id [String, Integer]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetLocaleGroupsByLocaleFieldId
@@ -449,15 +504,19 @@ module Arbetsformedlingen
       end
 
       # Returns locale groups by text
+      # @param language_id [String, Integer]
+      # @param text [String]
+      # @param exact_match [true, false]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetLocaleGroupsByText
-      def locale_groups_by_text(language_id:, text:, extact_match: false)
-        args = { languageId: language_id, term: text, exactMatch: extact_match }
+      def locale_groups_by_text(language_id:, text:, exact_match: false)
+        args = { languageId: language_id, term: text, exactMatch: exact_match }
         client_request('GetLocaleGroupsByText', args: args)
       end
 
       # Returns occupation names for jobs with culture
+      # @param language_id [String, Integer]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetOccupationNamesArt
@@ -466,6 +525,8 @@ module Arbetsformedlingen
       end
 
       # Returns occupation names by locale code
+      # @param language_id [String, Integer]
+      # @param locale_code [String, Integer]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetOccupationNamesByLocaleCode
@@ -475,6 +536,8 @@ module Arbetsformedlingen
       end
 
       # Returns occupation names by occupation name ids
+      # @param language_id [String, Integer]
+      # @param occupation_name_ids [Array<String>, Array<Integer>]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetOccupationNamesByOccupationNameIds
@@ -487,6 +550,8 @@ module Arbetsformedlingen
       end
 
       # Returns occupation names versions by occupation name ids
+      # @param language_id [String, Integer]
+      # @param occupation_name_ids [Array<String>, Array<Integer>]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetOccupationNamesByOccupationNameIdsVersion
@@ -499,15 +564,19 @@ module Arbetsformedlingen
       end
 
       # Returns occupation names by text
+      # @param language_id [String, Integer]
+      # @param text [String]
+      # @param exact_match [true, false]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetOccupationNamesByText
-      def occupation_names_by_text(language_id:, text:, extact_match: false)
-        args = { languageId: language_id, term: text, exactMatch: extact_match }
+      def occupation_names_by_text(language_id:, text:, exact_match: false)
+        args = { languageId: language_id, term: text, exactMatch: exact_match }
         client_request('GetOccupationNamesByText', args: args)
       end
 
       # Returns occupation names within construction
+      # @param language_id [String, Integer]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetOccupationNamesConstruction
@@ -517,6 +586,7 @@ module Arbetsformedlingen
       end
 
       # Returns occupation names within navigation
+      # @param language_id [String, Integer]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetOccupationNamesNavigation
@@ -526,6 +596,8 @@ module Arbetsformedlingen
       end
 
       # Returns post codes by municipality
+      # @param language_id [String, Integer]
+      # @param municipality_id [String, Integer]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetPostCodesByNationalNUTSLAU2Code
@@ -535,6 +607,8 @@ module Arbetsformedlingen
       end
 
       # Returns post codes by post code
+      # @param language_id [String, Integer]
+      # @param post_code [String, Integer]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetPostCodesByPostCode
@@ -544,6 +618,8 @@ module Arbetsformedlingen
       end
 
       # Returns post codes by post locality
+      # @param language_id [String, Integer]
+      # @param post_locality_id [String, Integer]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetPostCodesByPostLocality
@@ -553,6 +629,8 @@ module Arbetsformedlingen
       end
 
       # Returns post codes by post locality
+      # @param language_id [String, Integer]
+      # @param sun_level1_id [String, Integer]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetSUNField3ByGuide
@@ -562,6 +640,7 @@ module Arbetsformedlingen
       end
 
       # Returns SUN guide tree
+      # @param language_id [String, Integer]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetSUNGuideTree
@@ -570,6 +649,8 @@ module Arbetsformedlingen
       end
 
       # Returns skill headlines by main headline
+      # @param language_id [String, Integer]
+      # @param skill_headline_ids [Array<String>, Array<Integer>]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetSkillHeadlinesBySkillHeadlineIds
@@ -582,6 +663,8 @@ module Arbetsformedlingen
       end
 
       # Returns skill headlines by main headline
+      # @param language_id [String, Integer]
+      # @param skill_main_headline_id [String, Integer]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetSkillHeadlinesBySkillMainHeadlineId
@@ -591,15 +674,20 @@ module Arbetsformedlingen
       end
 
       # Returns skill headlines by text
+      # @param language_id [String, Integer]
+      # @param text [String]
+      # @param exact_match [true, false]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetSkillHeadlinesByText
-      def skill_headlines_by_text(language_id:, text:, extact_match: false)
-        args = { languageId: language_id, term: text, exactMatch: extact_match }
+      def skill_headlines_by_text(language_id:, text:, exact_match: false)
+        args = { languageId: language_id, term: text, exactMatch: exact_match }
         client_request('GetSkillHeadlinesByText', args: args)
       end
 
       # Returns skill headlines by text
+      # @param language_id [String, Integer]
+      # @param skill_main_headline_ids [Array<String>, Array<Integer>]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetSkillMainHeadlinesBySkillMainHeadlineIds
@@ -612,15 +700,20 @@ module Arbetsformedlingen
       end
 
       # Returns skill main headlines by text
+      # @param language_id [String, Integer]
+      # @param text [String]
+      # @param exact_match [true, false]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetSkillMainHeadlinesByText
-      def skill_main_headlines_by_text(language_id:, text:, extact_match: false)
-        args = { languageId: language_id, term: text, exactMatch: extact_match }
+      def skill_main_headlines_by_text(language_id:, text:, exact_match: false)
+        args = { languageId: language_id, term: text, exactMatch: exact_match }
         client_request('GetSkillMainHeadlinesByText', args: args)
       end
 
       # Returns skills by locale code
+      # @param language_id [String, Integer]
+      # @param locale_code [String, Integer]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetSkillsByLocaleCode
@@ -631,6 +724,8 @@ module Arbetsformedlingen
       end
 
       # Returns skills by main headline
+      # @param language_id [String, Integer]
+      # @param skill_headline_id [String, Integer]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetSkillsBySkillHeadlineId
@@ -640,6 +735,8 @@ module Arbetsformedlingen
       end
 
       # Returns skills by skill ids
+      # @param language_id [String, Integer]
+      # @param skill_ids [Array<String>, Array<Integer>]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetSkillsBySkillIds
@@ -652,6 +749,8 @@ module Arbetsformedlingen
       end
 
       # Returns skills versions by skill ids
+      # @param language_id [String, Integer]
+      # @param skill_ids [Array<String>, Array<Integer>]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetSkillsBySkillIdsVersion
@@ -664,6 +763,8 @@ module Arbetsformedlingen
       end
 
       # Returns skill headlines by main headline
+      # @param language_id [String, Integer]
+      # @param skill_main_headline_id [String, Integer]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetSkillsBySkillMainHeadlineId
@@ -673,11 +774,14 @@ module Arbetsformedlingen
       end
 
       # Returns skills by text
+      # @param language_id [String, Integer]
+      # @param text [String]
+      # @param exact_match [true, false]
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetSkillsByText
-      def skills_by_text(language_id:, text:, extact_match: false)
-        args = { languageId: language_id, term: text, exactMatch: extact_match }
+      def skills_by_text(language_id:, text:, exact_match: false)
+        args = { languageId: language_id, term: text, exactMatch: exact_match }
         client_request('GetSkillsByText', args: args)
       end
 
