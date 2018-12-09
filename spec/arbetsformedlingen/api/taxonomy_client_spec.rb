@@ -360,6 +360,11 @@ RSpec.describe Arbetsformedlingen::API::TaxonomyClient do
       css: 'SUNGuideBranch SUNLevel1 Term',
       expected: { value: 'Saknar formell, grundläggande utbildning', length: 7 },
     },
+    {
+      method_name: :version_information,
+      css: 'VersionInformation Version',
+      expected: { value: '1', length: 1 },
+    },
   ].each do |data|
     method = data.fetch(:method_name)
     expected = data.fetch(:expected)

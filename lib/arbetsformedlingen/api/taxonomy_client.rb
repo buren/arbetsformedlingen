@@ -520,6 +520,14 @@ module Arbetsformedlingen
       def sun_guide_tree(language_id:)
         client_request('GetSUNGuideTree', args: { languageId: language_id })
       end
+
+      # Returns version information
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetVersionInformations
+      def version_information
+        client_request('GetVersionInformations')
+      end
     end
   end
 end
