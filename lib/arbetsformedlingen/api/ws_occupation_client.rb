@@ -18,7 +18,7 @@ module Arbetsformedlingen
         super(SERVICE_URL, NAMESPACE)
       end
 
-      # Returns occupation response with specified id
+      # Returns occupation with specified id
       # @return [Response] the response
       # @see Response
       # @see Response#xml
@@ -26,7 +26,7 @@ module Arbetsformedlingen
         client_request('GetOccupationById', args: { occupationId: id })
       end
 
-      # Returns occupations response with specified name
+      # Returns occupations
       # @return [Response] the response
       # @see Response
       # @see Response#xml
@@ -42,7 +42,7 @@ module Arbetsformedlingen
         client_request('GetAllOccupations')
       end
 
-      # Returns occupations short response with specified id
+      # Returns occupations short
       # @return [Response] the response
       # @see Response
       # @see Response#xml
@@ -50,12 +50,20 @@ module Arbetsformedlingen
         client_request('GetAllOccupationsShort')
       end
 
-      # Returns occupations detailed response with specified id
+      # Returns occupations detailed
       # @return [Response] the response
       # @see Response
       # @see Response#xml
       def occupations_detailed
         client_request('GetAllOccupationsDetailed')
+      end
+
+      # Returns locale groups
+      # @return [Response] the response
+      # @see Response
+      # @see Response#xml
+      def locale_groups(id)
+        client_request('GetLocaleGroups', args: { occupationId: id })
       end
     end
   end

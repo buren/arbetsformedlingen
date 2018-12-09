@@ -58,4 +58,14 @@ RSpec.describe Arbetsformedlingen::API::WSOccupationClient do
       expect(first_name).to eq(expected_first_name)
     end
   end
+
+  describe '#locale_groups' do
+    it 'returns response that includes first occupation name', vcr: true do
+      client = described_class.new
+      response = client.locale_groups(461)
+
+      first_name = response.xml.css('GetLocaleGroupsResult').first.text
+      expect(first_name).to eq('1405#Marknadsanalytiker och marknadsförare m.fl.')
+    end
+  end
 end
