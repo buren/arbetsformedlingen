@@ -477,12 +477,56 @@ module Arbetsformedlingen
         client_request('GetOccupationNamesNavigation', args: args)
       end
 
+      # Returns post codes by municipality
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetPostCodesByNationalNUTSLAU2Code
+      def post_codes_by_municipality(language_id:, municipality_id:)
+        args = { languageId: language_id, NUTSCode: municipality_id }
+        client_request('GetPostCodesByNationalNUTSLAU2Code', args: args)
+      end
+
+      # Returns post codes by post code
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetPostCodesByPostCode
+      def post_codes_by_post_code(language_id:, post_code:)
+        args = { languageId: language_id, postCode: post_code }
+        client_request('GetPostCodesByPostCode', args: args)
+      end
+
+      # Returns post codes by post locality
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetPostCodesByPostLocality
+      def post_codes_by_post_locality(language_id:, post_locality_id:)
+        args = { languageId: language_id, postLocalityId: post_locality_id }
+        client_request('GetPostCodesByPostLocality', args: args)
+      end
+
+      # Returns post codes by post locality
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetSUNField3ByGuide
+      def sun_field3_by_guide(language_id:, sun_level1_id:)
+        args = { languageId: language_id, SUNLevel1ID: sun_level1_id }
+        client_request('GetSUNField3ByGuide', args: args)
+      end
+
       # Returns SUN guide tree
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetSUNGuideTree
       def sun_guide_tree(language_id:)
         client_request('GetSUNGuideTree', args: { languageId: language_id })
+      end
+
+      # Returns version information
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetVersionInformations
+      def version_information
+        client_request('GetVersionInformations')
       end
     end
   end

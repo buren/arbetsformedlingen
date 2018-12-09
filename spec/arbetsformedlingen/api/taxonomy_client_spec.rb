@@ -331,10 +331,39 @@ RSpec.describe Arbetsformedlingen::API::TaxonomyClient do
       expected: { value: '1:e Fartygsingenjör/1:e Maskinist', length: 30 },
     },
     {
+      method_name: :post_codes_by_municipality,
+      args: { language_id: 502, municipality_id: 1440 },
+      css: 'PostCode Code',
+      expected: { value: '44172', length: 63 },
+    },
+    {
+      method_name: :post_codes_by_post_code,
+      args: { language_id: 502, post_code: 11846 },
+      css: 'PostCode PostLocality',
+      expected: { value: 'Stockholm', length: 1 },
+    },
+    {
+      method_name: :post_codes_by_post_locality,
+      args: { language_id: 502, post_locality_id: 0 },
+      css: 'PostCode PostLocality',
+      expected: { value: 'Stockholm', length: 17389 },
+    },
+    {
+      method_name: :sun_field3_by_guide,
+      args: { language_id: 502, sun_level1_id: 1 },
+      css: 'SUNField3 Term',
+      expected: { value: 'Bred, generell utbildning', length: 1 },
+    },
+    {
       method_name: :sun_guide_tree,
       args: { language_id: 502 },
       css: 'SUNGuideBranch SUNLevel1 Term',
       expected: { value: 'Saknar formell, grundläggande utbildning', length: 7 },
+    },
+    {
+      method_name: :version_information,
+      css: 'VersionInformation Version',
+      expected: { value: '1', length: 1 },
     },
   ].each do |data|
     method = data.fetch(:method_name)
