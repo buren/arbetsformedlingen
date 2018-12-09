@@ -1,21 +1,21 @@
 # frozen_string_literal: true
 
-require 'arbetsformedlingen/soap_builder'
-require 'arbetsformedlingen/api/soap_request'
+require 'arbetsformedlingen/api/base_soap_client'
 
 module Arbetsformedlingen
   module API
     # WsOccupation API client
     # @see https://api.arbetsformedlingen.se/af/v0/Occupation/wsoccupation.asmx
-    class WSOccupationClient
-      attr_reader :request
-
+    class WSOccupationClient < BaseSOAPClient
       # Service URL
       SERVICE_URL = 'https://api.arbetsformedlingen.se/af/v0/Occupation/wsoccupation.asmx'.freeze
 
+      # Namespace
+      NAMESPACE = 'urn:ams.se:wsoccupation'
+
       # Initialize client
       def initialize
-        @request = SOAPRequest.new(SERVICE_URL)
+        super(SERVICE_URL, NAMESPACE)
       end
 
       # Returns occupation response with specified id
