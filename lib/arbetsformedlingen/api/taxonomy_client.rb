@@ -387,6 +387,15 @@ module Arbetsformedlingen
         client_request('GetLocaleCodeByISCO', args: { ISCO: isco })
       end
 
+      # Returns locale fields by locale code
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetLocaleFieldsByLocaleCode
+      def locale_fields_by_locale_code(language_id:, locale_code:)
+        args = { languageId: language_id, localeCode: locale_code }
+        client_request('GetLocaleFieldsByLocaleCode', args: args)
+      end
+
       # Returns SUN guide tree
       # @return [Response] the response
       # @see Response
