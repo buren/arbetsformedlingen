@@ -468,6 +468,15 @@ module Arbetsformedlingen
         client_request('GetOccupationNamesConstruction', args: args)
       end
 
+      # Returns occupation names within navigation
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetOccupationNamesNavigation
+      def occupation_names_navigation(language_id:)
+        args = { languageId: language_id }
+        client_request('GetOccupationNamesNavigation', args: args)
+      end
+
       # Returns SUN guide tree
       # @return [Response] the response
       # @see Response

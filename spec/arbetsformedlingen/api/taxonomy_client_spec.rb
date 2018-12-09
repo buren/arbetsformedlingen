@@ -325,6 +325,12 @@ RSpec.describe Arbetsformedlingen::API::TaxonomyClient do
       expected: { value: 'Anläggningsdykare', length: 168 },
     },
     {
+      method_name: :occupation_names_navigation,
+      args: { language_id: 502 },
+      css: 'OccupationName Term',
+      expected: { value: '1:e Fartygsingenjör/1:e Maskinist', length: 30 },
+    },
+    {
       method_name: :sun_guide_tree,
       args: { language_id: 502 },
       css: 'SUNGuideBranch SUNLevel1 Term',
