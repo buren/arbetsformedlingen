@@ -234,6 +234,70 @@ module Arbetsformedlingen
         client_request('GetAllPostLocalities', args: { languageId: language_id })
       end
 
+      # Returns SNI level 1
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllSNILevel1
+      def sni_level1(language_id:)
+        client_request('GetAllSNILevel1', args: { languageId: language_id })
+      end
+
+      # Returns SNI level 2
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllSNILevel2
+      def sni_level2(language_id:)
+        client_request('GetAllSNILevel2', args: { languageId: language_id })
+      end
+
+      # Returns SUN field 1
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllSUNField1
+      def sun_field1(language_id:)
+        client_request('GetAllSUNField1', args: { languageId: language_id })
+      end
+
+      # Returns SUN field 2
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllSUNField2
+      def sun_field2(language_id:)
+        client_request('GetAllSUNField2', args: { languageId: language_id })
+      end
+
+      # Returns SUN field 3
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllSUNField3
+      def sun_field3(language_id:)
+        client_request('GetAllSUNField3', args: { languageId: language_id })
+      end
+
+      # Returns SUN level 1
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllSUNLevel1
+      def sun_level1(language_id:)
+        client_request('GetAllSUNLevel1', args: { languageId: language_id })
+      end
+
+      # Returns SUN level 2
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllSUNLevel2
+      def sun_level2(language_id:)
+        client_request('GetAllSUNLevel2', args: { languageId: language_id })
+      end
+
+      # Returns SUN level 3
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllSUNLevel3
+      def sun_level3(language_id:)
+        client_request('GetAllSUNLevel3', args: { languageId: language_id })
+      end
+
       # Returns SUN guide tree
       # @return [Response] the response
       # @see Response
