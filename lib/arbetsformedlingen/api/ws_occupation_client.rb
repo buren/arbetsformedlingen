@@ -21,7 +21,7 @@ module Arbetsformedlingen
       # Returns occupation with specified id
       # @return [Response] the response
       # @see Response
-      # @see Response#xml
+      # @see https://api.arbetsformedlingen.se/af/v0/Occupation/wsoccupation.asmx?op=GetOccupationById
       def occupation(id)
         client_request('GetOccupationById', args: { occupationId: id })
       end
@@ -29,7 +29,7 @@ module Arbetsformedlingen
       # Returns occupations
       # @return [Response] the response
       # @see Response
-      # @see Response#xml
+      # @see https://api.arbetsformedlingen.se/af/v0/Occupation/wsoccupation.asmx?op=FindOccupation
       def find_occupations(name)
         client_request('FindOccupation', args: { name: name })
       end
@@ -37,7 +37,7 @@ module Arbetsformedlingen
       # Returns occupations response
       # @return [Response] the response
       # @see Response
-      # @see Response#xml
+      # @see https://api.arbetsformedlingen.se/af/v0/Occupation/wsoccupation.asmx?op=GetAllOccupations
       def occupations
         client_request('GetAllOccupations')
       end
@@ -45,7 +45,7 @@ module Arbetsformedlingen
       # Returns occupations short
       # @return [Response] the response
       # @see Response
-      # @see Response#xml
+      # @see https://api.arbetsformedlingen.se/af/v0/Occupation/wsoccupation.asmx?op=GetAllOccupationsShort
       def occupations_short
         client_request('GetAllOccupationsShort')
       end
@@ -53,7 +53,6 @@ module Arbetsformedlingen
       # Returns occupations detailed
       # @return [Response] the response
       # @see Response
-      # @see Response#xml
       def occupations_detailed
         client_request('GetAllOccupationsDetailed')
       end
@@ -61,7 +60,7 @@ module Arbetsformedlingen
       # Returns locale groups
       # @return [Response] the response
       # @see Response
-      # @see Response#xml
+      # @see https://api.arbetsformedlingen.se/af/v0/Occupation/wsoccupation.asmx?op=GetLocaleGroups
       def locale_groups(id)
         client_request('GetLocaleGroups', args: { occupationId: id })
       end
@@ -69,7 +68,7 @@ module Arbetsformedlingen
       # Returns platsbanken link for specified locale group id
       # @return [Response] the response
       # @see Response
-      # @see Response#xml
+      # @see https://api.arbetsformedlingen.se/af/v0/Occupation/wsoccupation.asmx?op=GetPlatsbankenLink
       def platsbanken_link(id)
         client_request('GetPlatsbankenLink', args: { localegroupid: id })
       end
@@ -77,7 +76,7 @@ module Arbetsformedlingen
       # Returns education connections
       # @return [Response] the response
       # @see Response
-      # @see Response#xml
+      # @see https://api.arbetsformedlingen.se/af/v0/Occupation/wsoccupation.asmx?op=LoadAllEducationConnections
       def education_connections
         client_request('LoadAllEducationConnections')
       end
@@ -85,7 +84,7 @@ module Arbetsformedlingen
       # Returns occupations containing id and name information
       # @return [Response] the response
       # @see Response
-      # @see Response#xml
+      # @see https://api.arbetsformedlingen.se/af/v0/Occupation/wsoccupation.asmx?op=LoadAllOccupationIdAndName
       def occupations_id_and_name
         client_request('LoadAllOccupationIdAndName')
       end
@@ -93,7 +92,7 @@ module Arbetsformedlingen
       # Returns article
       # @return [Response] the response
       # @see Response
-      # @see Response#xml
+      # @see https://api.arbetsformedlingen.se/af/v0/Occupation/wsoccupation.asmx?op=GetArticle
       def article(id)
         client_request('GetArticle', args: { articleId: id })
       end
