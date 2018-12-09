@@ -539,6 +539,15 @@ module Arbetsformedlingen
         client_request('GetSkillHeadlinesByText', args: args)
       end
 
+      # Returns skill headlines by text
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetSkillMainHeadlinesByText
+      def skill_main_headlines_by_text(language_id:, text:, extact_match: false)
+        args = { languageId: language_id, term: text, exactMatch: extact_match }
+        client_request('GetSkillMainHeadlinesByText', args: args)
+      end
+
       # Returns version information
       # @return [Response] the response
       # @see Response
