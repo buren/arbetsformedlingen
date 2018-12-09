@@ -361,6 +361,12 @@ RSpec.describe Arbetsformedlingen::API::TaxonomyClient do
       expected: { value: 'Saknar formell, grundläggande utbildning', length: 7 },
     },
     {
+      method_name: :skill_headlines_by_main_headline,
+      args: { language_id: 502, skill_main_headline_id: 2 },
+      css: 'SkillMainHeadline Term',
+      expected: { value: 'Datakunskaper', length: 15 },
+    },
+    {
       method_name: :version_information,
       css: 'VersionInformation Version',
       expected: { value: '1', length: 1 },

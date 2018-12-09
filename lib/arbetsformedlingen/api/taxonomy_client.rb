@@ -521,6 +521,15 @@ module Arbetsformedlingen
         client_request('GetSUNGuideTree', args: { languageId: language_id })
       end
 
+      # Returns skill headlines by main headlin
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetSkillHeadlinesBySkillMainHeadlineId
+      def skill_headlines_by_main_headline(language_id:, skill_main_headline_id:)
+        args = { languageId: language_id, skillMainHeadlineId: skill_main_headline_id }
+        client_request('GetSkillHeadlinesBySkillMainHeadlineId', args: args)
+      end
+
       # Returns version information
       # @return [Response] the response
       # @see Response
