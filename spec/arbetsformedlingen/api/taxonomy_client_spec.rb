@@ -331,6 +331,12 @@ RSpec.describe Arbetsformedlingen::API::TaxonomyClient do
       expected: { value: '2D-grafiker', length: 2 },
     },
     {
+      method_name: :occupation_names_versions_by_occupation_name_ids,
+      args: { language_id: 502, occupation_name_ids: [7441, 5373] },
+      css: 'OccupationNameExt Term',
+      expected: { value: '2D-grafiker', length: 2 },
+    },
+    {
       method_name: :occupation_names_by_text,
       args: { language_id: 502, text: 'A' },
       css: 'OccupationName Term',
