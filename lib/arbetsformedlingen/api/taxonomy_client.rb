@@ -298,6 +298,62 @@ module Arbetsformedlingen
         client_request('GetAllSUNLevel3', args: { languageId: language_id })
       end
 
+      # Returns skill headline
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllSkillHeadlines
+      def skill_headlines(language_id:)
+        client_request('GetAllSkillHeadlines', args: { languageId: language_id })
+      end
+
+      # Returns skill main headline
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllSkillMainHeadlines
+      def skill_main_headlines(language_id:)
+        client_request('GetAllSkillMainHeadlines', args: { languageId: language_id })
+      end
+
+      # Returns skills
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllSkills
+      def skills(language_id:)
+        client_request('GetAllSkills', args: { languageId: language_id })
+      end
+
+      # Returns skill versions
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllSkillsVersion
+      def skill_versions(language_id:)
+        client_request('GetAllSkillsVersion', args: { languageId: language_id })
+      end
+
+      # Returns unemployment benefit societies
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllUnemploymentBenefitSocieties
+      def unemployment_benefit_societies(language_id:)
+        client_request('GetAllUnemploymentBenefitSocieties', args: { languageId: language_id })
+      end
+
+      # Returns unemployment benefit societies
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllWageTypes
+      def wage_types(language_id:)
+        client_request('GetAllWageTypes', args: { languageId: language_id })
+      end
+
+      # Returns work time extents
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllWorkTimeExtents
+      def work_time_extents(language_id:)
+        client_request('GetAllWorkTimeExtents', args: { languageId: language_id })
+      end
+
       # Returns SUN guide tree
       # @return [Response] the response
       # @see Response

@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <soap12:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://www.w3.org/2003/05/soap-envelope">
+          <soap12:Body>
+            <GetAllSkillMainHeadlines xmlns="urn:ams.se:Taxonomy">
+              <languageId>502</languageId>
+            </GetAllSkillMainHeadlines>
+          </soap12:Body>
+        </soap12:Envelope>
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.arbetsformedlingen.se
+      Content-Type:
+      - text/xml
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 09 Dec 2018 10:41:36 GMT
+      Server:
+      - Microsoft-IIS/7.5
+      Cache-Control:
+      - private, max-age=0
+      Content-Type:
+      - application/soap+xml; charset=utf-8
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Content-Length:
+      - '636'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - X-JWT-Assertion, Origin, X-Requested-With, Content-Type, Accept
+      Access-Control-Allow-Methods:
+      - GET, OPTIONS, HEAD, PUT, POST, DELETE
+      Connection:
+      - close
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c29hcDpFbnZlbG9wZSB4bWxuczpzb2FwPSJodHRwOi8vd3d3LnczLm9yZy8yMDAzLzA1L3NvYXAtZW52ZWxvcGUiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zOnhzZD0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiPjxzb2FwOkJvZHk+PEdldEFsbFNraWxsTWFpbkhlYWRsaW5lc1Jlc3BvbnNlIHhtbG5zPSJ1cm46YW1zLnNlOlRheG9ub215Ij48R2V0QWxsU2tpbGxNYWluSGVhZGxpbmVzUmVzdWx0PjxTa2lsbE1haW5IZWFkbGluZT48U2tpbGxNYWluSGVhZGxpbmVJRD4yPC9Ta2lsbE1haW5IZWFkbGluZUlEPjxUZXJtPkRhdGFrdW5za2FwZXI8L1Rlcm0+PC9Ta2lsbE1haW5IZWFkbGluZT48U2tpbGxNYWluSGVhZGxpbmU+PFNraWxsTWFpbkhlYWRsaW5lSUQ+NDwvU2tpbGxNYWluSGVhZGxpbmVJRD48VGVybT7DlnZyaWdhIGtvbXBldGVuc3J1YnJpa2VyPC9UZXJtPjwvU2tpbGxNYWluSGVhZGxpbmU+PC9HZXRBbGxTa2lsbE1haW5IZWFkbGluZXNSZXN1bHQ+PC9HZXRBbGxTa2lsbE1haW5IZWFkbGluZXNSZXNwb25zZT48L3NvYXA6Qm9keT48L3NvYXA6RW52ZWxvcGU+
+    http_version: 
+  recorded_at: Sun, 09 Dec 2018 10:41:36 GMT
+recorded_with: VCR 3.0.3
