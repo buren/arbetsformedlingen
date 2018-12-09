@@ -9,10 +9,13 @@ module Arbetsformedlingen
   module API
     # API response object
     class Response
+      attr_reader :uri
+
       # Initialize response
-      def initialize(response)
+      def initialize(response, uri = nil)
         @response = response
         @json = nil
+        @uri = uri
       end
 
       # True if response is 200
