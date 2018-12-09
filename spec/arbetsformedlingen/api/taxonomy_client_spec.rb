@@ -223,6 +223,12 @@ RSpec.describe Arbetsformedlingen::API::TaxonomyClient do
       expected: { value: 'Övriga kompetensrubriker', length: 11028 },
     },
     {
+      method_name: :skill_versions,
+      args: { language_id: 502 },
+      css: 'SkillVersion SkillHeadline Term',
+      expected: { value: 'Övriga kompetensrubriker', length: 12138 },
+    },
+    {
       method_name: :sun_guide_tree,
       args: { language_id: 502 },
       css: 'SUNGuideBranch SUNLevel1 Term',
