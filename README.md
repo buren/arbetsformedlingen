@@ -85,8 +85,6 @@ response.json
 
 ## Taxonomy API Client
 
-There is some support for Arbetsförmedlingen's `Taxonomi` SOAP API. See [#20](https://github.com/buren/arbetsformedlingen/issues/20).
-
 ```ruby
 client = Arbetsformedlingen::API::TaxonomyClient.new
 response = client.occupation_names(language_id: 502) # sv language id
