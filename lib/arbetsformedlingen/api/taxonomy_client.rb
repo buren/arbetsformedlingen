@@ -314,6 +314,14 @@ module Arbetsformedlingen
         client_request('GetAllSkillMainHeadlines', args: { languageId: language_id })
       end
 
+      # Returns skills
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllSkills
+      def skills(language_id:)
+        client_request('GetAllSkills', args: { languageId: language_id })
+      end
+
       # Returns SUN guide tree
       # @return [Response] the response
       # @see Response
