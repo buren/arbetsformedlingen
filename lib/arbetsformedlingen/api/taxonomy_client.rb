@@ -234,6 +234,22 @@ module Arbetsformedlingen
         client_request('GetAllPostLocalities', args: { languageId: language_id })
       end
 
+      # Returns SNI level 1
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllSNILevel1
+      def sni_level1(language_id:)
+        client_request('GetAllSNILevel1', args: { languageId: language_id })
+      end
+
+      # Returns SNI level 2
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllSNILevel2
+      def sni_level2(language_id:)
+        client_request('GetAllSNILevel2', args: { languageId: language_id })
+      end
+
       # Returns SUN guide tree
       # @return [Response] the response
       # @see Response

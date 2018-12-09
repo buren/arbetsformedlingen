@@ -157,6 +157,18 @@ RSpec.describe Arbetsformedlingen::API::TaxonomyClient do
       expected: { value: 'Abbekås', length: 1742 },
     },
     {
+      method_name: :sni_level1,
+      args: { language_id: 502 },
+      css: 'SNILevel1 Term',
+      expected: { value: 'Jordbruk, skogsbruk och fiske', length: 21 },
+    },
+    {
+      method_name: :sni_level2,
+      args: { language_id: 502 },
+      css: 'SNILevel2 Term',
+      expected: { value: 'Service till utvinning', length: 90 },
+    },
+    {
       method_name: :sun_guide_tree,
       args: { language_id: 502 },
       css: 'SUNGuideBranch SUNLevel1 Term',
