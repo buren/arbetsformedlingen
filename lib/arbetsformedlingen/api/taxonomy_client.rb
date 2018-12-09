@@ -567,6 +567,15 @@ module Arbetsformedlingen
         client_request('GetSkillsBySkillHeadlineId', args: args)
       end
 
+      # Returns skill headlines by main headline
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetSkillsBySkillMainHeadlineId
+      def skills_by_main_headline(language_id:, skill_main_headline_id:)
+        args = { languageId: language_id, skillMainHeadlineId: skill_main_headline_id }
+        client_request('GetSkillsBySkillMainHeadlineId', args: args)
+      end
+
       # Returns version information
       # @return [Response] the response
       # @see Response
