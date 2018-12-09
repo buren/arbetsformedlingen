@@ -98,4 +98,15 @@ RSpec.describe Arbetsformedlingen::API::WSOccupationClient do
       expect(result.start_with?("571\tAdministratör/sekreteraryrken")).to eq(true)
     end
   end
+
+  describe '#article' do
+    it 'returns empty result for unknown id', vcr: true do
+      client = described_class.new
+      response = client.article(3)
+
+      result = response.xml.css('GetArticleResult')
+      expect(result.length).to eq(1)
+      expect(result.css('Id')).to be_empty
+    end
+  end
 end

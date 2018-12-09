@@ -89,6 +89,14 @@ module Arbetsformedlingen
       def occupations_id_and_name
         client_request('LoadAllOccupationIdAndName')
       end
+
+      # Returns article
+      # @return [Response] the response
+      # @see Response
+      # @see Response#xml
+      def article(id)
+        client_request('GetArticle', args: { articleId: id })
+      end
     end
   end
 end
