@@ -572,6 +572,18 @@ module Arbetsformedlingen
       # Returns skill headlines by main headline
       # @return [Response] the response
       # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetSkillHeadlinesBySkillHeadlineIds
+      def skill_headlines_by_headline_ids(language_id:, skill_headline_ids:)
+        args = {
+          languageId: language_id,
+          skillHeadlineIds: skill_headline_ids.map { |id| [:int, id] }
+        }
+        client_request('GetSkillHeadlinesBySkillHeadlineIds', args: args)
+      end
+
+      # Returns skill headlines by main headline
+      # @return [Response] the response
+      # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetSkillHeadlinesBySkillMainHeadlineId
       def skill_headlines_by_main_headline(language_id:, skill_main_headline_id:)
         args = { languageId: language_id, skillMainHeadlineId: skill_main_headline_id }
