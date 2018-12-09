@@ -78,4 +78,14 @@ RSpec.describe Arbetsformedlingen::API::WSOccupationClient do
       expect(first_name).to eq('/4.4d99301a154fd3fb8df3aca3.html#/?yrkesgrupper=2431|0')
     end
   end
+
+  describe '#education_connections' do
+    it 'returns education connections', vcr: true do
+      client = described_class.new
+      response = client.education_connections
+
+      result = response.xml.css('LoadAllEducationConnectionsResult').first.text
+      expect(result.start_with?("571\tinfo.ky")).to eq(true)
+    end
+  end
 end
