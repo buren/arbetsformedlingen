@@ -1,6 +1,6 @@
 # Change Log
 
-# HEAD
+# v0.7.0
 
 This is a pretty big release that adds support Ontology and Taxonomy APIs and completes WSOccupation :tada:
 
