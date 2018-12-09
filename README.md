@@ -182,8 +182,6 @@ client.create_ad(packet)
 
 ## WSOccupation API Client
 
-There is some support for Arbetsförmedlingen's `WSOccupation` SOAP API. See [PR#3](https://github.com/buren/arbetsformedlingen/pull/3).
-
 ```ruby
 client = Arbetsformedlingen::API::WSOccupationClient.new
 response = client.occupations
