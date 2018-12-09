@@ -99,12 +99,6 @@ RSpec.describe Arbetsformedlingen::API::TaxonomyClient do
       expected: { value: 'Administration, ekonomi, juridik', length: 21 },
     },
     {
-      method_name: :municipalities,
-      args: { language_id: 502 },
-      css: 'Municipality NationalNUTSLAU2Code',
-      expected: { value: '1440', length: 290 },
-    },
-    {
       method_name: :occupation_names_art,
       args: { language_id: 502 },
       css: 'OccupationName Term',
@@ -126,6 +120,17 @@ RSpec.describe Arbetsformedlingen::API::TaxonomyClient do
       args: { language_id: 502 },
       css: 'LocaleLevel3 Term',
       expected: { value: 'Andra bevaknings- och säkerhetsyrken', length: 147 },
+    },
+    {
+      method_name: :municipalities,
+      args: { language_id: 502 },
+      css: 'Municipality NationalNUTSLAU2Code',
+      expected: { value: '1440', length: 290 },
+    },
+    {
+      method_name: :municipality_homepages,
+      css: 'MunicipalityHomePage Url',
+      expected: { value: 'http://www.upplandsvasby.se/', length: 290 },
     },
     {
       method_name: :sun_guide_tree,

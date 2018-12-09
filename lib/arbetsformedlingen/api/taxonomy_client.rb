@@ -194,6 +194,14 @@ module Arbetsformedlingen
         client_request('GetAllMunicipalities', args: { languageId: language_id })
       end
 
+      # Returns municipality homepages
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllMunicipalityHomePages
+      def municipality_homepages
+        client_request('GetAllMunicipalityHomePages')
+      end
+
       # Returns SUN guide tree
       # @return [Response] the response
       # @see Response
