@@ -280,7 +280,7 @@ RSpec.describe Arbetsformedlingen::API::TaxonomyClient do
       method_name: :locale_fields_by_locale_field_ids,
       args: { language_id: 502, locale_field_ids: [3, 5] },
       css: 'LocaleField Term',
-      expected: { value: 'Data/IT', length: 1 },
+      expected: { value: 'Data/IT', length: 2 },
     },
     {
       method_name: :locale_fields_by_text,
@@ -323,6 +323,12 @@ RSpec.describe Arbetsformedlingen::API::TaxonomyClient do
       args: { language_id: 502, locale_code: 2421 },
       css: 'OccupationName Term',
       expected: { value: 'Administrativ utvecklare', length: 13 },
+    },
+    {
+      method_name: :occupation_names_by_occupation_name_ids,
+      args: { language_id: 502, occupation_name_ids: [7441, 5373] },
+      css: 'OccupationName Term',
+      expected: { value: '2D-grafiker', length: 2 },
     },
     {
       method_name: :occupation_names_by_text,

@@ -473,6 +473,18 @@ module Arbetsformedlingen
         client_request('GetOccupationNamesByLocaleCode', args: args)
       end
 
+      # Returns occupation names by locale code
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetOccupationNamesByOccupationNameIds
+      def occupation_names_by_occupation_name_ids(language_id:, occupation_name_ids:)
+        args = {
+          languageId: language_id,
+          occupationNameIds: occupation_name_ids.map { |id| [:int, id] }
+        }
+        client_request('GetOccupationNamesByOccupationNameIds', args: args)
+      end
+
       # Returns occupation names by text
       # @return [Response] the response
       # @see Response
