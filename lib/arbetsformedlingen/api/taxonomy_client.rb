@@ -154,14 +154,6 @@ module Arbetsformedlingen
         client_request('GetAllLocaleFields', args: { languageId: language_id })
       end
 
-      # Returns occupation names for jobs with culture
-      # @return [Response] the response
-      # @see Response
-      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetOccupationNamesArt
-      def occupation_names_art(language_id:)
-        client_request('GetOccupationNamesArt', args: { languageId: language_id })
-      end
-
       # Returns locale group skills
       # @return [Response] the response
       # @see Response
@@ -439,6 +431,14 @@ module Arbetsformedlingen
       def locale_groups_by_text(language_id:, text:, extact_match: false)
         args = { languageId: language_id, term: text, exactMatch: extact_match }
         client_request('GetLocaleGroupsByText', args: args)
+      end
+
+      # Returns occupation names for jobs with culture
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetOccupationNamesArt
+      def occupation_names_art(language_id:)
+        client_request('GetOccupationNamesArt', args: { languageId: language_id })
       end
 
       # Returns SUN guide tree
