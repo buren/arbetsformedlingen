@@ -337,6 +337,12 @@ RSpec.describe Arbetsformedlingen::API::TaxonomyClient do
       expected: { value: '44172', length: 63 },
     },
     {
+      method_name: :post_codes_by_post_code,
+      args: { language_id: 502, post_code: 11846 },
+      css: 'PostCode PostLocality',
+      expected: { value: 'Stockholm', length: 1 },
+    },
+    {
       method_name: :sun_guide_tree,
       args: { language_id: 502 },
       css: 'SUNGuideBranch SUNLevel1 Term',

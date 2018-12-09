@@ -486,6 +486,15 @@ module Arbetsformedlingen
         client_request('GetPostCodesByNationalNUTSLAU2Code', args: args)
       end
 
+      # Returns post codes by municipality
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetPostCodesByPostCode
+      def post_codes_by_post_code(language_id:, post_code:)
+        args = { languageId: language_id, postCode: post_code }
+        client_request('GetPostCodesByPostCode', args: args)
+      end
+
       # Returns SUN guide tree
       # @return [Response] the response
       # @see Response
