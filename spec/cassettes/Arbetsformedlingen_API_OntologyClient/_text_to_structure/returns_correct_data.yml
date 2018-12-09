@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://ontologi.arbetsformedlingen.se/ontology/v1/text-to-structure
+    body:
+      encoding: UTF-8
+      string: '{"text":"Som rekryteringsassistent kommer du att stötta våra rekryterare
+        i olika delar av rekryteringsprocessen. Du kommer bland annat att. Skriva
+        annonser för våra tjänster Göra telefonavstämningar med intressanta kandidater
+        Intervjua kandidater Skriva kandidatpresentationer som sedan skickas till
+        kunder. Skriva arbetsgivarintyg."}'
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - ontologi.arbetsformedlingen.se
+      Content-Type:
+      - application/json
+      Accept-Language:
+      - sv
+      Cache-Control:
+      - no-cache
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 09 Dec 2018 12:59:19 GMT
+      Server:
+      - nginx/1.10.3 (Ubuntu)
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '463'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - X-JWT-Assertion, Origin, X-Requested-With, Content-Type, Accept
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, OPTIONS, HEAD, PUT, POST
+      Access-Control-Max-Age:
+      - '1209600'
+    body:
+      encoding: UTF-8
+      string: '[{"uuid":"4808a9d5-f35a-53b7-bb67-16b972c2a1de","name":"Kunder","type":"skill","terms":["kunder"]},{"uuid":"5e83cacc-601b-54c4-9f52-5833859b5309","name":"Rekryterare","type":"occupation","terms":["rekryterare"]},{"uuid":"f03b764d-c530-58f8-a650-2c4446e31eb4","name":"Rekryteringsassistent","type":"occupation","terms":["rekryteringsassistent"]},{"uuid":"ad51170d-52a2-5f5e-8f6b-a1f76cfbdd36","name":"Arbetsgivarintyg","type":"skill","terms":["arbetsgivarintyg"]}]'
+    http_version: 
+  recorded_at: Sun, 09 Dec 2018 12:59:19 GMT
+recorded_with: VCR 3.0.3
