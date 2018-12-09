@@ -415,6 +415,12 @@ RSpec.describe Arbetsformedlingen::API::TaxonomyClient do
       expected: { length: 2 },
     },
     {
+      method_name: :skills_versions_by_skill_ids,
+      args: { language_id: 502, skill_ids: [2, 3] },
+      css: 'SkillVersion',
+      expected: { length: 2 },
+    },
+    {
       method_name: :skills_by_main_headline,
       args: { language_id: 502, skill_main_headline_id: 2 },
       css: 'SkillHeadline Term',
