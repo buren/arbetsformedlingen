@@ -301,6 +301,12 @@ RSpec.describe Arbetsformedlingen::API::TaxonomyClient do
       expected: { value: '870', length: 37 },
     },
     {
+      method_name: :locale_groups_by_locale_codes,
+      args: { language_id: 502, locale_codes: [2421] },
+      css: 'LocaleGroup Term',
+      expected: { value: 'Lednings- och organisationsutvecklare', length: 1 },
+    },
+    {
       method_name: :locale_groups_by_locale_field_id,
       args: { language_id: 502, locale_field_id: 1 },
       css: 'LocaleGroup Term',

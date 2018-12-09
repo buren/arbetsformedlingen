@@ -426,6 +426,18 @@ module Arbetsformedlingen
         client_request('GetLocaleGroupSkillsByLocaleCode', args: args)
       end
 
+      # Returns locale group skills by locale code
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetLocaleGroupsByLocaleCodes
+      def locale_groups_by_locale_codes(language_id:, locale_codes:)
+        args = {
+          languageId: language_id,
+          localeCodes: locale_codes.map { |code| [:string, code] }
+        }
+        client_request('GetLocaleGroupsByLocaleCodes', args: args)
+      end
+
       # Returns locale groups by locale field id
       # @return [Response] the response
       # @see Response
