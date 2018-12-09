@@ -65,6 +65,14 @@ module Arbetsformedlingen
       def locale_groups(id)
         client_request('GetLocaleGroups', args: { occupationId: id })
       end
+
+      # Returns locale groups
+      # @return [Response] the response
+      # @see Response
+      # @see Response#xml
+      def platsbanken_link(id)
+        client_request('GetPlatsbankenLink', args: { localegroupid: id })
+      end
     end
   end
 end

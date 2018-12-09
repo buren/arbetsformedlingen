@@ -68,4 +68,14 @@ RSpec.describe Arbetsformedlingen::API::WSOccupationClient do
       expect(first_name).to eq('1405#Marknadsanalytiker och marknadsförare m.fl.')
     end
   end
+
+  describe '#platsbanken_link' do
+    it 'returns response that includes first occupation name', vcr: true do
+      client = described_class.new
+      response = client.platsbanken_link(1405)
+
+      first_name = response.xml.css('GetPlatsbankenLinkResult').first.text
+      expect(first_name).to eq('/4.4d99301a154fd3fb8df3aca3.html#/?yrkesgrupper=2431|0')
+    end
+  end
 end
