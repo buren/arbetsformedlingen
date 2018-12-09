@@ -388,6 +388,17 @@ module Arbetsformedlingen
         client_request('GetLocaleFieldsByLocaleCode', args: args)
       end
 
+      # Returns locale fields by locale fields
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetLocaleFieldsByLocaleFieldIds
+      def locale_fields_by_locale_field_ids(language_id:, locale_field_ids:)
+        args = {
+          languageId: language_id,
+          localeFieldIds: locale_field_ids.map { |id| [:int, id] }
+        }
+        client_request('GetLocaleFieldsByLocaleFieldIds', args: args)
+      end
       # Returns locale fields by text
       # @return [Response] the response
       # @see Response
