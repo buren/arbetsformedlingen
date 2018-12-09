@@ -363,6 +363,14 @@ module Arbetsformedlingen
         client_request('GetEURegionsByCountryID', args: args)
       end
 
+      # Returns EU regions by country
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetISCOByLocaleCode
+      def isco_by_locale_code(locale_code:)
+        client_request('GetISCOByLocaleCode', args: { localeCode: locale_code })
+      end
+
       # Returns SUN guide tree
       # @return [Response] the response
       # @see Response

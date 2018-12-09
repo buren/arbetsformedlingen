@@ -253,6 +253,12 @@ RSpec.describe Arbetsformedlingen::API::TaxonomyClient do
       expected: { value: 'Blekinge län', length: 21 },
     },
     {
+      method_name: :isco_by_locale_code,
+      args: { locale_code: 2421 },
+      css: 'GetISCOByLocaleCodeResult string',
+      expected: { value: '2421', length: 1 },
+    },
+    {
       method_name: :sun_guide_tree,
       args: { language_id: 502 },
       css: 'SUNGuideBranch SUNLevel1 Term',
