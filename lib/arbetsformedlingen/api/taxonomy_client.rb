@@ -379,6 +379,14 @@ module Arbetsformedlingen
         client_request('GetLanguageIDByISO2Code', args: { ISO2Code: iso2_code })
       end
 
+      # Returns locale code by ISCO
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetLocaleCodeByISCO
+      def locale_code_by_isco(isco:)
+        client_request('GetLocaleCodeByISCO', args: { ISCO: isco })
+      end
+
       # Returns SUN guide tree
       # @return [Response] the response
       # @see Response
