@@ -395,10 +395,11 @@ module Arbetsformedlingen
       def locale_fields_by_locale_field_ids(language_id:, locale_field_ids:)
         args = {
           languageId: language_id,
-          localeFieldIds: locale_field_ids.map { |id| [:int, id] }
+          localeFieldIds: locale_field_ids.map { |id| [:int, id] },
         }
         client_request('GetLocaleFieldsByLocaleFieldIds', args: args)
       end
+
       # Returns locale fields by text
       # @return [Response] the response
       # @see Response
@@ -433,7 +434,7 @@ module Arbetsformedlingen
       def locale_groups_by_locale_codes(language_id:, locale_codes:)
         args = {
           languageId: language_id,
-          localeCodes: locale_codes.map { |code| [:string, code] }
+          localeCodes: locale_codes.map { |code| [:string, code] },
         }
         client_request('GetLocaleGroupsByLocaleCodes', args: args)
       end
@@ -480,7 +481,7 @@ module Arbetsformedlingen
       def occupation_names_by_occupation_name_ids(language_id:, occupation_name_ids:)
         args = {
           languageId: language_id,
-          occupationNameIds: occupation_name_ids.map { |id| [:int, id] }
+          occupationNameIds: occupation_name_ids.map { |id| [:int, id] },
         }
         client_request('GetOccupationNamesByOccupationNameIds', args: args)
       end
@@ -581,7 +582,7 @@ module Arbetsformedlingen
       def skill_headlines_by_skill_main_headlines_ids(language_id:, skill_main_headline_ids:)
         args = {
           languageId: language_id,
-          skillMainHeadlineIds: skill_main_headline_ids.map { |id| [:int, id] }
+          skillMainHeadlineIds: skill_main_headline_ids.map { |id| [:int, id] },
         }
         client_request('GetSkillMainHeadlinesBySkillMainHeadlineIds', args: args)
       end
@@ -621,7 +622,7 @@ module Arbetsformedlingen
       def skills_by_skill_ids(language_id:, skill_ids:)
         args = {
           languageId: language_id,
-          skillIds: skill_ids.map { |id| [:int, id] }
+          skillIds: skill_ids.map { |id| [:int, id] },
         }
         client_request('GetSkillsBySkillIds', args: args)
       end
@@ -633,7 +634,7 @@ module Arbetsformedlingen
       def skills_versions_by_skill_ids(language_id:, skill_ids:)
         args = {
           languageId: language_id,
-          skillIds: skill_ids.map { |id| [:int, id] }
+          skillIds: skill_ids.map { |id| [:int, id] },
         }
         client_request('GetSkillsBySkillIdsVersion', args: args)
       end

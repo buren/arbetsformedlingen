@@ -33,7 +33,7 @@ module Arbetsformedlingen
           end
 
           ruby_xml_builder_code = <<~RUBY_EVAL
-          body.#{name}(xmlns: namespace) { |node| #{ruby_statements.join(';')} }
+            body.#{name}(xmlns: namespace) { |node| #{ruby_statements.join(';')} }
           RUBY_EVAL
 
           instance_eval(ruby_xml_builder_code)
