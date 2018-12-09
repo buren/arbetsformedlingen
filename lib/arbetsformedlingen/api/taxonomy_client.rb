@@ -154,14 +154,6 @@ module Arbetsformedlingen
         client_request('GetAllLocaleFields', args: { languageId: language_id })
       end
 
-      # Returns occupation names for jobs with culture
-      # @return [Response] the response
-      # @see Response
-      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetOccupationNamesArt
-      def occupation_names_art(language_id:)
-        client_request('GetOccupationNamesArt', args: { languageId: language_id })
-      end
-
       # Returns locale group skills
       # @return [Response] the response
       # @see Response
@@ -396,13 +388,93 @@ module Arbetsformedlingen
         client_request('GetLocaleFieldsByLocaleCode', args: args)
       end
 
-      # Returns locale fields by locale code
+      # Returns locale fields by text
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetLocaleFieldsByText
       def locale_fields_by_text(language_id:, text:, exact_match: false)
         args = { languageId: language_id, term: text, exactMatch: exact_match }
         client_request('GetLocaleFieldsByText', args: args)
+      end
+
+      # Returns locale group by occupation name id
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetLocaleGroupByOccupationNameId
+      def locale_group_by_occupation_name_id(language_id:, occupation_name_id:)
+        args = { languageId: language_id, occupationNameId: occupation_name_id }
+        client_request('GetLocaleGroupByOccupationNameId', args: args)
+      end
+
+      # Returns locale group skills by locale code
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetLocaleGroupSkillsByLocaleCode
+      def locale_group_skills_by_locale_code(locale_code:)
+        args = { localeCode: locale_code }
+        client_request('GetLocaleGroupSkillsByLocaleCode', args: args)
+      end
+
+      # Returns locale groups by locale field id
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetLocaleGroupsByLocaleFieldId
+      def locale_groups_by_locale_field_id(language_id:, locale_field_id:)
+        args = { languageId: language_id, localeFieldId: locale_field_id }
+        client_request('GetLocaleGroupsByLocaleFieldId', args: args)
+      end
+
+      # Returns locale groups by text
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetLocaleGroupsByText
+      def locale_groups_by_text(language_id:, text:, extact_match: false)
+        args = { languageId: language_id, term: text, exactMatch: extact_match }
+        client_request('GetLocaleGroupsByText', args: args)
+      end
+
+      # Returns occupation names for jobs with culture
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetOccupationNamesArt
+      def occupation_names_art(language_id:)
+        client_request('GetOccupationNamesArt', args: { languageId: language_id })
+      end
+
+      # Returns occupation names by locale code
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetOccupationNamesByLocaleCode
+      def occupation_names_by_locale_code(language_id:, locale_code:)
+        args = { languageId: language_id, localeCode: locale_code }
+        client_request('GetOccupationNamesByLocaleCode', args: args)
+      end
+
+      # Returns occupation names by text
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetOccupationNamesByText
+      def occupation_names_by_text(language_id:, text:, extact_match: false)
+        args = { languageId: language_id, term: text, exactMatch: extact_match }
+        client_request('GetOccupationNamesByText', args: args)
+      end
+
+      # Returns occupation names within construction
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetOccupationNamesConstruction
+      def occupation_names_construction(language_id:)
+        args = { languageId: language_id }
+        client_request('GetOccupationNamesConstruction', args: args)
+      end
+
+      # Returns occupation names within navigation
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetOccupationNamesNavigation
+      def occupation_names_navigation(language_id:)
+        args = { languageId: language_id }
+        client_request('GetOccupationNamesNavigation', args: args)
       end
 
       # Returns SUN guide tree
