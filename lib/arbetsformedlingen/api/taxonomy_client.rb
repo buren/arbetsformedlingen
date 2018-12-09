@@ -1,15 +1,12 @@
 # frozen_string_literal: true
 
-require 'arbetsformedlingen/soap_builder'
-require 'arbetsformedlingen/api/soap_request'
+require 'arbetsformedlingen/api/base_soap_client'
 
 module Arbetsformedlingen
   module API
     # WsOccupation API client
     # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx
-    class TaxonomyClient
-      attr_reader :request
-
+    class TaxonomyClient < BaseSOAPClient
       # Service URL
       SERVICE_URL = 'http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx'
 
@@ -18,7 +15,7 @@ module Arbetsformedlingen
 
       # Initialize client
       def initialize
-        @request = SOAPRequest.new(SERVICE_URL)
+        super(SERVICE_URL, NAMESPACE)
       end
 
       # Returns occupation names
@@ -179,23 +176,6 @@ module Arbetsformedlingen
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetSUNGuideTree
       def sun_guide_tree(language_id:)
         client_request('GetSUNGuideTree', args: { languageId: language_id })
-      end
-
-      private
-
-      def client_request(name, args: {})
-        soap_body = SOAPBuilder.wrap do |body| # rubocop:disable Lint/UnusedBlockArgument
-          # HACK: Work around the XMLBuilder DSL
-          xml_builder = <<-RUBY
-          body.#{name}(xmlns: NAMESPACE) do |node|
-            #{args.map { |k, v| "node.#{k}(#{v})" }.join(';')}
-          end
-          RUBY
-
-          instance_eval(xml_builder)
-        end
-
-        request.post(soap_body.to_xml)
       end
     end
   end

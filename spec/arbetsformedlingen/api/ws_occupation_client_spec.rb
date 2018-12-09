@@ -5,7 +5,7 @@ require 'spec_helper'
 RSpec.describe Arbetsformedlingen::API::WSOccupationClient do
   let(:expected_first_name) do
     # TODO: Use a cassette instead
-    'Undersköterska inom vårdavdelning och mottagning'
+    'Supporttekniker, IT'
   end
 
   describe '#occupation' do

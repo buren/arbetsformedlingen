@@ -1,21 +1,21 @@
 # frozen_string_literal: true
 
-require 'arbetsformedlingen/soap_builder'
-require 'arbetsformedlingen/api/soap_request'
+require 'arbetsformedlingen/api/base_soap_client'
 
 module Arbetsformedlingen
   module API
     # WsOccupation API client
     # @see https://api.arbetsformedlingen.se/af/v0/Occupation/wsoccupation.asmx
-    class WSOccupationClient
-      attr_reader :request
-
+    class WSOccupationClient < BaseSOAPClient
       # Service URL
       SERVICE_URL = 'https://api.arbetsformedlingen.se/af/v0/Occupation/wsoccupation.asmx'.freeze
 
+      # Namespace
+      NAMESPACE = 'urn:ams.se:wsoccupation'
+
       # Initialize client
       def initialize
-        @request = SOAPRequest.new(SERVICE_URL)
+        super(SERVICE_URL, NAMESPACE)
       end
 
       # Returns occupation response with specified id
@@ -23,13 +23,7 @@ module Arbetsformedlingen
       # @see Response
       # @see Response#xml
       def occupation(id)
-        soap_body = SOAPBuilder.wrap do |body|
-          body.GetOccupationById(xmlns: 'urn:ams.se:wsoccupation') do |node|
-            node.occupationId(id)
-          end
-        end
-
-        request.post(soap_body.to_xml)
+        client_request('GetOccupationById', args: { occupationId: id })
       end
 
       # Returns occupations response with specified name
@@ -37,13 +31,7 @@ module Arbetsformedlingen
       # @see Response
       # @see Response#xml
       def find_occupations(name)
-        soap_body = SOAPBuilder.wrap do |body|
-          body.FindOccupation(xmlns: 'urn:ams.se:wsoccupation') do |node|
-            node.name(name)
-          end
-        end
-
-        request.post(soap_body.to_xml)
+        client_request('FindOccupation', args: { name: name })
       end
 
       # Returns occupations response
@@ -51,11 +39,7 @@ module Arbetsformedlingen
       # @see Response
       # @see Response#xml
       def occupations
-        soap_body = SOAPBuilder.wrap do |body|
-          body.GetAllOccupations(xmlns: 'urn:ams.se:wsoccupation')
-        end
-
-        request.post(soap_body.to_xml)
+        client_request('GetAllOccupations')
       end
 
       # Returns occupations short response with specified id
@@ -63,11 +47,7 @@ module Arbetsformedlingen
       # @see Response
       # @see Response#xml
       def occupations_short
-        soap_body = SOAPBuilder.wrap do |body|
-          body.GetAllOccupationsShort(xmlns: 'urn:ams.se:wsoccupation')
-        end
-
-        request.post(soap_body.to_xml)
+        client_request('GetAllOccupationsShort')
       end
 
       # Returns occupations detailed response with specified id
@@ -75,11 +55,7 @@ module Arbetsformedlingen
       # @see Response
       # @see Response#xml
       def occupations_detailed
-        soap_body = SOAPBuilder.wrap do |body|
-          body.GetAllOccupationsDetailed(xmlns: 'urn:ams.se:wsoccupation')
-        end
-
-        request.post(soap_body.to_xml)
+        client_request('GetAllOccupationsDetailed')
       end
     end
   end
