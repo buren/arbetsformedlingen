@@ -13,6 +13,7 @@ require 'arbetsformedlingen/api/matchning_client'
 require 'arbetsformedlingen/api/ledigtarbete_client'
 
 module Arbetsformedlingen
+  # API namespace
   module API
     # Main API client
     class Client
@@ -37,7 +38,7 @@ module Arbetsformedlingen
 
       # Post ad to API (ad => annons)
       # @return [Values::CreateAdPage] the result.
-      # @param [Arbetsformedlingen::Packet] Packet object.
+      # @param [Arbetsformedlingen::Packet] packet
       # @example Post ad
       #    client.ad(packet)
       def create_ad(packet)

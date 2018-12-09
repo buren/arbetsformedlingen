@@ -7,8 +7,10 @@ module Arbetsformedlingen
     class OntologyClient
       attr_reader :request
 
+      # Base API URL
       BASE_URL = 'http://ontologi.arbetsformedlingen.se/ontology/v1'
 
+      # Valid types
       VALID_TYPES = %w[skill occupation trait].freeze
 
       # Initialize client
@@ -24,7 +26,7 @@ module Arbetsformedlingen
         request.get('/concept', query: query)
       end
 
-      # GET /concept/{uuid} - Fetch a concept given an uuid
+      # GET /concept/:uuid} - Fetch a concept given an uuid
       # @return [Response]
       def concept(uuid)
         request.get("/concept/#{uuid}")
@@ -44,7 +46,7 @@ module Arbetsformedlingen
         request.get('/concept/related', query: query)
       end
 
-      # GET /concept/{uuid}/terms - Fetches the terms for the given uuid
+      # GET /concept/:uuid/terms - Fetches the terms for the given uuid
       # @return [Response]
       def concept_terms(concept_uuid, offset: nil, limit: nil)
         query = to_params(offset: offset, limit: limit)
@@ -52,7 +54,7 @@ module Arbetsformedlingen
         request.get("/concept/#{concept_uuid}/terms", query: query)
       end
 
-      # GET /concept/{uuid}/related/{type} - Fetches related concepts for the
+      # GET /concept/:uuid/related/:type - Fetches related concepts for the
       # given uuid, returning only concepts of the given type
       # @return [Response]
       def concept_relations(concept_uuid, type, offset: nil, limit: nil)
@@ -69,13 +71,13 @@ module Arbetsformedlingen
         request.get('/terms', query: query)
       end
 
-      # GET /{type}/{description} - Redirects to the concepts UUID
+      # GET /:type/:description - Redirects to the concepts UUID
       # @return [Response]
       def type_description(type, description)
         request.get("/#{type}/#{description}")
       end
 
-      # GET /{type}/{description}/related/{totype} - Redirects to the concepts
+      # GET /:type/:description/related/:totype - Redirects to the concepts
       # UUID related concepts
       # @return [Response]
       def type_description_relations(type, description, relation_type)

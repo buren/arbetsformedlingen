@@ -16,6 +16,7 @@ module Arbetsformedlingen
 
       # private
 
+      # :nodoc:
       def self.build_page(response)
         response_data = response.json
         data = response_data.fetch('platsannons')
@@ -42,10 +43,12 @@ module Arbetsformedlingen
         )
       end
 
+      # :nodoc:
       def self.build_empty(response)
         Values::Ad.new(response: response)
       end
 
+      # :nodoc:
       def self.build_terms(data)
         Values::Terms.new(
           duration: data.fetch('varaktighet', nil),
@@ -56,6 +59,7 @@ module Arbetsformedlingen
         )
       end
 
+      # :nodoc:
       def self.build_application(data)
         Values::Application.new(
           reference: data['referens'],
@@ -66,6 +70,7 @@ module Arbetsformedlingen
         )
       end
 
+      # :nodoc:
       def self.build_workplace(data)
         Values::Workplace.new(
           name: data.fetch('arbetsplatsnamn'),
@@ -82,6 +87,7 @@ module Arbetsformedlingen
         )
       end
 
+      # :nodoc:
       def self.build_postal(data)
         Values::Postal.new(
           code: data.fetch('postnummer', nil),
@@ -91,6 +97,7 @@ module Arbetsformedlingen
         )
       end
 
+      # :nodoc:
       def self.build_workplace_contacts(data)
         Values::Contact.new(
           name: data['namn'],
@@ -99,6 +106,7 @@ module Arbetsformedlingen
         )
       end
 
+      # :nodoc:
       def self.build_requirements(data)
         Values::Requirements.new(
           own_car: data.fetch('egenbil')

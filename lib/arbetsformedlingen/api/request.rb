@@ -17,7 +17,7 @@ module Arbetsformedlingen
         @locale = locale
       end
 
-      # Perform GEt request
+      # Perform GET request
       # @param [String] url to be fetched
       # @param [Hash, Array<Array<#to_s>>] query params
       # @return [Response] response object
@@ -38,6 +38,10 @@ module Arbetsformedlingen
         Response.new(response, uri)
       end
 
+      # Perform POST request
+      # @param [String] url to be fetched
+      # @param [Hash] data params
+      # @return [Response] response object
       def post(url, data: {})
         uri = to_uri(url)
 

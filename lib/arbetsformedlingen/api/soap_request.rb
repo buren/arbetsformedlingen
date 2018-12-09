@@ -30,7 +30,7 @@ module Arbetsformedlingen
       end
 
       # Performs a POST request
-      # @param [String] the post body
+      # @param [String] body
       # @return [Response] the response
       def post(body)
         http = Net::HTTP.new(uri.host, uri.port)

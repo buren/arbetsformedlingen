@@ -3,17 +3,22 @@
 require 'builder'
 
 module Arbetsformedlingen
+  # SOAP Envelope XML builder
   class SOAPBuilder
+    # SOAP attributes
     SOAP_ATTRIBUTES = {
       'xmlns:xsi' => 'http://www.w3.org/2001/XMLSchema-instance',
       'xmlns:xsd' => 'http://www.w3.org/2001/XMLSchema',
       'xmlns:soap12' => 'http://www.w3.org/2003/05/soap-envelope',
     }.freeze
 
+    # Wrap block
+    # @see #wrap
     def self.wrap(&block)
       new.wrap(&block)
     end
 
+    # Initialize object
     def initialize
       @builder = Builder::XmlMarkup.new(indent: 2)
       @builder.instruct!
@@ -21,6 +26,8 @@ module Arbetsformedlingen
       yield self if block_given?
     end
 
+    # Wrap block in SOAP envelope
+    # @return [SOAPBuilder]
     def wrap
       @builder.soap12(:Envelope, SOAP_ATTRIBUTES) do |envelope|
         envelope.soap12(:Body) { |body| yield(body) }

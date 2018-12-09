@@ -5,6 +5,7 @@ require 'arbetsformedlingen/api/soap_request'
 
 module Arbetsformedlingen
   module API
+    # Base client for SOAP clients
     class BaseSOAPClient
       attr_reader :request, :namespace, :service_url
 
@@ -15,6 +16,10 @@ module Arbetsformedlingen
         @request = SOAPRequest.new(url)
       end
 
+      # Perform client request
+      # @param [String] name of the main node
+      # @param args [Hash] optional arguments
+      # @return [Response]
       def client_request(name, args: {})
         soap_body = SOAPBuilder.wrap do |body| # rubocop:disable Lint/UnusedBlockArgument
           # HACK: Work around the XMLBuilder DSL

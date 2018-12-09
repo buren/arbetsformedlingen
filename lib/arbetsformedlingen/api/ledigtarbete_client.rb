@@ -16,7 +16,7 @@ module Arbetsformedlingen
       }.freeze
 
       # Post ad to API
-      # @param [Arbetsformedlingen::Packet, #to_xml] the data to be sent
+      # @param [Arbetsformedlingen::Packet, #to_xml] packet the data to be sent
       # @return [Values::CreateAdPage] the API result
       def create_ad(packet)
         xml = packet.to_xml
