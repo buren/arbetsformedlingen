@@ -18,11 +18,24 @@ module Arbetsformedlingen
       def client_request(name, args: {})
         soap_body = SOAPBuilder.wrap do |body| # rubocop:disable Lint/UnusedBlockArgument
           # HACK: Work around the XMLBuilder DSL
-          xml_builder = <<-RUBY
-          body.#{name}(xmlns: namespace) do |node|
-            #{args.map { |k, v| "node.#{k}('#{v}')" }.join(';')}
+          nodes = args.map do |key, value|
+            if value.is_a?(Array)
+              statements = value.map do |data|
+                k, v = data
+                "node.#{key} { |inode| inode.#{k}('#{v}') }"
+              end
+
+              statements.join(';')
+            else
+              "node.#{key}('#{value}')"
+            end
           end
-          RUBY
+
+          xml_builder = <<-RUBY_EVAL
+          body.#{name}(xmlns: namespace) do |node|
+            #{nodes.join(';')}
+          end
+          RUBY_EVAL
 
           instance_eval(xml_builder)
         end
