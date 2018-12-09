@@ -186,6 +186,14 @@ module Arbetsformedlingen
         client_request('GetAllLocaleGroups', args: { languageId: language_id })
       end
 
+      # Returns locale groups
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllLocaleLevel3
+      def locale_level3(language_id:)
+        client_request('GetAllLocaleLevel3', args: { languageId: language_id })
+      end
+
       # Returns SUN guide tree
       # @return [Response] the response
       # @see Response

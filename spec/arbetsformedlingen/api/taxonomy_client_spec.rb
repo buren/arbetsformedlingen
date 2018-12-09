@@ -122,6 +122,12 @@ RSpec.describe Arbetsformedlingen::API::TaxonomyClient do
       expected: { value: 'Officerare', length: 400 },
     },
     {
+      method_name: :locale_level3,
+      args: { language_id: 502 },
+      css: 'LocaleLevel3 Term',
+      expected: { value: 'Andra bevaknings- och säkerhetsyrken', length: 147 },
+    },
+    {
       method_name: :sun_guide_tree,
       args: { language_id: 502 },
       css: 'SUNGuideBranch SUNLevel1 Term',
