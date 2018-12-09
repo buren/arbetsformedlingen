@@ -197,7 +197,7 @@ https://api.arbetsformedlingen.se/af/v0/Occupation/wsoccupation.asmx
 
 ## Taxonomy API Client
 
-There is some support for Arbetsförmedlingen's `Taxonomi` SOAP API. See [#3](https://github.com/buren/arbetsformedlingen/issues/20).
+There is some support for Arbetsförmedlingen's `Taxonomi` SOAP API. See [#20](https://github.com/buren/arbetsformedlingen/issues/20).
 
 ```ruby
 client = Arbetsformedlingen::API::TaxonomyClient.new
