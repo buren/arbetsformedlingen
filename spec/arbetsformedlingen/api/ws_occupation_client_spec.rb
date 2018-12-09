@@ -88,4 +88,14 @@ RSpec.describe Arbetsformedlingen::API::WSOccupationClient do
       expect(result.start_with?("571\tinfo.ky")).to eq(true)
     end
   end
+
+  describe '#occupations_id_and_name' do
+    it 'returns occupations containing id and name information', vcr: true do
+      client = described_class.new
+      response = client.occupations_id_and_name
+
+      result = response.xml.css('LoadAllOccupationIdAndNameResult').first.text
+      expect(result.start_with?("571\tAdministratör/sekreteraryrken")).to eq(true)
+    end
+  end
 end

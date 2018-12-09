@@ -81,6 +81,14 @@ module Arbetsformedlingen
       def education_connections
         client_request('LoadAllEducationConnections')
       end
+
+      # Returns occupations containing id and name information
+      # @return [Response] the response
+      # @see Response
+      # @see Response#xml
+      def occupations_id_and_name
+        client_request('LoadAllOccupationIdAndName')
+      end
     end
   end
 end
