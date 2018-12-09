@@ -331,6 +331,12 @@ RSpec.describe Arbetsformedlingen::API::TaxonomyClient do
       expected: { value: '1:e Fartygsingenjör/1:e Maskinist', length: 30 },
     },
     {
+      method_name: :post_codes_by_municipality,
+      args: { language_id: 502, municipality_id: 1440 },
+      css: 'PostCode Code',
+      expected: { value: '44172', length: 63 },
+    },
+    {
       method_name: :sun_guide_tree,
       args: { language_id: 502 },
       css: 'SUNGuideBranch SUNLevel1 Term',
