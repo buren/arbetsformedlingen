@@ -521,6 +521,70 @@ module Arbetsformedlingen
         client_request('GetSUNGuideTree', args: { languageId: language_id })
       end
 
+      # Returns skill headlines by main headline
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetSkillHeadlinesBySkillMainHeadlineId
+      def skill_headlines_by_main_headline(language_id:, skill_main_headline_id:)
+        args = { languageId: language_id, skillMainHeadlineId: skill_main_headline_id }
+        client_request('GetSkillHeadlinesBySkillMainHeadlineId', args: args)
+      end
+
+      # Returns skill headlines by text
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetSkillHeadlinesByText
+      def skill_headlines_by_text(language_id:, text:, extact_match: false)
+        args = { languageId: language_id, term: text, exactMatch: extact_match }
+        client_request('GetSkillHeadlinesByText', args: args)
+      end
+
+      # Returns skill main headlines by text
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetSkillMainHeadlinesByText
+      def skill_main_headlines_by_text(language_id:, text:, extact_match: false)
+        args = { languageId: language_id, term: text, exactMatch: extact_match }
+        client_request('GetSkillMainHeadlinesByText', args: args)
+      end
+
+      # Returns skills by locale code
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetSkillsByLocaleCode
+      def skills_by_locale_code(language_id:, locale_code:)
+        # NOTE: Yes there is a typo, "localCode" instead of "localeCode", in the API
+        args = { languageId: language_id, localCode: locale_code }
+        client_request('GetSkillsByLocaleCode', args: args)
+      end
+
+      # Returns skill headlines by main headlin
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetSkillsBySkillHeadlineId
+      def skills_by_headline(language_id:, skill_headline_id:)
+        args = { languageId: language_id, skillHeadlineId: skill_headline_id }
+        client_request('GetSkillsBySkillHeadlineId', args: args)
+      end
+
+      # Returns skill headlines by main headline
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetSkillsBySkillMainHeadlineId
+      def skills_by_main_headline(language_id:, skill_main_headline_id:)
+        args = { languageId: language_id, skillMainHeadlineId: skill_main_headline_id }
+        client_request('GetSkillsBySkillMainHeadlineId', args: args)
+      end
+
+      # Returns skills by text
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetSkillsByText
+      def skills_by_text(language_id:, text:, extact_match: false)
+        args = { languageId: language_id, term: text, exactMatch: extact_match }
+        client_request('GetSkillsByText', args: args)
+      end
+
       # Returns version information
       # @return [Response] the response
       # @see Response

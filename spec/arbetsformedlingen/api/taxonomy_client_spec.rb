@@ -361,6 +361,48 @@ RSpec.describe Arbetsformedlingen::API::TaxonomyClient do
       expected: { value: 'Saknar formell, grundläggande utbildning', length: 7 },
     },
     {
+      method_name: :skill_headlines_by_main_headline,
+      args: { language_id: 502, skill_main_headline_id: 2 },
+      css: 'SkillMainHeadline Term',
+      expected: { value: 'Datakunskaper', length: 15 },
+    },
+    {
+      method_name: :skill_headlines_by_text,
+      args: { language_id: 502, text: 'A' },
+      css: 'SkillMainHeadline Term',
+      expected: { value: 'Datakunskaper', length: 39 },
+    },
+    {
+      method_name: :skill_main_headlines_by_text,
+      args: { language_id: 502, text: 'A' },
+      css: 'SkillMainHeadline Term',
+      expected: { value: 'Datakunskaper', length: 2 },
+    },
+    {
+      method_name: :skills_by_locale_code,
+      args: { language_id: 502, locale_code: 2421 },
+      css: 'SkillHeadline SkillMainHeadline Term',
+      expected: { value: 'Övriga kompetensrubriker', length: 37 },
+    },
+    {
+      method_name: :skills_by_headline,
+      args: { language_id: 502, skill_headline_id: 2 },
+      css: 'SkillHeadline Term',
+      expected: { value: 'Datakunskaper', length: 52 },
+    },
+    {
+      method_name: :skills_by_main_headline,
+      args: { language_id: 502, skill_main_headline_id: 2 },
+      css: 'SkillHeadline Term',
+      expected: { value: 'Datakunskaper', length: 788 },
+    },
+    {
+      method_name: :skills_by_text,
+      args: { language_id: 502, text: 'A' },
+      css: 'SkillHeadline Term',
+      expected: { value: 'Övriga kompetensrubriker', length: 8118 },
+    },
+    {
       method_name: :version_information,
       css: 'VersionInformation Version',
       expected: { value: '1', length: 1 },

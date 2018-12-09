@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <soap12:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://www.w3.org/2003/05/soap-envelope">
+          <soap12:Body>
+            <GetSkillHeadlinesBySkillMainHeadlineId xmlns="urn:ams.se:Taxonomy">
+              <languageId>502</languageId>
+              <skillMainHeadlineId>2</skillMainHeadlineId>
+            </GetSkillHeadlinesBySkillMainHeadlineId>
+          </soap12:Body>
+        </soap12:Envelope>
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.arbetsformedlingen.se
+      Content-Type:
+      - text/xml
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 09 Dec 2018 19:03:32 GMT
+      Server:
+      - Microsoft-IIS/7.5
+      Cache-Control:
+      - private, max-age=0
+      Content-Type:
+      - application/soap+xml; charset=utf-8
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Content-Length:
+      - '3670'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - X-JWT-Assertion, Origin, X-Requested-With, Content-Type, Accept
+      Access-Control-Allow-Methods:
+      - GET, OPTIONS, HEAD, PUT, POST, DELETE
+      Connection:
+      - close
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c29hcDpFbnZlbG9wZSB4bWxuczpzb2FwPSJodHRwOi8vd3d3LnczLm9yZy8yMDAzLzA1L3NvYXAtZW52ZWxvcGUiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zOnhzZD0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiPjxzb2FwOkJvZHk+PEdldFNraWxsSGVhZGxpbmVzQnlTa2lsbE1haW5IZWFkbGluZUlkUmVzcG9uc2UgeG1sbnM9InVybjphbXMuc2U6VGF4b25vbXkiPjxHZXRTa2lsbEhlYWRsaW5lc0J5U2tpbGxNYWluSGVhZGxpbmVJZFJlc3VsdD48U2tpbGxIZWFkbGluZT48U2tpbGxNYWluSGVhZGxpbmU+PFNraWxsTWFpbkhlYWRsaW5lSUQ+MjwvU2tpbGxNYWluSGVhZGxpbmVJRD48VGVybT5EYXRha3Vuc2thcGVyPC9UZXJtPjwvU2tpbGxNYWluSGVhZGxpbmU+PFNraWxsSGVhZGxpbmVJRD4yPC9Ta2lsbEhlYWRsaW5lSUQ+PFRlcm0+QWxsbcOkbm5hIGRhdGFrdW5za2FwZXI8L1Rlcm0+PC9Ta2lsbEhlYWRsaW5lPjxTa2lsbEhlYWRsaW5lPjxTa2lsbE1haW5IZWFkbGluZT48U2tpbGxNYWluSGVhZGxpbmVJRD4yPC9Ta2lsbE1haW5IZWFkbGluZUlEPjxUZXJtPkRhdGFrdW5za2FwZXI8L1Rlcm0+PC9Ta2lsbE1haW5IZWFkbGluZT48U2tpbGxIZWFkbGluZUlEPjYwMjExNjwvU2tpbGxIZWFkbGluZUlEPjxUZXJtPkFwcGxpa2F0aW9uc3BsYXR0Zm9ybWFyPC9UZXJtPjwvU2tpbGxIZWFkbGluZT48U2tpbGxIZWFkbGluZT48U2tpbGxNYWluSGVhZGxpbmU+PFNraWxsTWFpbkhlYWRsaW5lSUQ+MjwvU2tpbGxNYWluSGVhZGxpbmVJRD48VGVybT5EYXRha3Vuc2thcGVyPC9UZXJtPjwvU2tpbGxNYWluSGVhZGxpbmU+PFNraWxsSGVhZGxpbmVJRD42MDI1MDA8L1NraWxsSGVhZGxpbmVJRD48VGVybT5DQUQgLSBEYXRvcnN0w7ZkZCBrb25zdHJ1a3Rpb248L1Rlcm0+PC9Ta2lsbEhlYWRsaW5lPjxTa2lsbEhlYWRsaW5lPjxTa2lsbE1haW5IZWFkbGluZT48U2tpbGxNYWluSGVhZGxpbmVJRD4yPC9Ta2lsbE1haW5IZWFkbGluZUlEPjxUZXJtPkRhdGFrdW5za2FwZXI8L1Rlcm0+PC9Ta2lsbE1haW5IZWFkbGluZT48U2tpbGxIZWFkbGluZUlEPjExMjg8L1NraWxsSGVhZGxpbmVJRD48VGVybT5EYXRhYmFzZXI8L1Rlcm0+PC9Ta2lsbEhlYWRsaW5lPjxTa2lsbEhlYWRsaW5lPjxTa2lsbE1haW5IZWFkbGluZT48U2tpbGxNYWluSGVhZGxpbmVJRD4yPC9Ta2lsbE1haW5IZWFkbGluZUlEPjxUZXJtPkRhdGFrdW5za2FwZXI8L1Rlcm0+PC9Ta2lsbE1haW5IZWFkbGluZT48U2tpbGxIZWFkbGluZUlEPjYwNTUyNzwvU2tpbGxIZWFkbGluZUlEPjxUZXJtPkjDpXJkdmFyYTwvVGVybT48L1NraWxsSGVhZGxpbmU+PFNraWxsSGVhZGxpbmU+PFNraWxsTWFpbkhlYWRsaW5lPjxTa2lsbE1haW5IZWFkbGluZUlEPjI8L1NraWxsTWFpbkhlYWRsaW5lSUQ+PFRlcm0+RGF0YWt1bnNrYXBlcjwvVGVybT48L1NraWxsTWFpbkhlYWRsaW5lPjxTa2lsbEhlYWRsaW5lSUQ+NjA3NDE2PC9Ta2lsbEhlYWRsaW5lSUQ+PFRlcm0+SW50ZWdyYXRpb25zcGxhdHRmb3JtYXI8L1Rlcm0+PC9Ta2lsbEhlYWRsaW5lPjxTa2lsbEhlYWRsaW5lPjxTa2lsbE1haW5IZWFkbGluZT48U2tpbGxNYWluSGVhZGxpbmVJRD4yPC9Ta2lsbE1haW5IZWFkbGluZUlEPjxUZXJtPkRhdGFrdW5za2FwZXI8L1Rlcm0+PC9Ta2lsbE1haW5IZWFkbGluZT48U2tpbGxIZWFkbGluZUlEPjYwMzQ4MjwvU2tpbGxIZWFkbGluZUlEPjxUZXJtPktvbW11bmlrYXRpb25zcHJvdG9rb2xsPC9UZXJtPjwvU2tpbGxIZWFkbGluZT48U2tpbGxIZWFkbGluZT48U2tpbGxNYWluSGVhZGxpbmU+PFNraWxsTWFpbkhlYWRsaW5lSUQ+MjwvU2tpbGxNYWluSGVhZGxpbmVJRD48VGVybT5EYXRha3Vuc2thcGVyPC9UZXJtPjwvU2tpbGxNYWluSGVhZGxpbmU+PFNraWxsSGVhZGxpbmVJRD42MDU1Mjk8L1NraWxsSGVhZGxpbmVJRD48VGVybT5Ow6R0dmVyazwvVGVybT48L1NraWxsSGVhZGxpbmU+PFNraWxsSGVhZGxpbmU+PFNraWxsTWFpbkhlYWRsaW5lPjxTa2lsbE1haW5IZWFkbGluZUlEPjI8L1NraWxsTWFpbkhlYWRsaW5lSUQ+PFRlcm0+RGF0YWt1bnNrYXBlcjwvVGVybT48L1NraWxsTWFpbkhlYWRsaW5lPjxTa2lsbEhlYWRsaW5lSUQ+NDI2NDwvU2tpbGxIZWFkbGluZUlEPjxUZXJtPk9wZXJhdGl2c3lzdGVtPC9UZXJtPjwvU2tpbGxIZWFkbGluZT48U2tpbGxIZWFkbGluZT48U2tpbGxNYWluSGVhZGxpbmU+PFNraWxsTWFpbkhlYWRsaW5lSUQ+MjwvU2tpbGxNYWluSGVhZGxpbmVJRD48VGVybT5EYXRha3Vuc2thcGVyPC9UZXJtPjwvU2tpbGxNYWluSGVhZGxpbmU+PFNraWxsSGVhZGxpbmVJRD42MDUyNzA8L1NraWxsSGVhZGxpbmVJRD48VGVybT5Qcm9ncmFtbWVyaW5ncy0gb2NoIHN5c3RlbXV0dmVja2xpbmdzdmVya3R5ZzwvVGVybT48L1NraWxsSGVhZGxpbmU+PFNraWxsSGVhZGxpbmU+PFNraWxsTWFpbkhlYWRsaW5lPjxTa2lsbE1haW5IZWFkbGluZUlEPjI8L1NraWxsTWFpbkhlYWRsaW5lSUQ+PFRlcm0+RGF0YWt1bnNrYXBlcjwvVGVybT48L1NraWxsTWFpbkhlYWRsaW5lPjxTa2lsbEhlYWRsaW5lSUQ+NDY2NTwvU2tpbGxIZWFkbGluZUlEPjxUZXJtPlByb2dyYW1tZXJpbmdzc3Byw6VrPC9UZXJtPjwvU2tpbGxIZWFkbGluZT48U2tpbGxIZWFkbGluZT48U2tpbGxNYWluSGVhZGxpbmU+PFNraWxsTWFpbkhlYWRsaW5lSUQ+MjwvU2tpbGxNYWluSGVhZGxpbmVJRD48VGVybT5EYXRha3Vuc2thcGVyPC9UZXJtPjwvU2tpbGxNYWluSGVhZGxpbmU+PFNraWxsSGVhZGxpbmVJRD42MDc0MjA8L1NraWxsSGVhZGxpbmVJRD48VGVybT5QdWJsaWNlcmluZ3MtIG9jaCBwb3J0YWx2ZXJrdHlnPC9UZXJtPjwvU2tpbGxIZWFkbGluZT48U2tpbGxIZWFkbGluZT48U2tpbGxNYWluSGVhZGxpbmU+PFNraWxsTWFpbkhlYWRsaW5lSUQ+MjwvU2tpbGxNYWluSGVhZGxpbmVJRD48VGVybT5EYXRha3Vuc2thcGVyPC9UZXJtPjwvU2tpbGxNYWluSGVhZGxpbmU+PFNraWxsSGVhZGxpbmVJRD42MDc0MjY8L1NraWxsSGVhZGxpbmVJRD48VGVybT5SYW12ZXJrPC9UZXJtPjwvU2tpbGxIZWFkbGluZT48U2tpbGxIZWFkbGluZT48U2tpbGxNYWluSGVhZGxpbmU+PFNraWxsTWFpbkhlYWRsaW5lSUQ+MjwvU2tpbGxNYWluSGVhZGxpbmVJRD48VGVybT5EYXRha3Vuc2thcGVyPC9UZXJtPjwvU2tpbGxNYWluSGVhZGxpbmU+PFNraWxsSGVhZGxpbmVJRD42MDYzOTI8L1NraWxsSGVhZGxpbmVJRD48VGVybT5Sb3V0aW5ncHJvdG9rb2xsPC9UZXJtPjwvU2tpbGxIZWFkbGluZT48U2tpbGxIZWFkbGluZT48U2tpbGxNYWluSGVhZGxpbmU+PFNraWxsTWFpbkhlYWRsaW5lSUQ+MjwvU2tpbGxNYWluSGVhZGxpbmVJRD48VGVybT5EYXRha3Vuc2thcGVyPC9UZXJtPjwvU2tpbGxNYWluSGVhZGxpbmU+PFNraWxsSGVhZGxpbmVJRD42MDc0MjQ8L1NraWxsSGVhZGxpbmVJRD48VGVybT5TdHlyLSBvY2ggdXR2ZWNrbGluZ3Ntb2RlbGxlcjwvVGVybT48L1NraWxsSGVhZGxpbmU+PC9HZXRTa2lsbEhlYWRsaW5lc0J5U2tpbGxNYWluSGVhZGxpbmVJZFJlc3VsdD48L0dldFNraWxsSGVhZGxpbmVzQnlTa2lsbE1haW5IZWFkbGluZUlkUmVzcG9uc2U+PC9zb2FwOkJvZHk+PC9zb2FwOkVudmVsb3BlPg==
+    http_version: 
+  recorded_at: Sun, 09 Dec 2018 19:03:34 GMT
+recorded_with: VCR 3.0.3
