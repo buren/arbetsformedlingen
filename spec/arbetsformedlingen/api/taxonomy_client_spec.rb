@@ -145,6 +145,12 @@ RSpec.describe Arbetsformedlingen::API::TaxonomyClient do
       expected: { value: '1:e Fartygsingenjör/1:e Maskinist', length: 4595 },
     },
     {
+      method_name: :post_codes,
+      args: { language_id: 502 },
+      css: 'PostCode Code',
+      expected: { value: '10005', length: 17389 },
+    },
+    {
       method_name: :sun_guide_tree,
       args: { language_id: 502 },
       css: 'SUNGuideBranch SUNLevel1 Term',

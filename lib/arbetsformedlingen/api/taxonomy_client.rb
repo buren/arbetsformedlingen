@@ -210,12 +210,20 @@ module Arbetsformedlingen
         client_request('GetAllOccupationNameSynonyms', args: { languageId: language_id })
       end
 
-      # Returns occupation name synonyms
+      # Returns occupation name versions
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllOccupationNameSynonyms
       def occupation_name_versions(language_id:)
         client_request('GetAllOccupationNamesVersion', args: { languageId: language_id })
+      end
+
+      # Returns post codes
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllPostCodes
+      def post_codes(language_id:)
+        client_request('GetAllPostCodes', args: { languageId: language_id })
       end
 
       # Returns SUN guide tree
