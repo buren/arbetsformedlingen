@@ -576,7 +576,7 @@ module Arbetsformedlingen
       def skill_headlines_by_headline_ids(language_id:, skill_headline_ids:)
         args = {
           languageId: language_id,
-          skillHeadlineIds: skill_headline_ids.map { |id| [:int, id] }
+          skillHeadlineIds: skill_headline_ids.map { |id| [:int, id] },
         }
         client_request('GetSkillHeadlinesBySkillHeadlineIds', args: args)
       end
