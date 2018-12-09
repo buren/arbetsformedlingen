@@ -151,6 +151,12 @@ RSpec.describe Arbetsformedlingen::API::TaxonomyClient do
       expected: { value: '10005', length: 17389 },
     },
     {
+      method_name: :post_localities,
+      args: { language_id: 502 },
+      css: 'PostLocality Term',
+      expected: { value: 'Abbekås', length: 1742 },
+    },
+    {
       method_name: :sun_guide_tree,
       args: { language_id: 502 },
       css: 'SUNGuideBranch SUNLevel1 Term',

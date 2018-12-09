@@ -226,6 +226,14 @@ module Arbetsformedlingen
         client_request('GetAllPostCodes', args: { languageId: language_id })
       end
 
+      # Returns post localities
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllPostLocalities
+      def post_localities(language_id:)
+        client_request('GetAllPostLocalities', args: { languageId: language_id })
+      end
+
       # Returns SUN guide tree
       # @return [Response] the response
       # @see Response
