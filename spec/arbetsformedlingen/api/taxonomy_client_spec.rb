@@ -278,9 +278,9 @@ RSpec.describe Arbetsformedlingen::API::TaxonomyClient do
     },
     {
       method_name: :locale_fields_by_locale_field_ids,
-      args: { language_id: 502, locale_field_ids: [1] },
+      args: { language_id: 502, locale_field_ids: [3, 5] },
       css: 'LocaleField Term',
-      expected: { value: 'Administration, ekonomi, juridik', length: 1 },
+      expected: { value: 'Data/IT', length: 1 },
     },
     {
       method_name: :locale_fields_by_text,

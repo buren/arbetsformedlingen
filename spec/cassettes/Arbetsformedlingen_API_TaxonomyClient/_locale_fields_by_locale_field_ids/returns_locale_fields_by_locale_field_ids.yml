@@ -12,7 +12,8 @@ http_interactions:
             <GetLocaleFieldsByLocaleFieldIds xmlns="urn:ams.se:Taxonomy">
               <languageId>502</languageId>
               <localeFieldIds>
-                <int>1</int>
+                <int>3</int>
+                <int>73</int>
               </localeFieldIds>
             </GetLocaleFieldsByLocaleFieldIds>
           </soap12:Body>
@@ -34,7 +35,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 09 Dec 2018 19:57:29 GMT
+      - Sun, 09 Dec 2018 20:09:20 GMT
       Server:
       - Microsoft-IIS/7.5
       Cache-Control:
@@ -46,7 +47,7 @@ http_interactions:
       X-Powered-By:
       - ASP.NET
       Content-Length:
-      - '1010'
+      - '933'
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Headers:
@@ -58,7 +59,7 @@ http_interactions:
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c29hcDpFbnZlbG9wZSB4bWxuczpzb2FwPSJodHRwOi8vd3d3LnczLm9yZy8yMDAzLzA1L3NvYXAtZW52ZWxvcGUiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zOnhzZD0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiPjxzb2FwOkJvZHk+PEdldExvY2FsZUZpZWxkc0J5TG9jYWxlRmllbGRJZHNSZXNwb25zZSB4bWxucz0idXJuOmFtcy5zZTpUYXhvbm9teSI+PEdldExvY2FsZUZpZWxkc0J5TG9jYWxlRmllbGRJZHNSZXN1bHQ+PExvY2FsZUZpZWxkPjxMb2NhbGVGaWVsZElEPjE8L0xvY2FsZUZpZWxkSUQ+PFRlcm0+QWRtaW5pc3RyYXRpb24sIGVrb25vbWksIGp1cmlkaWs8L1Rlcm0+PERlc2NyaXB0aW9uPlV0cmVkZXIsIHBsYW5lcmFyIGVsbGVyIGbDtmxqZXIgdXBwIGVuIHZlcmtzYW1oZXQsIGRlc3MgcmVzdWx0YXQgb2NoIGVrb25vbWkuIEFyYmV0YXIgbWVkIGVrb25vbWlzayByZWRvdmlzbmluZywgdG9sa25pbmcgYXYgbGFnYXIgb2NoIGJlc3TDpG1tZWxzZXIsIHByw7Z2bmluZyBhdiBhbnPDtmtuaW5nYXIgZWxsZXIgcsOlZGdpdm5pbmcgb2NoIHVwcGx5c25pbmcuIEhhciBrb250YWt0ZXIgbWVkIGFsbG3DpG5oZXRlbiwgbXluZGlnaGV0ZXIsIGbDtnJldGFnIG9jaCBtZWRhcmJldGFyZSBpbm9tIGRlbiBlZ25hIG9yZ2FuaXNhdGlvbmVuLgoKIEV4ZW1wZWwgcMOlIHlya2VuIGlub20gb21yw6VkZXQ6IEbDtnJldGFnc2Vrb25vbSwgcmV2aXNvciwgYWR2b2thdCwgZG9tYXJlLCBtYXJrbmFkc2FuYWx5dGlrZXIsIGVrb25vbWlhc3Npc3RlbnQsIGzDpGthcnNla3JldGVyYXJlCi48L0Rlc2NyaXB0aW9uPjwvTG9jYWxlRmllbGQ+PC9HZXRMb2NhbGVGaWVsZHNCeUxvY2FsZUZpZWxkSWRzUmVzdWx0PjwvR2V0TG9jYWxlRmllbGRzQnlMb2NhbGVGaWVsZElkc1Jlc3BvbnNlPjwvc29hcDpCb2R5Pjwvc29hcDpFbnZlbG9wZT4=
+        PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c29hcDpFbnZlbG9wZSB4bWxuczpzb2FwPSJodHRwOi8vd3d3LnczLm9yZy8yMDAzLzA1L3NvYXAtZW52ZWxvcGUiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zOnhzZD0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiPjxzb2FwOkJvZHk+PEdldExvY2FsZUZpZWxkc0J5TG9jYWxlRmllbGRJZHNSZXNwb25zZSB4bWxucz0idXJuOmFtcy5zZTpUYXhvbm9teSI+PEdldExvY2FsZUZpZWxkc0J5TG9jYWxlRmllbGRJZHNSZXN1bHQ+PExvY2FsZUZpZWxkPjxMb2NhbGVGaWVsZElEPjM8L0xvY2FsZUZpZWxkSUQ+PFRlcm0+RGF0YS9JVDwvVGVybT48RGVzY3JpcHRpb24+QXJiZXRhciBtZWQgc3lzdGVtdXR2ZWNrbGluZywgcHJvZ3JhbW1lcmluZyBlbGxlciBkcmlmdC0gb2NoIHVuZGVyaMOlbGwgYXYgc3lzdGVtIG9jaCBuw6R0dmVyay4gR2VyIHN1cHBvcnQgdGlsbCBhbnbDpG5kYXJlLiBVdGZvcm1hciBsw6VuZ3Npa3RpZ2EgcGxhbmVyIGbDtnIgSVQtYW52w6RuZG5pbmcgZWxsZXIgYXJiZXRhciBtZWQgSVQtc8Oka2VyaGV0c2Zyw6Vnb3IuIEJ5Z2dlciB1cHAgd2ViYnBsYXRzZXIuCgpFeGVtcGVsIHDDpSB5cmtlbiBpbm9tIG9tcsOlZGV0OiBJVC1hcmtpdGVrdCwgZGF0YWJhc3Rla25pa2VyLCBwcm9ncmFtbWVyYXJlLCB3ZWJidXR2ZWNrbGFyZSwgSVQtc8Oka2VyaGV0c2NoZWYsIElULXN0cmF0ZWcsIG7DpHR2ZXJrc3Rla25pa2VyLCB3ZWJtYXN0ZXIuPC9EZXNjcmlwdGlvbj48L0xvY2FsZUZpZWxkPjwvR2V0TG9jYWxlRmllbGRzQnlMb2NhbGVGaWVsZElkc1Jlc3VsdD48L0dldExvY2FsZUZpZWxkc0J5TG9jYWxlRmllbGRJZHNSZXNwb25zZT48L3NvYXA6Qm9keT48L3NvYXA6RW52ZWxvcGU+
     http_version: 
-  recorded_at: Sun, 09 Dec 2018 19:57:31 GMT
+  recorded_at: Sun, 09 Dec 2018 20:09:22 GMT
 recorded_with: VCR 3.0.3
