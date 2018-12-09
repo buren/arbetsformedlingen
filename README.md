@@ -2,39 +2,17 @@
 
 Arbetsförmedlingen API client (Swedish Public Employment Service).
 
-__Features__
-* Post job ad (a.k.a Direktöverförda annonser)
-* Platsannons API Client
-* Ontology API Client
-* Taxonomy SOAP API Client
-* WSOccupation SOAP API Client
-
 __Index__
 * [Installation](#installation)
-* [API Client](#api-client)
-* [Post job ad](#post-job-ad)
-* [Ontology API Client](#ontology-api-client)
-* [Taxonomy API Client](#taxonomy-api-client)
-* [WSOccupation API Client](#wsoccupation-api-client)
+* [Post job ad](#post-job-ad) (a.k.a Direktöverförda annonser)
+* [API clients for](#api-clients)
+  + [Platsannonser/Platsbanken](#api-clients)
+  * [Ontology](#ontology-api-client)
+  * [Taxonomy (SOAP)](#taxonomy-api-client)
+  * [WSOccupation (SOAP)](#wsoccupation-api-client)
 * [RDoc](http://www.rubydoc.info/gems/arbetsformedlingen/).
 
-## Installation
-
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'arbetsformedlingen'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install arbetsformedlingen
-
-## API Client
+## API Clients
 
 __Create a client:__
 
@@ -70,117 +48,14 @@ end
 
 You can find Arbetsförmedlingens own documentation and some additional notes [here](https://goo.gl/c5jtBv). Note that the documentation provided by Arbetsförmedlingen can be pretty hard to follow.
 
+__Validation support__
+All models used to create a job ad include validations. _A lot_ of work was put into finding all the quirks in the API and adding each validation to its corresponding model. I can't recommend using it enough.
+
 __Complete example creating a packet__
 
 There's a lot of data you can/must send to the API when creating an ad. See files in `lib/arbetsformedlingen/models` for details.
 
-
-```ruby
-require 'date'
-require 'arbetsformedlingen'
-
-include Arbetsformedlingen # just for brevity
-
-document = Document.new(
-  customer_id: 'XXXYYYZZZ',
-  email: 'a@example.com'
-)
-
-company = Company.new(
-  name: 'ACME AB',
-  cin: 'XXYYZZXXYY',
-  description: 'A company description',
-  address: {
-    country_code: 'SE',
-    zip: '11356',
-    municipality: 'Stockholm',
-    street: 'Birger Jarlsgatan 57',
-    city: 'stockholm'
-  }
-)
-
-publication = Publication.new(
-  publish_at_date: Date.today,
-  name: 'John Doe',
-  email: 'john@example.com'
-)
-
-schedule = Schedule.new(
-  full_time: false,
-  summary: '3 days a week 8.00-17.00',
-  start_date: Date.today,
-  end_date: nil
-)
-
-salary = Salary.new(
-  currency: 'SEK',
-  type: :fixed, # :fixed, :fixed_and_commission, :commission
-  summary: 'Your salary will be...'
-)
-
-qualifications = []
-qualifications << Qualification.new(
-  summary: 'A summary', # optional, but recommended field
-  required: true,
-  experience: true,
-  drivers_license: 'B,C1',
-  car: true
-)
-
-qualifications << Qualification.new(
-  summary: 'A summary', # optional, but recommended field
-  required: false
-)
-
-application_method = ApplicationMethod.new(
-  external: true, # applications are not made through AF
-  url: 'https://example.com',
-  summary: 'Goto our website'
-)
-
-position = Position.new(
-  company: company,
-  schedule: schedule,
-  salary: salary,
-  qualifications: qualifications,
-  application_method: application_method,
-  attributes: {
-    title: 'A title',
-    purpose: 'A purpose',
-    address: {
-      country_code: 'SE',
-      zip: '11356',
-      municipality: 'Stockholm',
-      street: 'Birger Jarlsgatan 57',
-      city: 'stockholm'
-    }
-  }
-)
-
-packet = Packet.new(
-  publication: publication,
-  document: document,
-  position: position,
-  attributes: {
-    active: true,
-    job_id: 1,
-    number_to_fill: 1,
-    occupation: '4896'
-  }
-)
-
-puts "salary.valid?: #{salary.valid?}"
-puts "schedule.valid?: #{schedule.valid?}"
-puts "publication.valid?: #{publication.valid?}"
-puts "document.valid?: #{document.valid?}"
-puts "company.valid?: #{company.valid?}"
-puts "application_method.valid?: #{application_method.valid?}"
-puts "position.valid?: #{position.valid?}"
-puts "packet.valid?: #{packet.valid?}"
-
-client = API::Client.new(locale: 'sv')
-client.create_ad(packet)
-```
+[See full example](examples/post_job_ad.rb).
 
 ## WSOccupation API Client
 
@@ -246,6 +121,21 @@ This gem has translated the attribute names in Arbetsförmedlingens (AF) API fro
 | yrkesgrupp | occupational_group |
 | yrkesnamn | occupation |
 
+## Installation
+
+Add this line to your application's Gemfile:
+
+```ruby
+gem 'arbetsformedlingen'
+```
+
+And then execute:
+
+    $ bundle
+
+Or install it yourself as:
+
+    $ gem install arbetsformedlingen
 
 ## Development
 
