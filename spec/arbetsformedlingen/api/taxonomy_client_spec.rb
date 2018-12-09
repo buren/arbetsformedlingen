@@ -187,6 +187,24 @@ RSpec.describe Arbetsformedlingen::API::TaxonomyClient do
       expected: { value: 'Bred, generell utbildning', length: 117 },
     },
     {
+      method_name: :sun_level1,
+      args: { language_id: 502 },
+      css: 'SUNLevel1 Term',
+      expected: { value: 'Saknar formell, grundläggande utbildning', length: 7 },
+    },
+    {
+      method_name: :sun_level2,
+      args: { language_id: 502 },
+      css: 'SUNLevel2 Term',
+      expected: { value: 'Förskoleutbildning', length: 14 },
+    },
+    {
+      method_name: :sun_level3,
+      args: { language_id: 502 },
+      css: 'SUNLevel3 Term',
+      expected: { value: 'Övrig/ospec förskoleutbildning', length: 50 },
+    },
+    {
       method_name: :sun_guide_tree,
       args: { language_id: 502 },
       css: 'SUNGuideBranch SUNLevel1 Term',
