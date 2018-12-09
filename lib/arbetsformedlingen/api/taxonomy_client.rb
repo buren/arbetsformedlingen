@@ -396,13 +396,22 @@ module Arbetsformedlingen
         client_request('GetLocaleFieldsByLocaleCode', args: args)
       end
 
-      # Returns locale fields by locale code
+      # Returns locale fields by text
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetLocaleFieldsByText
       def locale_fields_by_text(language_id:, text:, exact_match: false)
         args = { languageId: language_id, term: text, exactMatch: exact_match }
         client_request('GetLocaleFieldsByText', args: args)
+      end
+
+      # Returns locale group by occupation name id
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetLocaleGroupByOccupationNameId
+      def locale_group_by_occupation_name_id(language_id:, occupation_name_id:)
+        args = { languageId: language_id, occupationNameId: occupation_name_id }
+        client_request('GetLocaleGroupByOccupationNameId', args: args)
       end
 
       # Returns SUN guide tree

@@ -283,6 +283,12 @@ RSpec.describe Arbetsformedlingen::API::TaxonomyClient do
       expected: { value: 'Administration, ekonomi, juridik', length: 18 },
     },
     {
+      method_name: :locale_group_by_occupation_name_id,
+      args: { language_id: 502, occupation_name_id: 6818 },
+      css: 'Term',
+      expected: { value: 'General-, landstings- och kommundirektörer m.fl.', length: 1 },
+    },
+    {
       method_name: :sun_guide_tree,
       args: { language_id: 502 },
       css: 'SUNGuideBranch SUNLevel1 Term',
