@@ -354,6 +354,57 @@ module Arbetsformedlingen
         client_request('GetAllWorkTimeExtents', args: { languageId: language_id })
       end
 
+      # Returns EU regions by country
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetEURegionsByCountryID
+      def eu_regions_by_country(language_id:, country_id:)
+        args = { countryId: country_id, languageId: language_id }
+        client_request('GetEURegionsByCountryID', args: args)
+      end
+
+      # Returns ISCO by local code
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetISCOByLocaleCode
+      def isco_by_locale_code(locale_code:)
+        client_request('GetISCOByLocaleCode', args: { localeCode: locale_code })
+      end
+
+      # Returns ISCO by ISO2 code
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetLanguageIDByISO2Code
+      def isco_by_iso2_code(iso2_code:)
+        client_request('GetLanguageIDByISO2Code', args: { ISO2Code: iso2_code })
+      end
+
+      # Returns locale code by ISCO
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetLocaleCodeByISCO
+      def locale_code_by_isco(isco:)
+        client_request('GetLocaleCodeByISCO', args: { ISCO: isco })
+      end
+
+      # Returns locale fields by locale code
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetLocaleFieldsByLocaleCode
+      def locale_fields_by_locale_code(language_id:, locale_code:)
+        args = { languageId: language_id, localeCode: locale_code }
+        client_request('GetLocaleFieldsByLocaleCode', args: args)
+      end
+
+      # Returns locale fields by locale code
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetLocaleFieldsByText
+      def locale_fields_by_text(language_id:, text:, exact_match: false)
+        args = { languageId: language_id, term: text, exactMatch: exact_match }
+        client_request('GetLocaleFieldsByText', args: args)
+      end
+
       # Returns SUN guide tree
       # @return [Response] the response
       # @see Response

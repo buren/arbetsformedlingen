@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <soap12:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://www.w3.org/2003/05/soap-envelope">
+          <soap12:Body>
+            <GetEURegionsByCountryID xmlns="urn:ams.se:Taxonomy">
+              <countryId>199</countryId>
+              <languageId>502</languageId>
+            </GetEURegionsByCountryID>
+          </soap12:Body>
+        </soap12:Envelope>
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.arbetsformedlingen.se
+      Content-Type:
+      - text/xml
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 09 Dec 2018 16:10:51 GMT
+      Server:
+      - Microsoft-IIS/7.5
+      Cache-Control:
+      - private, max-age=0
+      Content-Type:
+      - application/soap+xml; charset=utf-8
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Content-Length:
+      - '3102'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - X-JWT-Assertion, Origin, X-Requested-With, Content-Type, Accept
+      Access-Control-Allow-Methods:
+      - GET, OPTIONS, HEAD, PUT, POST, DELETE
+      Connection:
+      - close
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c29hcDpFbnZlbG9wZSB4bWxuczpzb2FwPSJodHRwOi8vd3d3LnczLm9yZy8yMDAzLzA1L3NvYXAtZW52ZWxvcGUiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zOnhzZD0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiPjxzb2FwOkJvZHk+PEdldEVVUmVnaW9uc0J5Q291bnRyeUlEUmVzcG9uc2UgeG1sbnM9InVybjphbXMuc2U6VGF4b25vbXkiPjxHZXRFVVJlZ2lvbnNCeUNvdW50cnlJRFJlc3VsdD48RVVSZWdpb24+PEVVUmVnaW9uSUQ+MTg0PC9FVVJlZ2lvbklEPjxUZXJtPkJsZWtpbmdlIGzDpG48L1Rlcm0+PE5hdGlvbmFsTlVUU0xldmVsM0NvZGU+MTA8L05hdGlvbmFsTlVUU0xldmVsM0NvZGU+PC9FVVJlZ2lvbj48RVVSZWdpb24+PEVVUmVnaW9uSUQ+MTg1PC9FVVJlZ2lvbklEPjxUZXJtPkRhbGFybmFzIGzDpG48L1Rlcm0+PE5hdGlvbmFsTlVUU0xldmVsM0NvZGU+MjA8L05hdGlvbmFsTlVUU0xldmVsM0NvZGU+PC9FVVJlZ2lvbj48RVVSZWdpb24+PEVVUmVnaW9uSUQ+MTk5PC9FVVJlZ2lvbklEPjxUZXJtPkdvdGxhbmRzIGzDpG48L1Rlcm0+PE5hdGlvbmFsTlVUU0xldmVsM0NvZGU+MDk8L05hdGlvbmFsTlVUU0xldmVsM0NvZGU+PC9FVVJlZ2lvbj48RVVSZWdpb24+PEVVUmVnaW9uSUQ+MTg2PC9FVVJlZ2lvbklEPjxUZXJtPkfDpHZsZWJvcmdzIGzDpG48L1Rlcm0+PE5hdGlvbmFsTlVUU0xldmVsM0NvZGU+MjE8L05hdGlvbmFsTlVUU0xldmVsM0NvZGU+PC9FVVJlZ2lvbj48RVVSZWdpb24+PEVVUmVnaW9uSUQ+MTg3PC9FVVJlZ2lvbklEPjxUZXJtPkhhbGxhbmRzIGzDpG48L1Rlcm0+PE5hdGlvbmFsTlVUU0xldmVsM0NvZGU+MTM8L05hdGlvbmFsTlVUU0xldmVsM0NvZGU+PC9FVVJlZ2lvbj48RVVSZWdpb24+PEVVUmVnaW9uSUQ+MTg4PC9FVVJlZ2lvbklEPjxUZXJtPkrDpG10bGFuZHMgbMOkbjwvVGVybT48TmF0aW9uYWxOVVRTTGV2ZWwzQ29kZT4yMzwvTmF0aW9uYWxOVVRTTGV2ZWwzQ29kZT48L0VVUmVnaW9uPjxFVVJlZ2lvbj48RVVSZWdpb25JRD4xODk8L0VVUmVnaW9uSUQ+PFRlcm0+SsO2bmvDtnBpbmdzIGzDpG48L1Rlcm0+PE5hdGlvbmFsTlVUU0xldmVsM0NvZGU+MDY8L05hdGlvbmFsTlVUU0xldmVsM0NvZGU+PC9FVVJlZ2lvbj48RVVSZWdpb24+PEVVUmVnaW9uSUQ+MTkwPC9FVVJlZ2lvbklEPjxUZXJtPkthbG1hciBsw6RuPC9UZXJtPjxOYXRpb25hbE5VVFNMZXZlbDNDb2RlPjA4PC9OYXRpb25hbE5VVFNMZXZlbDNDb2RlPjwvRVVSZWdpb24+PEVVUmVnaW9uPjxFVVJlZ2lvbklEPjE5MTwvRVVSZWdpb25JRD48VGVybT5Lcm9ub2JlcmdzIGzDpG48L1Rlcm0+PE5hdGlvbmFsTlVUU0xldmVsM0NvZGU+MDc8L05hdGlvbmFsTlVUU0xldmVsM0NvZGU+PC9FVVJlZ2lvbj48RVVSZWdpb24+PEVVUmVnaW9uSUQ+MTkyPC9FVVJlZ2lvbklEPjxUZXJtPk5vcnJib3R0ZW5zIGzDpG48L1Rlcm0+PE5hdGlvbmFsTlVUU0xldmVsM0NvZGU+MjU8L05hdGlvbmFsTlVUU0xldmVsM0NvZGU+PC9FVVJlZ2lvbj48RVVSZWdpb24+PEVVUmVnaW9uSUQ+MTk1PC9FVVJlZ2lvbklEPjxUZXJtPlNrw6VuZSBsw6RuPC9UZXJtPjxOYXRpb25hbE5VVFNMZXZlbDNDb2RlPjEyPC9OYXRpb25hbE5VVFNMZXZlbDNDb2RlPjwvRVVSZWdpb24+PEVVUmVnaW9uPjxFVVJlZ2lvbklEPjE5NzwvRVVSZWdpb25JRD48VGVybT5TdG9ja2hvbG1zIGzDpG48L1Rlcm0+PE5hdGlvbmFsTlVUU0xldmVsM0NvZGU+MDE8L05hdGlvbmFsTlVUU0xldmVsM0NvZGU+PC9FVVJlZ2lvbj48RVVSZWdpb24+PEVVUmVnaW9uSUQ+MTk2PC9FVVJlZ2lvbklEPjxUZXJtPlPDtmRlcm1hbmxhbmRzIGzDpG48L1Rlcm0+PE5hdGlvbmFsTlVUU0xldmVsM0NvZGU+MDQ8L05hdGlvbmFsTlVUU0xldmVsM0NvZGU+PC9FVVJlZ2lvbj48RVVSZWdpb24+PEVVUmVnaW9uSUQ+MTk4PC9FVVJlZ2lvbklEPjxUZXJtPlVwcHNhbGEgbMOkbjwvVGVybT48TmF0aW9uYWxOVVRTTGV2ZWwzQ29kZT4wMzwvTmF0aW9uYWxOVVRTTGV2ZWwzQ29kZT48L0VVUmVnaW9uPjxFVVJlZ2lvbj48RVVSZWdpb25JRD4yMDA8L0VVUmVnaW9uSUQ+PFRlcm0+VsOkcm1sYW5kcyBsw6RuPC9UZXJtPjxOYXRpb25hbE5VVFNMZXZlbDNDb2RlPjE3PC9OYXRpb25hbE5VVFNMZXZlbDNDb2RlPjwvRVVSZWdpb24+PEVVUmVnaW9uPjxFVVJlZ2lvbklEPjIwMTwvRVVSZWdpb25JRD48VGVybT5Ww6RzdGVyYm90dGVucyBsw6RuPC9UZXJtPjxOYXRpb25hbE5VVFNMZXZlbDNDb2RlPjI0PC9OYXRpb25hbE5VVFNMZXZlbDNDb2RlPjwvRVVSZWdpb24+PEVVUmVnaW9uPjxFVVJlZ2lvbklEPjIwMzwvRVVSZWdpb25JRD48VGVybT5Ww6RzdGVybm9ycmxhbmRzIGzDpG48L1Rlcm0+PE5hdGlvbmFsTlVUU0xldmVsM0NvZGU+MjI8L05hdGlvbmFsTlVUU0xldmVsM0NvZGU+PC9FVVJlZ2lvbj48RVVSZWdpb24+PEVVUmVnaW9uSUQ+MjAyPC9FVVJlZ2lvbklEPjxUZXJtPlbDpHN0bWFubGFuZHMgbMOkbjwvVGVybT48TmF0aW9uYWxOVVRTTGV2ZWwzQ29kZT4xOTwvTmF0aW9uYWxOVVRTTGV2ZWwzQ29kZT48L0VVUmVnaW9uPjxFVVJlZ2lvbj48RVVSZWdpb25JRD4yMDQ8L0VVUmVnaW9uSUQ+PFRlcm0+VsOkc3RyYSBHw7Z0YWxhbmRzIGzDpG48L1Rlcm0+PE5hdGlvbmFsTlVUU0xldmVsM0NvZGU+MTQ8L05hdGlvbmFsTlVUU0xldmVsM0NvZGU+PC9FVVJlZ2lvbj48RVVSZWdpb24+PEVVUmVnaW9uSUQ+MTkzPC9FVVJlZ2lvbklEPjxUZXJtPsOWcmVicm8gbMOkbjwvVGVybT48TmF0aW9uYWxOVVRTTGV2ZWwzQ29kZT4xODwvTmF0aW9uYWxOVVRTTGV2ZWwzQ29kZT48L0VVUmVnaW9uPjxFVVJlZ2lvbj48RVVSZWdpb25JRD4xOTQ8L0VVUmVnaW9uSUQ+PFRlcm0+w5ZzdGVyZ8O2dGxhbmRzIGzDpG48L1Rlcm0+PE5hdGlvbmFsTlVUU0xldmVsM0NvZGU+MDU8L05hdGlvbmFsTlVUU0xldmVsM0NvZGU+PC9FVVJlZ2lvbj48L0dldEVVUmVnaW9uc0J5Q291bnRyeUlEUmVzdWx0PjwvR2V0RVVSZWdpb25zQnlDb3VudHJ5SURSZXNwb25zZT48L3NvYXA6Qm9keT48L3NvYXA6RW52ZWxvcGU+
+    http_version: 
+  recorded_at: Sun, 09 Dec 2018 16:10:52 GMT
+recorded_with: VCR 3.0.3
