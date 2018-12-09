@@ -450,13 +450,22 @@ module Arbetsformedlingen
         client_request('GetOccupationNamesByLocaleCode', args: args)
       end
 
-      # Returns locale groups by text
+      # Returns occupation names by text
       # @return [Response] the response
       # @see Response
       # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetOccupationNamesByText
       def occupation_names_by_text(language_id:, text:, extact_match: false)
         args = { languageId: language_id, term: text, exactMatch: extact_match }
         client_request('GetOccupationNamesByText', args: args)
+      end
+
+      # Returns occupation names within construction
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetOccupationNamesConstruction
+      def occupation_names_construction(language_id:)
+        args = { languageId: language_id }
+        client_request('GetOccupationNamesConstruction', args: args)
       end
 
       # Returns SUN guide tree
