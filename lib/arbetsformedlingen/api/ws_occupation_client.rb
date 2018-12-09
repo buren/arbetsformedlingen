@@ -18,7 +18,7 @@ module Arbetsformedlingen
         super(SERVICE_URL, NAMESPACE)
       end
 
-      # Returns occupation response with specified id
+      # Returns occupation with specified id
       # @return [Response] the response
       # @see Response
       # @see Response#xml
@@ -26,7 +26,7 @@ module Arbetsformedlingen
         client_request('GetOccupationById', args: { occupationId: id })
       end
 
-      # Returns occupations response with specified name
+      # Returns occupations
       # @return [Response] the response
       # @see Response
       # @see Response#xml
@@ -42,7 +42,7 @@ module Arbetsformedlingen
         client_request('GetAllOccupations')
       end
 
-      # Returns occupations short response with specified id
+      # Returns occupations short
       # @return [Response] the response
       # @see Response
       # @see Response#xml
@@ -50,12 +50,52 @@ module Arbetsformedlingen
         client_request('GetAllOccupationsShort')
       end
 
-      # Returns occupations detailed response with specified id
+      # Returns occupations detailed
       # @return [Response] the response
       # @see Response
       # @see Response#xml
       def occupations_detailed
         client_request('GetAllOccupationsDetailed')
+      end
+
+      # Returns locale groups
+      # @return [Response] the response
+      # @see Response
+      # @see Response#xml
+      def locale_groups(id)
+        client_request('GetLocaleGroups', args: { occupationId: id })
+      end
+
+      # Returns platsbanken link for specified locale group id
+      # @return [Response] the response
+      # @see Response
+      # @see Response#xml
+      def platsbanken_link(id)
+        client_request('GetPlatsbankenLink', args: { localegroupid: id })
+      end
+
+      # Returns education connections
+      # @return [Response] the response
+      # @see Response
+      # @see Response#xml
+      def education_connections
+        client_request('LoadAllEducationConnections')
+      end
+
+      # Returns occupations containing id and name information
+      # @return [Response] the response
+      # @see Response
+      # @see Response#xml
+      def occupations_id_and_name
+        client_request('LoadAllOccupationIdAndName')
+      end
+
+      # Returns article
+      # @return [Response] the response
+      # @see Response
+      # @see Response#xml
+      def article(id)
+        client_request('GetArticle', args: { articleId: id })
       end
     end
   end

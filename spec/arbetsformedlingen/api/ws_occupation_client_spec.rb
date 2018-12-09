@@ -58,4 +58,55 @@ RSpec.describe Arbetsformedlingen::API::WSOccupationClient do
       expect(first_name).to eq(expected_first_name)
     end
   end
+
+  describe '#locale_groups' do
+    it 'returns response that includes first occupation name', vcr: true do
+      client = described_class.new
+      response = client.locale_groups(461)
+
+      first_name = response.xml.css('GetLocaleGroupsResult').first.text
+      expect(first_name).to eq('1405#Marknadsanalytiker och marknadsförare m.fl.')
+    end
+  end
+
+  describe '#platsbanken_link' do
+    it 'returns response that includes first occupation name', vcr: true do
+      client = described_class.new
+      response = client.platsbanken_link(1405)
+
+      first_name = response.xml.css('GetPlatsbankenLinkResult').first.text
+      expect(first_name).to eq('/4.4d99301a154fd3fb8df3aca3.html#/?yrkesgrupper=2431|0')
+    end
+  end
+
+  describe '#education_connections' do
+    it 'returns education connections', vcr: true do
+      client = described_class.new
+      response = client.education_connections
+
+      result = response.xml.css('LoadAllEducationConnectionsResult').first.text
+      expect(result.start_with?("571\tinfo.ky")).to eq(true)
+    end
+  end
+
+  describe '#occupations_id_and_name' do
+    it 'returns occupations containing id and name information', vcr: true do
+      client = described_class.new
+      response = client.occupations_id_and_name
+
+      result = response.xml.css('LoadAllOccupationIdAndNameResult').first.text
+      expect(result.start_with?("571\tAdministratör/sekreteraryrken")).to eq(true)
+    end
+  end
+
+  describe '#article' do
+    it 'returns empty result for unknown id', vcr: true do
+      client = described_class.new
+      response = client.article(3)
+
+      result = response.xml.css('GetArticleResult')
+      expect(result.length).to eq(1)
+      expect(result.css('Id')).to be_empty
+    end
+  end
 end
