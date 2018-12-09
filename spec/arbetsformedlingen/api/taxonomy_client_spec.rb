@@ -111,6 +111,11 @@ RSpec.describe Arbetsformedlingen::API::TaxonomyClient do
       expected: { value: 'Akrobat', length: 178 },
     },
     {
+      method_name: :locale_group_skills,
+      css: 'LocaleGroupSkill LocaleCode',
+      expected: { value: '0110', length: 13334 },
+    },
+    {
       method_name: :sun_guide_tree,
       args: { language_id: 502 },
       css: 'SUNGuideBranch SUNLevel1 Term',
