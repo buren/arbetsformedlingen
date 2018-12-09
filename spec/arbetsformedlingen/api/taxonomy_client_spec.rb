@@ -349,6 +349,12 @@ RSpec.describe Arbetsformedlingen::API::TaxonomyClient do
       expected: { value: 'Stockholm', length: 17389 },
     },
     {
+      method_name: :sun_field3_by_guide,
+      args: { language_id: 502, sun_level1_id: 1 },
+      css: 'SUNField3 Term',
+      expected: { value: 'Bred, generell utbildning', length: 1 },
+    },
+    {
       method_name: :sun_guide_tree,
       args: { language_id: 502 },
       css: 'SUNGuideBranch SUNLevel1 Term',

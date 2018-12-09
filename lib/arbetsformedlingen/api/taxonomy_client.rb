@@ -504,6 +504,15 @@ module Arbetsformedlingen
         client_request('GetPostCodesByPostLocality', args: args)
       end
 
+      # Returns post codes by post locality
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetSUNField3ByGuide
+      def sun_field3_by_guide(language_id:, sun_level1_id:)
+        args = { languageId: language_id, SUNLevel1ID: sun_level1_id }
+        client_request('GetSUNField3ByGuide', args: args)
+      end
+
       # Returns SUN guide tree
       # @return [Response] the response
       # @see Response
