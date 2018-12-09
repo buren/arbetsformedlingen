@@ -397,6 +397,12 @@ RSpec.describe Arbetsformedlingen::API::TaxonomyClient do
       expected: { value: 'Datakunskaper', length: 788 },
     },
     {
+      method_name: :skills_by_text,
+      args: { language_id: 502, text: 'A' },
+      css: 'SkillHeadline Term',
+      expected: { value: 'Övriga kompetensrubriker', length: 8118 },
+    },
+    {
       method_name: :version_information,
       css: 'VersionInformation Version',
       expected: { value: '1', length: 1 },
