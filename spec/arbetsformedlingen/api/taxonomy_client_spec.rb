@@ -289,6 +289,12 @@ RSpec.describe Arbetsformedlingen::API::TaxonomyClient do
       expected: { value: 'General-, landstings- och kommundirektörer m.fl.', length: 1 },
     },
     {
+      method_name: :locale_group_skills_by_locale_code,
+      args: { locale_code: 2421 },
+      css: 'LocaleGroupSkill SkillID',
+      expected: { value: '870', length: 37 },
+    },
+    {
       method_name: :sun_guide_tree,
       args: { language_id: 502 },
       css: 'SUNGuideBranch SUNLevel1 Term',

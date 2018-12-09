@@ -414,6 +414,15 @@ module Arbetsformedlingen
         client_request('GetLocaleGroupByOccupationNameId', args: args)
       end
 
+      # Returns locale group skills by locale code
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetLocaleGroupSkillsByLocaleCode
+      def locale_group_skills_by_locale_code(locale_code:)
+        args = { localeCode: locale_code }
+        client_request('GetLocaleGroupSkillsByLocaleCode', args: args)
+      end
+
       # Returns SUN guide tree
       # @return [Response] the response
       # @see Response
