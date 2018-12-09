@@ -202,6 +202,14 @@ module Arbetsformedlingen
         client_request('GetAllMunicipalityHomePages')
       end
 
+      # Returns occupation name synonyms
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllOccupationNameSynonyms
+      def occupation_name_synonyms(language_id: )
+        client_request('GetAllOccupationNameSynonyms', args: { languageId: language_id })
+      end
+
       # Returns SUN guide tree
       # @return [Response] the response
       # @see Response

@@ -133,6 +133,12 @@ RSpec.describe Arbetsformedlingen::API::TaxonomyClient do
       expected: { value: 'http://www.upplandsvasby.se/', length: 290 },
     },
     {
+      method_name: :occupation_name_synonyms,
+      args: { language_id: 502 },
+      css: 'OccupationNameSynonym SynonymTerm',
+      expected: { value: 'Sjöman', length: 1577 },
+    },
+    {
       method_name: :sun_guide_tree,
       args: { language_id: 502 },
       css: 'SUNGuideBranch SUNLevel1 Term',
