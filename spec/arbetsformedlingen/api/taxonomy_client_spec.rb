@@ -235,6 +235,12 @@ RSpec.describe Arbetsformedlingen::API::TaxonomyClient do
       expected: { value: '00', length: 28 },
     },
     {
+      method_name: :wage_types,
+      args: { language_id: 502 },
+      css: 'WageType Term',
+      expected: { value: 'Fast månads- vecko- eller timlön', length: 3 },
+    },
+    {
       method_name: :sun_guide_tree,
       args: { language_id: 502 },
       css: 'SUNGuideBranch SUNLevel1 Term',

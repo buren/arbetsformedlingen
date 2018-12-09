@@ -338,6 +338,14 @@ module Arbetsformedlingen
         client_request('GetAllUnemploymentBenefitSocieties', args: { languageId: language_id })
       end
 
+      # Returns unemployment benefit societies
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllWageTypes
+      def wage_types(language_id:)
+        client_request('GetAllWageTypes', args: { languageId: language_id })
+      end
+
       # Returns SUN guide tree
       # @return [Response] the response
       # @see Response
