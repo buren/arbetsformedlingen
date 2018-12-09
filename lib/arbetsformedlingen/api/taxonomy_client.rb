@@ -250,6 +250,30 @@ module Arbetsformedlingen
         client_request('GetAllSNILevel2', args: { languageId: language_id })
       end
 
+      # Returns SUN field 1
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllSUNField1
+      def sun_field1(language_id:)
+        client_request('GetAllSUNField1', args: { languageId: language_id })
+      end
+
+      # Returns SUN field 2
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllSUNField2
+      def sun_field2(language_id:)
+        client_request('GetAllSUNField2', args: { languageId: language_id })
+      end
+
+      # Returns SUN field 3
+      # @return [Response] the response
+      # @see Response
+      # @see http://api.arbetsformedlingen.se/taxonomi/v0/TaxonomiService.asmx?op=GetAllSUNField3
+      def sun_field3(language_id:)
+        client_request('GetAllSUNField3', args: { languageId: language_id })
+      end
+
       # Returns SUN guide tree
       # @return [Response] the response
       # @see Response

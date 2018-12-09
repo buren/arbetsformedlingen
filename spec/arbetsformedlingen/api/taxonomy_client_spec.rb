@@ -169,6 +169,24 @@ RSpec.describe Arbetsformedlingen::API::TaxonomyClient do
       expected: { value: 'Service till utvinning', length: 90 },
     },
     {
+      method_name: :sun_field1,
+      args: { language_id: 502 },
+      css: 'SUNField1 Term',
+      expected: { value: 'Allmän utbildning', length: 10 },
+    },
+    {
+      method_name: :sun_field2,
+      args: { language_id: 502 },
+      css: 'SUNField2 Term',
+      expected: { value: 'Bred, generell utbildning', length: 26 },
+    },
+    {
+      method_name: :sun_field3,
+      args: { language_id: 502 },
+      css: 'SUNField3 Term',
+      expected: { value: 'Bred, generell utbildning', length: 117 },
+    },
+    {
       method_name: :sun_guide_tree,
       args: { language_id: 502 },
       css: 'SUNGuideBranch SUNLevel1 Term',
