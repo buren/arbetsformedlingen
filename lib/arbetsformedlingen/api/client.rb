@@ -97,7 +97,7 @@ module Arbetsformedlingen
       #    client.counties
       # @see Values::SoklistaPage
       def municipalities(county_id: nil)
-        # NOTE: Due to a quirck in the API the lanid-param
+        # NOTE: Due to a quirk in the API the lanid-param
         #       *must* be present though it *can* be nil
         query = { lanid: county_id }
         response = request.get('soklista/kommuner', query: query)
@@ -147,7 +147,7 @@ module Arbetsformedlingen
       #    client.occupational_group(occupational_field_id: id)
       # @see Values::SoklistaPage
       def occupational_group(occupational_field_id: nil)
-        # NOTE: Due to a quirck in the API the yrkesomradeid-param
+        # NOTE: Due to a quirk in the API the yrkesomradeid-param
         #       *must* be present though it *can* be nil
         query = { yrkesomradeid: occupational_field_id }
         response = request.get('soklista/yrkesgrupper', query: query)
@@ -176,7 +176,7 @@ module Arbetsformedlingen
       #    client.occupations(occupational_group_id: id)
       # @see Values::SoklistaPage
       def occupations(occupational_group_id: nil)
-        # NOTE: Due to a quirck in the API the yrkesgruppid-param
+        # NOTE: Due to a quirk in the API the yrkesgruppid-param
         #       *must* be present though it *can* be nil
         query = { yrkesgruppid: occupational_group_id }
         response = request.get('soklista/yrken', query: query)
