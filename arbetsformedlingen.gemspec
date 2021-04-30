@@ -23,7 +23,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = %w[lib config]
 
   spec.add_dependency 'builder', '~> 3.2'
-  spec.add_dependency 'dry-validation', '~> 0.12'
+  spec.add_dependency 'dry-validation', '>= 0.12', '< 2.0'
   spec.add_dependency 'httparty', '~> 0.13' # Easy HTTP requests
 
   spec.add_development_dependency 'bundler', '> 1.14', '< 3'
